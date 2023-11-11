@@ -341,10 +341,10 @@ update_proxy_groups(config_data, merged_proxies)
 update_warp_proxy_groups(config_warp_data, merged_proxies)
 
 # 将更新后的数据写入到一个YAML文件中，并指定编码格式为UTF-8
-with open('./sub/merged_proxies.yaml', 'w', encoding='utf-8') as file:
+with open('./sub/meta.yaml', 'w', encoding='utf-8') as file:
     yaml.dump(config_data, file, sort_keys=False, allow_unicode=True)
 
-with open('./sub/merged_warp_proxies.yaml', 'w', encoding='utf-8') as file:
+with open('./sub/meta_warp_proxies.yaml', 'w', encoding='utf-8') as file:
     yaml.dump(config_warp_data, file, sort_keys=False, allow_unicode=True)
 
 print("聚合完成")
