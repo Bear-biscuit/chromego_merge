@@ -301,7 +301,7 @@ def process_clash(data, index):
         country = get_country_for_ip(ip)
         
         # 生成节点名称
-        proxy['name'] = f"{index}{i+1}_{country}"
+        proxy['name'] = f"{proxy['type']}_{index}{i+1}_{country}"
 
     merged_proxies.extend(proxies)
 
@@ -314,7 +314,7 @@ def process_clash_old(data, index):
         country = get_country_for_ip(ip)
 
         if proxy.get('type') != 'hysteria2':
-            proxy['name'] = f"{index}{i+1}_{country}"
+            proxy['name'] = f"{proxy['type']}_{index}{i+1}_{country}"
             merged_proxies.append(proxy)
 
 
