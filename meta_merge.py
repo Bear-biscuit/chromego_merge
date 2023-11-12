@@ -408,8 +408,6 @@ def process_hysteria(data, index):
 # 处理hysteria2
 def process_hysteria2(data, index):
     try:
-        ip = proxy.get('server', 'Unknown IP')
-        country = get_country_for_ip(ip)
         json_data = json.loads(data)
         # 处理 hysteria2 数据
         # 提取所需字段
