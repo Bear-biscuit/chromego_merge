@@ -381,7 +381,7 @@ def process_hysteria(data, index):
         protocol = json_data["protocol"]
         # 获取 IP 归属地
         country = get_country_for_ip(server)
-        name = f"{index}_{country}"
+        name = f"hysteria_{index}_{country}"
 
         # 创建当前网址的proxy字典
         proxy = {
@@ -425,7 +425,7 @@ def process_hysteria2(data, index):
         sni = json_data["tls"]["sni"]
         # 获取 IP 归属地
         country = get_country_for_ip(server)
-        name = f"{index}_{country}"
+        name = f"hysteria2_{index}_{country}"
 
         # 创建当前网址的proxy字典
         proxy = {
