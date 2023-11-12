@@ -231,6 +231,38 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: hysteria2_0_台湾
+  type: hysteria2
+  server: www.dtku46.xyz
+  port: 49730
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2_1_加拿大
+  type: hysteria2
+  server: 108.181.22.155
+  port: 37987
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2_2_台湾
+  type: hysteria2
+  server: www.dtku48.xyz
+  port: 51665
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2_3_加拿大
+  type: hysteria2
+  server: 108.181.22.155
+  port: 37987
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -267,6 +299,10 @@ proxy-groups:
   - hysteria_1_美国
   - hysteria_2_加拿大
   - hysteria_3_法国
+  - hysteria2_0_台湾
+  - hysteria2_1_加拿大
+  - hysteria2_2_台湾
+  - hysteria2_3_加拿大
 - name: 手动选择
   type: select
   proxies:
@@ -285,6 +321,10 @@ proxy-groups:
   - hysteria_1_美国
   - hysteria_2_加拿大
   - hysteria_3_法国
+  - hysteria2_0_台湾
+  - hysteria2_1_加拿大
+  - hysteria2_2_台湾
+  - hysteria2_3_加拿大
 - name: 负载均衡
   type: load-balance
   proxies:
@@ -303,6 +343,10 @@ proxy-groups:
   - hysteria_1_美国
   - hysteria_2_加拿大
   - hysteria_3_法国
+  - hysteria2_0_台湾
+  - hysteria2_1_加拿大
+  - hysteria2_2_台湾
+  - hysteria2_3_加拿大
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
