@@ -25,7 +25,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: 11_加拿大
+- name: tuic_11_加拿大
   server: tuic1.freeh1.xyz
   port: 40981
   type: tuic
@@ -38,7 +38,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: false
   congestion-controller: bbr
-- name: 21_加拿大
+- name: tuic_21_加拿大
   server: tuic3.dtku47.xyz
   port: 12255
   type: tuic
@@ -49,7 +49,7 @@ proxies:
   request-timeout: 8000
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 31_加拿大
+- name: tuic_31_加拿大
   server: 108.181.24.7
   port: 23450
   type: tuic
@@ -62,7 +62,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: 41_台湾
+- name: hysteria_41_台湾
   type: hysteria
   server: www.dtku46.xyz
   port: 11223
@@ -73,7 +73,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: 51_加拿大
+- name: tuic_51_加拿大
   server: 108.181.22.205
   port: 50987
   type: tuic
@@ -86,7 +86,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: 61_加拿大
+- name: tuic_61_加拿大
   server: 108.181.22.239
   port: 19988
   type: tuic
@@ -99,7 +99,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: 71_台湾
+- name: hysteria_71_台湾
   type: hysteria
   server: www.dtku50.xyz
   port: 14751
@@ -111,7 +111,7 @@ proxies:
   auth_str: 6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY
   up: 2
   down: 10
-- name: 81_英国
+- name: hysteria_81_英国
   type: hysteria
   server: 62.204.54.81
   port: 37899
@@ -123,7 +123,7 @@ proxies:
   auth_str: OdHFS3zC3HlSYJmc0GLQNKLAlwDbJqEmonVBXmI07T0Ojb1bQB
   up: 10
   down: 50
-- name: 91_台湾
+- name: hysteria_91_台湾
   type: hysteria
   server: www3.dtku49.xyz
   port: 58693
@@ -197,15 +197,15 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - 11_加拿大
-  - 21_加拿大
-  - 31_加拿大
-  - 41_台湾
-  - 51_加拿大
-  - 61_加拿大
-  - 71_台湾
-  - 81_英国
-  - 91_台湾
+  - tuic_11_加拿大
+  - tuic_21_加拿大
+  - tuic_31_加拿大
+  - hysteria_41_台湾
+  - tuic_51_加拿大
+  - tuic_61_加拿大
+  - hysteria_71_台湾
+  - hysteria_81_英国
+  - hysteria_91_台湾
   - 0_加拿大
   - 1_美国
   - 2_加拿大
@@ -216,15 +216,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 11_加拿大
-  - 21_加拿大
-  - 31_加拿大
-  - 41_台湾
-  - 51_加拿大
-  - 61_加拿大
-  - 71_台湾
-  - 81_英国
-  - 91_台湾
+  - tuic_11_加拿大
+  - tuic_21_加拿大
+  - tuic_31_加拿大
+  - hysteria_41_台湾
+  - tuic_51_加拿大
+  - tuic_61_加拿大
+  - hysteria_71_台湾
+  - hysteria_81_英国
+  - hysteria_91_台湾
   - 0_加拿大
   - 1_美国
   - 2_加拿大
