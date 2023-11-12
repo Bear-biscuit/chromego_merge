@@ -175,7 +175,7 @@ proxies:
   auth_str: nbdyVMqucpFMmyRiwcRQFI7EeKzJWjPYuks3ZzEhCv6HjeZvbh
   up: 11
   down: 55
-- name: 0_加拿大
+- name: hysteria_0_加拿大
   type: hysteria
   server: 109.104.152.180
   port: 64502
@@ -189,7 +189,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 1_美国
+- name: hysteria_1_美国
   type: hysteria
   server: 173.234.25.52
   port: 20164
@@ -203,7 +203,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 2_加拿大
+- name: hysteria_2_加拿大
   type: hysteria
   server: 109.104.152.149
   port: 48406
@@ -217,7 +217,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 3_法国
+- name: hysteria_3_法国
   type: hysteria
   server: 51.158.54.46
   port: 11926
@@ -263,10 +263,10 @@ proxy-groups:
   - hysteria_71_台湾
   - hysteria_81_英国
   - hysteria_91_台湾
-  - 0_加拿大
-  - 1_美国
-  - 2_加拿大
-  - 3_法国
+  - hysteria_0_加拿大
+  - hysteria_1_美国
+  - hysteria_2_加拿大
+  - hysteria_3_法国
 - name: 手动选择
   type: select
   proxies:
@@ -281,10 +281,10 @@ proxy-groups:
   - hysteria_71_台湾
   - hysteria_81_英国
   - hysteria_91_台湾
-  - 0_加拿大
-  - 1_美国
-  - 2_加拿大
-  - 3_法国
+  - hysteria_0_加拿大
+  - hysteria_1_美国
+  - hysteria_2_加拿大
+  - hysteria_3_法国
 - name: 负载均衡
   type: load-balance
   proxies:
@@ -299,10 +299,10 @@ proxy-groups:
   - hysteria_71_台湾
   - hysteria_81_英国
   - hysteria_91_台湾
-  - 0_加拿大
-  - 1_美国
-  - 2_加拿大
-  - 3_法国
+  - hysteria_0_加拿大
+  - hysteria_1_美国
+  - hysteria_2_加拿大
+  - hysteria_3_法国
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
