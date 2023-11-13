@@ -5,6 +5,9 @@ import logging
 from ipwhois import IPWhois
 from socket import gethostbyname
 
+# 全局字典，用于记录每个国家出现的次数
+country_count = {}
+
 # 对应国家
 country_code_mapping = {
     'AD': '安道尔',
@@ -274,7 +277,7 @@ def get_country_for_ip(ip):
 
     # 使用映射字典获取中文国家名，如果没有对应的映射，则返回原始国家码
     country = country_code_mapping.get(country, country)
-    
+ 
     return country
 # 提取节点
 def process_urls(url_file, processor):
@@ -300,8 +303,15 @@ def process_clash(data, index):
         ip = proxy.get('server', 'Unknown IP')
         country = get_country_for_ip(ip)
         
+        # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
+        key = f"{proxy['type']}_{country}"
+        count = country_count.get(key, 0)
+
         # 生成节点名称
-        proxy['name'] = f"{proxy['type']}_{index}{i+1}_{country}"
+        proxy['name'] = f"{key}{count}"
+
+        # 更新全局字典中该类型和国家出现的次数
+        country_count[key] = count + 1
 
     merged_proxies.extend(proxies)
 
@@ -313,8 +323,12 @@ def process_clash_old(data, index):
         ip = proxy.get('server', 'Unknown IP')
         country = get_country_for_ip(ip)
 
+        # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
+        key = f"{proxy['type']}_{country}"
+        count = country_count.get(key, 0)
+
         if proxy.get('type') != 'hysteria2':
-            proxy['name'] = f"{proxy['type']}_{index}{i+1}_{country}"
+            proxy['name'] = f"{key}{count}"
             merged_proxies.append(proxy)
 
 
@@ -379,9 +393,18 @@ def process_hysteria(data, index):
         server_name = json_data["server_name"]
         alpn = json_data["alpn"]
         protocol = json_data["protocol"]
+        
         # 获取 IP 归属地
         country = get_country_for_ip(server)
-        name = f"hysteria_{index}_{country}"
+
+        # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
+        key = f"hysteria_{country}"
+        count = country_count.get(key, 0)
+
+        name = f"{key}{count}"
+
+        # 更新全局字典中该类型和国家出现的次数
+        country_count[key] = count + 1
 
         # 创建当前网址的proxy字典
         proxy = {
@@ -423,7 +446,15 @@ def process_hysteria2(data, index):
         sni = json_data["tls"]["sni"]
         # 获取 IP 归属地
         country = get_country_for_ip(server)
-        name = f"hysteria2_{index}_{country}"
+
+        # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
+        key = f"hysteria2_{country}"
+        count = country_count.get(key, 0)
+
+        name = f"{key}{count}"
+
+        # 更新全局字典中该类型和国家出现的次数
+        country_count[key] = count + 1
 
         # 创建当前网址的proxy字典
         proxy = {
