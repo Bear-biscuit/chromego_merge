@@ -46,7 +46,7 @@ proxies:
 - name: hysteria2_加拿大0
   type: hysteria2
   server: 109.104.152.219
-  port: 34091
+  port: 22309
   password: dongtaiwang.com
   alpn:
   - h3
@@ -162,7 +162,7 @@ proxies:
   protocol: udp
   auth_str: OdHFS3zC3HlSYJmc0GLQNKLAlwDbJqEmonVBXmI07T0Ojb1bQB
   up: 10
-  down: 40
+  down: 30
 - name: hysteria_台湾2
   type: hysteria
   server: www3.dtku49.xyz
@@ -242,7 +242,7 @@ proxies:
 - name: hysteria2_加拿大1
   type: hysteria2
   server: 108.181.22.155
-  port: 37987
+  port: 4795
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -250,7 +250,7 @@ proxies:
 - name: hysteria2_台湾1
   type: hysteria2
   server: www.dtku48.xyz
-  port: 57298
+  port: 19244
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -258,7 +258,7 @@ proxies:
 - name: hysteria2_加拿大2
   type: hysteria2
   server: 108.181.22.155
-  port: 37987
+  port: 4795
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
