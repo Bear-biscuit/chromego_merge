@@ -36,17 +36,6 @@ proxies:
   skip-cert-verify: true
   up: 100 Mbps
   down: 100 Mbps
-- name: hysteria2_美国0
-  type: hysteria2
-  server: 167.160.90.251
-  port: 28901
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 100 Mbps
-  down: 100 Mbps
 - name: tuic_加拿大0
   server: tuic1.freeh1.xyz
   port: 40981
@@ -252,7 +241,6 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - hysteria2_加拿大0
-  - hysteria2_美国0
   - tuic_加拿大0
   - tuic_加拿大1
   - tuic_加拿大2
@@ -277,7 +265,6 @@ proxy-groups:
   tolerance: 50
   proxies:
   - hysteria2_加拿大0
-  - hysteria2_美国0
   - tuic_加拿大0
   - tuic_加拿大1
   - tuic_加拿大2
