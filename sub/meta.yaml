@@ -25,6 +25,17 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
+- name: hysteria_美国2
+  type: hysteria
+  server: 167.160.90.251
+  port: 48089
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
 - name: tuic_加拿大5
   server: tuic1.freeh1.xyz
   port: 40981
@@ -149,7 +160,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria_美国1
+- name: hysteria_美国2
   type: hysteria
   server: 173.234.25.52
   port: 20164
@@ -197,6 +208,7 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
+  - hysteria_美国2
   - tuic_加拿大5
   - tuic_加拿大5
   - tuic_加拿大5
@@ -207,7 +219,7 @@ proxy-groups:
   - hysteria_英国1
   - hysteria_台湾3
   - hysteria_加拿大2
-  - hysteria_美国1
+  - hysteria_美国2
   - hysteria_加拿大3
   - hysteria_法国1
 - name: 自动选择
@@ -216,6 +228,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - hysteria_美国2
   - tuic_加拿大5
   - tuic_加拿大5
   - tuic_加拿大5
@@ -226,7 +239,7 @@ proxy-groups:
   - hysteria_英国1
   - hysteria_台湾3
   - hysteria_加拿大2
-  - hysteria_美国1
+  - hysteria_美国2
   - hysteria_加拿大3
   - hysteria_法国1
 rules:

@@ -54,6 +54,17 @@ proxies:
   skip-cert-verify: true
   up: 100 Mbps
   down: 100 Mbps
+- name: hysteria_美国0
+  type: hysteria
+  server: 167.160.90.251
+  port: 48089
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
 - name: tuic_加拿大0
   server: tuic1.freeh1.xyz
   port: 40981
@@ -178,7 +189,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria_美国0
+- name: hysteria_美国1
   type: hysteria
   server: 173.234.25.52
   port: 20164
@@ -274,6 +285,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - hysteria2_加拿大0
+  - hysteria_美国0
   - tuic_加拿大0
   - tuic_加拿大1
   - tuic_加拿大2
@@ -284,7 +296,7 @@ proxy-groups:
   - hysteria_英国0
   - hysteria_台湾2
   - hysteria_加拿大0
-  - hysteria_美国0
+  - hysteria_美国1
   - hysteria_加拿大1
   - hysteria_法国0
   - hysteria2_台湾0
@@ -295,6 +307,7 @@ proxy-groups:
   type: select
   proxies:
   - hysteria2_加拿大0
+  - hysteria_美国0
   - tuic_加拿大0
   - tuic_加拿大1
   - tuic_加拿大2
@@ -305,7 +318,7 @@ proxy-groups:
   - hysteria_英国0
   - hysteria_台湾2
   - hysteria_加拿大0
-  - hysteria_美国0
+  - hysteria_美国1
   - hysteria_加拿大1
   - hysteria_法国0
   - hysteria2_台湾0
@@ -316,6 +329,7 @@ proxy-groups:
   type: load-balance
   proxies:
   - hysteria2_加拿大0
+  - hysteria_美国0
   - tuic_加拿大0
   - tuic_加拿大1
   - tuic_加拿大2
@@ -326,7 +340,7 @@ proxy-groups:
   - hysteria_英国0
   - hysteria_台湾2
   - hysteria_加拿大0
-  - hysteria_美国0
+  - hysteria_美国1
   - hysteria_加拿大1
   - hysteria_法国0
   - hysteria2_台湾0
