@@ -304,7 +304,7 @@ def process_clash(data, index):
         country = get_country_for_ip(ip)
         
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"{proxy['type']}_{country}"
+        key = f"{proxy['type']} || {country}"
         count = country_count.get(key, 0)
 
         # 生成节点名称
@@ -324,7 +324,7 @@ def process_clash_old(data, index):
         country = get_country_for_ip(ip)
 
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"{proxy['type']}_{country}"
+        key = f"{proxy['type']} || {country}"
         count = country_count.get(key, 0)
 
         if proxy.get('type') != 'hysteria2':
@@ -398,7 +398,7 @@ def process_hysteria(data, index):
         country = get_country_for_ip(server)
 
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"hysteria_{country}"
+        key = f"hysteria || {country}"
         count = country_count.get(key, 0)
 
         name = f"{key}{count}"
@@ -448,7 +448,7 @@ def process_hysteria2(data, index):
         country = get_country_for_ip(server)
 
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"hysteria2_{country}"
+        key = f"hysteria2 || {country}"
         count = country_count.get(key, 0)
 
         name = f"{key}{count}"
