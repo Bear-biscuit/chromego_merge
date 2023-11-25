@@ -43,7 +43,7 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: hysteria_美国2
+- name: hysteria || 美国2
   type: hysteria
   server: 167.160.90.251
   port: 48089
@@ -54,7 +54,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: tuic_加拿大5
+- name: tuic || 加拿大5
   server: tuic1.freeh1.xyz
   port: 40981
   type: tuic
@@ -67,7 +67,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: false
   congestion-controller: bbr
-- name: tuic_加拿大5
+- name: tuic || 加拿大5
   server: tuic3.dtku47.xyz
   port: 12255
   type: tuic
@@ -78,7 +78,7 @@ proxies:
   request-timeout: 8000
   udp-relay-mode: native
   congestion-controller: bbr
-- name: tuic_加拿大5
+- name: tuic || 加拿大5
   server: 108.181.24.7
   port: 23450
   type: tuic
@@ -91,7 +91,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: hysteria_台湾3
+- name: hysteria || 台湾3
   type: hysteria
   server: www.dtku46.xyz
   port: 11223
@@ -102,7 +102,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: tuic_加拿大5
+- name: tuic || 加拿大5
   server: 108.181.22.205
   port: 50987
   type: tuic
@@ -115,7 +115,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: tuic_加拿大5
+- name: tuic || 加拿大5
   server: 108.181.22.239
   port: 19988
   type: tuic
@@ -128,7 +128,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: hysteria_台湾3
+- name: hysteria || 台湾3
   type: hysteria
   server: www.dtku50.xyz
   port: 14751
@@ -140,7 +140,7 @@ proxies:
   auth_str: 6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY
   up: 2
   down: 10
-- name: hysteria_英国1
+- name: hysteria || 英国1
   type: hysteria
   server: 62.204.54.81
   port: 37899
@@ -152,7 +152,7 @@ proxies:
   auth_str: OdHFS3zC3HlSYJmc0GLQNKLAlwDbJqEmonVBXmI07T0Ojb1bQB
   up: 5
   down: 10
-- name: hysteria_台湾3
+- name: hysteria || 台湾3
   type: hysteria
   server: www3.dtku49.xyz
   port: 58693
@@ -164,7 +164,7 @@ proxies:
   auth_str: nbdyVMqucpFMmyRiwcRQFI7EeKzJWjPYuks3ZzEhCv6HjeZvbh
   up: 11
   down: 55
-- name: hysteria_加拿大2
+- name: hysteria || 加拿大2
   type: hysteria
   server: 109.104.152.180
   port: 64502
@@ -178,7 +178,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria_美国2
+- name: hysteria || 美国2
   type: hysteria
   server: 173.234.25.52
   port: 20164
@@ -192,7 +192,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria_加拿大3
+- name: hysteria || 加拿大3
   type: hysteria
   server: 109.104.152.149
   port: 48406
@@ -206,7 +206,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria_法国1
+- name: hysteria || 法国1
   type: hysteria
   server: 51.158.54.46
   port: 11926
@@ -241,54 +241,54 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - hysteria_美国2
-  - tuic_加拿大5
-  - tuic_加拿大5
-  - tuic_加拿大5
-  - hysteria_台湾3
-  - tuic_加拿大5
-  - tuic_加拿大5
-  - hysteria_台湾3
-  - hysteria_英国1
-  - hysteria_台湾3
-  - hysteria_加拿大2
-  - hysteria_美国2
-  - hysteria_加拿大3
-  - hysteria_法国1
+  - hysteria || 美国2
+  - tuic || 加拿大5
+  - tuic || 加拿大5
+  - tuic || 加拿大5
+  - hysteria || 台湾3
+  - tuic || 加拿大5
+  - tuic || 加拿大5
+  - hysteria || 台湾3
+  - hysteria || 英国1
+  - hysteria || 台湾3
+  - hysteria || 加拿大2
+  - hysteria || 美国2
+  - hysteria || 加拿大3
+  - hysteria || 法国1
 - name: 手动选择
   type: select
   proxies:
-  - hysteria_美国2
-  - tuic_加拿大5
-  - tuic_加拿大5
-  - tuic_加拿大5
-  - hysteria_台湾3
-  - tuic_加拿大5
-  - tuic_加拿大5
-  - hysteria_台湾3
-  - hysteria_英国1
-  - hysteria_台湾3
-  - hysteria_加拿大2
-  - hysteria_美国2
-  - hysteria_加拿大3
-  - hysteria_法国1
+  - hysteria || 美国2
+  - tuic || 加拿大5
+  - tuic || 加拿大5
+  - tuic || 加拿大5
+  - hysteria || 台湾3
+  - tuic || 加拿大5
+  - tuic || 加拿大5
+  - hysteria || 台湾3
+  - hysteria || 英国1
+  - hysteria || 台湾3
+  - hysteria || 加拿大2
+  - hysteria || 美国2
+  - hysteria || 加拿大3
+  - hysteria || 法国1
 - name: 负载均衡
   type: load-balance
   proxies:
-  - hysteria_美国2
-  - tuic_加拿大5
-  - tuic_加拿大5
-  - tuic_加拿大5
-  - hysteria_台湾3
-  - tuic_加拿大5
-  - tuic_加拿大5
-  - hysteria_台湾3
-  - hysteria_英国1
-  - hysteria_台湾3
-  - hysteria_加拿大2
-  - hysteria_美国2
-  - hysteria_加拿大3
-  - hysteria_法国1
+  - hysteria || 美国2
+  - tuic || 加拿大5
+  - tuic || 加拿大5
+  - tuic || 加拿大5
+  - hysteria || 台湾3
+  - tuic || 加拿大5
+  - tuic || 加拿大5
+  - hysteria || 台湾3
+  - hysteria || 英国1
+  - hysteria || 台湾3
+  - hysteria || 加拿大2
+  - hysteria || 美国2
+  - hysteria || 加拿大3
+  - hysteria || 法国1
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
