@@ -25,17 +25,6 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: hysteria2_加拿大0
-  type: hysteria2
-  server: 109.104.152.219
-  port: 22998
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 100 Mbps
-  down: 100 Mbps
 - name: hysteria_美国0
   type: hysteria
   server: 167.160.90.251
@@ -47,6 +36,17 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
+- name: hysteria2_加拿大0
+  type: hysteria2
+  server: 109.104.152.219
+  port: 22998
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 100 Mbps
+  down: 100 Mbps
 - name: tuic_加拿大0
   server: tuic1.freeh1.xyz
   port: 40981
@@ -232,7 +232,7 @@ proxies:
 - name: hysteria2_台湾1
   type: hysteria2
   server: www.dtku48.xyz
-  port: 49694
+  port: 12398
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -251,8 +251,8 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - hysteria2_加拿大0
   - hysteria_美国0
+  - hysteria2_加拿大0
   - tuic_加拿大0
   - tuic_加拿大1
   - tuic_加拿大2
@@ -276,8 +276,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - hysteria2_加拿大0
   - hysteria_美国0
+  - hysteria2_加拿大0
   - tuic_加拿大0
   - tuic_加拿大1
   - tuic_加拿大2
