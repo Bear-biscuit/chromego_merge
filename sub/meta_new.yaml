@@ -145,18 +145,19 @@ proxies:
   auth_str: OdHFS3zC3HlSYJmc0GLQNKLAlwDbJqEmonVBXmI07T0Ojb1bQB
   up: 5
   down: 10
-- name: hysteria || 台湾2
-  type: hysteria
-  server: www3.dtku49.xyz
-  port: 58693
+- name: tuic || 加拿大5
+  server: 108.181.22.239
+  port: 19988
+  type: tuic
+  uuid: 485ce799-da5f-46e8-a82b-8ef322d8602f
+  password: dongtaiwang.com
   sni: bing.com
-  skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  auth_str: nbdyVMqucpFMmyRiwcRQFI7EeKzJWjPYuks3ZzEhCv6HjeZvbh
-  up: 11
-  down: 55
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: hysteria || 加拿大0
   type: hysteria
   server: 109.104.152.180
@@ -229,14 +230,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 || 台湾1
-  type: hysteria2
-  server: www.dtku48.xyz
-  port: 37151
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: hysteria2 || 加拿大2
   type: hysteria2
   server: 108.181.22.155
@@ -261,14 +254,13 @@ proxy-groups:
   - tuic || 加拿大4
   - hysteria || 台湾1
   - hysteria || 英国0
-  - hysteria || 台湾2
+  - tuic || 加拿大5
   - hysteria || 加拿大0
   - hysteria || 美国1
   - hysteria || 加拿大1
   - hysteria || 法国0
   - hysteria2 || 台湾0
   - hysteria2 || 加拿大1
-  - hysteria2 || 台湾1
   - hysteria2 || 加拿大2
 - name: 自动选择
   type: url-test
@@ -286,14 +278,13 @@ proxy-groups:
   - tuic || 加拿大4
   - hysteria || 台湾1
   - hysteria || 英国0
-  - hysteria || 台湾2
+  - tuic || 加拿大5
   - hysteria || 加拿大0
   - hysteria || 美国1
   - hysteria || 加拿大1
   - hysteria || 法国0
   - hysteria2 || 台湾0
   - hysteria2 || 加拿大1
-  - hysteria2 || 台湾1
   - hysteria2 || 加拿大2
 rules:
 - DOMAIN,clash.razord.top,DIRECT

@@ -36,7 +36,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: tuic || 加拿大5
+- name: tuic || 加拿大6
   server: tuic1.freeh1.xyz
   port: 40981
   type: tuic
@@ -49,7 +49,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: false
   congestion-controller: bbr
-- name: tuic || 加拿大5
+- name: tuic || 加拿大6
   server: tuic3.dtku47.xyz
   port: 12255
   type: tuic
@@ -60,7 +60,7 @@ proxies:
   request-timeout: 8000
   udp-relay-mode: native
   congestion-controller: bbr
-- name: tuic || 加拿大5
+- name: tuic || 加拿大6
   server: 108.181.24.7
   port: 23450
   type: tuic
@@ -73,7 +73,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: hysteria || 台湾3
+- name: hysteria || 台湾2
   type: hysteria
   server: www.dtku46.xyz
   port: 11223
@@ -84,7 +84,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: tuic || 加拿大5
+- name: tuic || 加拿大6
   server: 108.181.22.205
   port: 50987
   type: tuic
@@ -97,7 +97,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: tuic || 加拿大5
+- name: tuic || 加拿大6
   server: 108.181.22.239
   port: 19988
   type: tuic
@@ -110,7 +110,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: hysteria || 台湾3
+- name: hysteria || 台湾2
   type: hysteria
   server: www.dtku50.xyz
   port: 14751
@@ -134,18 +134,19 @@ proxies:
   auth_str: OdHFS3zC3HlSYJmc0GLQNKLAlwDbJqEmonVBXmI07T0Ojb1bQB
   up: 5
   down: 10
-- name: hysteria || 台湾3
-  type: hysteria
-  server: www3.dtku49.xyz
-  port: 58693
+- name: tuic || 加拿大6
+  server: 108.181.22.239
+  port: 19988
+  type: tuic
+  uuid: 485ce799-da5f-46e8-a82b-8ef322d8602f
+  password: dongtaiwang.com
   sni: bing.com
-  skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  auth_str: nbdyVMqucpFMmyRiwcRQFI7EeKzJWjPYuks3ZzEhCv6HjeZvbh
-  up: 11
-  down: 55
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: hysteria || 加拿大2
   type: hysteria
   server: 109.104.152.180
@@ -209,15 +210,15 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - hysteria || 美国2
-  - tuic || 加拿大5
-  - tuic || 加拿大5
-  - tuic || 加拿大5
-  - hysteria || 台湾3
-  - tuic || 加拿大5
-  - tuic || 加拿大5
-  - hysteria || 台湾3
+  - tuic || 加拿大6
+  - tuic || 加拿大6
+  - tuic || 加拿大6
+  - hysteria || 台湾2
+  - tuic || 加拿大6
+  - tuic || 加拿大6
+  - hysteria || 台湾2
   - hysteria || 英国1
-  - hysteria || 台湾3
+  - tuic || 加拿大6
   - hysteria || 加拿大2
   - hysteria || 美国2
   - hysteria || 加拿大3
@@ -229,15 +230,15 @@ proxy-groups:
   tolerance: 50
   proxies:
   - hysteria || 美国2
-  - tuic || 加拿大5
-  - tuic || 加拿大5
-  - tuic || 加拿大5
-  - hysteria || 台湾3
-  - tuic || 加拿大5
-  - tuic || 加拿大5
-  - hysteria || 台湾3
+  - tuic || 加拿大6
+  - tuic || 加拿大6
+  - tuic || 加拿大6
+  - hysteria || 台湾2
+  - tuic || 加拿大6
+  - tuic || 加拿大6
+  - hysteria || 台湾2
   - hysteria || 英国1
-  - hysteria || 台湾3
+  - tuic || 加拿大6
   - hysteria || 加拿大2
   - hysteria || 美国2
   - hysteria || 加拿大3
