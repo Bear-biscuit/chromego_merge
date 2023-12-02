@@ -54,15 +54,16 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria2 || 加拿大0
-  type: hysteria2
+- name: hysteria || 加拿大0
+  type: hysteria
   server: 109.104.152.219
-  port: 13298
-  password: dongtaiwang.com
-  alpn:
-  - h3
+  port: 22335
+  auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 100 Mbps
   down: 100 Mbps
 - name: tuic || 加拿大0
@@ -176,7 +177,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: hysteria || 加拿大0
+- name: hysteria || 加拿大1
   type: hysteria
   server: 109.104.152.180
   port: 64502
@@ -204,7 +205,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria || 加拿大1
+- name: hysteria || 加拿大2
   type: hysteria
   server: 109.104.152.149
   port: 48406
@@ -240,7 +241,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 || 加拿大1
+- name: hysteria2 || 加拿大0
   type: hysteria2
   server: 108.181.22.155
   port: 22601
@@ -248,7 +249,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 || 加拿大2
+- name: hysteria2 || 加拿大1
   type: hysteria2
   server: 108.181.22.155
   port: 22601
@@ -278,7 +279,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - hysteria || 美国0
-  - hysteria2 || 加拿大0
+  - hysteria || 加拿大0
   - tuic || 加拿大0
   - tuic || 加拿大1
   - tuic || 加拿大2
@@ -288,18 +289,18 @@ proxy-groups:
   - hysteria || 台湾1
   - hysteria || 英国0
   - tuic || 加拿大5
-  - hysteria || 加拿大0
-  - hysteria || 美国1
   - hysteria || 加拿大1
+  - hysteria || 美国1
+  - hysteria || 加拿大2
   - hysteria || 法国0
   - hysteria2 || 台湾0
+  - hysteria2 || 加拿大0
   - hysteria2 || 加拿大1
-  - hysteria2 || 加拿大2
 - name: 手动选择
   type: select
   proxies:
   - hysteria || 美国0
-  - hysteria2 || 加拿大0
+  - hysteria || 加拿大0
   - tuic || 加拿大0
   - tuic || 加拿大1
   - tuic || 加拿大2
@@ -309,18 +310,18 @@ proxy-groups:
   - hysteria || 台湾1
   - hysteria || 英国0
   - tuic || 加拿大5
-  - hysteria || 加拿大0
-  - hysteria || 美国1
   - hysteria || 加拿大1
+  - hysteria || 美国1
+  - hysteria || 加拿大2
   - hysteria || 法国0
   - hysteria2 || 台湾0
+  - hysteria2 || 加拿大0
   - hysteria2 || 加拿大1
-  - hysteria2 || 加拿大2
 - name: 负载均衡
   type: load-balance
   proxies:
   - hysteria || 美国0
-  - hysteria2 || 加拿大0
+  - hysteria || 加拿大0
   - tuic || 加拿大0
   - tuic || 加拿大1
   - tuic || 加拿大2
@@ -330,13 +331,13 @@ proxy-groups:
   - hysteria || 台湾1
   - hysteria || 英国0
   - tuic || 加拿大5
-  - hysteria || 加拿大0
-  - hysteria || 美国1
   - hysteria || 加拿大1
+  - hysteria || 美国1
+  - hysteria || 加拿大2
   - hysteria || 法国0
   - hysteria2 || 台湾0
+  - hysteria2 || 加拿大0
   - hysteria2 || 加拿大1
-  - hysteria2 || 加拿大2
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin

@@ -36,6 +36,18 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
+- name: hysteria || 加拿大3
+  type: hysteria
+  server: 109.104.152.219
+  port: 22335
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 100 Mbps
+  down: 100 Mbps
 - name: tuic || 加拿大6
   server: tuic1.freeh1.xyz
   port: 40981
@@ -147,7 +159,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: hysteria || 加拿大2
+- name: hysteria || 加拿大3
   type: hysteria
   server: 109.104.152.180
   port: 64502
@@ -175,7 +187,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria || 加拿大3
+- name: hysteria || 加拿大4
   type: hysteria
   server: 109.104.152.149
   port: 48406
@@ -210,6 +222,7 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - hysteria || 美国2
+  - hysteria || 加拿大3
   - tuic || 加拿大6
   - tuic || 加拿大6
   - tuic || 加拿大6
@@ -219,9 +232,9 @@ proxy-groups:
   - hysteria || 台湾2
   - hysteria || 英国1
   - tuic || 加拿大6
-  - hysteria || 加拿大2
-  - hysteria || 美国2
   - hysteria || 加拿大3
+  - hysteria || 美国2
+  - hysteria || 加拿大4
   - hysteria || 法国1
 - name: 自动选择
   type: url-test
@@ -230,6 +243,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - hysteria || 美国2
+  - hysteria || 加拿大3
   - tuic || 加拿大6
   - tuic || 加拿大6
   - tuic || 加拿大6
@@ -239,9 +253,9 @@ proxy-groups:
   - hysteria || 台湾2
   - hysteria || 英国1
   - tuic || 加拿大6
-  - hysteria || 加拿大2
-  - hysteria || 美国2
   - hysteria || 加拿大3
+  - hysteria || 美国2
+  - hysteria || 加拿大4
   - hysteria || 法国1
 rules:
 - DOMAIN,clash.razord.top,DIRECT
