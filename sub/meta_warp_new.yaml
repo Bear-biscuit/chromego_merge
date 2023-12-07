@@ -181,8 +181,8 @@ proxies:
 - name: hysteria | 🇨🇦加拿大0
   type: hysteria
   server: 109.104.152.180
-  port: 59759
-  ports: 59759
+  port: 16605
+  ports: 16605
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -245,7 +245,7 @@ proxies:
 - name: hysteria2 | 🇨🇦加拿大0
   type: hysteria2
   server: 108.181.22.155
-  port: 12881
+  port: 15565
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -253,7 +253,7 @@ proxies:
 - name: hysteria2 | 🇨🇦加拿大1
   type: hysteria2
   server: 108.181.22.155
-  port: 12881
+  port: 15565
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
