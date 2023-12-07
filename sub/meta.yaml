@@ -36,11 +36,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-<<<<<<< HEAD
-- name: tuic || 加拿大🇨🇦5
-=======
 - name: tuic | 🇨🇦加拿大7
->>>>>>> 1905eb1c9ea6659811a75d3fc015d59a10c8f00a
   server: 109.104.152.219
   port: 11226
   type: tuic
@@ -53,9 +49,6 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-<<<<<<< HEAD
-- name: tuic || 加拿大🇨🇦5
-=======
 - name: tuic | 🇨🇦加拿大7
   server: tuic1.freeh1.xyz
   port: 40981
@@ -81,7 +74,6 @@ proxies:
   udp-relay-mode: native
   congestion-controller: bbr
 - name: tuic | 🇨🇦加拿大7
->>>>>>> 1905eb1c9ea6659811a75d3fc015d59a10c8f00a
   server: 108.181.24.7
   port: 23450
   type: tuic
@@ -94,10 +86,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-<<<<<<< HEAD
-- name: tuic || 加拿大🇨🇦5
-=======
-- name: hysteria | NoneTW2
+- name: hysteria | 🇹🇼台湾2
   type: hysteria
   server: www.dtku46.xyz
   port: 11223
@@ -109,7 +98,6 @@ proxies:
   down: 55 Mbps
   skip-cert-verify: true
 - name: tuic | 🇨🇦加拿大7
->>>>>>> 1905eb1c9ea6659811a75d3fc015d59a10c8f00a
   server: 108.181.22.205
   port: 50987
   type: tuic
@@ -122,11 +110,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-<<<<<<< HEAD
-- name: tuic || 加拿大🇨🇦5
-=======
 - name: tuic | 🇨🇦加拿大7
->>>>>>> 1905eb1c9ea6659811a75d3fc015d59a10c8f00a
   server: 108.181.22.239
   port: 19988
   type: tuic
@@ -139,10 +123,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-<<<<<<< HEAD
-- name: tuic || 加拿大🇨🇦5
-=======
-- name: hysteria | NoneTW2
+- name: hysteria | 🇹🇼台湾2
   type: hysteria
   server: www.dtku50.xyz
   port: 14751
@@ -155,7 +136,6 @@ proxies:
   up: 2
   down: 10
 - name: tuic | 🇨🇦加拿大7
->>>>>>> 1905eb1c9ea6659811a75d3fc015d59a10c8f00a
   server: 109.104.152.180
   port: 22335
   type: tuic
@@ -242,70 +222,42 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-<<<<<<< HEAD
-  - hysteria || 美国🇺🇸2
-  - tuic || 加拿大🇨🇦5
-  - tuic || 加拿大🇨🇦5
-  - tuic || 加拿大🇨🇦5
-  - tuic || 加拿大🇨🇦5
-  - tuic || 加拿大🇨🇦5
-  - hysteria || 英国🇬🇧1
-  - hysteria || 加拿大🇨🇦2
-  - hysteria || 美国🇺🇸2
-  - hysteria || 加拿大🇨🇦3
-  - hysteria || 法国🇫🇷1
-=======
   - hysteria | 🇺🇸美国2
   - tuic | 🇨🇦加拿大7
   - tuic | 🇨🇦加拿大7
   - tuic | 🇨🇦加拿大7
   - tuic | 🇨🇦加拿大7
-  - hysteria | NoneTW2
+  - hysteria | 🇹🇼台湾2
   - tuic | 🇨🇦加拿大7
   - tuic | 🇨🇦加拿大7
-  - hysteria | NoneTW2
+  - hysteria | 🇹🇼台湾2
   - tuic | 🇨🇦加拿大7
   - hysteria | 🇬🇧英国1
   - hysteria | 🇨🇦加拿大2
   - hysteria | 🇺🇸美国2
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇫🇷法国1
->>>>>>> 1905eb1c9ea6659811a75d3fc015d59a10c8f00a
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-<<<<<<< HEAD
-  - hysteria || 美国🇺🇸2
-  - tuic || 加拿大🇨🇦5
-  - tuic || 加拿大🇨🇦5
-  - tuic || 加拿大🇨🇦5
-  - tuic || 加拿大🇨🇦5
-  - tuic || 加拿大🇨🇦5
-  - hysteria || 英国🇬🇧1
-  - hysteria || 加拿大🇨🇦2
-  - hysteria || 美国🇺🇸2
-  - hysteria || 加拿大🇨🇦3
-  - hysteria || 法国🇫🇷1
-=======
   - hysteria | 🇺🇸美国2
   - tuic | 🇨🇦加拿大7
   - tuic | 🇨🇦加拿大7
   - tuic | 🇨🇦加拿大7
   - tuic | 🇨🇦加拿大7
-  - hysteria | NoneTW2
+  - hysteria | 🇹🇼台湾2
   - tuic | 🇨🇦加拿大7
   - tuic | 🇨🇦加拿大7
-  - hysteria | NoneTW2
+  - hysteria | 🇹🇼台湾2
   - tuic | 🇨🇦加拿大7
   - hysteria | 🇬🇧英国1
   - hysteria | 🇨🇦加拿大2
   - hysteria | 🇺🇸美国2
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇫🇷法国1
->>>>>>> 1905eb1c9ea6659811a75d3fc015d59a10c8f00a
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
