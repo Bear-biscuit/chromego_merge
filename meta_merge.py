@@ -45,7 +45,7 @@ def get_emoji_for_ip(ip):
     country_emoji = results.get('asn_country_code', 'Unknown')
 
     # 使用映射字典获取emoji，如果没有对应的映射，则返回原始国家码
-    country_emoji = country_emoji_mapping.get(country_emoji, country_emoji)
+    country_emoji = country_emoji_mapping.get(country_emoji, None)
  
     return country_emoji
 # 提取节点
@@ -74,7 +74,7 @@ def process_clash(data, index):
         country_emoji = get_emoji_for_ip(ip)
         
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"{proxy['type']} || {country}{country_emoji}"
+        key = f"{proxy['type']} | {country_emoji}{country}"
         count = country_count.get(key, 0)
 
         # 生成节点名称
@@ -95,7 +95,7 @@ def process_clash_old(data, index):
         country_emoji = get_emoji_for_ip(ip)
 
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"{proxy['type']} || {country}{country_emoji}"
+        key = f"{proxy['type']} | {country_emoji}{country}"
         count = country_count.get(key, 0)
 
         if proxy.get('type') != 'hysteria2':
@@ -120,7 +120,7 @@ def process_sb(data, index):
         # 获取 IP 归属地
         country = get_country_for_ip(server)
         country_emoji = get_emoji_for_ip(server)
-        name = f"shadowtls_{index}_{country}{country_emoji}"
+        name = f"shadowtls_{index}_{country_emoji}{country}"
         # 创建当前网址的proxy字典
         proxy = {
             "name": name,
@@ -171,7 +171,7 @@ def process_hysteria(data, index):
         country_emoji = get_emoji_for_ip(server)
 
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"hysteria || {country}{country_emoji}"
+        key = f"hysteria | {country_emoji}{country}"
         count = country_count.get(key, 0)
 
         name = f"{key}{count}"
@@ -222,7 +222,7 @@ def process_hysteria2(data, index):
         country_emoji = get_emoji_for_ip(server)
 
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"hysteria2 || {country}{country_emoji}"
+        key = f"hysteria2 | {country_emoji}{country}"
         count = country_count.get(key, 0)
 
         name = f"{key}{count}"
@@ -273,7 +273,7 @@ def process_xray(data, index):
             # 获取 IP 归属地
             country = get_country_for_ip(server)
             country_emoji = get_emoji_for_ip(server)
-            name = f"reality_{index}_{country}{country_emoji}"
+            name = f"reality_{index}_{country_emoji}{country}"
             
             # 根据network判断tcp
             if network == "tcp":
