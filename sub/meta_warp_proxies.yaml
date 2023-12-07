@@ -54,7 +54,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: tuic || 加拿大🇨🇦7
+- name: tuic || 加拿大🇨🇦5
   server: 109.104.152.219
   port: 11226
   type: tuic
@@ -67,31 +67,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: tuic || 加拿大🇨🇦7
-  server: tuic1.freeh1.xyz
-  port: 40981
-  type: tuic
-  uuid: c2faac69-e1c1-4bf5-b8a8-d2ce4d834a66
-  password: dongtaiwang
-  sni: tuic1.freeh1.xyz
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: false
-  congestion-controller: bbr
-- name: tuic || 加拿大🇨🇦7
-  server: tuic3.dtku47.xyz
-  port: 12255
-  type: tuic
-  uuid: ed6a538a-6e66-4f21-a769-4b389bb2f3ab
-  password: dongtaiwang
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: tuic || 加拿大🇨🇦7
+- name: tuic || 加拿大🇨🇦5
   server: 108.181.24.7
   port: 23450
   type: tuic
@@ -104,18 +80,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: hysteria || TWTW2
-  type: hysteria
-  server: www.dtku46.xyz
-  port: 11223
-  auth-str: mqoE9qSoyMFa
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-  skip-cert-verify: true
-- name: tuic || 加拿大🇨🇦7
+- name: tuic || 加拿大🇨🇦5
   server: 108.181.22.205
   port: 50987
   type: tuic
@@ -128,7 +93,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: tuic || 加拿大🇨🇦7
+- name: tuic || 加拿大🇨🇦5
   server: 108.181.22.239
   port: 19988
   type: tuic
@@ -141,19 +106,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: hysteria || TWTW2
-  type: hysteria
-  server: www.dtku50.xyz
-  port: 14751
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: 6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY
-  up: 2
-  down: 10
-- name: tuic || 加拿大🇨🇦7
+- name: tuic || 加拿大🇨🇦5
   server: 109.104.152.180
   port: 22335
   type: tuic
@@ -256,15 +209,11 @@ proxy-groups:
   tolerance: 50
   proxies:
   - hysteria || 美国🇺🇸2
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - hysteria || TWTW2
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - hysteria || TWTW2
-  - tuic || 加拿大🇨🇦7
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
   - hysteria || 英国🇬🇧1
   - hysteria || 加拿大🇨🇦2
   - hysteria || 美国🇺🇸2
@@ -274,15 +223,11 @@ proxy-groups:
   type: select
   proxies:
   - hysteria || 美国🇺🇸2
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - hysteria || TWTW2
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - hysteria || TWTW2
-  - tuic || 加拿大🇨🇦7
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
   - hysteria || 英国🇬🇧1
   - hysteria || 加拿大🇨🇦2
   - hysteria || 美国🇺🇸2
@@ -292,15 +237,11 @@ proxy-groups:
   type: load-balance
   proxies:
   - hysteria || 美国🇺🇸2
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - hysteria || TWTW2
-  - tuic || 加拿大🇨🇦7
-  - tuic || 加拿大🇨🇦7
-  - hysteria || TWTW2
-  - tuic || 加拿大🇨🇦7
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
+  - tuic || 加拿大🇨🇦5
   - hysteria || 英国🇬🇧1
   - hysteria || 加拿大🇨🇦2
   - hysteria || 美国🇺🇸2
