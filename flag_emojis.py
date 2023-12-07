@@ -1,4 +1,4 @@
-flag_emojis = {
+country_emoji_mapping = {
     'CA': '🇨🇦',
     'DE': '🇩🇪',
     'FR': '🇫🇷',
