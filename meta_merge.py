@@ -5,6 +5,7 @@ import logging
 from ipwhois import IPWhois
 from socket import gethostbyname
 from country_mappings import country_code_mapping
+from flag_emojis import country_emoji_mapping
 # 全局字典，用于记录每个国家出现的次数
 country_count = {}
 
@@ -27,6 +28,26 @@ def get_country_for_ip(ip):
     country = country_code_mapping.get(country, country)
  
     return country
+
+# ip归属emoji
+def get_emoji_for_ip(ip):
+    try:
+        # 尝试解析输入，判断是 IP 地址还是域名
+        ip_address = gethostbyname(ip)
+    except Exception:
+        # 如果解析失败，说明输入可能是 IP 地址
+        ip_address = ip
+    # 使用 IP 地址调用 IPWhois 进行查询
+    obj = IPWhois(ip_address)
+    results = obj.lookup_rdap()
+
+    # 提取国家信息
+    country_emoji = results.get('asn_country_code', 'Unknown')
+
+    # 使用映射字典获取emoji，如果没有对应的映射，则返回原始国家码
+    country_emoji = country_emoji_mapping.get(country_emoji, country_emoji)
+ 
+    return country_emoji
 # 提取节点
 def process_urls(url_file, processor):
     try:
@@ -50,9 +71,10 @@ def process_clash(data, index):
     for i, proxy in enumerate(proxies):
         ip = proxy.get('server', 'Unknown IP')
         country = get_country_for_ip(ip)
+        country_emoji = get_emoji_for_ip(ip)
         
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"{proxy['type']} || {country}"
+        key = f"{proxy['type']} || {country}{country_emoji}"
         count = country_count.get(key, 0)
 
         # 生成节点名称
@@ -70,9 +92,10 @@ def process_clash_old(data, index):
     for i, proxy in enumerate(proxies):
         ip = proxy.get('server', 'Unknown IP')
         country = get_country_for_ip(ip)
+        country_emoji = get_emoji_for_ip(ip)
 
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"{proxy['type']} || {country}"
+        key = f"{proxy['type']} || {country}{country_emoji}"
         count = country_count.get(key, 0)
 
         if proxy.get('type') != 'hysteria2':
@@ -96,7 +119,8 @@ def process_sb(data, index):
         version = json_data["outbounds"][1]["version"]
         # 获取 IP 归属地
         country = get_country_for_ip(server)
-        name = f"shadowtls_{index}_{country}"
+        country_emoji = get_emoji_for_ip(server)
+        name = f"shadowtls_{index}_{country}{country_emoji}"
         # 创建当前网址的proxy字典
         proxy = {
             "name": name,
@@ -144,9 +168,10 @@ def process_hysteria(data, index):
         
         # 获取 IP 归属地
         country = get_country_for_ip(server)
+        country_emoji = get_emoji_for_ip(server)
 
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"hysteria || {country}"
+        key = f"hysteria || {country}{country_emoji}"
         count = country_count.get(key, 0)
 
         name = f"{key}{count}"
@@ -194,9 +219,10 @@ def process_hysteria2(data, index):
         sni = json_data["tls"]["sni"]
         # 获取 IP 归属地
         country = get_country_for_ip(server)
+        country_emoji = get_emoji_for_ip(server)
 
         # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
-        key = f"hysteria2 || {country}"
+        key = f"hysteria2 || {country}{country_emoji}"
         count = country_count.get(key, 0)
 
         name = f"{key}{count}"
@@ -246,7 +272,8 @@ def process_xray(data, index):
             isudp = True
             # 获取 IP 归属地
             country = get_country_for_ip(server)
-            name = f"reality_{index}_{country}"
+            country_emoji = get_emoji_for_ip(server)
+            name = f"reality_{index}_{country}{country_emoji}"
             
             # 根据network判断tcp
             if network == "tcp":
