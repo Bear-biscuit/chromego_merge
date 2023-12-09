@@ -38,9 +38,9 @@ proxies:
   skip-cert-verify: true
 - name: tuic | 🇨🇦加拿大7
   server: 109.104.152.219
-  port: 11226
+  port: 11091
   type: tuic
-  uuid: a47e8e4a-a917-4d89-8b22-fc2bedcd7a21
+  uuid: 62fc1c08-c2d7-4d35-8cb3-6289b4293679
   password: dongtaiwang.com
   sni: bing.com
   alpn:
@@ -123,18 +123,6 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: hysteria | 🇹🇼台湾2
-  type: hysteria
-  server: www.dtku50.xyz
-  port: 14751
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: 6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY
-  up: 2
-  down: 10
 - name: tuic | 🇨🇦加拿大7
   server: 109.104.152.180
   port: 22335
@@ -148,6 +136,18 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bb
+- name: hysteria | 🇹🇼台湾2
+  type: hysteria
+  server: www.dtku50.xyz
+  port: 14751
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: 6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY
+  up: 2
+  down: 10
 - name: hysteria | 🇬🇧英国1
   type: hysteria
   server: 62.204.54.81
@@ -163,14 +163,14 @@ proxies:
 - name: hysteria | 🇨🇦加拿大2
   type: hysteria
   server: 109.104.152.180
-  port: 16605
-  ports: 16605
+  port: 40522
+  ports: 40522
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -230,8 +230,8 @@ proxy-groups:
   - hysteria | 🇹🇼台湾2
   - tuic | 🇨🇦加拿大7
   - tuic | 🇨🇦加拿大7
-  - hysteria | 🇹🇼台湾2
   - tuic | 🇨🇦加拿大7
+  - hysteria | 🇹🇼台湾2
   - hysteria | 🇬🇧英国1
   - hysteria | 🇨🇦加拿大2
   - hysteria | 🇺🇸美国2
@@ -251,8 +251,8 @@ proxy-groups:
   - hysteria | 🇹🇼台湾2
   - tuic | 🇨🇦加拿大7
   - tuic | 🇨🇦加拿大7
-  - hysteria | 🇹🇼台湾2
   - tuic | 🇨🇦加拿大7
+  - hysteria | 🇹🇼台湾2
   - hysteria | 🇬🇧英国1
   - hysteria | 🇨🇦加拿大2
   - hysteria | 🇺🇸美国2
