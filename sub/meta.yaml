@@ -36,7 +36,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: tuic | 🇨🇦加拿大7
+- name: tuic | 🇨🇦加拿大6
   server: 109.104.152.219
   port: 11091
   type: tuic
@@ -49,7 +49,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大7
+- name: tuic | 🇨🇦加拿大6
   server: tuic1.freeh1.xyz
   port: 40981
   type: tuic
@@ -62,7 +62,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: false
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大7
+- name: tuic | 🇨🇦加拿大6
   server: tuic3.dtku47.xyz
   port: 12255
   type: tuic
@@ -73,7 +73,7 @@ proxies:
   request-timeout: 8000
   udp-relay-mode: native
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大7
+- name: tuic | 🇨🇦加拿大6
   server: 108.181.24.7
   port: 23450
   type: tuic
@@ -86,7 +86,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: hysteria | 🇹🇼台湾2
+- name: hysteria | 🇹🇼台湾3
   type: hysteria
   server: www.dtku46.xyz
   port: 11223
@@ -97,7 +97,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: tuic | 🇨🇦加拿大7
+- name: tuic | 🇨🇦加拿大6
   server: 108.181.22.205
   port: 50987
   type: tuic
@@ -110,20 +110,18 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大7
-  server: 108.181.22.239
-  port: 19988
-  type: tuic
-  uuid: 485ce799-da5f-46e8-a82b-8ef322d8602f
-  password: dongtaiwang.com
-  sni: bing.com
+- name: hysteria | 🇹🇼台湾3
+  type: hysteria
+  server: www.dtku46.xyz
+  port: 11223
+  auth-str: mqoE9qSoyMFa
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大7
+- name: tuic | 🇨🇦加拿大6
   server: 109.104.152.180
   port: 22335
   type: tuic
@@ -136,16 +134,16 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bb
-- name: hysteria | 🇹🇼台湾2
+- name: hysteria | 🇹🇼台湾3
   type: hysteria
   server: www.dtku50.xyz
-  port: 14751
-  sni: www.microsoft.com
+  port: 23577
+  sni: www.amazon.cn
   skip-cert-verify: true
   alpn:
   - h3
   protocol: udp
-  auth_str: 6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY
+  auth_str: dongtaiwang.com
   up: 2
   down: 10
 - name: hysteria | 🇬🇧英国1
@@ -162,15 +160,15 @@ proxies:
   down: 10
 - name: hysteria | 🇨🇦加拿大2
   type: hysteria
-  server: 109.104.152.180
-  port: 40522
-  ports: 40522
-  auth_str: dongtaiwang.com
+  server: 108.181.22.239
+  port: 61561
+  ports: 61561
+  auth_str: PBhG3zqMKaMO5ZnemDvLrZ6v0Fd7EqCutDvzLNtvWHJ6IpMWJg
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.microsoft.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -216,6 +214,30 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: hysteria2 | 🇹🇼台湾1
+  type: hysteria2
+  server: www.dtku46.xyz
+  port: 62580
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2 | 🇨🇦加拿大2
+  type: hysteria2
+  server: 108.181.22.155
+  port: 48558
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2 | 🇨🇦加拿大3
+  type: hysteria2
+  server: 108.181.22.155
+  port: 48558
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -223,20 +245,23 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - hysteria | 🇺🇸美国2
-  - tuic | 🇨🇦加拿大7
-  - tuic | 🇨🇦加拿大7
-  - tuic | 🇨🇦加拿大7
-  - tuic | 🇨🇦加拿大7
-  - hysteria | 🇹🇼台湾2
-  - tuic | 🇨🇦加拿大7
-  - tuic | 🇨🇦加拿大7
-  - tuic | 🇨🇦加拿大7
-  - hysteria | 🇹🇼台湾2
+  - tuic | 🇨🇦加拿大6
+  - tuic | 🇨🇦加拿大6
+  - tuic | 🇨🇦加拿大6
+  - tuic | 🇨🇦加拿大6
+  - hysteria | 🇹🇼台湾3
+  - tuic | 🇨🇦加拿大6
+  - hysteria | 🇹🇼台湾3
+  - tuic | 🇨🇦加拿大6
+  - hysteria | 🇹🇼台湾3
   - hysteria | 🇬🇧英国1
   - hysteria | 🇨🇦加拿大2
   - hysteria | 🇺🇸美国2
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇫🇷法国1
+  - hysteria2 | 🇹🇼台湾1
+  - hysteria2 | 🇨🇦加拿大2
+  - hysteria2 | 🇨🇦加拿大3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -244,20 +269,23 @@ proxy-groups:
   tolerance: 50
   proxies:
   - hysteria | 🇺🇸美国2
-  - tuic | 🇨🇦加拿大7
-  - tuic | 🇨🇦加拿大7
-  - tuic | 🇨🇦加拿大7
-  - tuic | 🇨🇦加拿大7
-  - hysteria | 🇹🇼台湾2
-  - tuic | 🇨🇦加拿大7
-  - tuic | 🇨🇦加拿大7
-  - tuic | 🇨🇦加拿大7
-  - hysteria | 🇹🇼台湾2
+  - tuic | 🇨🇦加拿大6
+  - tuic | 🇨🇦加拿大6
+  - tuic | 🇨🇦加拿大6
+  - tuic | 🇨🇦加拿大6
+  - hysteria | 🇹🇼台湾3
+  - tuic | 🇨🇦加拿大6
+  - hysteria | 🇹🇼台湾3
+  - tuic | 🇨🇦加拿大6
+  - hysteria | 🇹🇼台湾3
   - hysteria | 🇬🇧英国1
   - hysteria | 🇨🇦加拿大2
   - hysteria | 🇺🇸美国2
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇫🇷法国1
+  - hysteria2 | 🇹🇼台湾1
+  - hysteria2 | 🇨🇦加拿大2
+  - hysteria2 | 🇨🇦加拿大3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
