@@ -244,48 +244,12 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - hysteria | 🇺🇸美国2
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - hysteria | 🇬🇧英国1
-  - hysteria | 🇨🇦加拿大2
-  - hysteria | 🇺🇸美国2
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇫🇷法国1
-  - hysteria2 | 🇹🇼台湾1
-  - hysteria2 | 🇨🇦加拿大2
-  - hysteria2 | 🇨🇦加拿大3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
-  proxies:
-  - hysteria | 🇺🇸美国2
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - hysteria | 🇬🇧英国1
-  - hysteria | 🇨🇦加拿大2
-  - hysteria | 🇺🇸美国2
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇫🇷法国1
-  - hysteria2 | 🇹🇼台湾1
-  - hysteria2 | 🇨🇦加拿大2
-  - hysteria2 | 🇨🇦加拿大3
+  proxies: null
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
