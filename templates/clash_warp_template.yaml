@@ -28,17 +28,20 @@ proxies:
 
   - name: WARP
     type: wireguard
-    server: engage.cloudflareclient.com
+    server: 162.159.192.1
     port: 2408
     ip: 172.16.0.2
-    ipv6: 2606:4700:110:87c0:ba32:773a:8d44:e353
-    private-key: +HpHpY/KjSv5hJdGrN2ok1A6CKhCmTQv5Unwyul9S1g=
+    allowed-ips: ['0.0.0.0/0']
+    private-key: YK9x7GzI+qLagm+aOAs16xOXFPqp9fuAMQR6wCVxvXc=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
     udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "WARP前置节点"
+    mtu: 1280
+    reserved: 3Mem
+    remote-dns-resolve: true
+    dns:
+    - 1.1.1.1
+    - 8.8.8.8
+    dialer-proxy: WARP前置节点
 
 proxy-groups:
   - name: 节点选择
