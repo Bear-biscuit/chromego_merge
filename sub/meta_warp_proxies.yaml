@@ -42,6 +42,34 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
+- name: 博客地址：bocchi2b.top
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 当你打不开“某些网站时”
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 在warp前置节点中
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 选择chromego
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 在chromego选择能用的节点
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 在节点选择中选择warp
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 不行就试试别的chromego节点
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
 - name: hysteria | 🇺🇸美国2
   type: hysteria
   server: 167.160.90.251
@@ -260,59 +288,23 @@ proxy-groups:
   type: select
   proxies:
   - WARP
-  - 🌍 chromego
-  - ♻️ 自动选择
+  - chromego
+  - 自动选择
   - DIRECT
 - name: WARP前置节点
   type: select
   proxies:
-  - ♻️ 自动选择
-  - 🌍 chromego
-- name: ♻️ 自动选择
+  - 自动选择
+  - chromego
+- name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
-  proxies:
-  - hysteria | 🇺🇸美国2
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - hysteria | 🇬🇧英国1
-  - hysteria | 🇨🇦加拿大2
-  - hysteria | 🇺🇸美国2
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇫🇷法国1
-  - hysteria2 | 🇹🇼台湾1
-  - hysteria2 | 🇨🇦加拿大2
-  - hysteria2 | 🇨🇦加拿大3
-- name: 🌍 chromego
+  proxies: null
+- name: chromego
   type: select
-  proxies:
-  - hysteria | 🇺🇸美国2
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - hysteria | 🇬🇧英国1
-  - hysteria | 🇨🇦加拿大2
-  - hysteria | 🇺🇸美国2
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇫🇷法国1
-  - hysteria2 | 🇹🇼台湾1
-  - hysteria2 | 🇨🇦加拿大2
-  - hysteria2 | 🇨🇦加拿大3
+  proxies: null
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
@@ -321,4 +313,4 @@ rules:
 - DOMAIN,yacd.haishan.me,DIRECT
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
-- MATCH,节点选择
+- MATCH,🚀 节点选择
