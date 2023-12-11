@@ -260,15 +260,13 @@ proxy-groups:
   type: select
   proxies:
   - WARP
-  - ♻️ 自动选择
-  - 🚥 负载均衡
   - 🌍 chromego
+  - ♻️ 自动选择
   - DIRECT
 - name: WARP前置节点
   type: select
   proxies:
   - ♻️ 自动选择
-  - 🚥 负载均衡
   - 🌍 chromego
 - name: ♻️ 自动选择
   type: url-test
