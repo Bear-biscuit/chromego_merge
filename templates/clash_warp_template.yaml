@@ -44,22 +44,22 @@ proxies:
     dialer-proxy: WARP前置节点
 
 proxy-groups:
-  - name: 节点选择
+  - name: 🚀 节点选择
     type: select
     proxies:
       - WARP
-      - 自动选择
-      - 负载均衡
-      - 手动选择
+      - ♻️ 自动选择
+      - 🚥 负载均衡
+      - 🌍 chromego
       - DIRECT
   - name: WARP前置节点
     type: select
     proxies:
-      - 自动选择
-      - 负载均衡
-      - 手动选择
+      - ♻️ 自动选择
+      - 🚥 负载均衡
+      - 🌍 chromego
 
-  - name: 自动选择
+  - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -67,14 +67,10 @@ proxy-groups:
     proxies:
 
 
-  - name: 手动选择
+  - name: 🌍 chromego
     type: select
     proxies:
 
-
-  - name: 负载均衡
-    type: load-balance #负载均衡
-    proxies:
 
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
