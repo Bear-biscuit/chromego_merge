@@ -26,22 +26,50 @@ dns:
       - 240.0.0.0/4
 proxies:
 
-  - name: WARP
-    type: wireguard
-    server: 162.159.192.1
-    port: 2408
-    ip: 172.16.0.2
-    allowed-ips: ['0.0.0.0/0']
-    private-key: YK9x7GzI+qLagm+aOAs16xOXFPqp9fuAMQR6wCVxvXc=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    mtu: 1280
-    reserved: 3Mem
-    remote-dns-resolve: true
-    dns:
-    - 1.1.1.1
-    - 8.8.8.8
-    dialer-proxy: WARP前置节点
+- name: WARP
+  type: wireguard
+  server: 162.159.192.1
+  port: 2408
+  ip: 172.16.0.2
+  allowed-ips: ['0.0.0.0/0']
+  private-key: YK9x7GzI+qLagm+aOAs16xOXFPqp9fuAMQR6wCVxvXc=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  udp: true
+  mtu: 1280
+  reserved: 3Mem
+  remote-dns-resolve: true
+  dns:
+  - 1.1.1.1
+  - 8.8.8.8
+  dialer-proxy: WARP前置节点
+- name: 博客地址：bocchi2b.top
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 当你打不开“某些网站时”
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 在warp前置节点中
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 选择chromego
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 在chromego选择能用的节点
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 在节点选择中选择warp
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
+- name: 不行就试试别的chromego节点
+  type: hysteria2
+  server: 109.104.152.333
+  port: 8007
 
 proxy-groups:
   - name: 🚀 节点选择
