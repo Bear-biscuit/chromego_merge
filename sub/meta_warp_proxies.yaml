@@ -256,21 +256,21 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 proxy-groups:
-- name: 节点选择
+- name: 🚀 节点选择
   type: select
   proxies:
   - WARP
-  - 自动选择
-  - 负载均衡
-  - 手动选择
+  - ♻️ 自动选择
+  - 🚥 负载均衡
+  - 🌍 chromego
   - DIRECT
 - name: WARP前置节点
   type: select
   proxies:
-  - 自动选择
-  - 负载均衡
-  - 手动选择
-- name: 自动选择
+  - ♻️ 自动选择
+  - 🚥 负载均衡
+  - 🌍 chromego
+- name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -294,29 +294,8 @@ proxy-groups:
   - hysteria2 | 🇹🇼台湾1
   - hysteria2 | 🇨🇦加拿大2
   - hysteria2 | 🇨🇦加拿大3
-- name: 手动选择
+- name: 🌍 chromego
   type: select
-  proxies:
-  - hysteria | 🇺🇸美国2
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
-  - hysteria | 🇹🇼台湾3
-  - hysteria | 🇬🇧英国1
-  - hysteria | 🇨🇦加拿大2
-  - hysteria | 🇺🇸美国2
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇫🇷法国1
-  - hysteria2 | 🇹🇼台湾1
-  - hysteria2 | 🇨🇦加拿大2
-  - hysteria2 | 🇨🇦加拿大3
-- name: 负载均衡
-  type: load-balance
   proxies:
   - hysteria | 🇺🇸美国2
   - tuic | 🇨🇦加拿大6
