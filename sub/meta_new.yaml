@@ -110,20 +110,18 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大5
-  server: 108.181.22.239
-  port: 19988
-  type: tuic
-  uuid: 485ce799-da5f-46e8-a82b-8ef322d8602f
-  password: dongtaiwang.com
-  sni: bing.com
+- name: hysteria | 🇹🇼台湾1
+  type: hysteria
+  server: www.dtku46.xyz
+  port: 11223
+  auth-str: mqoE9qSoyMFa
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大6
+- name: tuic | 🇨🇦加拿大5
   server: 109.104.152.180
   port: 22335
   type: tuic
@@ -136,16 +134,16 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bb
-- name: hysteria | 🇹🇼台湾1
+- name: hysteria | 🇹🇼台湾2
   type: hysteria
   server: www.dtku50.xyz
-  port: 14751
-  sni: www.microsoft.com
+  port: 23577
+  sni: www.amazon.cn
   skip-cert-verify: true
   alpn:
   - h3
   protocol: udp
-  auth_str: 6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY
+  auth_str: dongtaiwang.com
   up: 2
   down: 10
 - name: hysteria | 🇬🇧英国0
@@ -162,15 +160,15 @@ proxies:
   down: 10
 - name: hysteria | 🇨🇦加拿大0
   type: hysteria
-  server: 109.104.152.180
-  port: 40522
-  ports: 40522
-  auth_str: dongtaiwang.com
+  server: 108.181.22.239
+  port: 61561
+  ports: 61561
+  auth_str: PBhG3zqMKaMO5ZnemDvLrZ6v0Fd7EqCutDvzLNtvWHJ6IpMWJg
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.microsoft.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -253,9 +251,9 @@ proxy-groups:
   - tuic | 🇨🇦加拿大3
   - hysteria | 🇹🇼台湾0
   - tuic | 🇨🇦加拿大4
-  - tuic | 🇨🇦加拿大5
-  - tuic | 🇨🇦加拿大6
   - hysteria | 🇹🇼台湾1
+  - tuic | 🇨🇦加拿大5
+  - hysteria | 🇹🇼台湾2
   - hysteria | 🇬🇧英国0
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国1
@@ -277,9 +275,9 @@ proxy-groups:
   - tuic | 🇨🇦加拿大3
   - hysteria | 🇹🇼台湾0
   - tuic | 🇨🇦加拿大4
-  - tuic | 🇨🇦加拿大5
-  - tuic | 🇨🇦加拿大6
   - hysteria | 🇹🇼台湾1
+  - tuic | 🇨🇦加拿大5
+  - hysteria | 🇹🇼台湾2
   - hysteria | 🇬🇧英国0
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国1
