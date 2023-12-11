@@ -407,7 +407,7 @@ process_urls('./urls/sb_urls.txt', process_sb)
 process_urls('./urls/hysteria_urls.txt', process_hysteria)
 
 # 处理 hysteria2 URLs
-#process_urls('./urls/hysteria2_urls.txt', process_hysteria2)
+process_urls('./urls/hysteria2_urls.txt', process_hysteria2)
 
 # 处理 xray URLs
 process_urls('./urls/xray_urls.txt', process_xray)
