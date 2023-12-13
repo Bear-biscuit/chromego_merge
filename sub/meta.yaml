@@ -36,33 +36,29 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: tuic | 🇨🇦加拿大6
-  server: 109.104.152.219
-  port: 11091
-  type: tuic
-  uuid: 62fc1c08-c2d7-4d35-8cb3-6289b4293679
-  password: dongtaiwang.com
-  sni: bing.com
+- name: hysteria | 🇨🇦加拿大3
+  type: hysteria
+  server: 108.181.22.239
+  port: 41146
+  auth-str: dongtaiwang.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大6
-  server: tuic1.freeh1.xyz
-  port: 40981
-  type: tuic
-  uuid: c2faac69-e1c1-4bf5-b8a8-d2ce4d834a66
-  password: dongtaiwang
-  sni: tuic1.freeh1.xyz
+- name: hysteria | 🇨🇦加拿大3
+  type: hysteria
+  server: 108.181.22.213
+  port: 61834
+  auth-str: dongtaiwang.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: false
-  congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大6
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
+- name: tuic | 🇨🇦加拿大4
   server: tuic3.dtku47.xyz
   port: 12255
   type: tuic
@@ -73,7 +69,7 @@ proxies:
   request-timeout: 8000
   udp-relay-mode: native
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大6
+- name: tuic | 🇨🇦加拿大4
   server: 108.181.24.7
   port: 23450
   type: tuic
@@ -97,7 +93,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: tuic | 🇨🇦加拿大6
+- name: tuic | 🇨🇦加拿大4
   server: 108.181.22.205
   port: 50987
   type: tuic
@@ -133,7 +129,7 @@ proxies:
   auth_str: dongtaiwang.com
   up: 2
   down: 10
-- name: tuic | 🇨🇦加拿大6
+- name: tuic | 🇨🇦加拿大4
   server: 108.181.22.239
   port: 45600
   type: tuic
@@ -186,7 +182,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇨🇦加拿大1
+- name: hysteria | 🇨🇦加拿大3
   type: hysteria
   server: 108.181.22.239
   port: 41146
@@ -251,19 +247,19 @@ proxy-groups:
   tolerance: 50
   proxies:
   - hysteria | 🇺🇸美国3
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
-  - tuic | 🇨🇦加拿大6
+  - hysteria | 🇨🇦加拿大3
+  - hysteria | 🇨🇦加拿大3
+  - tuic | 🇨🇦加拿大4
+  - tuic | 🇨🇦加拿大4
   - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
+  - tuic | 🇨🇦加拿大4
   - hysteria | 🇹🇼台湾3
   - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大6
+  - tuic | 🇨🇦加拿大4
   - hysteria | 🇬🇧英国1
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
-  - hysteria | 🇨🇦加拿大1
+  - hysteria | 🇨🇦加拿大3
   - hysteria | 🇫🇷法国1
   - hysteria2 | 🇹🇼台湾1
   - hysteria2 | 🇨🇦加拿大2
