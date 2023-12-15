@@ -213,7 +213,7 @@ proxies:
 - name: hysteria2 | 🇹🇼台湾1
   type: hysteria2
   server: www.dtku46.xyz
-  port: 29300
+  port: 18417
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
