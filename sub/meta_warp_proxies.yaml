@@ -114,19 +114,6 @@ proxies:
   request-timeout: 8000
   udp-relay-mode: native
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大4
-  server: 108.181.24.7
-  port: 23450
-  type: tuic
-  uuid: 3618921b-adeb-4bd3-a2a0-f98b72a674b1
-  password: dongtaiwang
-  sni: bing.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
 - name: hysteria | 🇹🇼台湾3
   type: hysteria
   server: www.dtku46.xyz
@@ -302,7 +289,6 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大3
   - tuic | 🇨🇦加拿大4
-  - tuic | 🇨🇦加拿大4
   - hysteria | 🇹🇼台湾3
   - tuic | 🇨🇦加拿大4
   - hysteria | 🇹🇼台湾3
@@ -322,7 +308,6 @@ proxy-groups:
   - hysteria | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大3
-  - tuic | 🇨🇦加拿大4
   - tuic | 🇨🇦加拿大4
   - hysteria | 🇹🇼台湾3
   - tuic | 🇨🇦加拿大4
