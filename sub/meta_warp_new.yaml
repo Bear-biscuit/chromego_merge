@@ -174,11 +174,11 @@ proxies:
   auth_str: dongtaiwang.com
   up: 2
   down: 10
-- name: tuic | 🇨🇦加拿大3
-  server: 104.234.70.41
-  port: 11223
+- name: tuic | 🇺🇸美国0
+  server: 64.110.25.10
+  port: 11227
   type: tuic
-  uuid: c573056f-e44b-4244-8142-136753c3debe
+  uuid: 764b539f-2d3c-4772-9731-5ebf6984af98
   password: dongtaiwang.com
   sni: bing.com
   alpn:
@@ -187,11 +187,11 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: tuic | 🇺🇸美国0
-  server: 64.110.25.10
-  port: 11227
+- name: tuic | 🇨🇦加拿大3
+  server: 104.234.70.41
+  port: 11223
   type: tuic
-  uuid: 764b539f-2d3c-4772-9731-5ebf6984af98
+  uuid: c573056f-e44b-4244-8142-136753c3debe
   password: dongtaiwang.com
   sni: bing.com
   alpn:
@@ -320,8 +320,8 @@ proxy-groups:
   - tuic | 🇨🇦加拿大2
   - hysteria | 🇹🇼台湾1
   - hysteria | 🇹🇼台湾2
-  - tuic | 🇨🇦加拿大3
   - tuic | 🇺🇸美国0
+  - tuic | 🇨🇦加拿大3
   - hysteria | 🇬🇧英国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
@@ -342,8 +342,8 @@ proxy-groups:
   - tuic | 🇨🇦加拿大2
   - hysteria | 🇹🇼台湾1
   - hysteria | 🇹🇼台湾2
-  - tuic | 🇨🇦加拿大3
   - tuic | 🇺🇸美国0
+  - tuic | 🇨🇦加拿大3
   - hysteria | 🇬🇧英国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
