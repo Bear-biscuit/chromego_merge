@@ -36,7 +36,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大3
+- name: hysteria | 🇨🇦加拿大6
   type: hysteria
   server: 108.181.22.239
   port: 41146
@@ -47,10 +47,10 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大3
+- name: hysteria | 🇨🇦加拿大6
   type: hysteria
   server: 108.181.22.213
-  port: 61834
+  port: 52284
   auth-str: dongtaiwang.com
   alpn:
   - h3
@@ -58,30 +58,28 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: tuic | 🇨🇦加拿大4
-  server: tuic3.dtku47.xyz
-  port: 12255
-  type: tuic
-  uuid: ed6a538a-6e66-4f21-a769-4b389bb2f3ab
-  password: dongtaiwang
+- name: hysteria | 🇨🇦加拿大6
+  type: hysteria
+  server: 108.181.22.155
+  port: 19721
+  auth-str: dongtaiwang.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大4
-  server: 108.181.24.7
-  port: 23450
-  type: tuic
-  uuid: 3618921b-adeb-4bd3-a2a0-f98b72a674b1
-  password: dongtaiwang
-  sni: bing.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  congestion-controller: bbr
+- name: hysteria | 🇨🇦加拿大6
+  server: 104.234.70.41
+  type: hysteria
+  port: 21025
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
 - name: hysteria | 🇹🇼台湾3
   type: hysteria
   server: www.dtku46.xyz
@@ -93,19 +91,17 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: tuic | 🇨🇦加拿大4
-  server: 108.181.22.205
-  port: 50987
-  type: tuic
-  uuid: d6214437-e1b5-4334-9090-8f66b78bea89
-  password: dongtaiwang
-  sni: bing.com
+- name: hysteria | 🇨🇦加拿大6
+  server: 104.234.70.6
+  type: hysteria
+  port: 16117
+  auth-str: dongtaiwang.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  congestion-controller: bbr
 - name: hysteria | 🇹🇼台湾3
   type: hysteria
   server: www.dtku46.xyz
@@ -142,7 +138,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大4
+- name: tuic | 🇨🇦加拿大1
   server: 104.234.70.41
   port: 11223
   type: tuic
@@ -195,7 +191,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇨🇦加拿大3
+- name: hysteria | 🇨🇦加拿大6
   type: hysteria
   server: 108.181.22.239
   port: 39967
@@ -260,20 +256,20 @@ proxy-groups:
   tolerance: 50
   proxies:
   - hysteria | 🇺🇸美国3
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大3
-  - tuic | 🇨🇦加拿大4
-  - tuic | 🇨🇦加拿大4
+  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇨🇦加拿大6
   - hysteria | 🇹🇼台湾3
-  - tuic | 🇨🇦加拿大4
+  - hysteria | 🇨🇦加拿大6
   - hysteria | 🇹🇼台湾3
   - hysteria | 🇹🇼台湾3
   - tuic | 🇺🇸美国1
-  - tuic | 🇨🇦加拿大4
+  - tuic | 🇨🇦加拿大1
   - hysteria | 🇬🇧英国1
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
-  - hysteria | 🇨🇦加拿大3
+  - hysteria | 🇨🇦加拿大6
   - hysteria | 🇫🇷法国1
   - hysteria2 | 🇹🇼台湾1
   - hysteria2 | 🇨🇦加拿大2
