@@ -138,19 +138,6 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大1
-  server: 104.234.70.41
-  port: 11223
-  type: tuic
-  uuid: c573056f-e44b-4244-8142-136753c3debe
-  password: dongtaiwang.com
-  sni: bing.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
 - name: hysteria | 🇬🇧英国1
   type: hysteria
   server: 62.204.54.81
@@ -265,7 +252,6 @@ proxy-groups:
   - hysteria | 🇹🇼台湾3
   - hysteria | 🇹🇼台湾3
   - tuic | 🇺🇸美国1
-  - tuic | 🇨🇦加拿大1
   - hysteria | 🇬🇧英国1
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
