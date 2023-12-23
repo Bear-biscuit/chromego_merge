@@ -183,17 +183,6 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: hysteria2 | 🇬🇧英国0
-  type: hysteria2
-  server: 45.145.72.212
-  port: 23520
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  up: 1 Mbps
-  down: 5 Mbps
-  skip-cert-verify: true
 - name: hysteria | 🇬🇧英国0
   type: hysteria
   server: 62.204.54.81
@@ -315,7 +304,6 @@ proxy-groups:
   - hysteria | 🇹🇼台湾1
   - hysteria | 🇹🇼台湾2
   - tuic | 🇺🇸美国0
-  - hysteria2 | 🇬🇧英国0
   - hysteria | 🇬🇧英国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
@@ -337,7 +325,6 @@ proxy-groups:
   - hysteria | 🇹🇼台湾1
   - hysteria | 🇹🇼台湾2
   - tuic | 🇺🇸美国0
-  - hysteria2 | 🇬🇧英国0
   - hysteria | 🇬🇧英国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
