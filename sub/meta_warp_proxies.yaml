@@ -70,6 +70,28 @@ proxies:
   type: hysteria2
   server: 109.104.152.333
   port: 8007
+- name: hysteria | 🇺🇸美国3
+  type: hysteria
+  server: 167.160.90.251
+  port: 48089
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
+- name: hysteria | 🇨🇦加拿大6
+  type: hysteria
+  server: 108.181.22.239
+  port: 41146
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
 - name: hysteria | 🇨🇦加拿大6
   type: hysteria
   server: 108.181.22.213
@@ -272,6 +294,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - hysteria | 🇺🇸美国3
+  - hysteria | 🇨🇦加拿大6
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇨🇦加拿大6
@@ -291,6 +315,8 @@ proxy-groups:
 - name: chromego
   type: select
   proxies:
+  - hysteria | 🇺🇸美国3
+  - hysteria | 🇨🇦加拿大6
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇨🇦加拿大6
