@@ -91,6 +91,17 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
+- name: hysteria | 🇨🇦加拿大6
+  server: 104.234.70.6
+  type: hysteria
+  port: 16117
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
 - name: hysteria | 🇹🇼台湾3
   type: hysteria
   server: www.dtku46.xyz
@@ -237,6 +248,7 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇹🇼台湾3
+  - hysteria | 🇨🇦加拿大6
   - hysteria | 🇹🇼台湾3
   - hysteria | 🇹🇼台湾3
   - tuic | 🇺🇸美国1
