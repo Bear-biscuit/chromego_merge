@@ -70,7 +70,7 @@ proxies:
   type: hysteria2
   server: 109.104.152.333
   port: 8007
-- name: hysteria | 🇺🇸美国3
+- name: hysteria | 🇺🇸美国2
   type: hysteria
   server: 167.160.90.251
   port: 48089
@@ -81,7 +81,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大6
+- name: hysteria | 🇨🇦加拿大5
   type: hysteria
   server: 108.181.22.239
   port: 41146
@@ -92,7 +92,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大6
+- name: hysteria | 🇨🇦加拿大5
   type: hysteria
   server: 108.181.22.213
   port: 52284
@@ -103,7 +103,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大6
+- name: hysteria | 🇨🇦加拿大5
   type: hysteria
   server: 108.181.22.155
   port: 19721
@@ -114,7 +114,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大6
+- name: hysteria | 🇨🇦加拿大5
   server: 104.234.70.41
   type: hysteria
   port: 57153
@@ -136,7 +136,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大6
+- name: hysteria | 🇨🇦加拿大5
   server: 104.234.70.6
   type: hysteria
   port: 16117
@@ -195,7 +195,7 @@ proxies:
   auth_str: dongtaiwang.com
   up: 5
   down: 10
-- name: hysteria | 🇺🇸美国3
+- name: hysteria | 🇺🇸美国2
   type: hysteria
   server: 167.160.91.115
   port: 41189
@@ -209,7 +209,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国4
+- name: hysteria | 🇺🇸美国3
   type: hysteria
   server: 173.234.25.52
   port: 20164
@@ -223,7 +223,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇨🇦加拿大6
+- name: hysteria | 🇨🇦加拿大5
   type: hysteria
   server: 108.181.22.239
   port: 39967
@@ -294,20 +294,20 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - hysteria | 🇺🇸美国3
-  - hysteria | 🇨🇦加拿大6
-  - hysteria | 🇨🇦加拿大6
-  - hysteria | 🇨🇦加拿大6
-  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇺🇸美国2
+  - hysteria | 🇨🇦加拿大5
+  - hysteria | 🇨🇦加拿大5
+  - hysteria | 🇨🇦加拿大5
+  - hysteria | 🇨🇦加拿大5
   - hysteria | 🇹🇼台湾3
-  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇨🇦加拿大5
   - hysteria | 🇹🇼台湾3
   - hysteria | 🇹🇼台湾3
   - tuic | 🇺🇸美国1
   - hysteria | 🇬🇧英国1
+  - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
-  - hysteria | 🇺🇸美国4
-  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇨🇦加拿大5
   - hysteria | 🇫🇷法国1
   - hysteria2 | 🇹🇼台湾1
   - hysteria2 | 🇨🇦加拿大2
@@ -315,20 +315,20 @@ proxy-groups:
 - name: chromego
   type: select
   proxies:
-  - hysteria | 🇺🇸美国3
-  - hysteria | 🇨🇦加拿大6
-  - hysteria | 🇨🇦加拿大6
-  - hysteria | 🇨🇦加拿大6
-  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇺🇸美国2
+  - hysteria | 🇨🇦加拿大5
+  - hysteria | 🇨🇦加拿大5
+  - hysteria | 🇨🇦加拿大5
+  - hysteria | 🇨🇦加拿大5
   - hysteria | 🇹🇼台湾3
-  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇨🇦加拿大5
   - hysteria | 🇹🇼台湾3
   - hysteria | 🇹🇼台湾3
   - tuic | 🇺🇸美国1
   - hysteria | 🇬🇧英国1
+  - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
-  - hysteria | 🇺🇸美国4
-  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇨🇦加拿大5
   - hysteria | 🇫🇷法国1
   - hysteria2 | 🇹🇼台湾1
   - hysteria2 | 🇨🇦加拿大2
