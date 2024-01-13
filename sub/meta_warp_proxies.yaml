@@ -186,7 +186,7 @@ proxies:
 - name: hysteria | 🇬🇧英国1
   type: hysteria
   server: 62.204.54.81
-  port: 46333
+  port: 44550
   sni: bing.com
   skip-cert-verify: true
   alpn:
