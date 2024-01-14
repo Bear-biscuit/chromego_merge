@@ -25,21 +25,10 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: hysteria | 🇺🇸美国4
+- name: hysteria | 🇺🇸美国6
   type: hysteria
-  server: 167.160.90.251
+  server: 167.160.90.252
   port: 48089
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-  skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大5
-  type: hysteria
-  server: 108.181.22.239
-  port: 41146
   auth-str: dongtaiwang.com
   alpn:
   - h3
@@ -80,18 +69,18 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇹🇼台湾3
+- name: hysteria | 🇨🇦加拿大5
+  server: 108.181.2.154
   type: hysteria
-  server: www.dtku46.xyz
-  port: 11223
-  auth-str: mqoE9qSoyMFa
+  port: 33445
+  auth-str: dongtaiwang.com
   alpn:
   - h3
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇺🇸美国4
+- name: hysteria | 🇺🇸美国6
   server: 167.160.91.116
   type: hysteria
   port: 55009
@@ -102,18 +91,18 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇹🇼台湾3
+- name: hysteria | 🇺🇸美国6
   type: hysteria
-  server: www.dtku46.xyz
-  port: 11223
-  auth-str: mqoE9qSoyMFa
+  server: 64.110.25.10
+  port: 44556
+  auth-str: dongtaiwang.com
   alpn:
   - h3
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇹🇼台湾3
+- name: hysteria | 🇹🇼台湾1
   type: hysteria
   server: www.dtku50.xyz
   port: 56252
@@ -125,19 +114,17 @@ proxies:
   auth_str: dongtaiwang.com
   up: 2
   down: 10
-- name: tuic | 🇺🇸美国1
+- name: hysteria | 🇺🇸美国6
+  type: hysteria
   server: 64.110.25.10
-  port: 33445
-  type: tuic
-  uuid: 670998c6-a78f-43cc-86aa-29292476e040
-  password: dongtaiwang.com
-  sni: bing.com
+  port: 44556
+  auth-str: dongtaiwang.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  congestion-controller: bbr
 - name: hysteria | 🇬🇧英国1
   type: hysteria
   server: 62.204.54.81
@@ -150,7 +137,7 @@ proxies:
   auth_str: dongtaiwang.com
   up: 5
   down: 10
-- name: hysteria | 🇺🇸美国4
+- name: hysteria | 🇺🇸美国6
   type: hysteria
   server: 167.160.91.115
   port: 41189
@@ -164,7 +151,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国5
+- name: hysteria | 🇺🇸美国7
   type: hysteria
   server: 173.234.25.52
   port: 20164
@@ -206,14 +193,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria2 | 🇹🇼台湾1
-  type: hysteria2
-  server: www.dtku46.xyz
-  port: 55307
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: hysteria2 | 🇨🇦加拿大2
   type: hysteria2
   server: 108.181.22.155
@@ -242,22 +221,20 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国6
   - hysteria | 🇨🇦加拿大5
   - hysteria | 🇨🇦加拿大5
   - hysteria | 🇨🇦加拿大5
   - hysteria | 🇨🇦加拿大5
-  - hysteria | 🇹🇼台湾3
-  - hysteria | 🇺🇸美国4
-  - hysteria | 🇹🇼台湾3
-  - hysteria | 🇹🇼台湾3
-  - tuic | 🇺🇸美国1
+  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国6
+  - hysteria | 🇹🇼台湾1
+  - hysteria | 🇺🇸美国6
   - hysteria | 🇬🇧英国1
-  - hysteria | 🇺🇸美国4
-  - hysteria | 🇺🇸美国5
+  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国7
   - hysteria | 🇨🇦加拿大5
   - hysteria | 🇫🇷法国1
-  - hysteria2 | 🇹🇼台湾1
   - hysteria2 | 🇨🇦加拿大2
   - hysteria2 | 🇨🇦加拿大3
 rules:
