@@ -70,7 +70,7 @@ proxies:
   type: hysteria2
   server: 109.104.152.333
   port: 8007
-- name: hysteria | 🇺🇸美国6
+- name: hysteria | 🇺🇸美国4
   type: hysteria
   server: 167.160.90.252
   port: 48089
@@ -81,10 +81,38 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大5
+- name: vmess | 🇨🇦加拿大1
+  type: vmess
+  server: dongtaiwang2.com
+  port: 443
+  cipher: auto
+  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /gzogws
+    headers:
+      host: xray1.freeh1.xyz
+- name: vless | 🇨🇦加拿大1
+  type: vless
+  server: dongtaiwang2.com
+  port: 443
+  uuid: ffb15cd2-0521-49de-b8aa-fb15d58c8075
+  tls: true
+  servername: v2ray3.freegradely.xyz
+  network: ws
+  ws-opts:
+    path: /bqbows
+    headers:
+      host: v2ray3.freegradely.xyz
+  client-fingerprint: chrome
+- name: hysteria | 🇹🇼台湾3
   type: hysteria
-  server: 108.181.22.213
-  port: 52284
+  server: 111.243.97.209
+  port: 22334
   auth-str: dongtaiwang.com
   alpn:
   - h3
@@ -92,10 +120,10 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大5
+- name: hysteria | 🇹🇼台湾3
   type: hysteria
-  server: 108.181.22.155
-  port: 19721
+  server: www4.dtku49.xyz
+  port: 22334
   auth-str: dongtaiwang.com
   alpn:
   - h3
@@ -103,51 +131,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大5
-  server: 108.181.2.154
-  type: hysteria
-  port: 33445
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-  skip-cert-verify: true
-- name: hysteria | 🇨🇦加拿大5
-  server: 108.181.2.154
-  type: hysteria
-  port: 33445
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-  skip-cert-verify: true
-- name: hysteria | 🇺🇸美国6
-  server: 167.160.91.116
-  type: hysteria
-  port: 55009
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-  skip-cert-verify: true
-- name: hysteria | 🇺🇸美国6
-  type: hysteria
-  server: 64.110.25.10
-  port: 44556
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-  skip-cert-verify: true
-- name: hysteria | 🇹🇼台湾1
+- name: hysteria | 🇹🇼台湾3
   type: hysteria
   server: www.dtku50.xyz
   port: 56252
@@ -159,7 +143,7 @@ proxies:
   auth_str: dongtaiwang.com
   up: 2
   down: 10
-- name: hysteria | 🇺🇸美国6
+- name: hysteria | 🇺🇸美国4
   type: hysteria
   server: 64.110.25.10
   port: 44556
@@ -182,7 +166,7 @@ proxies:
   auth_str: dongtaiwang.com
   up: 5
   down: 10
-- name: hysteria | 🇺🇸美国6
+- name: hysteria | 🇺🇸美国4
   type: hysteria
   server: 167.160.91.115
   port: 41189
@@ -196,21 +180,21 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国7
+- name: hysteria | 🇺🇸美国5
   type: hysteria
   server: 173.234.25.52
-  port: 20164
-  ports: 20164
-  auth_str: Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F
+  port: 30072
+  ports: 30072
+  auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.microsoft.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇨🇦加拿大5
+- name: hysteria | 🇨🇦加拿大1
   type: hysteria
   server: 108.181.22.239
   port: 39967
@@ -238,22 +222,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria2 | 🇨🇦加拿大2
-  type: hysteria2
-  server: 108.181.22.155
-  port: 31721
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: hysteria2 | 🇨🇦加拿大3
-  type: hysteria2
-  server: 108.181.22.155
-  port: 31721
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -273,41 +241,33 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - hysteria | 🇺🇸美国6
-  - hysteria | 🇨🇦加拿大5
-  - hysteria | 🇨🇦加拿大5
-  - hysteria | 🇨🇦加拿大5
-  - hysteria | 🇨🇦加拿大5
-  - hysteria | 🇺🇸美国6
-  - hysteria | 🇺🇸美国6
-  - hysteria | 🇹🇼台湾1
-  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国4
+  - vmess | 🇨🇦加拿大1
+  - vless | 🇨🇦加拿大1
+  - hysteria | 🇹🇼台湾3
+  - hysteria | 🇹🇼台湾3
+  - hysteria | 🇹🇼台湾3
+  - hysteria | 🇺🇸美国4
   - hysteria | 🇬🇧英国1
-  - hysteria | 🇺🇸美国6
-  - hysteria | 🇺🇸美国7
-  - hysteria | 🇨🇦加拿大5
+  - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国5
+  - hysteria | 🇨🇦加拿大1
   - hysteria | 🇫🇷法国1
-  - hysteria2 | 🇨🇦加拿大2
-  - hysteria2 | 🇨🇦加拿大3
 - name: chromego
   type: select
   proxies:
-  - hysteria | 🇺🇸美国6
-  - hysteria | 🇨🇦加拿大5
-  - hysteria | 🇨🇦加拿大5
-  - hysteria | 🇨🇦加拿大5
-  - hysteria | 🇨🇦加拿大5
-  - hysteria | 🇺🇸美国6
-  - hysteria | 🇺🇸美国6
-  - hysteria | 🇹🇼台湾1
-  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国4
+  - vmess | 🇨🇦加拿大1
+  - vless | 🇨🇦加拿大1
+  - hysteria | 🇹🇼台湾3
+  - hysteria | 🇹🇼台湾3
+  - hysteria | 🇹🇼台湾3
+  - hysteria | 🇺🇸美国4
   - hysteria | 🇬🇧英国1
-  - hysteria | 🇺🇸美国6
-  - hysteria | 🇺🇸美国7
-  - hysteria | 🇨🇦加拿大5
+  - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国5
+  - hysteria | 🇨🇦加拿大1
   - hysteria | 🇫🇷法国1
-  - hysteria2 | 🇨🇦加拿大2
-  - hysteria2 | 🇨🇦加拿大3
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
