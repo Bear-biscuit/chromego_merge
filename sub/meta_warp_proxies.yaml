@@ -70,6 +70,32 @@ proxies:
   type: hysteria2
   server: 109.104.152.333
   port: 8007
+- name: vless | 🇨🇦加拿大4
+  type: vless
+  server: dongtaiwang3.com
+  port: 443
+  uuid: a9202ced-3185-489c-8b28-74e9a00d894d
+  tls: true
+  servername: dongtaiwang.dtku47.xyz
+  network: ws
+  ws-opts:
+    path: /eobjws
+    headers:
+      host: dongtaiwang.dtku47.xyz
+  client-fingerprint: chrome
+- name: vless | 🇨🇦加拿大4
+  type: vless
+  server: dongtaiwang2.com
+  port: 443
+  uuid: a9202ced-3185-489c-8b28-74e9a00d894d
+  tls: true
+  servername: dongtaiwang.dtku47.xyz
+  network: ws
+  ws-opts:
+    path: /eobjws
+    headers:
+      host: dongtaiwang.dtku47.xyz
+  client-fingerprint: chrome
 - name: ss | 🇺🇸美国1
   type: ss
   server: 167.160.90.252
@@ -90,22 +116,7 @@ proxies:
     min-streams: '16'
     statistic: true
     only-tcp: false
-- name: vmess | 🇨🇦加拿大3
-  type: vmess
-  server: dongtaiwang2.com
-  port: 443
-  cipher: auto
-  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /gzogws
-    headers:
-      host: xray1.freeh1.xyz
-- name: vless | 🇨🇦加拿大2
+- name: vless | 🇨🇦加拿大4
   type: vless
   server: dongtaiwang2.com
   port: 443
@@ -118,7 +129,7 @@ proxies:
     headers:
       host: v2ray3.freegradely.xyz
   client-fingerprint: chrome
-- name: vless | 🇨🇦加拿大2
+- name: vless | 🇨🇦加拿大4
   type: vless
   server: dongtaiwang3.com
   port: 443
@@ -131,7 +142,7 @@ proxies:
     headers:
       host: dongtaiwang.freeh1.xyz
   client-fingerprint: chrome
-- name: vmess | 🇨🇦加拿大3
+- name: vmess | 🇨🇦加拿大2
   type: vmess
   server: dongtaiwang2.com
   port: 443
@@ -146,7 +157,7 @@ proxies:
     path: /gzogws
     headers:
       host: xray1.freeh1.xyz
-- name: vmess | 🇨🇦加拿大3
+- name: vmess | 🇨🇦加拿大2
   type: vmess
   server: dongtaiwang3.com
   port: 443
@@ -259,12 +270,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - vless | 🇨🇦加拿大4
+  - vless | 🇨🇦加拿大4
   - ss | 🇺🇸美国1
-  - vmess | 🇨🇦加拿大3
-  - vless | 🇨🇦加拿大2
-  - vless | 🇨🇦加拿大2
-  - vmess | 🇨🇦加拿大3
-  - vmess | 🇨🇦加拿大3
+  - vless | 🇨🇦加拿大4
+  - vless | 🇨🇦加拿大4
+  - vmess | 🇨🇦加拿大2
+  - vmess | 🇨🇦加拿大2
   - hysteria | 🇹🇼台湾2
   - hysteria | 🇹🇼台湾2
   - hysteria | 🇫🇷法国1
@@ -274,12 +286,13 @@ proxy-groups:
 - name: chromego
   type: select
   proxies:
+  - vless | 🇨🇦加拿大4
+  - vless | 🇨🇦加拿大4
   - ss | 🇺🇸美国1
-  - vmess | 🇨🇦加拿大3
-  - vless | 🇨🇦加拿大2
-  - vless | 🇨🇦加拿大2
-  - vmess | 🇨🇦加拿大3
-  - vmess | 🇨🇦加拿大3
+  - vless | 🇨🇦加拿大4
+  - vless | 🇨🇦加拿大4
+  - vmess | 🇨🇦加拿大2
+  - vmess | 🇨🇦加拿大2
   - hysteria | 🇹🇼台湾2
   - hysteria | 🇹🇼台湾2
   - hysteria | 🇫🇷法国1

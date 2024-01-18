@@ -70,6 +70,32 @@ proxies:
   type: hysteria2
   server: 109.104.152.333
   port: 8007
+- name: vless | 🇨🇦加拿大0
+  type: vless
+  server: dongtaiwang3.com
+  port: 443
+  uuid: a9202ced-3185-489c-8b28-74e9a00d894d
+  tls: true
+  servername: dongtaiwang.dtku47.xyz
+  network: ws
+  ws-opts:
+    path: /eobjws
+    headers:
+      host: dongtaiwang.dtku47.xyz
+  client-fingerprint: chrome
+- name: vless | 🇨🇦加拿大1
+  type: vless
+  server: dongtaiwang2.com
+  port: 443
+  uuid: a9202ced-3185-489c-8b28-74e9a00d894d
+  tls: true
+  servername: dongtaiwang.dtku47.xyz
+  network: ws
+  ws-opts:
+    path: /eobjws
+    headers:
+      host: dongtaiwang.dtku47.xyz
+  client-fingerprint: chrome
 - name: ss | 🇺🇸美国0
   type: ss
   server: 167.160.90.252
@@ -90,6 +116,32 @@ proxies:
     min-streams: '16'
     statistic: true
     only-tcp: false
+- name: vless | 🇨🇦加拿大2
+  type: vless
+  server: dongtaiwang2.com
+  port: 443
+  uuid: ffb15cd2-0521-49de-b8aa-fb15d58c8075
+  tls: true
+  servername: v2ray3.freegradely.xyz
+  network: ws
+  ws-opts:
+    path: /bqbows
+    headers:
+      host: v2ray3.freegradely.xyz
+  client-fingerprint: chrome
+- name: vless | 🇨🇦加拿大3
+  type: vless
+  server: dongtaiwang3.com
+  port: 443
+  uuid: 869d601c-9e4c-4e83-b816-bb553234aaea
+  tls: true
+  servername: dongtaiwang.freeh1.xyz
+  network: ws
+  ws-opts:
+    path: /pxzaws
+    headers:
+      host: dongtaiwang.freeh1.xyz
+  client-fingerprint: chrome
 - name: vmess | 🇨🇦加拿大0
   type: vmess
   server: dongtaiwang2.com
@@ -105,48 +157,7 @@ proxies:
     path: /gzogws
     headers:
       host: xray1.freeh1.xyz
-- name: vless | 🇨🇦加拿大0
-  type: vless
-  server: dongtaiwang2.com
-  port: 443
-  uuid: ffb15cd2-0521-49de-b8aa-fb15d58c8075
-  tls: true
-  servername: v2ray3.freegradely.xyz
-  network: ws
-  ws-opts:
-    path: /bqbows
-    headers:
-      host: v2ray3.freegradely.xyz
-  client-fingerprint: chrome
-- name: vless | 🇨🇦加拿大1
-  type: vless
-  server: dongtaiwang3.com
-  port: 443
-  uuid: 869d601c-9e4c-4e83-b816-bb553234aaea
-  tls: true
-  servername: dongtaiwang.freeh1.xyz
-  network: ws
-  ws-opts:
-    path: /pxzaws
-    headers:
-      host: dongtaiwang.freeh1.xyz
-  client-fingerprint: chrome
 - name: vmess | 🇨🇦加拿大1
-  type: vmess
-  server: dongtaiwang2.com
-  port: 443
-  cipher: auto
-  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /gzogws
-    headers:
-      host: xray1.freeh1.xyz
-- name: vmess | 🇨🇦加拿大2
   type: vmess
   server: dongtaiwang3.com
   port: 443
@@ -279,12 +290,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - ss | 🇺🇸美国0
-  - vmess | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大1
+  - ss | 🇺🇸美国0
+  - vless | 🇨🇦加拿大2
+  - vless | 🇨🇦加拿大3
+  - vmess | 🇨🇦加拿大0
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇨🇦加拿大2
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -296,12 +308,13 @@ proxy-groups:
 - name: chromego
   type: select
   proxies:
-  - ss | 🇺🇸美国0
-  - vmess | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大1
+  - ss | 🇺🇸美国0
+  - vless | 🇨🇦加拿大2
+  - vless | 🇨🇦加拿大3
+  - vmess | 🇨🇦加拿大0
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇨🇦加拿大2
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
