@@ -1,2 +1,3 @@
 PyYAML==6.0.1
 ipwhois
+geoip2
