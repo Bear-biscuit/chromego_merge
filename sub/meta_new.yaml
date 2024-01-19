@@ -247,10 +247,10 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国3
+- name: hysteria2 | 🇨🇦加拿大0
   type: hysteria2
-  server: 64.110.25.11
-  port: 33337
+  server: 108.181.24.77
+  port: 18775
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -279,7 +279,7 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
+  - hysteria2 | 🇨🇦加拿大0
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -304,7 +304,7 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
+  - hysteria2 | 🇨🇦加拿大0
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
