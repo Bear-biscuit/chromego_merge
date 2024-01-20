@@ -99,21 +99,6 @@ proxies:
   client-fingerprint: chrome
 - name: vmess | 🇨🇦加拿大0
   type: vmess
-  server: dongtaiwang2.com
-  port: 443
-  cipher: auto
-  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /gzogws
-    headers:
-      host: xray1.freeh1.xyz
-- name: vmess | 🇨🇦加拿大1
-  type: vmess
   server: dongtaiwang3.com
   port: 443
   cipher: auto
@@ -267,7 +252,6 @@ proxy-groups:
   - vless | 🇨🇦加拿大2
   - vless | 🇨🇦加拿大3
   - vmess | 🇨🇦加拿大0
-  - vmess | 🇨🇦加拿大1
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -292,7 +276,6 @@ proxy-groups:
   - vless | 🇨🇦加拿大2
   - vless | 🇨🇦加拿大3
   - vmess | 🇨🇦加拿大0
-  - vmess | 🇨🇦加拿大1
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
