@@ -239,6 +239,14 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: hysteria2 | 🇫🇷法国1
+  type: hysteria2
+  server: 62.210.101.0
+  port: 52465
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国0
   type: hysteria2
   server: 64.110.25.11
@@ -248,14 +256,6 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国1
-  type: hysteria2
-  server: 64.110.25.11
-  port: 33337
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国2
   type: hysteria2
   server: 64.110.25.11
   port: 33337
@@ -307,9 +307,9 @@ proxy-groups:
   - hysteria | 🇺🇸美国0
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国1
+  - hysteria2 | 🇫🇷法国1
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
-  - hysteria2 | 🇺🇸美国2
   - hysteria2 | 🇨🇦加拿大0
 - name: 手动选择
   type: select
@@ -329,9 +329,9 @@ proxy-groups:
   - hysteria | 🇺🇸美国0
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国1
+  - hysteria2 | 🇫🇷法国1
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
-  - hysteria2 | 🇺🇸美国2
   - hysteria2 | 🇨🇦加拿大0
 - name: 负载均衡
   type: load-balance
@@ -351,9 +351,9 @@ proxy-groups:
   - hysteria | 🇺🇸美国0
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国1
+  - hysteria2 | 🇫🇷法国1
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
-  - hysteria2 | 🇺🇸美国2
   - hysteria2 | 🇨🇦加拿大0
   url: http://www.gstatic.com/generate_204
   interval: 300
