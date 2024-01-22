@@ -38,9 +38,9 @@ proxies:
     headers:
       host: dongtaiwang.dtku47.xyz
   client-fingerprint: chrome
-- name: vless | 🇫🇷法国0
+- name: vless | 🇺🇸美国0
   type: vless
-  server: fr.freeh1.xyz
+  server: cu.dongtaiwang3.com
   port: 443
   uuid: 7b671cd2-233d-406c-88da-1c687727dc52
   tls: true
@@ -71,7 +71,7 @@ proxies:
     min-streams: '16'
     statistic: true
     only-tcp: false
-- name: vless | 🇺🇸美国0
+- name: vless | 🇺🇸美国1
   type: vless
   server: cu.dongtaiwang3.com
   port: 443
@@ -84,9 +84,9 @@ proxies:
     headers:
       host: v2ray3.freegradely.xyz
   client-fingerprint: chrome
-- name: vless | 🇫🇷法国1
+- name: vless | 🇺🇸美国2
   type: vless
-  server: fr.freeh1.xyz
+  server: cu.dongtaiwang3.com
   port: 443
   uuid: 7b671cd2-233d-406c-88da-1c687727dc52
   tls: true
@@ -262,10 +262,10 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - vless | 🇨🇦加拿大0
-  - vless | 🇫🇷法国0
-  - ss | 🇺🇸美国0
   - vless | 🇺🇸美国0
-  - vless | 🇫🇷法国1
+  - ss | 🇺🇸美国0
+  - vless | 🇺🇸美国1
+  - vless | 🇺🇸美国2
   - vmess | 🇺🇸美国0
   - vmess | 🇨🇦加拿大0
   - hysteria | 🇹🇼台湾0
@@ -287,10 +287,10 @@ proxy-groups:
   tolerance: 50
   proxies:
   - vless | 🇨🇦加拿大0
-  - vless | 🇫🇷法国0
-  - ss | 🇺🇸美国0
   - vless | 🇺🇸美国0
-  - vless | 🇫🇷法国1
+  - ss | 🇺🇸美国0
+  - vless | 🇺🇸美国1
+  - vless | 🇺🇸美国2
   - vmess | 🇺🇸美国0
   - vmess | 🇨🇦加拿大0
   - hysteria | 🇹🇼台湾0
