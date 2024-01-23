@@ -51,6 +51,26 @@ proxies:
     headers:
       host: fr.freeh1.xyz
   client-fingerprint: chrome
+- name: ss | 🇫🇷法国0
+  type: ss
+  server: 62.210.103.0
+  port: 12299
+  cipher: 2022-blake3-aes-128-gcm
+  password: guXsVF5bET8TgJV0HYUYew==
+  plugin: shadow-tls
+  client-fingerprint: chrome
+  plugin-opts:
+    host: addons.mozilla.org
+    password: 1fba3104-360c-483f-9fc2-c90c85b55389
+    version: 3
+  smux:
+    enabled: true
+    protocol: h2mux
+    padding: true
+    max-connections: '8'
+    min-streams: '16'
+    statistic: true
+    only-tcp: false
 - name: ss | 🇺🇸美国0
   type: ss
   server: 167.160.90.252
@@ -263,6 +283,7 @@ proxy-groups:
   - DIRECT
   - vless | 🇨🇦加拿大0
   - vless | 🇺🇸美国0
+  - ss | 🇫🇷法国0
   - ss | 🇺🇸美国0
   - vless | 🇺🇸美国1
   - vless | 🇺🇸美国2
@@ -288,6 +309,7 @@ proxy-groups:
   proxies:
   - vless | 🇨🇦加拿大0
   - vless | 🇺🇸美国0
+  - ss | 🇫🇷法国0
   - ss | 🇺🇸美国0
   - vless | 🇺🇸美国1
   - vless | 🇺🇸美国2
