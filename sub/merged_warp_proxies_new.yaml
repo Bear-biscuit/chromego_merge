@@ -45,18 +45,18 @@ proxies:
   type: vless
   server: 23.227.38.51
   port: 443
-  uuid: a9202ced-3185-489c-8b28-74e9a00d894d
+  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
   tls: true
-  servername: dongtaiwang.dtku47.xyz
+  servername: fr.freeh1.xyz
   network: ws
   ws-opts:
-    path: /eobjws
+    path: /kfhaws
     headers:
-      host: dongtaiwang.dtku47.xyz
+      host: fr.freeh1.xyz
   client-fingerprint: chrome
 - name: vless | 🇨🇦加拿大1
   type: vless
-  server: dongtaiwang2.com
+  server: 23.227.39.51
   port: 443
   uuid: 7b671cd2-233d-406c-88da-1c687727dc52
   tls: true
@@ -71,14 +71,14 @@ proxies:
   type: vless
   server: 172.67.70.101
   port: 443
-  uuid: a9202ced-3185-489c-8b28-74e9a00d894d
+  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
   tls: true
-  servername: dongtaiwang.dtku47.xyz
+  servername: fr.freeh1.xyz
   network: ws
   ws-opts:
-    path: /eobjws
+    path: /kfhaws
     headers:
-      host: dongtaiwang.dtku47.xyz
+      host: fr.freeh1.xyz
   client-fingerprint: chrome
 - name: vless | 🇺🇸美国1
   type: vless
@@ -261,10 +261,10 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国1
+- name: hysteria2 | 🇫🇷法国2
   type: hysteria2
-  server: 64.110.25.11
-  port: 33337
+  server: 62.210.103.0
+  port: 52465
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -316,7 +316,7 @@ proxy-groups:
   - hysteria | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国1
   - hysteria2 | 🇺🇸美国0
-  - hysteria2 | 🇺🇸美国1
+  - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇨🇦加拿大0
 - name: 手动选择
   type: select
@@ -339,7 +339,7 @@ proxy-groups:
   - hysteria | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国1
   - hysteria2 | 🇺🇸美国0
-  - hysteria2 | 🇺🇸美国1
+  - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇨🇦加拿大0
 - name: 负载均衡
   type: load-balance
@@ -362,7 +362,7 @@ proxy-groups:
   - hysteria | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国1
   - hysteria2 | 🇺🇸美国0
-  - hysteria2 | 🇺🇸美国1
+  - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇨🇦加拿大0
   url: http://www.gstatic.com/generate_204
   interval: 300
