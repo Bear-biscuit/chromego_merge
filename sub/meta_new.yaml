@@ -25,6 +25,20 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
+- name: bocchi
+  server: 142.171.31.40
+  port: 1020
+  reality-opts:
+    public-key: wV_ZidCVpMUBOLuxyhq3YBOMwL04jwCsk5wohpMb7E0
+    short-id: b6eebe1e7ae032f1
+  client-fingerprint: chrome
+  type: vless
+  uuid: 731f4c1c-492a-4c68-939f-5ee904ae6dd2
+  tls: true
+  tfo: false
+  servername: itunes.apple.com
+  skip-cert-verify: true
+  udp: true
 - name: vless | 🇨🇦加拿大0
   type: vless
   server: 23.227.38.51
