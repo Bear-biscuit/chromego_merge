@@ -349,7 +349,7 @@ proxies:
 - name: hysteria | 🇹🇼台湾1
   type: hysteria
   server: www.dtku50.xyz
-  port: 32408
+  port: 18470
   sni: www.amazon.cn
   skip-cert-verify: true
   alpn:
@@ -458,7 +458,7 @@ proxies:
 - name: hysteria2 | 🇨🇦加拿大0
   type: hysteria2
   server: 108.181.24.77
-  port: 18775
+  port: 43656
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
