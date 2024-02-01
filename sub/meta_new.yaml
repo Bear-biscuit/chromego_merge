@@ -39,6 +39,20 @@ proxies:
   servername: itunes.apple.com
   skip-cert-verify: true
   udp: true
+- name: vless | 🇫🇷法国0
+  type: vless
+  server: 51.159.103.141
+  port: 12207
+  udp: true
+  uuid: 63925418-7ae3-4da1-9e73-fb3fc5af6fdb
+  tls: true
+  servername: s0.awsstatic.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: A-DHKUq8W8KZKM1gr8xcKCoqKSct73NtdSjUZMhFcEM
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
 - name: vless | 🇨🇦加拿大0
   type: vless
   server: 109.104.152.4
@@ -67,6 +81,20 @@ proxies:
     public-key: O5x9mSGdETFh_ql4m_2dPEUNBVwCly9XSi9pu1teLls
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
+- name: vless | 🇫🇷法国1
+  type: vless
+  server: 51.159.103.141
+  port: 12207
+  udp: true
+  uuid: 63925418-7ae3-4da1-9e73-fb3fc5af6fdb
+  tls: true
+  servername: s0.awsstatic.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: A-DHKUq8W8KZKM1gr8xcKCoqKSct73NtdSjUZMhFcEM
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
 - name: vmess | 🇨🇦加拿大0
   type: vmess
   server: 108.181.2.154
@@ -79,13 +107,14 @@ proxies:
   network: tcp
 - name: vmess | 🇨🇦加拿大1
   type: vmess
-  server: 108.181.2.154
-  port: 33445
+  server: 108.181.5.18
+  port: 18657
   cipher: auto
-  uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290
+  uuid: 636ba072-493e-4235-b7a8-822bd4e340d5
   alterId: 0
   tls: false
   skip-cert-verify: true
+  servername: ''
   network: tcp
 - name: vmess | 🇨🇦加拿大2
   type: vmess
@@ -99,17 +128,6 @@ proxies:
   servername: ''
   network: tcp
 - name: vmess | 🇨🇦加拿大3
-  type: vmess
-  server: 108.181.5.18
-  port: 18657
-  cipher: auto
-  uuid: 636ba072-493e-4235-b7a8-822bd4e340d5
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: tcp
-- name: vmess | 🇨🇦加拿大4
   type: vmess
   server: 108.181.5.18
   port: 18657
@@ -254,13 +272,14 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
+  - vless | 🇫🇷法国0
   - vless | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大1
+  - vless | 🇫🇷法国1
   - vmess | 🇨🇦加拿大0
   - vmess | 🇨🇦加拿大1
   - vmess | 🇨🇦加拿大2
   - vmess | 🇨🇦加拿大3
-  - vmess | 🇨🇦加拿大4
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -279,13 +298,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - vless | 🇫🇷法国0
   - vless | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大1
+  - vless | 🇫🇷法国1
   - vmess | 🇨🇦加拿大0
   - vmess | 🇨🇦加拿大1
   - vmess | 🇨🇦加拿大2
   - vmess | 🇨🇦加拿大3
-  - vmess | 🇨🇦加拿大4
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
