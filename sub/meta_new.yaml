@@ -41,6 +41,20 @@ proxies:
   udp: true
 - name: vless | 🇨🇦加拿大0
   type: vless
+  server: 109.104.152.4
+  port: 16414
+  udp: true
+  uuid: 80b5b4de-0619-4ac2-b1ff-f2bcc697b641
+  tls: true
+  servername: mensura.cdn-apple.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: QR_5pj5Kj8I3sO6-6ywnM7B1fE2-btdv-IFEas2JHgE
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: vless | 🇨🇦加拿大1
+  type: vless
   server: 108.181.5.130
   port: 17346
   udp: true
@@ -241,6 +255,7 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - vless | 🇨🇦加拿大0
+  - vless | 🇨🇦加拿大1
   - vmess | 🇨🇦加拿大0
   - vmess | 🇨🇦加拿大1
   - vmess | 🇨🇦加拿大2
@@ -265,6 +280,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - vless | 🇨🇦加拿大0
+  - vless | 🇨🇦加拿大1
   - vmess | 🇨🇦加拿大0
   - vmess | 🇨🇦加拿大1
   - vmess | 🇨🇦加拿大2
