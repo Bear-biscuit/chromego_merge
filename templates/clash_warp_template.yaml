@@ -10,7 +10,7 @@ dns:
   ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  default-nameserver: 
+  default-nameserver:
     - 223.5.5.5
     - 8.8.8.8
   nameserver:
@@ -25,21 +25,24 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-
-  - name: WARP
-    type: wireguard
-    server: 162.159.192.1
-    port: 2408
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87ad:b400:91:eadb:887f
-    private-key: wIC19yRRSJkhVJcE09Qo9bE3P3PIwS3yyqyUnjwNO34=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    ip-version: ipv6-prefer
-    reserved: XiBe
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "WARP前置节点"
+  - {
+      name: 网页瑟瑟用我,
+      server: 142.171.31.40,
+      port: 1020,
+      reality-opts:
+        {
+          public-key: wV_ZidCVpMUBOLuxyhq3YBOMwL04jwCsk5wohpMb7E0,
+          short-id: b6eebe1e7ae032f1,
+        },
+      client-fingerprint: chrome,
+      type: vless,
+      uuid: 731f4c1c-492a-4c68-939f-5ee904ae6dd2,
+      tls: true,
+      tfo: false,
+      servername: itunes.apple.com,
+      skip-cert-verify: true,
+      udp: true,
+    }
 
 proxy-groups:
   - name: 节点选择
@@ -64,23 +67,20 @@ proxy-groups:
     tolerance: 50
     proxies:
 
-
   - name: 手动选择
     type: select
     proxies:
-
 
   - name: 负载均衡
     type: load-balance #负载均衡
     proxies:
 
-    url: 'http://www.gstatic.com/generate_204'
+    url: "http://www.gstatic.com/generate_204"
     interval: 300
     #lazy: true
     #disable-udp: true
     strategy: round-robin #作为前置节点⽤这个⽐较好
 
-      
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
