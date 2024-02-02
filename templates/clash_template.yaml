@@ -26,7 +26,7 @@ dns:
       - 240.0.0.0/4
 proxies:
 - {
-      name: bocchi,
+      name: 网页瑟瑟专用,
       server: 142.171.31.40,
       port: 1020,
       reality-opts:
