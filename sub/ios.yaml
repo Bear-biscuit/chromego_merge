@@ -25,6 +25,20 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
+- name: 网页瑟瑟用我
+  server: 142.171.31.40
+  port: 1020
+  reality-opts:
+    public-key: wV_ZidCVpMUBOLuxyhq3YBOMwL04jwCsk5wohpMb7E0
+    short-id: b6eebe1e7ae032f1
+  client-fingerprint: chrome
+  type: vless
+  uuid: 731f4c1c-492a-4c68-939f-5ee904ae6dd2
+  tls: true
+  tfo: false
+  servername: itunes.apple.com
+  skip-cert-verify: true
+  udp: true
 - name: vless | 🇫🇷法国0
   type: vless
   server: 51.159.103.141
@@ -255,28 +269,11 @@ proxy-groups:
 - name: 节点选择
   type: select
   proxies:
+  - WARP
   - 自动选择
+  - 负载均衡
+  - 手动选择
   - DIRECT
-  - vless | 🇫🇷法国0
-  - vless | 🇨🇦加拿大0
-  - vless | 🇫🇷法国1
-  - vmess | 🇨🇦加拿大0
-  - vmess | 🇨🇦加拿大1
-  - vmess | 🇨🇦加拿大2
-  - vmess | 🇨🇦加拿大3
-  - hysteria | 🇹🇼台湾0
-  - hysteria | 🇹🇼台湾1
-  - hysteria2 | 🇫🇷法国0
-  - hysteria2 | 🇬🇧英国0
-  - hysteria | 🇫🇷法国0
-  - hysteria | 🇺🇸美国0
-  - hysteria | 🇺🇸美国1
-  - hysteria | 🇺🇸美国2
-  - hysteria2 | 🇫🇷法国1
-  - hysteria2 | 🇺🇸美国0
-  - hysteria2 | 🇫🇷法国2
-  - hysteria2 | 🇨🇦加拿大0
-  - reality_1_🇨🇦加拿大
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -303,6 +300,55 @@ proxy-groups:
   - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇨🇦加拿大0
   - reality_1_🇨🇦加拿大
+- name: 手动选择
+  type: select
+  proxies:
+  - vless | 🇫🇷法国0
+  - vless | 🇨🇦加拿大0
+  - vless | 🇫🇷法国1
+  - vmess | 🇨🇦加拿大0
+  - vmess | 🇨🇦加拿大1
+  - vmess | 🇨🇦加拿大2
+  - vmess | 🇨🇦加拿大3
+  - hysteria | 🇹🇼台湾0
+  - hysteria | 🇹🇼台湾1
+  - hysteria2 | 🇫🇷法国0
+  - hysteria2 | 🇬🇧英国0
+  - hysteria | 🇫🇷法国0
+  - hysteria | 🇺🇸美国0
+  - hysteria | 🇺🇸美国1
+  - hysteria | 🇺🇸美国2
+  - hysteria2 | 🇫🇷法国1
+  - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇫🇷法国2
+  - hysteria2 | 🇨🇦加拿大0
+  - reality_1_🇨🇦加拿大
+- name: 负载均衡
+  type: load-balance
+  proxies:
+  - vless | 🇫🇷法国0
+  - vless | 🇨🇦加拿大0
+  - vless | 🇫🇷法国1
+  - vmess | 🇨🇦加拿大0
+  - vmess | 🇨🇦加拿大1
+  - vmess | 🇨🇦加拿大2
+  - vmess | 🇨🇦加拿大3
+  - hysteria | 🇹🇼台湾0
+  - hysteria | 🇹🇼台湾1
+  - hysteria2 | 🇫🇷法国0
+  - hysteria2 | 🇬🇧英国0
+  - hysteria | 🇫🇷法国0
+  - hysteria | 🇺🇸美国0
+  - hysteria | 🇺🇸美国1
+  - hysteria | 🇺🇸美国2
+  - hysteria2 | 🇫🇷法国1
+  - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇫🇷法国2
+  - hysteria2 | 🇨🇦加拿大0
+  - reality_1_🇨🇦加拿大
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  strategy: round-robin
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
