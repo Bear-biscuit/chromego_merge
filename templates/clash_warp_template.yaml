@@ -53,13 +53,6 @@ proxy-groups:
       - 负载均衡
       - 手动选择
       - DIRECT
-  - name: WARP前置节点
-    type: select
-    proxies:
-      - 自动选择
-      - 负载均衡
-      - 手动选择
-
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
