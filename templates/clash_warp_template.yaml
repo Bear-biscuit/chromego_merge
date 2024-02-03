@@ -48,7 +48,6 @@ proxy-groups:
   - name: 节点选择
     type: select
     proxies:
-      - WARP
       - 自动选择
       - 负载均衡
       - 手动选择
