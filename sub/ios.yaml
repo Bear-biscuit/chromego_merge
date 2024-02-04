@@ -65,6 +65,19 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
+- name: tuic | 🇨🇦加拿大1
+  type: tuic
+  server: 109.104.153.17
+  port: 22334
+  udp: true
+  uuid: 364d2d85-5bfd-463f-a3dd-a08012a2a6ce
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: tuic | 🇫🇷法国1
   type: tuic
   server: 62.210.103.14
@@ -92,19 +105,6 @@ proxies:
   udp-relay-mode: native
   congestion-controller: bbr
 - name: tuic | 🇫🇷法国3
-  type: tuic
-  server: 62.210.103.14
-  port: 44556
-  udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: tuic | 🇫🇷法国4
   type: tuic
   server: 62.210.103.14
   port: 44556
@@ -289,10 +289,10 @@ proxy-groups:
   proxies:
   - tuic | 🇨🇦加拿大0
   - tuic | 🇫🇷法国0
+  - tuic | 🇨🇦加拿大1
   - tuic | 🇫🇷法国1
   - tuic | 🇫🇷法国2
   - tuic | 🇫🇷法国3
-  - tuic | 🇫🇷法国4
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -312,10 +312,10 @@ proxy-groups:
   proxies:
   - tuic | 🇨🇦加拿大0
   - tuic | 🇫🇷法国0
+  - tuic | 🇨🇦加拿大1
   - tuic | 🇫🇷法国1
   - tuic | 🇫🇷法国2
   - tuic | 🇫🇷法国3
-  - tuic | 🇫🇷法国4
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -335,10 +335,10 @@ proxy-groups:
   proxies:
   - tuic | 🇨🇦加拿大0
   - tuic | 🇫🇷法国0
+  - tuic | 🇨🇦加拿大1
   - tuic | 🇫🇷法国1
   - tuic | 🇫🇷法国2
   - tuic | 🇫🇷法国3
-  - tuic | 🇫🇷法国4
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
