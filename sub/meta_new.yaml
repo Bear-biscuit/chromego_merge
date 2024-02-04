@@ -233,17 +233,17 @@ proxies:
   skip-cert-verify: true
 - name: reality_1_🇨🇦加拿大
   type: vless
-  server: 109.104.152.4
-  port: 16414
-  uuid: 80b5b4de-0619-4ac2-b1ff-f2bcc697b641
+  server: 108.181.22.213
+  port: 28945
+  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: mensura.cdn-apple.com
+  servername: m.media-amazon.com
   reality-opts:
-    public-key: QR_5pj5Kj8I3sO6-6ywnM7B1fE2-btdv-IFEas2JHgE
+    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
     short-id: 6ba85179e30d4fc2
 - name: reality_3_🇨🇦加拿大
   type: vless
