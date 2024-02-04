@@ -39,12 +39,12 @@ proxies:
   servername: itunes.apple.com
   skip-cert-verify: true
   udp: true
-- name: tuic | 🇨🇦加拿大0
+- name: tuic | 🇫🇷法国0
   type: tuic
-  server: 109.104.152.4
-  port: 443
+  server: 62.210.103.14
+  port: 44556
   udp: true
-  uuid: 9ec44c8c-5dc0-4c92-a7ed-5422b0ac1913
+  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
   password: dongtaiwang.com
   alpn:
   - h3
@@ -52,12 +52,12 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: tuic | 🇫🇷法国0
+- name: tuic | 🇨🇦加拿大0
   type: tuic
-  server: 62.210.103.14
-  port: 44556
+  server: 109.104.152.4
+  port: 443
   udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  uuid: 9ec44c8c-5dc0-4c92-a7ed-5422b0ac1913
   password: dongtaiwang.com
   alpn:
   - h3
@@ -287,8 +287,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - tuic | 🇨🇦加拿大0
   - tuic | 🇫🇷法国0
+  - tuic | 🇨🇦加拿大0
   - tuic | 🇨🇦加拿大1
   - tuic | 🇫🇷法国1
   - tuic | 🇫🇷法国2
@@ -310,8 +310,8 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - tuic | 🇨🇦加拿大0
   - tuic | 🇫🇷法国0
+  - tuic | 🇨🇦加拿大0
   - tuic | 🇨🇦加拿大1
   - tuic | 🇫🇷法国1
   - tuic | 🇫🇷法国2
@@ -333,8 +333,8 @@ proxy-groups:
 - name: 负载均衡
   type: load-balance
   proxies:
-  - tuic | 🇨🇦加拿大0
   - tuic | 🇫🇷法国0
+  - tuic | 🇨🇦加拿大0
   - tuic | 🇨🇦加拿大1
   - tuic | 🇫🇷法国1
   - tuic | 🇫🇷法国2
