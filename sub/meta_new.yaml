@@ -25,19 +25,20 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: tuic | 🇬🇧英国0
-  type: tuic
-  server: 195.137.220.189
-  port: 33445
-  udp: true
-  uuid: 983a85bd-8fae-45d2-a702-5d00a383763e
-  password: dongtaiwang.com
+- name: hysteria | 🇫🇷法国0
+  type: hysteria
+  server: 51.159.103.141
+  port: 18044
+  10000-13000: null
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+  hop_interval: 190
 - name: tuic | 🇺🇸美国0
   type: tuic
   server: 74.63.249.229
@@ -51,12 +52,12 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大0
+- name: tuic | 🇹🇼台湾0
   type: tuic
-  server: 108.181.2.158
-  port: 33440
+  server: 1.162.136.33
+  port: 33098
   udp: true
-  uuid: 996c2970-ec1c-4659-9c5f-b3609c42a764
+  uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
   password: dongtaiwang.com
   alpn:
   - h3
@@ -79,22 +80,20 @@ proxies:
     public-key: JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
-- name: vless | 🇩🇪德国1
-  type: vless
-  server: 92.118.205.66
-  port: 10081
+- name: tuic | 🇬🇧英国0
+  type: tuic
+  server: 195.137.220.189
+  port: 33445
   udp: true
-  uuid: 7c009b14-ceb0-4373-9504-ab2a9ca2354a
-  tls: true
-  servername: images-na.ssl-images-amazon.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: vless | 🇩🇪德国2
+  uuid: 983a85bd-8fae-45d2-a702-5d00a383763e
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: vless | 🇩🇪德国1
   type: vless
   server: 92.118.205.66
   port: 10081
@@ -150,7 +149,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇫🇷法国0
+- name: hysteria | 🇫🇷法国1
   type: hysteria
   server: 51.158.54.46
   port: 55396
@@ -238,20 +237,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: reality_0_🇫🇷法国
-  type: vless
-  server: 62.210.101.0
-  port: 18700
-  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: update.microsoft
-  reality-opts:
-    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
-    short-id: 6ba85179e30d4fc2
 - name: reality_1_🇨🇦加拿大
   type: vless
   server: 108.181.22.213
@@ -280,19 +265,19 @@ proxies:
   reality-opts:
     public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
     short-id: 6ba85179e30d4fc2
-- name: reality_3_🇨🇦加拿大
+- name: reality_3_🇫🇷法国
   type: vless
-  server: 108.181.22.213
-  port: 28945
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
+  server: 62.210.101.0
+  port: 18700
+  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: m.media-amazon.com
+  servername: update.microsoft
   reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
     short-id: 6ba85179e30d4fc2
 proxy-groups:
 - name: 节点选择
@@ -300,17 +285,17 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - tuic | 🇬🇧英国0
+  - hysteria | 🇫🇷法国0
   - tuic | 🇺🇸美国0
-  - tuic | 🇨🇦加拿大0
+  - tuic | 🇹🇼台湾0
   - vless | 🇩🇪德国0
+  - tuic | 🇬🇧英国0
   - vless | 🇩🇪德国1
-  - vless | 🇩🇪德国2
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
   - hysteria | 🇹🇼台湾2
-  - hysteria | 🇫🇷法国0
+  - hysteria | 🇫🇷法国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国1
@@ -318,27 +303,26 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇨🇦加拿大0
-  - reality_0_🇫🇷法国
   - reality_1_🇨🇦加拿大
   - reality_2_🇫🇷法国
-  - reality_3_🇨🇦加拿大
+  - reality_3_🇫🇷法国
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - tuic | 🇬🇧英国0
+  - hysteria | 🇫🇷法国0
   - tuic | 🇺🇸美国0
-  - tuic | 🇨🇦加拿大0
+  - tuic | 🇹🇼台湾0
   - vless | 🇩🇪德国0
+  - tuic | 🇬🇧英国0
   - vless | 🇩🇪德国1
-  - vless | 🇩🇪德国2
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
   - hysteria | 🇹🇼台湾2
-  - hysteria | 🇫🇷法国0
+  - hysteria | 🇫🇷法国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国1
@@ -346,10 +330,9 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇨🇦加拿大0
-  - reality_0_🇫🇷法国
   - reality_1_🇨🇦加拿大
   - reality_2_🇫🇷法国
-  - reality_3_🇨🇦加拿大
+  - reality_3_🇫🇷法国
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
