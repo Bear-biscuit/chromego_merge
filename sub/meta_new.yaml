@@ -25,12 +25,25 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: tuic | 🇫🇷法国0
+- name: tuic | 🇬🇧英国0
   type: tuic
-  server: 62.210.103.14
-  port: 44556
+  server: 195.137.220.189
+  port: 33445
   udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  uuid: 983a85bd-8fae-45d2-a702-5d00a383763e
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: tuic | 🇺🇸美国0
+  type: tuic
+  server: 74.63.249.229
+  port: 443
+  udp: true
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -40,10 +53,23 @@ proxies:
   congestion-controller: bbr
 - name: tuic | 🇨🇦加拿大0
   type: tuic
-  server: 109.104.152.4
+  server: 108.181.2.158
+  port: 33440
+  udp: true
+  uuid: 996c2970-ec1c-4659-9c5f-b3609c42a764
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: tuic | 🇺🇸美国1
+  type: tuic
+  server: 74.63.249.229
   port: 443
   udp: true
-  uuid: 9ec44c8c-5dc0-4c92-a7ed-5422b0ac1913
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -51,12 +77,12 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大1
+- name: tuic | 🇺🇸美国2
   type: tuic
-  server: 109.104.153.17
-  port: 22334
+  server: 74.63.249.229
+  port: 443
   udp: true
-  uuid: 364d2d85-5bfd-463f-a3dd-a08012a2a6ce
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -64,38 +90,12 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: tuic | 🇫🇷法国1
+- name: tuic | 🇺🇸美国3
   type: tuic
-  server: 62.210.103.14
-  port: 44556
+  server: 74.63.249.229
+  port: 443
   udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: tuic | 🇫🇷法国2
-  type: tuic
-  server: 62.210.103.14
-  port: 44556
-  udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: tuic | 🇫🇷法国3
-  type: tuic
-  server: 62.210.103.14
-  port: 44556
-  udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -202,8 +202,8 @@ proxies:
   - h3
 - name: hysteria2 | 🇫🇷法国1
   type: hysteria2
-  server: 62.210.101.0
-  port: 52465
+  server: 62.210.103.0
+  port: 22483
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -219,7 +219,7 @@ proxies:
 - name: hysteria2 | 🇫🇷法国2
   type: hysteria2
   server: 62.210.103.0
-  port: 52465
+  port: 22483
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -232,6 +232,20 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
+- name: reality_0_🇫🇷法国
+  type: vless
+  server: 62.210.101.0
+  port: 18700
+  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: update.microsoft
+  reality-opts:
+    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
+    short-id: 6ba85179e30d4fc2
 - name: reality_1_🇨🇦加拿大
   type: vless
   server: 108.181.22.213
@@ -245,6 +259,20 @@ proxies:
   servername: m.media-amazon.com
   reality-opts:
     public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    short-id: 6ba85179e30d4fc2
+- name: reality_2_🇫🇷法国
+  type: vless
+  server: 62.210.101.0
+  port: 18700
+  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: update.microsoft
+  reality-opts:
+    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
     short-id: 6ba85179e30d4fc2
 - name: reality_3_🇨🇦加拿大
   type: vless
@@ -266,12 +294,12 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - tuic | 🇫🇷法国0
+  - tuic | 🇬🇧英国0
+  - tuic | 🇺🇸美国0
   - tuic | 🇨🇦加拿大0
-  - tuic | 🇨🇦加拿大1
-  - tuic | 🇫🇷法国1
-  - tuic | 🇫🇷法国2
-  - tuic | 🇫🇷法国3
+  - tuic | 🇺🇸美国1
+  - tuic | 🇺🇸美国2
+  - tuic | 🇺🇸美国3
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -284,7 +312,9 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇨🇦加拿大0
+  - reality_0_🇫🇷法国
   - reality_1_🇨🇦加拿大
+  - reality_2_🇫🇷法国
   - reality_3_🇨🇦加拿大
 - name: 自动选择
   type: url-test
@@ -292,12 +322,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - tuic | 🇫🇷法国0
+  - tuic | 🇬🇧英国0
+  - tuic | 🇺🇸美国0
   - tuic | 🇨🇦加拿大0
-  - tuic | 🇨🇦加拿大1
-  - tuic | 🇫🇷法国1
-  - tuic | 🇫🇷法国2
-  - tuic | 🇫🇷法国3
+  - tuic | 🇺🇸美国1
+  - tuic | 🇺🇸美国2
+  - tuic | 🇺🇸美国3
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -310,7 +340,9 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇨🇦加拿大0
+  - reality_0_🇫🇷法国
   - reality_1_🇨🇦加拿大
+  - reality_2_🇫🇷法国
   - reality_3_🇨🇦加拿大
 rules:
 - DOMAIN,clash.razord.top,DIRECT
