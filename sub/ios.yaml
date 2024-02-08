@@ -39,26 +39,12 @@ proxies:
   servername: itunes.apple.com
   skip-cert-verify: true
   udp: true
-- name: hysteria | 🇫🇷法国0
-  type: hysteria
-  server: 51.159.103.141
-  port: 18044
-  10000-13000: null
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 11
-  down: 55
-  hop_interval: 190
-- name: tuic | 🇺🇸美国0
+- name: tuic | 🇨🇦加拿大0
   type: tuic
-  server: 74.63.249.229
-  port: 443
+  server: 109.104.152.212
+  port: 33440
   udp: true
-  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
+  uuid: 41b29997-f495-4957-845c-a3f0d421d9e0
   password: dongtaiwang.com
   alpn:
   - h3
@@ -68,7 +54,7 @@ proxies:
   congestion-controller: bbr
 - name: tuic | 🇹🇼台湾0
   type: tuic
-  server: 1.162.136.33
+  server: 111.243.69.34
   port: 33098
   udp: true
   uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
@@ -79,27 +65,12 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: vless | 🇩🇪德国0
-  type: vless
-  server: 92.118.205.66
-  port: 10081
-  udp: true
-  uuid: 7c009b14-ceb0-4373-9504-ab2a9ca2354a
-  tls: true
-  servername: images-na.ssl-images-amazon.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: tuic | 🇬🇧英国0
+- name: tuic | 🇹🇼台湾1
   type: tuic
-  server: 195.137.220.189
-  port: 33445
+  server: 111.243.69.34
+  port: 33098
   udp: true
-  uuid: 983a85bd-8fae-45d2-a702-5d00a383763e
+  uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
   password: dongtaiwang.com
   alpn:
   - h3
@@ -107,21 +78,45 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: vless | 🇩🇪德国1
-  type: vless
-  server: 92.118.205.66
-  port: 10081
+- name: tuic | 🇨🇦加拿大1
+  type: tuic
+  server: 108.181.5.18
+  port: 22889
   udp: true
-  uuid: 7c009b14-ceb0-4373-9504-ab2a9ca2354a
-  tls: true
-  servername: images-na.ssl-images-amazon.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
+  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: tuic | 🇨🇦加拿大2
+  type: tuic
+  server: 108.181.5.18
+  port: 22889
+  udp: true
+  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: tuic | 🇨🇦加拿大3
+  type: tuic
+  server: 108.181.5.18
+  port: 22889
+  udp: true
+  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: hysteria | 🇹🇼台湾0
   type: hysteria
   server: www2.dtku48.xyz
@@ -163,7 +158,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: hysteria | 🇫🇷法国1
+- name: hysteria | 🇫🇷法国0
   type: hysteria
   server: 51.158.54.46
   port: 55396
@@ -307,17 +302,17 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - hysteria | 🇫🇷法国0
-  - tuic | 🇺🇸美国0
+  - tuic | 🇨🇦加拿大0
   - tuic | 🇹🇼台湾0
-  - vless | 🇩🇪德国0
-  - tuic | 🇬🇧英国0
-  - vless | 🇩🇪德国1
+  - tuic | 🇹🇼台湾1
+  - tuic | 🇨🇦加拿大1
+  - tuic | 🇨🇦加拿大2
+  - tuic | 🇨🇦加拿大3
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
   - hysteria | 🇹🇼台湾2
-  - hysteria | 🇫🇷法国1
+  - hysteria | 🇫🇷法国0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国1
@@ -331,17 +326,17 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - hysteria | 🇫🇷法国0
-  - tuic | 🇺🇸美国0
+  - tuic | 🇨🇦加拿大0
   - tuic | 🇹🇼台湾0
-  - vless | 🇩🇪德国0
-  - tuic | 🇬🇧英国0
-  - vless | 🇩🇪德国1
+  - tuic | 🇹🇼台湾1
+  - tuic | 🇨🇦加拿大1
+  - tuic | 🇨🇦加拿大2
+  - tuic | 🇨🇦加拿大3
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
   - hysteria | 🇹🇼台湾2
-  - hysteria | 🇫🇷法国1
+  - hysteria | 🇫🇷法国0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国1
@@ -355,17 +350,17 @@ proxy-groups:
 - name: 负载均衡
   type: load-balance
   proxies:
-  - hysteria | 🇫🇷法国0
-  - tuic | 🇺🇸美国0
+  - tuic | 🇨🇦加拿大0
   - tuic | 🇹🇼台湾0
-  - vless | 🇩🇪德国0
-  - tuic | 🇬🇧英国0
-  - vless | 🇩🇪德国1
+  - tuic | 🇹🇼台湾1
+  - tuic | 🇨🇦加拿大1
+  - tuic | 🇨🇦加拿大2
+  - tuic | 🇨🇦加拿大3
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
   - hysteria | 🇹🇼台湾2
-  - hysteria | 🇫🇷法国1
+  - hysteria | 🇫🇷法国0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国1
