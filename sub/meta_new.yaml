@@ -95,6 +95,24 @@ proxies:
   port: 443
   password: Bog0ELmMM9DSxDdQ
   cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN0
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10818
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN1
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27105
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN2
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27108
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
 - name: vmess | 🇺🇸美国3
   type: vmess
   server: www.darkroom.lol
@@ -125,7 +143,7 @@ proxies:
     path: /debian
     headers:
       host: data-us-v1.shwjfkw.cn
-- name: ss | NoneCN0
+- name: ss | NoneCN3
   type: ss
   server: service.ouluyun9803.com
   port: 20003
@@ -146,35 +164,41 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: ss | NoneCN1
+- name: ss | NoneCN4
   type: ss
   server: service.ouluyun9803.com
   port: 20005
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大0
+- name: ss | NoneCN5
   type: ss
-  server: 109.104.152.161
-  port: 12345
-  password: dongtaiwang.com
+  server: yd.qianggewangluo.buzz
+  port: 10808
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大1
+- name: ss | NoneCN6
   type: ss
-  server: 109.104.152.33
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27104
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN7
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27102
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
 - name: ss | 🇺🇸美国2
   type: ss
-  server: 64.31.55.124
-  port: 12345
-  password: dongtaiwang.com
+  server: series-a2.samanehha.co
+  port: 443
+  password: mps3FwmDjLrWaOVg
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇹🇼台湾0
+- name: ss | NoneCN8
   type: ss
-  server: 111.243.98.243
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27103
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
 - name: vmess | 🇺🇸美国5
   type: vmess
@@ -206,7 +230,7 @@ proxies:
     path: /debian
     headers:
       host: data-us-v1.shwjfkw.cn
-- name: ss | NoneCN2
+- name: ss | NoneCN9
   type: ss
   server: service.ouluyun9803.com
   port: 20003
@@ -227,19 +251,19 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: ss | NoneCN3
+- name: ss | NoneCN10
   type: ss
   server: service.ouluyun9803.com
   port: 20005
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大2
+- name: ss | 🇨🇦加拿大0
   type: ss
   server: 109.104.152.161
   port: 12345
   password: dongtaiwang.com
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大3
+- name: ss | 🇨🇦加拿大1
   type: ss
   server: 109.104.152.33
   port: 12345
@@ -251,7 +275,7 @@ proxies:
   port: 12345
   password: dongtaiwang.com
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇹🇼台湾1
+- name: ss | 🇹🇼台湾0
   type: ss
   server: 111.243.98.243
   port: 12345
@@ -287,7 +311,7 @@ proxies:
     path: /debian
     headers:
       host: data-us-v1.shwjfkw.cn
-- name: ss | NoneCN4
+- name: ss | NoneCN11
   type: ss
   server: service.ouluyun9803.com
   port: 20003
@@ -308,19 +332,19 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: ss | NoneCN5
+- name: ss | NoneCN12
   type: ss
   server: service.ouluyun9803.com
   port: 20005
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大4
+- name: ss | 🇨🇦加拿大2
   type: ss
   server: 109.104.152.161
   port: 12345
   password: dongtaiwang.com
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大5
+- name: ss | 🇨🇦加拿大3
   type: ss
   server: 109.104.152.33
   port: 12345
@@ -332,7 +356,7 @@ proxies:
   port: 12345
   password: dongtaiwang.com
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇹🇼台湾2
+- name: ss | 🇹🇼台湾1
   type: ss
   server: 111.243.98.243
   port: 12345
@@ -368,7 +392,7 @@ proxies:
     path: /debian
     headers:
       host: data-us-v1.shwjfkw.cn
-- name: ss | NoneCN6
+- name: ss | NoneCN13
   type: ss
   server: service.ouluyun9803.com
   port: 20003
@@ -389,19 +413,19 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: ss | NoneCN7
+- name: ss | NoneCN14
   type: ss
   server: service.ouluyun9803.com
   port: 20005
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大6
+- name: ss | 🇨🇦加拿大4
   type: ss
   server: 109.104.152.161
   port: 12345
   password: dongtaiwang.com
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大7
+- name: ss | 🇨🇦加拿大5
   type: ss
   server: 109.104.152.33
   port: 12345
@@ -413,7 +437,7 @@ proxies:
   port: 12345
   password: dongtaiwang.com
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇹🇼台湾3
+- name: ss | 🇹🇼台湾2
   type: ss
   server: 111.243.98.243
   port: 12345
@@ -588,42 +612,46 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - tuic | 🇺🇸美国0
   - ss | 🇺🇸美国1
+  - ss | NoneCN0
+  - ss | NoneCN1
+  - ss | NoneCN2
   - vmess | 🇺🇸美国3
   - vmess | NoneCN0
-  - ss | NoneCN0
+  - ss | NoneCN3
   - vmess | 🇺🇸美国4
-  - ss | NoneCN1
-  - ss | 🇨🇦加拿大0
-  - ss | 🇨🇦加拿大1
+  - ss | NoneCN4
+  - ss | NoneCN5
+  - ss | NoneCN6
+  - ss | NoneCN7
   - ss | 🇺🇸美国2
-  - ss | 🇹🇼台湾0
+  - ss | NoneCN8
   - vmess | 🇺🇸美国5
   - vmess | NoneCN1
-  - ss | NoneCN2
+  - ss | NoneCN9
   - vmess | 🇺🇸美国6
-  - ss | NoneCN3
-  - ss | 🇨🇦加拿大2
-  - ss | 🇨🇦加拿大3
+  - ss | NoneCN10
+  - ss | 🇨🇦加拿大0
+  - ss | 🇨🇦加拿大1
   - ss | 🇺🇸美国3
-  - ss | 🇹🇼台湾1
+  - ss | 🇹🇼台湾0
   - vmess | 🇺🇸美国7
   - vmess | NoneCN2
-  - ss | NoneCN4
+  - ss | NoneCN11
   - vmess | 🇺🇸美国8
-  - ss | NoneCN5
-  - ss | 🇨🇦加拿大4
-  - ss | 🇨🇦加拿大5
+  - ss | NoneCN12
+  - ss | 🇨🇦加拿大2
+  - ss | 🇨🇦加拿大3
   - ss | 🇺🇸美国4
-  - ss | 🇹🇼台湾2
+  - ss | 🇹🇼台湾1
   - vmess | 🇺🇸美国9
   - vmess | NoneCN3
-  - ss | NoneCN6
+  - ss | NoneCN13
   - vmess | 🇺🇸美国10
-  - ss | NoneCN7
-  - ss | 🇨🇦加拿大6
-  - ss | 🇨🇦加拿大7
+  - ss | NoneCN14
+  - ss | 🇨🇦加拿大4
+  - ss | 🇨🇦加拿大5
   - ss | 🇺🇸美国5
-  - ss | 🇹🇼台湾3
+  - ss | 🇹🇼台湾2
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -650,42 +678,46 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - tuic | 🇺🇸美国0
   - ss | 🇺🇸美国1
+  - ss | NoneCN0
+  - ss | NoneCN1
+  - ss | NoneCN2
   - vmess | 🇺🇸美国3
   - vmess | NoneCN0
-  - ss | NoneCN0
+  - ss | NoneCN3
   - vmess | 🇺🇸美国4
-  - ss | NoneCN1
-  - ss | 🇨🇦加拿大0
-  - ss | 🇨🇦加拿大1
+  - ss | NoneCN4
+  - ss | NoneCN5
+  - ss | NoneCN6
+  - ss | NoneCN7
   - ss | 🇺🇸美国2
-  - ss | 🇹🇼台湾0
+  - ss | NoneCN8
   - vmess | 🇺🇸美国5
   - vmess | NoneCN1
-  - ss | NoneCN2
+  - ss | NoneCN9
   - vmess | 🇺🇸美国6
-  - ss | NoneCN3
-  - ss | 🇨🇦加拿大2
-  - ss | 🇨🇦加拿大3
+  - ss | NoneCN10
+  - ss | 🇨🇦加拿大0
+  - ss | 🇨🇦加拿大1
   - ss | 🇺🇸美国3
-  - ss | 🇹🇼台湾1
+  - ss | 🇹🇼台湾0
   - vmess | 🇺🇸美国7
   - vmess | NoneCN2
-  - ss | NoneCN4
+  - ss | NoneCN11
   - vmess | 🇺🇸美国8
-  - ss | NoneCN5
-  - ss | 🇨🇦加拿大4
-  - ss | 🇨🇦加拿大5
+  - ss | NoneCN12
+  - ss | 🇨🇦加拿大2
+  - ss | 🇨🇦加拿大3
   - ss | 🇺🇸美国4
-  - ss | 🇹🇼台湾2
+  - ss | 🇹🇼台湾1
   - vmess | 🇺🇸美国9
   - vmess | NoneCN3
-  - ss | NoneCN6
+  - ss | NoneCN13
   - vmess | 🇺🇸美国10
-  - ss | NoneCN7
-  - ss | 🇨🇦加拿大6
-  - ss | 🇨🇦加拿大7
+  - ss | NoneCN14
+  - ss | 🇨🇦加拿大4
+  - ss | 🇨🇦加拿大5
   - ss | 🇺🇸美国5
-  - ss | 🇹🇼台湾3
+  - ss | 🇹🇼台湾2
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
