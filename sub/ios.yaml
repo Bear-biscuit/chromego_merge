@@ -39,197 +39,67 @@ proxies:
   servername: itunes.apple.com
   skip-cert-verify: true
   udp: true
-- name: vmess | 🇺🇸美国0
-  type: vmess
-  server: www.darkroom.lol
-  port: 8080
-  cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: www.darkroom.lol
-- name: vmess | 🇺🇸美国1
-  type: vmess
-  server: 172.67.221.183
-  port: 8080
-  cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: www.blueberrywindow.online
-- name: ss | 🇺🇸美国0
-  type: ss
-  server: fast_2ray_telchannelll.fast2rayy.eu.org
-  port: 443
-  password: Bog0ELmMM9DSxDdQ
-  cipher: chacha20-ietf-poly1305
-- name: vmess | 🇺🇸美国2
-  type: vmess
-  server: 104.21.82.183
-  port: 8880
-  cipher: auto
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: server26.beheshtbaneh.com
-- name: tuic | 🇺🇸美国0
-  type: tuic
-  server: 64.31.55.216
-  port: 56789
-  udp: true
-  uuid: 9a661a16-675c-4451-ba20-cde666de44ae
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: ss | 🇺🇸美国1
-  type: ss
-  server: jseyu.arvancode.eu.org
-  port: 443
-  password: Bog0ELmMM9DSxDdQ
-  cipher: chacha20-ietf-poly1305
 - name: ss | NoneCN0
-  type: ss
-  server: yd.qianggewangluo.buzz
-  port: 10818
-  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
-  cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN1
-  type: ss
-  server: foshan.chiguayun.shop
-  port: 27105
-  password: f4b81edb-73a5-41fa-9086-6f446061815d
-  cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN2
-  type: ss
-  server: foshan.chiguayun.shop
-  port: 27108
-  password: f4b81edb-73a5-41fa-9086-6f446061815d
-  cipher: chacha20-ietf-poly1305
-- name: vmess | 🇺🇸美国3
-  type: vmess
-  server: www.darkroom.lol
-  port: 8080
-  cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: www.darkroom.lol
-- name: vmess | NoneCN0
-  type: vmess
-  server: data-us-v1.shwjfkw.cn
-  port: 20401
-  cipher: auto
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /debian
-    headers:
-      host: data-us-v1.shwjfkw.cn
-- name: ss | NoneCN3
-  type: ss
-  server: service.ouluyun9803.com
-  port: 20003
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  cipher: chacha20-ietf-poly1305
-- name: vmess | 🇺🇸美国4
-  type: vmess
-  server: 104.21.82.183
-  port: 8880
-  cipher: auto
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: server26.beheshtbaneh.com
-- name: ss | NoneCN4
-  type: ss
-  server: service.ouluyun9803.com
-  port: 20005
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN5
-  type: ss
-  server: yd.qianggewangluo.buzz
-  port: 10808
-  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
-  cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN6
-  type: ss
-  server: foshan.chiguayun.shop
-  port: 27104
-  password: f4b81edb-73a5-41fa-9086-6f446061815d
-  cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN7
-  type: ss
-  server: foshan.chiguayun.shop
-  port: 27102
-  password: f4b81edb-73a5-41fa-9086-6f446061815d
-  cipher: chacha20-ietf-poly1305
-- name: ss | 🇺🇸美国2
-  type: ss
-  server: series-a2.samanehha.co
-  port: 443
-  password: mps3FwmDjLrWaOVg
-  cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN8
   type: ss
   server: foshan.chiguayun.shop
   port: 27103
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: vmess | 🇺🇸美国5
-  type: vmess
-  server: www.darkroom.lol
-  port: 8080
-  cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: www.darkroom.lol
-- name: vmess | NoneCN1
+- name: ss | NoneCN1
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10809
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN2
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10813
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN3
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10815
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN4
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10803
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN5
+  type: ss
+  server: hefei.chiguayun.shop
+  port: 27101
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN6
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10817
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN7
+  type: ss
+  server: hefei.chiguayun.shop
+  port: 27105
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: ss | 🇨🇦加拿大0
+  type: ss
+  server: uydyfkghjrtcsdx.youcansee.cyou
+  port: 20167
+  password: ca7e0c98-136d-472c-927b-b56bcba722e3
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN8
+  type: ss
+  server: zhejiang.52vpn.top
+  port: 32143
+  password: 432fe02f-b649-4bdc-91d8-f91ae87002f7
+  cipher: chacha20-ietf-poly1305
+- name: vmess | NoneCN0
   type: vmess
   server: data-us-v1.shwjfkw.cn
   port: 20401
@@ -250,7 +120,7 @@ proxies:
   port: 20003
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: vmess | 🇺🇸美国6
+- name: vmess | 🇺🇸美国0
   type: vmess
   server: 104.21.82.183
   port: 8880
@@ -271,33 +141,9 @@ proxies:
   port: 20005
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大0
-  type: ss
-  server: 109.104.152.161
-  port: 12345
-  password: dongtaiwang.com
-  cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大1
-  type: ss
-  server: 109.104.152.33
-  port: 12345
-  password: dongtaiwang.com
-  cipher: chacha20-ietf-poly1305
-- name: ss | 🇺🇸美国3
-  type: ss
-  server: 64.31.55.124
-  port: 12345
-  password: dongtaiwang.com
-  cipher: chacha20-ietf-poly1305
-- name: ss | 🇹🇼台湾0
-  type: ss
-  server: 111.243.98.243
-  port: 12345
-  password: dongtaiwang.com
-  cipher: chacha20-ietf-poly1305
-- name: vmess | 🇺🇸美国7
+- name: vmess | 🇺🇸美国1
   type: vmess
-  server: www.darkroom.lol
+  server: 172.67.221.183
   port: 8080
   cipher: auto
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -309,7 +155,154 @@ proxies:
   ws-opts:
     path: /
     headers:
-      host: www.darkroom.lol
+      host: www.blueberrywindow.online
+- name: vmess | 🇺🇸美国2
+  type: vmess
+  server: 104.21.82.183
+  port: 8880
+  cipher: auto
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: server26.beheshtbaneh.com
+- name: ss | NoneCN11
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27105
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN12
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27108
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN13
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10808
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN14
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27104
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN15
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27102
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: vmess | NoneCN1
+  type: vmess
+  server: data-us-v1.shwjfkw.cn
+  port: 20401
+  cipher: auto
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /debian
+    headers:
+      host: data-us-v1.shwjfkw.cn
+- name: ss | NoneCN16
+  type: ss
+  server: service.ouluyun9803.com
+  port: 20003
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  cipher: chacha20-ietf-poly1305
+- name: vmess | 🇺🇸美国3
+  type: vmess
+  server: 104.21.82.183
+  port: 8880
+  cipher: auto
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: server26.beheshtbaneh.com
+- name: ss | NoneCN17
+  type: ss
+  server: service.ouluyun9803.com
+  port: 20005
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  cipher: chacha20-ietf-poly1305
+- name: vmess | 🇺🇸美国4
+  type: vmess
+  server: 172.67.221.183
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.blueberrywindow.online
+- name: vmess | 🇺🇸美国5
+  type: vmess
+  server: 104.21.82.183
+  port: 8880
+  cipher: auto
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: server26.beheshtbaneh.com
+- name: ss | NoneCN18
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27105
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN19
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27108
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN20
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10808
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN21
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27104
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN22
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27102
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
 - name: vmess | NoneCN2
   type: vmess
   server: data-us-v1.shwjfkw.cn
@@ -325,12 +318,48 @@ proxies:
     path: /debian
     headers:
       host: data-us-v1.shwjfkw.cn
-- name: ss | NoneCN11
+- name: ss | NoneCN23
   type: ss
   server: service.ouluyun9803.com
   port: 20003
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
+- name: vmess | 🇺🇸美国6
+  type: vmess
+  server: 104.21.82.183
+  port: 8880
+  cipher: auto
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: server26.beheshtbaneh.com
+- name: ss | NoneCN24
+  type: ss
+  server: service.ouluyun9803.com
+  port: 20005
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  cipher: chacha20-ietf-poly1305
+- name: vmess | 🇺🇸美国7
+  type: vmess
+  server: 172.67.221.183
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.blueberrywindow.online
 - name: vmess | 🇺🇸美国8
   type: vmess
   server: 104.21.82.183
@@ -346,51 +375,36 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: ss | NoneCN12
+- name: ss | NoneCN25
   type: ss
-  server: service.ouluyun9803.com
-  port: 20005
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  server: foshan.chiguayun.shop
+  port: 27105
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大2
+- name: ss | NoneCN26
   type: ss
-  server: 109.104.152.161
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27108
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大3
+- name: ss | NoneCN27
   type: ss
-  server: 109.104.152.33
-  port: 12345
-  password: dongtaiwang.com
+  server: yd.qianggewangluo.buzz
+  port: 10808
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇺🇸美国4
+- name: ss | NoneCN28
   type: ss
-  server: 64.31.55.124
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27104
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇹🇼台湾1
+- name: ss | NoneCN29
   type: ss
-  server: 111.243.98.243
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27102
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: vmess | 🇺🇸美国9
-  type: vmess
-  server: www.darkroom.lol
-  port: 8080
-  cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: www.darkroom.lol
 - name: vmess | NoneCN3
   type: vmess
   server: data-us-v1.shwjfkw.cn
@@ -406,13 +420,13 @@ proxies:
     path: /debian
     headers:
       host: data-us-v1.shwjfkw.cn
-- name: ss | NoneCN13
+- name: ss | NoneCN30
   type: ss
   server: service.ouluyun9803.com
   port: 20003
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: vmess | 🇺🇸美国10
+- name: vmess | 🇺🇸美国9
   type: vmess
   server: 104.21.82.183
   port: 8880
@@ -427,36 +441,1716 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: ss | NoneCN14
+- name: ss | NoneCN31
   type: ss
   server: service.ouluyun9803.com
   port: 20005
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大4
+- name: vmess | 🇺🇸美国10
+  type: vmess
+  server: 172.67.221.183
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.blueberrywindow.online
+- name: vmess | 🇺🇸美国11
+  type: vmess
+  server: 104.21.82.183
+  port: 8880
+  cipher: auto
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: server26.beheshtbaneh.com
+- name: ss | NoneCN32
   type: ss
-  server: 109.104.152.161
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27105
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大5
+- name: ss | NoneCN33
   type: ss
-  server: 109.104.152.33
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27108
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇺🇸美国5
+- name: ss | NoneCN34
   type: ss
-  server: 64.31.55.124
-  port: 12345
-  password: dongtaiwang.com
+  server: yd.qianggewangluo.buzz
+  port: 10808
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇹🇼台湾2
+- name: ss | NoneCN35
   type: ss
-  server: 111.243.98.243
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27104
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
+- name: ss | NoneCN36
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27102
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: vless | 🇺🇸美国0
+  type: vless
+  server: 198.41.193.226
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国1
+  type: vless
+  server: 104.27.97.91
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国2
+  type: vless
+  server: 108.162.196.107
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国3
+  type: vless
+  server: 104.22.46.253
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国4
+  type: vless
+  server: 173.245.49.56
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国5
+  type: vless
+  server: 198.41.195.168
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国6
+  type: vless
+  server: 103.21.244.189
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国7
+  type: vless
+  server: 104.21.35.228
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国8
+  type: vless
+  server: 162.159.38.71
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国9
+  type: vless
+  server: 104.19.7.150
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国10
+  type: vless
+  server: 108.162.196.74
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国11
+  type: vless
+  server: 104.18.9.181
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | NoneCR0
+  type: vless
+  server: 190.93.245.188
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国12
+  type: vless
+  server: 198.41.218.199
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国13
+  type: vless
+  server: 104.18.110.163
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | NoneCR1
+  type: vless
+  server: 190.93.246.114
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国14
+  type: vless
+  server: 103.21.244.236
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国15
+  type: vless
+  server: 162.159.24.166
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国16
+  type: vless
+  server: 104.25.69.69
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国17
+  type: vless
+  server: 104.16.196.143
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国18
+  type: vless
+  server: 103.21.244.162
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国19
+  type: vless
+  server: 172.66.138.14
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国20
+  type: vless
+  server: 172.64.49.33
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国21
+  type: vless
+  server: 104.25.113.186
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国22
+  type: vless
+  server: 104.20.5.9
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国23
+  type: vless
+  server: 104.25.211.145
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国24
+  type: vless
+  server: 172.67.209.51
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国25
+  type: vless
+  server: 104.18.141.86
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国26
+  type: vless
+  server: 188.114.97.19
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国27
+  type: vless
+  server: 104.27.16.75
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国28
+  type: vless
+  server: 104.18.95.234
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国29
+  type: vless
+  server: 198.41.202.98
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国30
+  type: vless
+  server: 162.159.24.244
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国31
+  type: vless
+  server: 104.24.132.228
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国32
+  type: vless
+  server: 198.41.209.249
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国33
+  type: vless
+  server: 104.24.88.199
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国34
+  type: vless
+  server: 103.21.244.248
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国35
+  type: vless
+  server: 104.20.253.93
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国36
+  type: vless
+  server: 173.245.58.18
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国37
+  type: vless
+  server: 104.17.11.252
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国38
+  type: vless
+  server: 104.24.18.7
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国39
+  type: vless
+  server: 104.16.38.162
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国40
+  type: vless
+  server: 108.162.194.144
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | NoneCR2
+  type: vless
+  server: 190.93.244.218
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国41
+  type: vless
+  server: 104.19.45.11
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国42
+  type: vless
+  server: 188.114.96.211
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国43
+  type: vless
+  server: 172.67.152.22
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国44
+  type: vless
+  server: 104.16.75.128
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国45
+  type: vless
+  server: 198.41.202.169
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国46
+  type: vless
+  server: 104.24.57.248
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国47
+  type: vless
+  server: 173.245.49.207
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国48
+  type: vless
+  server: 104.24.226.143
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国49
+  type: vless
+  server: 173.245.59.17
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国50
+  type: vless
+  server: 104.17.2.38
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国51
+  type: vless
+  server: 162.159.6.199
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国52
+  type: vless
+  server: 141.101.113.239
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国53
+  type: vless
+  server: 172.64.173.200
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国54
+  type: vless
+  server: 104.21.235.122
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | NoneCR3
+  type: vless
+  server: 190.93.246.107
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国55
+  type: vless
+  server: 188.114.97.27
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | NoneCR4
+  type: vless
+  server: 190.93.244.47
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国56
+  type: vless
+  server: 173.245.58.237
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国57
+  type: vless
+  server: 172.67.166.72
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | NoneCR5
+  type: vless
+  server: 190.93.245.106
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国58
+  type: vless
+  server: 104.27.107.221
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国59
+  type: vless
+  server: 103.21.244.137
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国60
+  type: vless
+  server: 104.22.71.28
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国61
+  type: vless
+  server: 104.17.123.53
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国62
+  type: vless
+  server: 104.21.25.95
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国63
+  type: vless
+  server: 104.24.190.226
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国64
+  type: vless
+  server: 104.27.61.67
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国65
+  type: vless
+  server: 104.24.171.195
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国66
+  type: vless
+  server: 173.245.49.195
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | NoneCR6
+  type: vless
+  server: 190.93.247.5
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国67
+  type: vless
+  server: 108.162.192.179
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国68
+  type: vless
+  server: 198.41.216.62
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国69
+  type: vless
+  server: 104.17.6.218
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国70
+  type: vless
+  server: 103.21.244.219
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国71
+  type: vless
+  server: 141.101.121.69
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国72
+  type: vless
+  server: 104.25.12.88
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国73
+  type: vless
+  server: 104.24.74.248
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国74
+  type: vless
+  server: 104.18.9.239
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国75
+  type: vless
+  server: 104.16.247.95
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国76
+  type: vless
+  server: 104.25.19.37
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国77
+  type: vless
+  server: 104.18.238.119
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国78
+  type: vless
+  server: 104.24.214.188
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国79
+  type: vless
+  server: 172.66.142.115
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国80
+  type: vless
+  server: 103.21.244.126
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国81
+  type: vless
+  server: 103.21.244.74
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国82
+  type: vless
+  server: 103.21.244.94
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国83
+  type: vless
+  server: 104.20.87.76
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国84
+  type: vless
+  server: 104.25.122.116
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | NoneCR7
+  type: vless
+  server: 190.93.245.66
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国85
+  type: vless
+  server: 104.18.23.136
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国86
+  type: vless
+  server: 104.25.254.11
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国87
+  type: vless
+  server: 104.25.94.175
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国88
+  type: vless
+  server: 141.101.121.18
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国89
+  type: vless
+  server: 162.159.133.78
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国90
+  type: vless
+  server: 173.245.59.173
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | NoneCR8
+  type: vless
+  server: 190.93.247.107
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国91
+  type: vless
+  server: 162.159.252.249
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国92
+  type: vless
+  server: 104.17.12.96
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国93
+  type: vless
+  server: 162.159.21.6
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国94
+  type: vless
+  server: 103.21.244.125
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国95
+  type: vless
+  server: 104.16.137.106
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国96
+  type: vless
+  server: 172.64.149.192
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国97
+  type: vless
+  server: 104.24.16.226
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国98
+  type: vless
+  server: 172.67.103.221
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国99
+  type: vless
+  server: 188.114.97.111
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国100
+  type: vless
+  server: 172.67.109.53
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国101
+  type: vless
+  server: 104.20.252.36
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国102
+  type: vless
+  server: 104.20.125.193
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国103
+  type: vless
+  server: 188.114.99.120
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国104
+  type: vless
+  server: 108.162.193.37
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国105
+  type: vless
+  server: 104.17.103.194
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国106
+  type: vless
+  server: 198.41.200.139
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国107
+  type: vless
+  server: 188.114.97.222
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | NoneCR9
+  type: vless
+  server: 190.93.247.68
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国108
+  type: vless
+  server: 104.17.87.110
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国109
+  type: vless
+  server: 172.67.155.77
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国110
+  type: vless
+  server: 162.159.26.15
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国111
+  type: vless
+  server: 198.41.217.152
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国112
+  type: vless
+  server: 104.18.244.225
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | NoneCR10
+  type: vless
+  server: 190.93.245.73
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国113
+  type: vless
+  server: 104.27.41.157
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国114
+  type: vless
+  server: 141.101.121.106
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国115
+  type: vless
+  server: 104.24.31.205
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国116
+  type: vless
+  server: 198.41.220.53
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国117
+  type: vless
+  server: 104.24.178.127
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国118
+  type: vless
+  server: 162.159.240.167
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国119
+  type: vless
+  server: 103.21.244.141
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国120
+  type: vless
+  server: 172.67.19.224
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国121
+  type: vless
+  server: 104.25.225.101
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国122
+  type: vless
+  server: 188.114.96.162
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国123
+  type: vless
+  server: 104.18.135.212
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国124
+  type: vless
+  server: 104.19.246.22
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
+- name: vless | 🇺🇸美国125
+  type: vless
+  server: 172.64.164.162
+  port: 443
+  uuid: 95878aa5-a695-4b88-b502-55c05c998cf2
+  tls: true
+  servername: lg1.dtku41.xyz
+  network: ws
+  ws-opts:
+    path: /ugrlws
+    headers:
+      host: lg1.dtku41.xyz
 - name: hysteria | 🇹🇼台湾0
   type: hysteria
   server: www2.dtku48.xyz
@@ -628,52 +2322,197 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - vmess | 🇺🇸美国0
-  - vmess | 🇺🇸美国1
-  - ss | 🇺🇸美国0
-  - vmess | 🇺🇸美国2
-  - tuic | 🇺🇸美国0
-  - ss | 🇺🇸美国1
   - ss | NoneCN0
   - ss | NoneCN1
   - ss | NoneCN2
-  - vmess | 🇺🇸美国3
-  - vmess | NoneCN0
   - ss | NoneCN3
-  - vmess | 🇺🇸美国4
   - ss | NoneCN4
   - ss | NoneCN5
   - ss | NoneCN6
   - ss | NoneCN7
-  - ss | 🇺🇸美国2
-  - ss | NoneCN8
-  - vmess | 🇺🇸美国5
-  - vmess | NoneCN1
-  - ss | NoneCN9
-  - vmess | 🇺🇸美国6
-  - ss | NoneCN10
   - ss | 🇨🇦加拿大0
-  - ss | 🇨🇦加拿大1
-  - ss | 🇺🇸美国3
-  - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国7
-  - vmess | NoneCN2
+  - ss | NoneCN8
+  - vmess | NoneCN0
+  - ss | NoneCN9
+  - vmess | 🇺🇸美国0
+  - ss | NoneCN10
+  - vmess | 🇺🇸美国1
+  - vmess | 🇺🇸美国2
   - ss | NoneCN11
-  - vmess | 🇺🇸美国8
   - ss | NoneCN12
-  - ss | 🇨🇦加拿大2
-  - ss | 🇨🇦加拿大3
-  - ss | 🇺🇸美国4
-  - ss | 🇹🇼台湾1
-  - vmess | 🇺🇸美国9
-  - vmess | NoneCN3
   - ss | NoneCN13
-  - vmess | 🇺🇸美国10
   - ss | NoneCN14
-  - ss | 🇨🇦加拿大4
-  - ss | 🇨🇦加拿大5
-  - ss | 🇺🇸美国5
-  - ss | 🇹🇼台湾2
+  - ss | NoneCN15
+  - vmess | NoneCN1
+  - ss | NoneCN16
+  - vmess | 🇺🇸美国3
+  - ss | NoneCN17
+  - vmess | 🇺🇸美国4
+  - vmess | 🇺🇸美国5
+  - ss | NoneCN18
+  - ss | NoneCN19
+  - ss | NoneCN20
+  - ss | NoneCN21
+  - ss | NoneCN22
+  - vmess | NoneCN2
+  - ss | NoneCN23
+  - vmess | 🇺🇸美国6
+  - ss | NoneCN24
+  - vmess | 🇺🇸美国7
+  - vmess | 🇺🇸美国8
+  - ss | NoneCN25
+  - ss | NoneCN26
+  - ss | NoneCN27
+  - ss | NoneCN28
+  - ss | NoneCN29
+  - vmess | NoneCN3
+  - ss | NoneCN30
+  - vmess | 🇺🇸美国9
+  - ss | NoneCN31
+  - vmess | 🇺🇸美国10
+  - vmess | 🇺🇸美国11
+  - ss | NoneCN32
+  - ss | NoneCN33
+  - ss | NoneCN34
+  - ss | NoneCN35
+  - ss | NoneCN36
+  - vless | 🇺🇸美国0
+  - vless | 🇺🇸美国1
+  - vless | 🇺🇸美国2
+  - vless | 🇺🇸美国3
+  - vless | 🇺🇸美国4
+  - vless | 🇺🇸美国5
+  - vless | 🇺🇸美国6
+  - vless | 🇺🇸美国7
+  - vless | 🇺🇸美国8
+  - vless | 🇺🇸美国9
+  - vless | 🇺🇸美国10
+  - vless | 🇺🇸美国11
+  - vless | NoneCR0
+  - vless | 🇺🇸美国12
+  - vless | 🇺🇸美国13
+  - vless | NoneCR1
+  - vless | 🇺🇸美国14
+  - vless | 🇺🇸美国15
+  - vless | 🇺🇸美国16
+  - vless | 🇺🇸美国17
+  - vless | 🇺🇸美国18
+  - vless | 🇺🇸美国19
+  - vless | 🇺🇸美国20
+  - vless | 🇺🇸美国21
+  - vless | 🇺🇸美国22
+  - vless | 🇺🇸美国23
+  - vless | 🇺🇸美国24
+  - vless | 🇺🇸美国25
+  - vless | 🇺🇸美国26
+  - vless | 🇺🇸美国27
+  - vless | 🇺🇸美国28
+  - vless | 🇺🇸美国29
+  - vless | 🇺🇸美国30
+  - vless | 🇺🇸美国31
+  - vless | 🇺🇸美国32
+  - vless | 🇺🇸美国33
+  - vless | 🇺🇸美国34
+  - vless | 🇺🇸美国35
+  - vless | 🇺🇸美国36
+  - vless | 🇺🇸美国37
+  - vless | 🇺🇸美国38
+  - vless | 🇺🇸美国39
+  - vless | 🇺🇸美国40
+  - vless | NoneCR2
+  - vless | 🇺🇸美国41
+  - vless | 🇺🇸美国42
+  - vless | 🇺🇸美国43
+  - vless | 🇺🇸美国44
+  - vless | 🇺🇸美国45
+  - vless | 🇺🇸美国46
+  - vless | 🇺🇸美国47
+  - vless | 🇺🇸美国48
+  - vless | 🇺🇸美国49
+  - vless | 🇺🇸美国50
+  - vless | 🇺🇸美国51
+  - vless | 🇺🇸美国52
+  - vless | 🇺🇸美国53
+  - vless | 🇺🇸美国54
+  - vless | NoneCR3
+  - vless | 🇺🇸美国55
+  - vless | NoneCR4
+  - vless | 🇺🇸美国56
+  - vless | 🇺🇸美国57
+  - vless | NoneCR5
+  - vless | 🇺🇸美国58
+  - vless | 🇺🇸美国59
+  - vless | 🇺🇸美国60
+  - vless | 🇺🇸美国61
+  - vless | 🇺🇸美国62
+  - vless | 🇺🇸美国63
+  - vless | 🇺🇸美国64
+  - vless | 🇺🇸美国65
+  - vless | 🇺🇸美国66
+  - vless | NoneCR6
+  - vless | 🇺🇸美国67
+  - vless | 🇺🇸美国68
+  - vless | 🇺🇸美国69
+  - vless | 🇺🇸美国70
+  - vless | 🇺🇸美国71
+  - vless | 🇺🇸美国72
+  - vless | 🇺🇸美国73
+  - vless | 🇺🇸美国74
+  - vless | 🇺🇸美国75
+  - vless | 🇺🇸美国76
+  - vless | 🇺🇸美国77
+  - vless | 🇺🇸美国78
+  - vless | 🇺🇸美国79
+  - vless | 🇺🇸美国80
+  - vless | 🇺🇸美国81
+  - vless | 🇺🇸美国82
+  - vless | 🇺🇸美国83
+  - vless | 🇺🇸美国84
+  - vless | NoneCR7
+  - vless | 🇺🇸美国85
+  - vless | 🇺🇸美国86
+  - vless | 🇺🇸美国87
+  - vless | 🇺🇸美国88
+  - vless | 🇺🇸美国89
+  - vless | 🇺🇸美国90
+  - vless | NoneCR8
+  - vless | 🇺🇸美国91
+  - vless | 🇺🇸美国92
+  - vless | 🇺🇸美国93
+  - vless | 🇺🇸美国94
+  - vless | 🇺🇸美国95
+  - vless | 🇺🇸美国96
+  - vless | 🇺🇸美国97
+  - vless | 🇺🇸美国98
+  - vless | 🇺🇸美国99
+  - vless | 🇺🇸美国100
+  - vless | 🇺🇸美国101
+  - vless | 🇺🇸美国102
+  - vless | 🇺🇸美国103
+  - vless | 🇺🇸美国104
+  - vless | 🇺🇸美国105
+  - vless | 🇺🇸美国106
+  - vless | 🇺🇸美国107
+  - vless | NoneCR9
+  - vless | 🇺🇸美国108
+  - vless | 🇺🇸美国109
+  - vless | 🇺🇸美国110
+  - vless | 🇺🇸美国111
+  - vless | 🇺🇸美国112
+  - vless | NoneCR10
+  - vless | 🇺🇸美国113
+  - vless | 🇺🇸美国114
+  - vless | 🇺🇸美国115
+  - vless | 🇺🇸美国116
+  - vless | 🇺🇸美国117
+  - vless | 🇺🇸美国118
+  - vless | 🇺🇸美国119
+  - vless | 🇺🇸美国120
+  - vless | 🇺🇸美国121
+  - vless | 🇺🇸美国122
+  - vless | 🇺🇸美国123
+  - vless | 🇺🇸美国124
+  - vless | 🇺🇸美国125
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -691,52 +2530,197 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - vmess | 🇺🇸美国0
-  - vmess | 🇺🇸美国1
-  - ss | 🇺🇸美国0
-  - vmess | 🇺🇸美国2
-  - tuic | 🇺🇸美国0
-  - ss | 🇺🇸美国1
   - ss | NoneCN0
   - ss | NoneCN1
   - ss | NoneCN2
-  - vmess | 🇺🇸美国3
-  - vmess | NoneCN0
   - ss | NoneCN3
-  - vmess | 🇺🇸美国4
   - ss | NoneCN4
   - ss | NoneCN5
   - ss | NoneCN6
   - ss | NoneCN7
-  - ss | 🇺🇸美国2
-  - ss | NoneCN8
-  - vmess | 🇺🇸美国5
-  - vmess | NoneCN1
-  - ss | NoneCN9
-  - vmess | 🇺🇸美国6
-  - ss | NoneCN10
   - ss | 🇨🇦加拿大0
-  - ss | 🇨🇦加拿大1
-  - ss | 🇺🇸美国3
-  - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国7
-  - vmess | NoneCN2
+  - ss | NoneCN8
+  - vmess | NoneCN0
+  - ss | NoneCN9
+  - vmess | 🇺🇸美国0
+  - ss | NoneCN10
+  - vmess | 🇺🇸美国1
+  - vmess | 🇺🇸美国2
   - ss | NoneCN11
-  - vmess | 🇺🇸美国8
   - ss | NoneCN12
-  - ss | 🇨🇦加拿大2
-  - ss | 🇨🇦加拿大3
-  - ss | 🇺🇸美国4
-  - ss | 🇹🇼台湾1
-  - vmess | 🇺🇸美国9
-  - vmess | NoneCN3
   - ss | NoneCN13
-  - vmess | 🇺🇸美国10
   - ss | NoneCN14
-  - ss | 🇨🇦加拿大4
-  - ss | 🇨🇦加拿大5
-  - ss | 🇺🇸美国5
-  - ss | 🇹🇼台湾2
+  - ss | NoneCN15
+  - vmess | NoneCN1
+  - ss | NoneCN16
+  - vmess | 🇺🇸美国3
+  - ss | NoneCN17
+  - vmess | 🇺🇸美国4
+  - vmess | 🇺🇸美国5
+  - ss | NoneCN18
+  - ss | NoneCN19
+  - ss | NoneCN20
+  - ss | NoneCN21
+  - ss | NoneCN22
+  - vmess | NoneCN2
+  - ss | NoneCN23
+  - vmess | 🇺🇸美国6
+  - ss | NoneCN24
+  - vmess | 🇺🇸美国7
+  - vmess | 🇺🇸美国8
+  - ss | NoneCN25
+  - ss | NoneCN26
+  - ss | NoneCN27
+  - ss | NoneCN28
+  - ss | NoneCN29
+  - vmess | NoneCN3
+  - ss | NoneCN30
+  - vmess | 🇺🇸美国9
+  - ss | NoneCN31
+  - vmess | 🇺🇸美国10
+  - vmess | 🇺🇸美国11
+  - ss | NoneCN32
+  - ss | NoneCN33
+  - ss | NoneCN34
+  - ss | NoneCN35
+  - ss | NoneCN36
+  - vless | 🇺🇸美国0
+  - vless | 🇺🇸美国1
+  - vless | 🇺🇸美国2
+  - vless | 🇺🇸美国3
+  - vless | 🇺🇸美国4
+  - vless | 🇺🇸美国5
+  - vless | 🇺🇸美国6
+  - vless | 🇺🇸美国7
+  - vless | 🇺🇸美国8
+  - vless | 🇺🇸美国9
+  - vless | 🇺🇸美国10
+  - vless | 🇺🇸美国11
+  - vless | NoneCR0
+  - vless | 🇺🇸美国12
+  - vless | 🇺🇸美国13
+  - vless | NoneCR1
+  - vless | 🇺🇸美国14
+  - vless | 🇺🇸美国15
+  - vless | 🇺🇸美国16
+  - vless | 🇺🇸美国17
+  - vless | 🇺🇸美国18
+  - vless | 🇺🇸美国19
+  - vless | 🇺🇸美国20
+  - vless | 🇺🇸美国21
+  - vless | 🇺🇸美国22
+  - vless | 🇺🇸美国23
+  - vless | 🇺🇸美国24
+  - vless | 🇺🇸美国25
+  - vless | 🇺🇸美国26
+  - vless | 🇺🇸美国27
+  - vless | 🇺🇸美国28
+  - vless | 🇺🇸美国29
+  - vless | 🇺🇸美国30
+  - vless | 🇺🇸美国31
+  - vless | 🇺🇸美国32
+  - vless | 🇺🇸美国33
+  - vless | 🇺🇸美国34
+  - vless | 🇺🇸美国35
+  - vless | 🇺🇸美国36
+  - vless | 🇺🇸美国37
+  - vless | 🇺🇸美国38
+  - vless | 🇺🇸美国39
+  - vless | 🇺🇸美国40
+  - vless | NoneCR2
+  - vless | 🇺🇸美国41
+  - vless | 🇺🇸美国42
+  - vless | 🇺🇸美国43
+  - vless | 🇺🇸美国44
+  - vless | 🇺🇸美国45
+  - vless | 🇺🇸美国46
+  - vless | 🇺🇸美国47
+  - vless | 🇺🇸美国48
+  - vless | 🇺🇸美国49
+  - vless | 🇺🇸美国50
+  - vless | 🇺🇸美国51
+  - vless | 🇺🇸美国52
+  - vless | 🇺🇸美国53
+  - vless | 🇺🇸美国54
+  - vless | NoneCR3
+  - vless | 🇺🇸美国55
+  - vless | NoneCR4
+  - vless | 🇺🇸美国56
+  - vless | 🇺🇸美国57
+  - vless | NoneCR5
+  - vless | 🇺🇸美国58
+  - vless | 🇺🇸美国59
+  - vless | 🇺🇸美国60
+  - vless | 🇺🇸美国61
+  - vless | 🇺🇸美国62
+  - vless | 🇺🇸美国63
+  - vless | 🇺🇸美国64
+  - vless | 🇺🇸美国65
+  - vless | 🇺🇸美国66
+  - vless | NoneCR6
+  - vless | 🇺🇸美国67
+  - vless | 🇺🇸美国68
+  - vless | 🇺🇸美国69
+  - vless | 🇺🇸美国70
+  - vless | 🇺🇸美国71
+  - vless | 🇺🇸美国72
+  - vless | 🇺🇸美国73
+  - vless | 🇺🇸美国74
+  - vless | 🇺🇸美国75
+  - vless | 🇺🇸美国76
+  - vless | 🇺🇸美国77
+  - vless | 🇺🇸美国78
+  - vless | 🇺🇸美国79
+  - vless | 🇺🇸美国80
+  - vless | 🇺🇸美国81
+  - vless | 🇺🇸美国82
+  - vless | 🇺🇸美国83
+  - vless | 🇺🇸美国84
+  - vless | NoneCR7
+  - vless | 🇺🇸美国85
+  - vless | 🇺🇸美国86
+  - vless | 🇺🇸美国87
+  - vless | 🇺🇸美国88
+  - vless | 🇺🇸美国89
+  - vless | 🇺🇸美国90
+  - vless | NoneCR8
+  - vless | 🇺🇸美国91
+  - vless | 🇺🇸美国92
+  - vless | 🇺🇸美国93
+  - vless | 🇺🇸美国94
+  - vless | 🇺🇸美国95
+  - vless | 🇺🇸美国96
+  - vless | 🇺🇸美国97
+  - vless | 🇺🇸美国98
+  - vless | 🇺🇸美国99
+  - vless | 🇺🇸美国100
+  - vless | 🇺🇸美国101
+  - vless | 🇺🇸美国102
+  - vless | 🇺🇸美国103
+  - vless | 🇺🇸美国104
+  - vless | 🇺🇸美国105
+  - vless | 🇺🇸美国106
+  - vless | 🇺🇸美国107
+  - vless | NoneCR9
+  - vless | 🇺🇸美国108
+  - vless | 🇺🇸美国109
+  - vless | 🇺🇸美国110
+  - vless | 🇺🇸美国111
+  - vless | 🇺🇸美国112
+  - vless | NoneCR10
+  - vless | 🇺🇸美国113
+  - vless | 🇺🇸美国114
+  - vless | 🇺🇸美国115
+  - vless | 🇺🇸美国116
+  - vless | 🇺🇸美国117
+  - vless | 🇺🇸美国118
+  - vless | 🇺🇸美国119
+  - vless | 🇺🇸美国120
+  - vless | 🇺🇸美国121
+  - vless | 🇺🇸美国122
+  - vless | 🇺🇸美国123
+  - vless | 🇺🇸美国124
+  - vless | 🇺🇸美国125
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -754,52 +2738,197 @@ proxy-groups:
 - name: 负载均衡
   type: load-balance
   proxies:
-  - vmess | 🇺🇸美国0
-  - vmess | 🇺🇸美国1
-  - ss | 🇺🇸美国0
-  - vmess | 🇺🇸美国2
-  - tuic | 🇺🇸美国0
-  - ss | 🇺🇸美国1
   - ss | NoneCN0
   - ss | NoneCN1
   - ss | NoneCN2
-  - vmess | 🇺🇸美国3
-  - vmess | NoneCN0
   - ss | NoneCN3
-  - vmess | 🇺🇸美国4
   - ss | NoneCN4
   - ss | NoneCN5
   - ss | NoneCN6
   - ss | NoneCN7
-  - ss | 🇺🇸美国2
-  - ss | NoneCN8
-  - vmess | 🇺🇸美国5
-  - vmess | NoneCN1
-  - ss | NoneCN9
-  - vmess | 🇺🇸美国6
-  - ss | NoneCN10
   - ss | 🇨🇦加拿大0
-  - ss | 🇨🇦加拿大1
-  - ss | 🇺🇸美国3
-  - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国7
-  - vmess | NoneCN2
+  - ss | NoneCN8
+  - vmess | NoneCN0
+  - ss | NoneCN9
+  - vmess | 🇺🇸美国0
+  - ss | NoneCN10
+  - vmess | 🇺🇸美国1
+  - vmess | 🇺🇸美国2
   - ss | NoneCN11
-  - vmess | 🇺🇸美国8
   - ss | NoneCN12
-  - ss | 🇨🇦加拿大2
-  - ss | 🇨🇦加拿大3
-  - ss | 🇺🇸美国4
-  - ss | 🇹🇼台湾1
-  - vmess | 🇺🇸美国9
-  - vmess | NoneCN3
   - ss | NoneCN13
-  - vmess | 🇺🇸美国10
   - ss | NoneCN14
-  - ss | 🇨🇦加拿大4
-  - ss | 🇨🇦加拿大5
-  - ss | 🇺🇸美国5
-  - ss | 🇹🇼台湾2
+  - ss | NoneCN15
+  - vmess | NoneCN1
+  - ss | NoneCN16
+  - vmess | 🇺🇸美国3
+  - ss | NoneCN17
+  - vmess | 🇺🇸美国4
+  - vmess | 🇺🇸美国5
+  - ss | NoneCN18
+  - ss | NoneCN19
+  - ss | NoneCN20
+  - ss | NoneCN21
+  - ss | NoneCN22
+  - vmess | NoneCN2
+  - ss | NoneCN23
+  - vmess | 🇺🇸美国6
+  - ss | NoneCN24
+  - vmess | 🇺🇸美国7
+  - vmess | 🇺🇸美国8
+  - ss | NoneCN25
+  - ss | NoneCN26
+  - ss | NoneCN27
+  - ss | NoneCN28
+  - ss | NoneCN29
+  - vmess | NoneCN3
+  - ss | NoneCN30
+  - vmess | 🇺🇸美国9
+  - ss | NoneCN31
+  - vmess | 🇺🇸美国10
+  - vmess | 🇺🇸美国11
+  - ss | NoneCN32
+  - ss | NoneCN33
+  - ss | NoneCN34
+  - ss | NoneCN35
+  - ss | NoneCN36
+  - vless | 🇺🇸美国0
+  - vless | 🇺🇸美国1
+  - vless | 🇺🇸美国2
+  - vless | 🇺🇸美国3
+  - vless | 🇺🇸美国4
+  - vless | 🇺🇸美国5
+  - vless | 🇺🇸美国6
+  - vless | 🇺🇸美国7
+  - vless | 🇺🇸美国8
+  - vless | 🇺🇸美国9
+  - vless | 🇺🇸美国10
+  - vless | 🇺🇸美国11
+  - vless | NoneCR0
+  - vless | 🇺🇸美国12
+  - vless | 🇺🇸美国13
+  - vless | NoneCR1
+  - vless | 🇺🇸美国14
+  - vless | 🇺🇸美国15
+  - vless | 🇺🇸美国16
+  - vless | 🇺🇸美国17
+  - vless | 🇺🇸美国18
+  - vless | 🇺🇸美国19
+  - vless | 🇺🇸美国20
+  - vless | 🇺🇸美国21
+  - vless | 🇺🇸美国22
+  - vless | 🇺🇸美国23
+  - vless | 🇺🇸美国24
+  - vless | 🇺🇸美国25
+  - vless | 🇺🇸美国26
+  - vless | 🇺🇸美国27
+  - vless | 🇺🇸美国28
+  - vless | 🇺🇸美国29
+  - vless | 🇺🇸美国30
+  - vless | 🇺🇸美国31
+  - vless | 🇺🇸美国32
+  - vless | 🇺🇸美国33
+  - vless | 🇺🇸美国34
+  - vless | 🇺🇸美国35
+  - vless | 🇺🇸美国36
+  - vless | 🇺🇸美国37
+  - vless | 🇺🇸美国38
+  - vless | 🇺🇸美国39
+  - vless | 🇺🇸美国40
+  - vless | NoneCR2
+  - vless | 🇺🇸美国41
+  - vless | 🇺🇸美国42
+  - vless | 🇺🇸美国43
+  - vless | 🇺🇸美国44
+  - vless | 🇺🇸美国45
+  - vless | 🇺🇸美国46
+  - vless | 🇺🇸美国47
+  - vless | 🇺🇸美国48
+  - vless | 🇺🇸美国49
+  - vless | 🇺🇸美国50
+  - vless | 🇺🇸美国51
+  - vless | 🇺🇸美国52
+  - vless | 🇺🇸美国53
+  - vless | 🇺🇸美国54
+  - vless | NoneCR3
+  - vless | 🇺🇸美国55
+  - vless | NoneCR4
+  - vless | 🇺🇸美国56
+  - vless | 🇺🇸美国57
+  - vless | NoneCR5
+  - vless | 🇺🇸美国58
+  - vless | 🇺🇸美国59
+  - vless | 🇺🇸美国60
+  - vless | 🇺🇸美国61
+  - vless | 🇺🇸美国62
+  - vless | 🇺🇸美国63
+  - vless | 🇺🇸美国64
+  - vless | 🇺🇸美国65
+  - vless | 🇺🇸美国66
+  - vless | NoneCR6
+  - vless | 🇺🇸美国67
+  - vless | 🇺🇸美国68
+  - vless | 🇺🇸美国69
+  - vless | 🇺🇸美国70
+  - vless | 🇺🇸美国71
+  - vless | 🇺🇸美国72
+  - vless | 🇺🇸美国73
+  - vless | 🇺🇸美国74
+  - vless | 🇺🇸美国75
+  - vless | 🇺🇸美国76
+  - vless | 🇺🇸美国77
+  - vless | 🇺🇸美国78
+  - vless | 🇺🇸美国79
+  - vless | 🇺🇸美国80
+  - vless | 🇺🇸美国81
+  - vless | 🇺🇸美国82
+  - vless | 🇺🇸美国83
+  - vless | 🇺🇸美国84
+  - vless | NoneCR7
+  - vless | 🇺🇸美国85
+  - vless | 🇺🇸美国86
+  - vless | 🇺🇸美国87
+  - vless | 🇺🇸美国88
+  - vless | 🇺🇸美国89
+  - vless | 🇺🇸美国90
+  - vless | NoneCR8
+  - vless | 🇺🇸美国91
+  - vless | 🇺🇸美国92
+  - vless | 🇺🇸美国93
+  - vless | 🇺🇸美国94
+  - vless | 🇺🇸美国95
+  - vless | 🇺🇸美国96
+  - vless | 🇺🇸美国97
+  - vless | 🇺🇸美国98
+  - vless | 🇺🇸美国99
+  - vless | 🇺🇸美国100
+  - vless | 🇺🇸美国101
+  - vless | 🇺🇸美国102
+  - vless | 🇺🇸美国103
+  - vless | 🇺🇸美国104
+  - vless | 🇺🇸美国105
+  - vless | 🇺🇸美国106
+  - vless | 🇺🇸美国107
+  - vless | NoneCR9
+  - vless | 🇺🇸美国108
+  - vless | 🇺🇸美国109
+  - vless | 🇺🇸美国110
+  - vless | 🇺🇸美国111
+  - vless | 🇺🇸美国112
+  - vless | NoneCR10
+  - vless | 🇺🇸美国113
+  - vless | 🇺🇸美国114
+  - vless | 🇺🇸美国115
+  - vless | 🇺🇸美国116
+  - vless | 🇺🇸美国117
+  - vless | 🇺🇸美国118
+  - vless | 🇺🇸美国119
+  - vless | 🇺🇸美国120
+  - vless | 🇺🇸美国121
+  - vless | 🇺🇸美国122
+  - vless | 🇺🇸美国123
+  - vless | 🇺🇸美国124
+  - vless | 🇺🇸美国125
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
