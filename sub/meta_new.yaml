@@ -25,6 +25,13 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
+- name: vless | 🇨🇦加拿大0
+  type: vless
+  server: 108.181.5.18
+  port: 22222
+  uuid: 1bf69b3a-4673-4d02-a311-cb6380eaddce
+  tls: false
+  network: tcp
 - name: ss | 🇨🇦加拿大0
   type: ss
   server: 109.104.152.144
@@ -33,47 +40,41 @@ proxies:
   cipher: chacha20-ietf-poly1305
 - name: ss | NoneCN0
   type: ss
-  server: foshan.chiguayun.shop
-  port: 27103
-  password: f4b81edb-73a5-41fa-9086-6f446061815d
-  cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN1
-  type: ss
   server: yd.qianggewangluo.buzz
   port: 10809
   password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
   cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN2
+- name: ss | NoneCN1
   type: ss
   server: yd.qianggewangluo.buzz
   port: 10813
   password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
   cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN3
+- name: ss | NoneCN2
   type: ss
   server: yd.qianggewangluo.buzz
   port: 10815
   password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
   cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN4
+- name: ss | NoneCN3
   type: ss
   server: yd.qianggewangluo.buzz
   port: 10803
   password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
   cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN5
+- name: ss | NoneCN4
   type: ss
   server: hefei.chiguayun.shop
   port: 27101
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN6
+- name: ss | NoneCN5
   type: ss
   server: yd.qianggewangluo.buzz
   port: 10817
   password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
   cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN7
+- name: ss | NoneCN6
   type: ss
   server: hefei.chiguayun.shop
   port: 27105
@@ -85,7 +86,7 @@ proxies:
   port: 20167
   password: ca7e0c98-136d-472c-927b-b56bcba722e3
   cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN8
+- name: ss | NoneCN7
   type: ss
   server: zhejiang.52vpn.top
   port: 32143
@@ -112,7 +113,7 @@ proxies:
     path: /debian
     headers:
       host: data-us-v1.shwjfkw.cn
-- name: ss | NoneCN9
+- name: ss | NoneCN8
   type: ss
   server: service.ouluyun9803.com
   port: 20003
@@ -133,7 +134,7 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: ss | NoneCN10
+- name: ss | NoneCN9
   type: ss
   server: service.ouluyun9803.com
   port: 20005
@@ -169,35 +170,41 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: ss | NoneCN11
+- name: ss | NoneCN10
   type: ss
   server: foshan.chiguayun.shop
   port: 27105
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN12
+- name: ss | NoneCN11
   type: ss
   server: foshan.chiguayun.shop
   port: 27108
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN13
+- name: ss | NoneCN12
   type: ss
   server: yd.qianggewangluo.buzz
   port: 10808
   password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
   cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN14
+- name: ss | NoneCN13
   type: ss
   server: foshan.chiguayun.shop
   port: 27104
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: ss | NoneCN15
+- name: ss | NoneCN14
   type: ss
   server: foshan.chiguayun.shop
   port: 27102
   password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: ss | 🇹🇼台湾1
+  type: ss
+  server: www.dtku40.xyz
+  port: 22222
+  password: dongtaiwang.com
   cipher: chacha20-ietf-poly1305
 - name: ss | 🇨🇦加拿大2
   type: ss
@@ -205,18 +212,20 @@ proxies:
   port: 111
   password: dongtaiwang.com
   cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大3
-  type: ss
-  server: 109.104.152.144
-  port: 111
-  password: dongtaiwang.com
-  cipher: chacha20-ietf-poly1305
-- name: ss | 🇨🇦加拿大4
-  type: ss
-  server: 109.104.152.144
-  port: 111
-  password: dongtaiwang.com
-  cipher: chacha20-ietf-poly1305
+- name: vless | 🇨🇦加拿大1
+  type: vless
+  server: 109.104.152.101
+  port: 11111
+  udp: true
+  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
+  tls: true
+  servername: m.media-amazon.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
 - name: hysteria | 🇹🇼台湾0
   type: hysteria
   server: www2.dtku48.xyz
@@ -379,6 +388,7 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
+  - vless | 🇨🇦加拿大0
   - ss | 🇨🇦加拿大0
   - ss | NoneCN0
   - ss | NoneCN1
@@ -387,24 +397,23 @@ proxy-groups:
   - ss | NoneCN4
   - ss | NoneCN5
   - ss | NoneCN6
-  - ss | NoneCN7
   - ss | 🇨🇦加拿大1
-  - ss | NoneCN8
+  - ss | NoneCN7
   - ss | 🇹🇼台湾0
   - vmess | NoneCN0
-  - ss | NoneCN9
+  - ss | NoneCN8
   - vmess | 🇺🇸美国0
-  - ss | NoneCN10
+  - ss | NoneCN9
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
+  - ss | NoneCN10
   - ss | NoneCN11
   - ss | NoneCN12
   - ss | NoneCN13
   - ss | NoneCN14
-  - ss | NoneCN15
+  - ss | 🇹🇼台湾1
   - ss | 🇨🇦加拿大2
-  - ss | 🇨🇦加拿大3
-  - ss | 🇨🇦加拿大4
+  - vless | 🇨🇦加拿大1
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -425,6 +434,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - vless | 🇨🇦加拿大0
   - ss | 🇨🇦加拿大0
   - ss | NoneCN0
   - ss | NoneCN1
@@ -433,24 +443,23 @@ proxy-groups:
   - ss | NoneCN4
   - ss | NoneCN5
   - ss | NoneCN6
-  - ss | NoneCN7
   - ss | 🇨🇦加拿大1
-  - ss | NoneCN8
+  - ss | NoneCN7
   - ss | 🇹🇼台湾0
   - vmess | NoneCN0
-  - ss | NoneCN9
+  - ss | NoneCN8
   - vmess | 🇺🇸美国0
-  - ss | NoneCN10
+  - ss | NoneCN9
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
+  - ss | NoneCN10
   - ss | NoneCN11
   - ss | NoneCN12
   - ss | NoneCN13
   - ss | NoneCN14
-  - ss | NoneCN15
+  - ss | 🇹🇼台湾1
   - ss | 🇨🇦加拿大2
-  - ss | 🇨🇦加拿大3
-  - ss | 🇨🇦加拿大4
+  - vless | 🇨🇦加拿大1
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
