@@ -32,28 +32,6 @@ proxies:
   uuid: 1bf69b3a-4673-4d02-a311-cb6380eaddce
   tls: false
   network: tcp
-- name: vmess | 🇨🇦加拿大0
-  type: vmess
-  server: 109.104.152.144
-  port: 12300
-  cipher: auto
-  uuid: 4be33771-099d-4d65-9426-09bed47eb41f
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: tcp
-- name: vmess | 🇹🇼台湾0
-  type: vmess
-  server: www.dtku40.xyz
-  port: 34500
-  cipher: auto
-  uuid: fe3800ef-a9e8-4943-aaf2-6d99dac75c32
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: tcp
 - name: tuic | 🇨🇦加拿大0
   type: tuic
   server: 109.104.152.144
@@ -67,21 +45,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: vless | 🇫🇷法国0
-  type: vless
-  server: 51.159.77.153
-  port: 11112
-  udp: true
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
-  tls: true
-  servername: m.media-amazon.com
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: vmess | 🇹🇼台湾1
+- name: vmess | 🇹🇼台湾0
   type: vmess
   server: www.dtku40.xyz
   port: 34500
@@ -92,7 +56,7 @@ proxies:
   skip-cert-verify: true
   servername: ''
   network: tcp
-- name: vmess | 🇨🇦加拿大1
+- name: vmess | 🇨🇦加拿大0
   type: vmess
   server: 109.104.152.144
   port: 12300
@@ -1938,12 +1902,9 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - vless | 🇨🇦加拿大0
-  - vmess | 🇨🇦加拿大0
-  - vmess | 🇹🇼台湾0
   - tuic | 🇨🇦加拿大0
-  - vless | 🇫🇷法国0
-  - vmess | 🇹🇼台湾1
-  - vmess | 🇨🇦加拿大1
+  - vmess | 🇹🇼台湾0
+  - vmess | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大1
   - vless | 🇺🇸美国0
   - vless | 🇺🇸美国1
@@ -2104,12 +2065,9 @@ proxy-groups:
   tolerance: 50
   proxies:
   - vless | 🇨🇦加拿大0
-  - vmess | 🇨🇦加拿大0
-  - vmess | 🇹🇼台湾0
   - tuic | 🇨🇦加拿大0
-  - vless | 🇫🇷法国0
-  - vmess | 🇹🇼台湾1
-  - vmess | 🇨🇦加拿大1
+  - vmess | 🇹🇼台湾0
+  - vmess | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大1
   - vless | 🇺🇸美国0
   - vless | 🇺🇸美国1
