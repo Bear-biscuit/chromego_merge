@@ -25,13 +25,17 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: vless | 🇨🇦加拿大0
-  type: vless
-  server: 108.181.5.18
-  port: 22222
-  uuid: 1bf69b3a-4673-4d02-a311-cb6380eaddce
-  tls: false
-  network: tcp
+- name: hysteria2 | 🇺🇸美国0
+  type: hysteria2
+  server: 64.31.55.30
+  port: 20011
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: tuic | 🇨🇦加拿大0
   type: tuic
   server: 109.104.152.144
@@ -45,28 +49,26 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: vmess | 🇹🇼台湾0
-  type: vmess
-  server: www.dtku40.xyz
-  port: 34500
-  cipher: auto
-  uuid: fe3800ef-a9e8-4943-aaf2-6d99dac75c32
-  alterId: 0
+- name: vless | 🇨🇦加拿大0
+  type: vless
+  server: 108.181.5.18
+  port: 22222
+  uuid: 1bf69b3a-4673-4d02-a311-cb6380eaddce
   tls: false
-  skip-cert-verify: true
-  servername: ''
   network: tcp
-- name: vmess | 🇨🇦加拿大0
-  type: vmess
-  server: 109.104.152.144
-  port: 12300
-  cipher: auto
-  uuid: 4be33771-099d-4d65-9426-09bed47eb41f
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: tcp
+- name: tuic | 🇨🇦加拿大1
+  type: tuic
+  server: 109.104.152.101
+  port: 22288
+  udp: true
+  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: vless | 🇨🇦加拿大1
   type: vless
   server: 109.104.152.101
@@ -1829,7 +1831,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国0
+- name: hysteria2 | 🇺🇸美国1
   type: hysteria2
   server: 64.110.25.11
   port: 33337
@@ -1901,10 +1903,10 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - vless | 🇨🇦加拿大0
+  - hysteria2 | 🇺🇸美国0
   - tuic | 🇨🇦加拿大0
-  - vmess | 🇹🇼台湾0
-  - vmess | 🇨🇦加拿大0
+  - vless | 🇨🇦加拿大0
+  - tuic | 🇨🇦加拿大1
   - vless | 🇨🇦加拿大1
   - vless | 🇺🇸美国0
   - vless | 🇺🇸美国1
@@ -2052,7 +2054,7 @@ proxy-groups:
   - hysteria | 🇹🇼台湾2
   - hysteria | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国1
-  - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇨🇦加拿大0
   - reality_1_🇫🇷法国
@@ -2064,10 +2066,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - vless | 🇨🇦加拿大0
+  - hysteria2 | 🇺🇸美国0
   - tuic | 🇨🇦加拿大0
-  - vmess | 🇹🇼台湾0
-  - vmess | 🇨🇦加拿大0
+  - vless | 🇨🇦加拿大0
+  - tuic | 🇨🇦加拿大1
   - vless | 🇨🇦加拿大1
   - vless | 🇺🇸美国0
   - vless | 🇺🇸美国1
@@ -2215,7 +2217,7 @@ proxy-groups:
   - hysteria | 🇹🇼台湾2
   - hysteria | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国1
-  - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇨🇦加拿大0
   - reality_1_🇫🇷法国
