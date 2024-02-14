@@ -62,6 +62,18 @@ proxies:
   network: ws
   ws-opts:
     path: /9tEYTPFN/
+- name: hysteria | 🇨🇦加拿大0
+  type: hysteria
+  server: 109.104.152.101
+  port: 32200
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
 - name: vmess | 🇨🇦加拿大0
   type: vmess
   server: 108.181.5.18
@@ -1911,6 +1923,7 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - tuic | 🇨🇦加拿大0
   - vmess | 🇹🇼台湾0
+  - hysteria | 🇨🇦加拿大0
   - vmess | 🇨🇦加拿大0
   - tuic | 🇨🇦加拿大1
   - vless | 🇨🇦加拿大0
@@ -2074,6 +2087,7 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - tuic | 🇨🇦加拿大0
   - vmess | 🇹🇼台湾0
+  - hysteria | 🇨🇦加拿大0
   - vmess | 🇨🇦加拿大0
   - tuic | 🇨🇦加拿大1
   - vless | 🇨🇦加拿大0
