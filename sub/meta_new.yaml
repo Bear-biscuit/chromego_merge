@@ -60,20 +60,18 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大1
-  type: tuic
+- name: hysteria2 | 🇨🇦加拿大1
+  type: hysteria2
   server: 109.104.152.101
-  port: 31102
-  udp: true
-  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
+  port: 16610
   password: dongtaiwang.com
   alpn:
   - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大2
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: tuic | 🇨🇦加拿大1
   type: tuic
   server: 109.104.152.101
   port: 22288
@@ -86,7 +84,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大3
+- name: tuic | 🇨🇦加拿大2
   type: tuic
   server: 109.104.152.101
   port: 31101
@@ -1768,11 +1766,15 @@ proxies:
   down: 10
 - name: hysteria2 | 🇫🇷法国0
   type: hysteria2
-  server: 51.158.54.46
-  port: 44550
+  server: 51.159.77.153
+  port: 33390
   password: dongtaiwang.com
+  alpn:
+  - h3
   sni: bing.com
   skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: hysteria2 | 🇬🇧英国0
   type: hysteria2
   server: 45.150.165.84
@@ -1908,9 +1910,9 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇨🇦加拿大0
   - tuic | 🇨🇦加拿大0
+  - hysteria2 | 🇨🇦加拿大1
   - tuic | 🇨🇦加拿大1
   - tuic | 🇨🇦加拿大2
-  - tuic | 🇨🇦加拿大3
   - vless | 🇺🇸美国0
   - vless | 🇺🇸美国1
   - vless | 🇺🇸美国2
@@ -2071,9 +2073,9 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇨🇦加拿大0
   - tuic | 🇨🇦加拿大0
+  - hysteria2 | 🇨🇦加拿大1
   - tuic | 🇨🇦加拿大1
   - tuic | 🇨🇦加拿大2
-  - tuic | 🇨🇦加拿大3
   - vless | 🇺🇸美国0
   - vless | 🇺🇸美国1
   - vless | 🇺🇸美国2
