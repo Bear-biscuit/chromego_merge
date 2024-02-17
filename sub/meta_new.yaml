@@ -25,21 +25,39 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: hysteria2 | 🇺🇸美国0
-  type: hysteria2
+- name: vless | 🇺🇸美国0
+  type: vless
   server: 64.31.55.30
-  port: 20011
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
+  port: 33220
+  udp: true
+  uuid: fb706a82-ec58-44d9-8f7a-39b8494e3a6d
+  tls: true
+  servername: www.lovelive-anime.jp
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: fgV5xXgT53rlP82phUB6BpbKwvH8cqvomdEnrqlErko
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: vless | 🇨🇦加拿大0
+  type: vless
+  server: 108.181.5.130
+  port: 19910
+  udp: true
+  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
+  tls: true
+  servername: m.media-amazon.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
 - name: hysteria2 | 🇨🇦加拿大0
   type: hysteria2
-  server: 109.104.152.144
-  port: 51100
+  server: 109.104.152.242
+  port: 1022
   password: dongtaiwang.com
   alpn:
   - h3
@@ -47,23 +65,10 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: tuic | 🇨🇦加拿大0
-  type: tuic
-  server: 109.104.152.144
-  port: 44411
-  udp: true
-  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
 - name: hysteria2 | 🇨🇦加拿大1
   type: hysteria2
-  server: 109.104.152.101
-  port: 16610
+  server: 109.104.152.242
+  port: 1022
   password: dongtaiwang.com
   alpn:
   - h3
@@ -71,33 +76,35 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: tuic | 🇨🇦加拿大1
-  type: tuic
-  server: 109.104.152.101
-  port: 22288
+- name: vless | 🇨🇦加拿大1
+  type: vless
+  server: 108.181.5.130
+  port: 19910
   udp: true
-  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: tuic | 🇨🇦加拿大2
-  type: tuic
-  server: 109.104.152.101
-  port: 31101
+  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
+  tls: true
+  servername: m.media-amazon.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: vless | 🇨🇦加拿大2
+  type: vless
+  server: 108.181.5.130
+  port: 19910
   udp: true
-  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: vless | 🇺🇸美国0
+  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
+  tls: true
+  servername: m.media-amazon.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: vless | 🇺🇸美国1
   type: vless
   server: 198.41.193.226
   port: 443
@@ -109,7 +116,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国1
+- name: vless | 🇺🇸美国2
   type: vless
   server: 104.27.97.91
   port: 443
@@ -121,7 +128,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国2
+- name: vless | 🇺🇸美国3
   type: vless
   server: 108.162.196.107
   port: 443
@@ -133,7 +140,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国3
+- name: vless | 🇺🇸美国4
   type: vless
   server: 104.22.46.253
   port: 443
@@ -145,7 +152,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国4
+- name: vless | 🇺🇸美国5
   type: vless
   server: 173.245.49.56
   port: 443
@@ -157,7 +164,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国5
+- name: vless | 🇺🇸美国6
   type: vless
   server: 198.41.195.168
   port: 443
@@ -169,7 +176,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国6
+- name: vless | 🇺🇸美国7
   type: vless
   server: 103.21.244.189
   port: 443
@@ -181,7 +188,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国7
+- name: vless | 🇺🇸美国8
   type: vless
   server: 104.21.35.228
   port: 443
@@ -193,7 +200,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国8
+- name: vless | 🇺🇸美国9
   type: vless
   server: 162.159.38.71
   port: 443
@@ -205,7 +212,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国9
+- name: vless | 🇺🇸美国10
   type: vless
   server: 104.19.7.150
   port: 443
@@ -217,7 +224,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国10
+- name: vless | 🇺🇸美国11
   type: vless
   server: 108.162.196.74
   port: 443
@@ -229,7 +236,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国11
+- name: vless | 🇺🇸美国12
   type: vless
   server: 104.18.9.181
   port: 443
@@ -253,7 +260,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国12
+- name: vless | 🇺🇸美国13
   type: vless
   server: 198.41.218.199
   port: 443
@@ -265,7 +272,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国13
+- name: vless | 🇺🇸美国14
   type: vless
   server: 104.18.110.163
   port: 443
@@ -289,7 +296,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国14
+- name: vless | 🇺🇸美国15
   type: vless
   server: 103.21.244.236
   port: 443
@@ -301,7 +308,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国15
+- name: vless | 🇺🇸美国16
   type: vless
   server: 162.159.24.166
   port: 443
@@ -313,7 +320,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国16
+- name: vless | 🇺🇸美国17
   type: vless
   server: 104.25.69.69
   port: 443
@@ -325,7 +332,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国17
+- name: vless | 🇺🇸美国18
   type: vless
   server: 104.16.196.143
   port: 443
@@ -337,7 +344,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国18
+- name: vless | 🇺🇸美国19
   type: vless
   server: 103.21.244.162
   port: 443
@@ -349,7 +356,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国19
+- name: vless | 🇺🇸美国20
   type: vless
   server: 172.66.138.14
   port: 443
@@ -361,7 +368,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国20
+- name: vless | 🇺🇸美国21
   type: vless
   server: 172.64.49.33
   port: 443
@@ -373,7 +380,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国21
+- name: vless | 🇺🇸美国22
   type: vless
   server: 104.25.113.186
   port: 443
@@ -385,7 +392,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国22
+- name: vless | 🇺🇸美国23
   type: vless
   server: 104.20.5.9
   port: 443
@@ -397,7 +404,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国23
+- name: vless | 🇺🇸美国24
   type: vless
   server: 104.25.211.145
   port: 443
@@ -409,7 +416,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国24
+- name: vless | 🇺🇸美国25
   type: vless
   server: 172.67.209.51
   port: 443
@@ -421,7 +428,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国25
+- name: vless | 🇺🇸美国26
   type: vless
   server: 104.18.141.86
   port: 443
@@ -433,7 +440,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国26
+- name: vless | 🇺🇸美国27
   type: vless
   server: 188.114.97.19
   port: 443
@@ -445,7 +452,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国27
+- name: vless | 🇺🇸美国28
   type: vless
   server: 104.27.16.75
   port: 443
@@ -457,7 +464,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国28
+- name: vless | 🇺🇸美国29
   type: vless
   server: 104.18.95.234
   port: 443
@@ -469,7 +476,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国29
+- name: vless | 🇺🇸美国30
   type: vless
   server: 198.41.202.98
   port: 443
@@ -481,7 +488,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国30
+- name: vless | 🇺🇸美国31
   type: vless
   server: 162.159.24.244
   port: 443
@@ -493,7 +500,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国31
+- name: vless | 🇺🇸美国32
   type: vless
   server: 104.24.132.228
   port: 443
@@ -505,7 +512,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国32
+- name: vless | 🇺🇸美国33
   type: vless
   server: 198.41.209.249
   port: 443
@@ -517,7 +524,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国33
+- name: vless | 🇺🇸美国34
   type: vless
   server: 104.24.88.199
   port: 443
@@ -529,7 +536,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国34
+- name: vless | 🇺🇸美国35
   type: vless
   server: 103.21.244.248
   port: 443
@@ -541,7 +548,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国35
+- name: vless | 🇺🇸美国36
   type: vless
   server: 104.20.253.93
   port: 443
@@ -553,7 +560,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国36
+- name: vless | 🇺🇸美国37
   type: vless
   server: 173.245.58.18
   port: 443
@@ -565,7 +572,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国37
+- name: vless | 🇺🇸美国38
   type: vless
   server: 104.17.11.252
   port: 443
@@ -577,7 +584,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国38
+- name: vless | 🇺🇸美国39
   type: vless
   server: 104.24.18.7
   port: 443
@@ -589,7 +596,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国39
+- name: vless | 🇺🇸美国40
   type: vless
   server: 104.16.38.162
   port: 443
@@ -601,7 +608,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国40
+- name: vless | 🇺🇸美国41
   type: vless
   server: 108.162.194.144
   port: 443
@@ -625,7 +632,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国41
+- name: vless | 🇺🇸美国42
   type: vless
   server: 104.19.45.11
   port: 443
@@ -637,7 +644,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国42
+- name: vless | 🇺🇸美国43
   type: vless
   server: 188.114.96.211
   port: 443
@@ -649,7 +656,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国43
+- name: vless | 🇺🇸美国44
   type: vless
   server: 172.67.152.22
   port: 443
@@ -661,7 +668,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国44
+- name: vless | 🇺🇸美国45
   type: vless
   server: 104.16.75.128
   port: 443
@@ -673,7 +680,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国45
+- name: vless | 🇺🇸美国46
   type: vless
   server: 198.41.202.169
   port: 443
@@ -685,7 +692,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国46
+- name: vless | 🇺🇸美国47
   type: vless
   server: 104.24.57.248
   port: 443
@@ -697,7 +704,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国47
+- name: vless | 🇺🇸美国48
   type: vless
   server: 173.245.49.207
   port: 443
@@ -709,7 +716,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国48
+- name: vless | 🇺🇸美国49
   type: vless
   server: 104.24.226.143
   port: 443
@@ -721,7 +728,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国49
+- name: vless | 🇺🇸美国50
   type: vless
   server: 173.245.59.17
   port: 443
@@ -733,7 +740,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国50
+- name: vless | 🇺🇸美国51
   type: vless
   server: 104.17.2.38
   port: 443
@@ -745,7 +752,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国51
+- name: vless | 🇺🇸美国52
   type: vless
   server: 162.159.6.199
   port: 443
@@ -757,7 +764,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国52
+- name: vless | 🇺🇸美国53
   type: vless
   server: 141.101.113.239
   port: 443
@@ -769,7 +776,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国53
+- name: vless | 🇺🇸美国54
   type: vless
   server: 172.64.173.200
   port: 443
@@ -781,7 +788,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国54
+- name: vless | 🇺🇸美国55
   type: vless
   server: 104.21.235.122
   port: 443
@@ -805,7 +812,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国55
+- name: vless | 🇺🇸美国56
   type: vless
   server: 188.114.97.27
   port: 443
@@ -829,7 +836,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国56
+- name: vless | 🇺🇸美国57
   type: vless
   server: 173.245.58.237
   port: 443
@@ -841,7 +848,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国57
+- name: vless | 🇺🇸美国58
   type: vless
   server: 172.67.166.72
   port: 443
@@ -865,7 +872,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国58
+- name: vless | 🇺🇸美国59
   type: vless
   server: 104.27.107.221
   port: 443
@@ -877,7 +884,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国59
+- name: vless | 🇺🇸美国60
   type: vless
   server: 103.21.244.137
   port: 443
@@ -889,7 +896,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国60
+- name: vless | 🇺🇸美国61
   type: vless
   server: 104.22.71.28
   port: 443
@@ -901,7 +908,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国61
+- name: vless | 🇺🇸美国62
   type: vless
   server: 104.17.123.53
   port: 443
@@ -913,7 +920,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国62
+- name: vless | 🇺🇸美国63
   type: vless
   server: 104.21.25.95
   port: 443
@@ -925,7 +932,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国63
+- name: vless | 🇺🇸美国64
   type: vless
   server: 104.24.190.226
   port: 443
@@ -937,7 +944,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国64
+- name: vless | 🇺🇸美国65
   type: vless
   server: 104.27.61.67
   port: 443
@@ -949,7 +956,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国65
+- name: vless | 🇺🇸美国66
   type: vless
   server: 104.24.171.195
   port: 443
@@ -961,7 +968,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国66
+- name: vless | 🇺🇸美国67
   type: vless
   server: 173.245.49.195
   port: 443
@@ -985,7 +992,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国67
+- name: vless | 🇺🇸美国68
   type: vless
   server: 108.162.192.179
   port: 443
@@ -997,7 +1004,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国68
+- name: vless | 🇺🇸美国69
   type: vless
   server: 198.41.216.62
   port: 443
@@ -1009,7 +1016,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国69
+- name: vless | 🇺🇸美国70
   type: vless
   server: 104.17.6.218
   port: 443
@@ -1021,7 +1028,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国70
+- name: vless | 🇺🇸美国71
   type: vless
   server: 103.21.244.219
   port: 443
@@ -1033,7 +1040,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国71
+- name: vless | 🇺🇸美国72
   type: vless
   server: 141.101.121.69
   port: 443
@@ -1045,7 +1052,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国72
+- name: vless | 🇺🇸美国73
   type: vless
   server: 104.25.12.88
   port: 443
@@ -1057,7 +1064,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国73
+- name: vless | 🇺🇸美国74
   type: vless
   server: 104.24.74.248
   port: 443
@@ -1069,7 +1076,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国74
+- name: vless | 🇺🇸美国75
   type: vless
   server: 104.18.9.239
   port: 443
@@ -1081,7 +1088,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国75
+- name: vless | 🇺🇸美国76
   type: vless
   server: 104.16.247.95
   port: 443
@@ -1093,7 +1100,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国76
+- name: vless | 🇺🇸美国77
   type: vless
   server: 104.25.19.37
   port: 443
@@ -1105,7 +1112,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国77
+- name: vless | 🇺🇸美国78
   type: vless
   server: 104.18.238.119
   port: 443
@@ -1117,7 +1124,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国78
+- name: vless | 🇺🇸美国79
   type: vless
   server: 104.24.214.188
   port: 443
@@ -1129,7 +1136,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国79
+- name: vless | 🇺🇸美国80
   type: vless
   server: 172.66.142.115
   port: 443
@@ -1141,7 +1148,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国80
+- name: vless | 🇺🇸美国81
   type: vless
   server: 103.21.244.126
   port: 443
@@ -1153,7 +1160,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国81
+- name: vless | 🇺🇸美国82
   type: vless
   server: 103.21.244.74
   port: 443
@@ -1165,7 +1172,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国82
+- name: vless | 🇺🇸美国83
   type: vless
   server: 103.21.244.94
   port: 443
@@ -1177,7 +1184,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国83
+- name: vless | 🇺🇸美国84
   type: vless
   server: 104.20.87.76
   port: 443
@@ -1189,7 +1196,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国84
+- name: vless | 🇺🇸美国85
   type: vless
   server: 104.25.122.116
   port: 443
@@ -1213,7 +1220,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国85
+- name: vless | 🇺🇸美国86
   type: vless
   server: 104.18.23.136
   port: 443
@@ -1225,7 +1232,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国86
+- name: vless | 🇺🇸美国87
   type: vless
   server: 104.25.254.11
   port: 443
@@ -1237,7 +1244,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国87
+- name: vless | 🇺🇸美国88
   type: vless
   server: 104.25.94.175
   port: 443
@@ -1249,7 +1256,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国88
+- name: vless | 🇺🇸美国89
   type: vless
   server: 141.101.121.18
   port: 443
@@ -1261,7 +1268,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国89
+- name: vless | 🇺🇸美国90
   type: vless
   server: 162.159.133.78
   port: 443
@@ -1273,7 +1280,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国90
+- name: vless | 🇺🇸美国91
   type: vless
   server: 173.245.59.173
   port: 443
@@ -1297,7 +1304,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国91
+- name: vless | 🇺🇸美国92
   type: vless
   server: 162.159.252.249
   port: 443
@@ -1309,7 +1316,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国92
+- name: vless | 🇺🇸美国93
   type: vless
   server: 104.17.12.96
   port: 443
@@ -1321,7 +1328,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国93
+- name: vless | 🇺🇸美国94
   type: vless
   server: 162.159.21.6
   port: 443
@@ -1333,7 +1340,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国94
+- name: vless | 🇺🇸美国95
   type: vless
   server: 103.21.244.125
   port: 443
@@ -1345,7 +1352,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国95
+- name: vless | 🇺🇸美国96
   type: vless
   server: 104.16.137.106
   port: 443
@@ -1357,7 +1364,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国96
+- name: vless | 🇺🇸美国97
   type: vless
   server: 172.64.149.192
   port: 443
@@ -1369,7 +1376,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国97
+- name: vless | 🇺🇸美国98
   type: vless
   server: 104.24.16.226
   port: 443
@@ -1381,7 +1388,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国98
+- name: vless | 🇺🇸美国99
   type: vless
   server: 172.67.103.221
   port: 443
@@ -1393,7 +1400,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国99
+- name: vless | 🇺🇸美国100
   type: vless
   server: 188.114.97.111
   port: 443
@@ -1405,7 +1412,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国100
+- name: vless | 🇺🇸美国101
   type: vless
   server: 172.67.109.53
   port: 443
@@ -1417,7 +1424,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国101
+- name: vless | 🇺🇸美国102
   type: vless
   server: 104.20.252.36
   port: 443
@@ -1429,7 +1436,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国102
+- name: vless | 🇺🇸美国103
   type: vless
   server: 104.20.125.193
   port: 443
@@ -1441,7 +1448,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国103
+- name: vless | 🇺🇸美国104
   type: vless
   server: 188.114.99.120
   port: 443
@@ -1453,7 +1460,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国104
+- name: vless | 🇺🇸美国105
   type: vless
   server: 108.162.193.37
   port: 443
@@ -1465,7 +1472,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国105
+- name: vless | 🇺🇸美国106
   type: vless
   server: 104.17.103.194
   port: 443
@@ -1477,7 +1484,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国106
+- name: vless | 🇺🇸美国107
   type: vless
   server: 198.41.200.139
   port: 443
@@ -1489,7 +1496,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国107
+- name: vless | 🇺🇸美国108
   type: vless
   server: 188.114.97.222
   port: 443
@@ -1513,7 +1520,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国108
+- name: vless | 🇺🇸美国109
   type: vless
   server: 104.17.87.110
   port: 443
@@ -1525,7 +1532,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国109
+- name: vless | 🇺🇸美国110
   type: vless
   server: 172.67.155.77
   port: 443
@@ -1537,7 +1544,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国110
+- name: vless | 🇺🇸美国111
   type: vless
   server: 162.159.26.15
   port: 443
@@ -1549,7 +1556,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国111
+- name: vless | 🇺🇸美国112
   type: vless
   server: 198.41.217.152
   port: 443
@@ -1561,7 +1568,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国112
+- name: vless | 🇺🇸美国113
   type: vless
   server: 104.18.244.225
   port: 443
@@ -1585,7 +1592,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国113
+- name: vless | 🇺🇸美国114
   type: vless
   server: 104.27.41.157
   port: 443
@@ -1597,7 +1604,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国114
+- name: vless | 🇺🇸美国115
   type: vless
   server: 141.101.121.106
   port: 443
@@ -1609,7 +1616,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国115
+- name: vless | 🇺🇸美国116
   type: vless
   server: 104.24.31.205
   port: 443
@@ -1621,7 +1628,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国116
+- name: vless | 🇺🇸美国117
   type: vless
   server: 198.41.220.53
   port: 443
@@ -1633,7 +1640,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国117
+- name: vless | 🇺🇸美国118
   type: vless
   server: 104.24.178.127
   port: 443
@@ -1645,7 +1652,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国118
+- name: vless | 🇺🇸美国119
   type: vless
   server: 162.159.240.167
   port: 443
@@ -1657,7 +1664,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国119
+- name: vless | 🇺🇸美国120
   type: vless
   server: 103.21.244.141
   port: 443
@@ -1669,7 +1676,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国120
+- name: vless | 🇺🇸美国121
   type: vless
   server: 172.67.19.224
   port: 443
@@ -1681,7 +1688,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国121
+- name: vless | 🇺🇸美国122
   type: vless
   server: 104.25.225.101
   port: 443
@@ -1693,7 +1700,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国122
+- name: vless | 🇺🇸美国123
   type: vless
   server: 188.114.96.162
   port: 443
@@ -1705,7 +1712,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国123
+- name: vless | 🇺🇸美国124
   type: vless
   server: 104.18.135.212
   port: 443
@@ -1717,7 +1724,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国124
+- name: vless | 🇺🇸美国125
   type: vless
   server: 104.19.246.22
   port: 443
@@ -1729,7 +1736,7 @@ proxies:
     path: /ugrlws
     headers:
       host: lg1.dtku41.xyz
-- name: vless | 🇺🇸美国125
+- name: vless | 🇺🇸美国126
   type: vless
   server: 172.64.164.162
   port: 443
@@ -1849,7 +1856,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国1
+- name: hysteria2 | 🇺🇸美国0
   type: hysteria2
   server: 64.110.25.11
   port: 33337
@@ -1907,13 +1914,12 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - hysteria2 | 🇺🇸美国0
-  - hysteria2 | 🇨🇦加拿大0
-  - tuic | 🇨🇦加拿大0
-  - hysteria2 | 🇨🇦加拿大1
-  - tuic | 🇨🇦加拿大1
-  - tuic | 🇨🇦加拿大2
   - vless | 🇺🇸美国0
+  - vless | 🇨🇦加拿大0
+  - hysteria2 | 🇨🇦加拿大0
+  - hysteria2 | 🇨🇦加拿大1
+  - vless | 🇨🇦加拿大1
+  - vless | 🇨🇦加拿大2
   - vless | 🇺🇸美国1
   - vless | 🇺🇸美国2
   - vless | 🇺🇸美国3
@@ -1925,11 +1931,11 @@ proxy-groups:
   - vless | 🇺🇸美国9
   - vless | 🇺🇸美国10
   - vless | 🇺🇸美国11
-  - vless | NoneCR0
   - vless | 🇺🇸美国12
+  - vless | NoneCR0
   - vless | 🇺🇸美国13
-  - vless | NoneCR1
   - vless | 🇺🇸美国14
+  - vless | NoneCR1
   - vless | 🇺🇸美国15
   - vless | 🇺🇸美国16
   - vless | 🇺🇸美国17
@@ -1956,8 +1962,8 @@ proxy-groups:
   - vless | 🇺🇸美国38
   - vless | 🇺🇸美国39
   - vless | 🇺🇸美国40
-  - vless | NoneCR2
   - vless | 🇺🇸美国41
+  - vless | NoneCR2
   - vless | 🇺🇸美国42
   - vless | 🇺🇸美国43
   - vless | 🇺🇸美国44
@@ -1971,13 +1977,13 @@ proxy-groups:
   - vless | 🇺🇸美国52
   - vless | 🇺🇸美国53
   - vless | 🇺🇸美国54
-  - vless | NoneCR3
   - vless | 🇺🇸美国55
-  - vless | NoneCR4
+  - vless | NoneCR3
   - vless | 🇺🇸美国56
+  - vless | NoneCR4
   - vless | 🇺🇸美国57
-  - vless | NoneCR5
   - vless | 🇺🇸美国58
+  - vless | NoneCR5
   - vless | 🇺🇸美国59
   - vless | 🇺🇸美国60
   - vless | 🇺🇸美国61
@@ -1986,8 +1992,8 @@ proxy-groups:
   - vless | 🇺🇸美国64
   - vless | 🇺🇸美国65
   - vless | 🇺🇸美国66
-  - vless | NoneCR6
   - vless | 🇺🇸美国67
+  - vless | NoneCR6
   - vless | 🇺🇸美国68
   - vless | 🇺🇸美国69
   - vless | 🇺🇸美国70
@@ -2005,15 +2011,15 @@ proxy-groups:
   - vless | 🇺🇸美国82
   - vless | 🇺🇸美国83
   - vless | 🇺🇸美国84
-  - vless | NoneCR7
   - vless | 🇺🇸美国85
+  - vless | NoneCR7
   - vless | 🇺🇸美国86
   - vless | 🇺🇸美国87
   - vless | 🇺🇸美国88
   - vless | 🇺🇸美国89
   - vless | 🇺🇸美国90
-  - vless | NoneCR8
   - vless | 🇺🇸美国91
+  - vless | NoneCR8
   - vless | 🇺🇸美国92
   - vless | 🇺🇸美国93
   - vless | 🇺🇸美国94
@@ -2030,14 +2036,14 @@ proxy-groups:
   - vless | 🇺🇸美国105
   - vless | 🇺🇸美国106
   - vless | 🇺🇸美国107
-  - vless | NoneCR9
   - vless | 🇺🇸美国108
+  - vless | NoneCR9
   - vless | 🇺🇸美国109
   - vless | 🇺🇸美国110
   - vless | 🇺🇸美国111
   - vless | 🇺🇸美国112
-  - vless | NoneCR10
   - vless | 🇺🇸美国113
+  - vless | NoneCR10
   - vless | 🇺🇸美国114
   - vless | 🇺🇸美国115
   - vless | 🇺🇸美国116
@@ -2050,6 +2056,7 @@ proxy-groups:
   - vless | 🇺🇸美国123
   - vless | 🇺🇸美国124
   - vless | 🇺🇸美国125
+  - vless | 🇺🇸美国126
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -2059,7 +2066,7 @@ proxy-groups:
   - hysteria | 🇹🇼台湾2
   - hysteria | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国1
-  - hysteria2 | 🇺🇸美国1
+  - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇫🇷法国3
   - reality_2_🇫🇷法国
@@ -2070,13 +2077,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - hysteria2 | 🇺🇸美国0
-  - hysteria2 | 🇨🇦加拿大0
-  - tuic | 🇨🇦加拿大0
-  - hysteria2 | 🇨🇦加拿大1
-  - tuic | 🇨🇦加拿大1
-  - tuic | 🇨🇦加拿大2
   - vless | 🇺🇸美国0
+  - vless | 🇨🇦加拿大0
+  - hysteria2 | 🇨🇦加拿大0
+  - hysteria2 | 🇨🇦加拿大1
+  - vless | 🇨🇦加拿大1
+  - vless | 🇨🇦加拿大2
   - vless | 🇺🇸美国1
   - vless | 🇺🇸美国2
   - vless | 🇺🇸美国3
@@ -2088,11 +2094,11 @@ proxy-groups:
   - vless | 🇺🇸美国9
   - vless | 🇺🇸美国10
   - vless | 🇺🇸美国11
-  - vless | NoneCR0
   - vless | 🇺🇸美国12
+  - vless | NoneCR0
   - vless | 🇺🇸美国13
-  - vless | NoneCR1
   - vless | 🇺🇸美国14
+  - vless | NoneCR1
   - vless | 🇺🇸美国15
   - vless | 🇺🇸美国16
   - vless | 🇺🇸美国17
@@ -2119,8 +2125,8 @@ proxy-groups:
   - vless | 🇺🇸美国38
   - vless | 🇺🇸美国39
   - vless | 🇺🇸美国40
-  - vless | NoneCR2
   - vless | 🇺🇸美国41
+  - vless | NoneCR2
   - vless | 🇺🇸美国42
   - vless | 🇺🇸美国43
   - vless | 🇺🇸美国44
@@ -2134,13 +2140,13 @@ proxy-groups:
   - vless | 🇺🇸美国52
   - vless | 🇺🇸美国53
   - vless | 🇺🇸美国54
-  - vless | NoneCR3
   - vless | 🇺🇸美国55
-  - vless | NoneCR4
+  - vless | NoneCR3
   - vless | 🇺🇸美国56
+  - vless | NoneCR4
   - vless | 🇺🇸美国57
-  - vless | NoneCR5
   - vless | 🇺🇸美国58
+  - vless | NoneCR5
   - vless | 🇺🇸美国59
   - vless | 🇺🇸美国60
   - vless | 🇺🇸美国61
@@ -2149,8 +2155,8 @@ proxy-groups:
   - vless | 🇺🇸美国64
   - vless | 🇺🇸美国65
   - vless | 🇺🇸美国66
-  - vless | NoneCR6
   - vless | 🇺🇸美国67
+  - vless | NoneCR6
   - vless | 🇺🇸美国68
   - vless | 🇺🇸美国69
   - vless | 🇺🇸美国70
@@ -2168,15 +2174,15 @@ proxy-groups:
   - vless | 🇺🇸美国82
   - vless | 🇺🇸美国83
   - vless | 🇺🇸美国84
-  - vless | NoneCR7
   - vless | 🇺🇸美国85
+  - vless | NoneCR7
   - vless | 🇺🇸美国86
   - vless | 🇺🇸美国87
   - vless | 🇺🇸美国88
   - vless | 🇺🇸美国89
   - vless | 🇺🇸美国90
-  - vless | NoneCR8
   - vless | 🇺🇸美国91
+  - vless | NoneCR8
   - vless | 🇺🇸美国92
   - vless | 🇺🇸美国93
   - vless | 🇺🇸美国94
@@ -2193,14 +2199,14 @@ proxy-groups:
   - vless | 🇺🇸美国105
   - vless | 🇺🇸美国106
   - vless | 🇺🇸美国107
-  - vless | NoneCR9
   - vless | 🇺🇸美国108
+  - vless | NoneCR9
   - vless | 🇺🇸美国109
   - vless | 🇺🇸美国110
   - vless | 🇺🇸美国111
   - vless | 🇺🇸美国112
-  - vless | NoneCR10
   - vless | 🇺🇸美国113
+  - vless | NoneCR10
   - vless | 🇺🇸美国114
   - vless | 🇺🇸美国115
   - vless | 🇺🇸美国116
@@ -2213,6 +2219,7 @@ proxy-groups:
   - vless | 🇺🇸美国123
   - vless | 🇺🇸美国124
   - vless | 🇺🇸美国125
+  - vless | 🇺🇸美国126
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -2222,7 +2229,7 @@ proxy-groups:
   - hysteria | 🇹🇼台湾2
   - hysteria | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国1
-  - hysteria2 | 🇺🇸美国1
+  - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇫🇷法国3
   - reality_2_🇫🇷法国
