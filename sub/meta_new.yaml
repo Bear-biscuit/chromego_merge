@@ -27,8 +27,8 @@ dns:
 proxies:
 - name: hysteria2 | 🇺🇸美国0
   type: hysteria2
-  server: 208.115.243.45
-  port: 30010
+  server: 64.31.55.42
+  port: 31100
   password: dongtaiwang.com
   alpn:
   - h3
@@ -36,10 +36,25 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
+- name: vmess | 🇨🇦加拿大0
+  type: vmess
+  server: 23.227.38.220
+  port: 443
+  cipher: auto
+  uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: photographs-encouraged-orientation-do.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
+    headers:
+      host: photographs-encouraged-orientation-do.trycloudflare.com
 - name: hysteria2 | 🇨🇦加拿大0
   type: hysteria2
-  server: 109.104.152.171
-  port: 20011
+  server: 109.104.152.214
+  port: 11111
   password: dongtaiwang.com
   alpn:
   - h3
@@ -49,8 +64,8 @@ proxies:
   down: 55 Mbps
 - name: hysteria2 | 🇨🇦加拿大1
   type: hysteria2
-  server: 109.104.152.171
-  port: 20011
+  server: 109.104.152.214
+  port: 11111
   password: dongtaiwang.com
   alpn:
   - h3
@@ -58,56 +73,20 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria2 | 🇺🇸美国1
-  type: hysteria2
-  server: 208.115.243.45
-  port: 30010
-  password: dongtaiwang.com
+- name: tuic | 🇨🇦加拿大0
+  server: 108.181.5.131
+  port: 21167
+  type: tuic
+  uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
+  password: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
   alpn:
   - h3
-  sni: bing.com
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+  sni: www.bing.com
   skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: hysteria2 | 🇨🇦加拿大2
-  type: hysteria2
-  server: 109.104.152.171
-  port: 20011
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: vless | 🇨🇦加拿大0
-  type: vless
-  server: 108.181.5.130
-  port: 19910
-  udp: true
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
-  tls: true
-  servername: m.media-amazon.com
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: vless | 🇨🇦加拿大1
-  type: vless
-  server: 108.181.5.130
-  port: 19910
-  udp: true
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
-  tls: true
-  servername: m.media-amazon.com
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
 - name: hysteria | 🇹🇼台湾0
   type: hysteria
   server: www2.dtku48.xyz
@@ -216,7 +195,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国2
+- name: hysteria2 | 🇺🇸美国1
   type: hysteria2
   server: 64.110.25.11
   port: 33337
@@ -275,12 +254,10 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - hysteria2 | 🇺🇸美国0
+  - vmess | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大1
-  - hysteria2 | 🇺🇸美国1
-  - hysteria2 | 🇨🇦加拿大2
-  - vless | 🇨🇦加拿大0
-  - vless | 🇨🇦加拿大1
+  - tuic | 🇨🇦加拿大0
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -290,7 +267,7 @@ proxy-groups:
   - hysteria | 🇹🇼台湾2
   - hysteria | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国1
-  - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇫🇷法国3
   - reality_2_🇫🇷法国
@@ -302,12 +279,10 @@ proxy-groups:
   tolerance: 50
   proxies:
   - hysteria2 | 🇺🇸美国0
+  - vmess | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大1
-  - hysteria2 | 🇺🇸美国1
-  - hysteria2 | 🇨🇦加拿大2
-  - vless | 🇨🇦加拿大0
-  - vless | 🇨🇦加拿大1
+  - tuic | 🇨🇦加拿大0
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -317,7 +292,7 @@ proxy-groups:
   - hysteria | 🇹🇼台湾2
   - hysteria | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国1
-  - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国2
   - hysteria2 | 🇫🇷法国3
   - reality_2_🇫🇷法国
