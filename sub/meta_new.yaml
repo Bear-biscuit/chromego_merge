@@ -51,6 +51,21 @@ proxies:
     path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
     headers:
       host: photographs-encouraged-orientation-do.trycloudflare.com
+- name: vmess | 🇨🇦加拿大1
+  type: vmess
+  server: 23.227.39.210
+  port: 443
+  cipher: auto
+  uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: phoenix-readers-contrary-vertex.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+    headers:
+      host: phoenix-readers-contrary-vertex.trycloudflare.com
 - name: hysteria2 | 🇨🇦加拿大0
   type: hysteria2
   server: 109.104.152.214
@@ -255,6 +270,7 @@ proxy-groups:
   - DIRECT
   - hysteria2 | 🇺🇸美国0
   - vmess | 🇨🇦加拿大0
+  - vmess | 🇨🇦加拿大1
   - hysteria2 | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大1
   - tuic | 🇨🇦加拿大0
@@ -280,6 +296,7 @@ proxy-groups:
   proxies:
   - hysteria2 | 🇺🇸美国0
   - vmess | 🇨🇦加拿大0
+  - vmess | 🇨🇦加拿大1
   - hysteria2 | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大1
   - tuic | 🇨🇦加拿大0
