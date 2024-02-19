@@ -39,33 +39,33 @@ proxies:
 - name: vmess | 🇨🇦加拿大0
   type: vmess
   server: 23.227.38.220
-  port: 443
+  port: 2053
   cipher: auto
   uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
   alterId: 0
   tls: true
   skip-cert-verify: true
-  servername: photographs-encouraged-orientation-do.trycloudflare.com
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
   network: ws
   ws-opts:
     path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
     headers:
-      host: photographs-encouraged-orientation-do.trycloudflare.com
+      host: pcs-referenced-camera-concerns.trycloudflare.com
 - name: vmess | 🇨🇦加拿大1
   type: vmess
   server: 23.227.39.210
-  port: 443
+  port: 2053
   cipher: auto
   uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
   alterId: 0
   tls: true
   skip-cert-verify: true
-  servername: phoenix-readers-contrary-vertex.trycloudflare.com
+  servername: sequence-worse-councils-nest.trycloudflare.com
   network: ws
   ws-opts:
     path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
     headers:
-      host: phoenix-readers-contrary-vertex.trycloudflare.com
+      host: sequence-worse-councils-nest.trycloudflare.com
 - name: hysteria2 | 🇨🇦加拿大0
   type: hysteria2
   server: 109.104.152.214
@@ -88,20 +88,36 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: tuic | 🇨🇦加拿大0
-  server: 108.181.5.131
-  port: 21167
-  type: tuic
+- name: vmess | 🇨🇦加拿大2
+  type: vmess
+  server: 23.227.38.220
+  port: 443
+  cipher: auto
   uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
-  password: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-  sni: www.bing.com
+  alterId: 0
+  tls: true
   skip-cert-verify: true
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+- name: vmess | 🇨🇦加拿大3
+  type: vmess
+  server: 23.227.39.210
+  port: 443
+  cipher: auto
+  uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: sequence-worse-councils-nest.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+    headers:
+      host: sequence-worse-councils-nest.trycloudflare.com
 - name: hysteria | 🇹🇼台湾0
   type: hysteria
   server: www2.dtku48.xyz
@@ -273,7 +289,8 @@ proxy-groups:
   - vmess | 🇨🇦加拿大1
   - hysteria2 | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大1
-  - tuic | 🇨🇦加拿大0
+  - vmess | 🇨🇦加拿大2
+  - vmess | 🇨🇦加拿大3
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
@@ -299,7 +316,8 @@ proxy-groups:
   - vmess | 🇨🇦加拿大1
   - hysteria2 | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大1
-  - tuic | 🇨🇦加拿大0
+  - vmess | 🇨🇦加拿大2
+  - vmess | 🇨🇦加拿大3
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
