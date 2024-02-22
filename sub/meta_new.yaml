@@ -265,80 +265,7 @@ proxies:
     path: 0e5da13a-b148-4889-9d72-ad1d9d5aa9ad-vm
     headers:
       host: widescreen-instruction-breakdown-postage.trycloudflare.com
-- name: vless | 🇺🇸美国0
-  type: vless
-  server: 64.31.55.42
-  port: 23514
-  udp: true
-  uuid: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  tls: true
-  servername: addons.mozilla.org
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: ew6CB407JaI_WVD7QlD5QuvJTD7Pbv1oEbtis35-MRM
-  client-fingerprint: chrome
-- name: vmess | 🇺🇸美国12
-  type: vmess
-  server: fbi.gov
-  port: 8080
-  cipher: auto
-  uuid: 9084653a-ee34-4293-979e-7c2b50dffb84
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: configured-creek-relating-theater.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 9084653a-ee34-4293-979e-7c2b50dffb84-vm
-    headers:
-      host: configured-creek-relating-theater.trycloudflare.com
-- name: vmess | 🇺🇸美国13
-  type: vmess
-  server: fbi.gov
-  port: 8080
-  cipher: auto
-  uuid: ac750859-79e7-4507-ba93-e92584ac49e3
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: per-essex-patterns-bowling.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ac750859-79e7-4507-ba93-e92584ac49e3-vm
-    headers:
-      host: per-essex-patterns-bowling.trycloudflare.com
-- name: vmess | 🇺🇸美国14
-  type: vmess
-  server: fbi.gov
-  port: 8080
-  cipher: auto
-  uuid: 5f7934bf-a228-49a7-9572-5ce4377c34d5
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: uh-lawyers-instruments-kernel.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 5f7934bf-a228-49a7-9572-5ce4377c34d5-vm
-    headers:
-      host: uh-lawyers-instruments-kernel.trycloudflare.com
-- name: vmess | 🇺🇸美国15
-  type: vmess
-  server: fbi.gov
-  port: 8080
-  cipher: auto
-  uuid: 0e5da13a-b148-4889-9d72-ad1d9d5aa9ad
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: widescreen-instruction-breakdown-postage.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 0e5da13a-b148-4889-9d72-ad1d9d5aa9ad-vm
-    headers:
-      host: widescreen-instruction-breakdown-postage.trycloudflare.com
-- name: vmess | 🇺🇸美国63
+- name: vmess | 🇺🇸美国68
   type: vmess
   server: yh1.freeh1.xyz
   port: 8080
@@ -353,7 +280,7 @@ proxies:
     path: 9084653a-ee34-4293-979e-7c2b50dffb84-vm
     headers:
       host: configured-creek-relating-theater.trycloudflare.com
-- name: vmess | 🇺🇸美国64
+- name: vmess | 🇺🇸美国69
   type: vmess
   server: yh1.freeh1.xyz
   port: 8080
@@ -368,7 +295,7 @@ proxies:
     path: ac750859-79e7-4507-ba93-e92584ac49e3-vm
     headers:
       host: per-essex-patterns-bowling.trycloudflare.com
-- name: vmess | 🇺🇸美国65
+- name: vmess | 🇺🇸美国70
   type: vmess
   server: yh1.freeh1.xyz
   port: 8080
@@ -383,7 +310,7 @@ proxies:
     path: 5f7934bf-a228-49a7-9572-5ce4377c34d5-vm
     headers:
       host: uh-lawyers-instruments-kernel.trycloudflare.com
-- name: vmess | 🇺🇸美国66
+- name: vmess | 🇺🇸美国71
   type: vmess
   server: yh1.freeh1.xyz
   port: 8080
@@ -640,15 +567,10 @@ proxy-groups:
   - vmess | 🇺🇸美国9
   - vmess | 🇺🇸美国10
   - vmess | 🇺🇸美国11
-  - vless | 🇺🇸美国0
-  - vmess | 🇺🇸美国12
-  - vmess | 🇺🇸美国13
-  - vmess | 🇺🇸美国14
-  - vmess | 🇺🇸美国15
-  - vmess | 🇺🇸美国63
-  - vmess | 🇺🇸美国64
-  - vmess | 🇺🇸美国65
-  - vmess | 🇺🇸美国66
+  - vmess | 🇺🇸美国68
+  - vmess | 🇺🇸美国69
+  - vmess | 🇺🇸美国70
+  - vmess | 🇺🇸美国71
   - vmess | 🇨🇦加拿大4
   - vmess | 🇨🇦加拿大5
   - vmess | 🇨🇦加拿大6
@@ -689,15 +611,10 @@ proxy-groups:
   - vmess | 🇺🇸美国9
   - vmess | 🇺🇸美国10
   - vmess | 🇺🇸美国11
-  - vless | 🇺🇸美国0
-  - vmess | 🇺🇸美国12
-  - vmess | 🇺🇸美国13
-  - vmess | 🇺🇸美国14
-  - vmess | 🇺🇸美国15
-  - vmess | 🇺🇸美国63
-  - vmess | 🇺🇸美国64
-  - vmess | 🇺🇸美国65
-  - vmess | 🇺🇸美国66
+  - vmess | 🇺🇸美国68
+  - vmess | 🇺🇸美国69
+  - vmess | 🇺🇸美国70
+  - vmess | 🇺🇸美国71
   - vmess | 🇨🇦加拿大4
   - vmess | 🇨🇦加拿大5
   - vmess | 🇨🇦加拿大6
