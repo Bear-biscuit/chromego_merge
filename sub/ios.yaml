@@ -3037,12 +3037,47 @@ proxies:
   server: 51.159.77.153
   port: 33390
   password: dongtaiwang.com
-  alpn:
-  - h3
   sni: bing.com
   skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
+- name: vless | 🇨🇦加拿大0
+  type: vless
+  server: 173.242.112.223
+  port: 53019
+  udp: true
+  uuid: 8497b067-fb80-46f6-9d1e-f448b08a38ab
+  tls: true
+  servername: addons.mozilla.org
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: vIMF9VrPGWZsgY2zsRZyt4mLcnA7bn_dF1UcBi4dv3w
+  client-fingerprint: chrome
+- name: vless | 🇨🇦加拿大1
+  type: vless
+  server: 89.208.243.9
+  port: 40821
+  udp: true
+  uuid: ad6a6c44-8214-4b3d-a13b-e398daa9026a
+  tls: true
+  servername: addons.mozilla.org
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: tC_h0GuPP1DxQ-WMgp4QBHjPOVY_taYW9pUMocOzbAY
+  client-fingerprint: chrome
+- name: vless | 🇨🇦加拿大2
+  type: vless
+  server: 216.24.188.189
+  port: 53555
+  udp: true
+  uuid: 7d8f6abc-8048-4a5d-93c7-67e0b7371c16
+  tls: true
+  servername: addons.mozilla.org
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: tbez1qn3jAT8TYsvh-w4Jh24mZHV6h8uWt1NaOizpBo
+  client-fingerprint: chrome
 - name: vless | 🇬🇧英国0
   type: vless
   server: 45.145.72.212
@@ -3387,6 +3422,9 @@ proxy-groups:
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
+  - vless | 🇨🇦加拿大0
+  - vless | 🇨🇦加拿大1
+  - vless | 🇨🇦加拿大2
   - vless | 🇬🇧英国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇺🇸美国0
@@ -3602,6 +3640,9 @@ proxy-groups:
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
+  - vless | 🇨🇦加拿大0
+  - vless | 🇨🇦加拿大1
+  - vless | 🇨🇦加拿大2
   - vless | 🇬🇧英国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇺🇸美国0
@@ -3817,6 +3858,9 @@ proxy-groups:
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
+  - vless | 🇨🇦加拿大0
+  - vless | 🇨🇦加拿大1
+  - vless | 🇨🇦加拿大2
   - vless | 🇬🇧英国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇺🇸美国0
