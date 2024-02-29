@@ -344,14 +344,14 @@ proxies:
   server: fbi.gov
   port: 8080
   cipher: auto
-  uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
   alterId: 0
   tls: false
   skip-cert-verify: true
   servername: larger-marketing-amounts-skin.trycloudflare.com
   network: ws
   ws-opts:
-    path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
 - name: vmess | 🇺🇸美国17
@@ -404,14 +404,14 @@ proxies:
   server: yh1.freeh1.xyz
   port: 8080
   cipher: auto
-  uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
   alterId: 0
   tls: false
   skip-cert-verify: true
   servername: larger-marketing-amounts-skin.trycloudflare.com
   network: ws
   ws-opts:
-    path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
 - name: vmess | 🇺🇸美国21
@@ -464,14 +464,14 @@ proxies:
   server: yh3.freeh1.xyz
   port: 8080
   cipher: auto
-  uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
   alterId: 0
   tls: false
   skip-cert-verify: true
   servername: larger-marketing-amounts-skin.trycloudflare.com
   network: ws
   ws-opts:
-    path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
 - name: vmess | 🇺🇸美国25
@@ -524,14 +524,14 @@ proxies:
   server: yh3.freeh1.xyz
   port: 8080
   cipher: auto
-  uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
   alterId: 0
   tls: false
   skip-cert-verify: true
   servername: larger-marketing-amounts-skin.trycloudflare.com
   network: ws
   ws-opts:
-    path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
 - name: vmess | 🇺🇸美国29
@@ -704,14 +704,14 @@ proxies:
   server: fbi.gov
   port: 8080
   cipher: auto
-  uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
   alterId: 0
   tls: false
   skip-cert-verify: true
   servername: larger-marketing-amounts-skin.trycloudflare.com
   network: ws
   ws-opts:
-    path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
 - name: vmess | 🇺🇸美国37
@@ -764,14 +764,14 @@ proxies:
   server: yh1.freeh1.xyz
   port: 8080
   cipher: auto
-  uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
   alterId: 0
   tls: false
   skip-cert-verify: true
   servername: larger-marketing-amounts-skin.trycloudflare.com
   network: ws
   ws-opts:
-    path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
 - name: vmess | 🇺🇸美国41
@@ -824,14 +824,14 @@ proxies:
   server: yh3.freeh1.xyz
   port: 8080
   cipher: auto
-  uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
   alterId: 0
   tls: false
   skip-cert-verify: true
   servername: larger-marketing-amounts-skin.trycloudflare.com
   network: ws
   ws-opts:
-    path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
 - name: vmess | 🇺🇸美国45
@@ -884,14 +884,14 @@ proxies:
   server: yh3.freeh1.xyz
   port: 8080
   cipher: auto
-  uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
   alterId: 0
   tls: false
   skip-cert-verify: true
   servername: larger-marketing-amounts-skin.trycloudflare.com
   network: ws
   ws-opts:
-    path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
 - name: hysteria | 🇹🇼台湾0
