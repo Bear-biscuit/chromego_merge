@@ -742,18 +742,6 @@ proxies:
     host: nijigen-works.jp
     password: FHDLxKgzbcDCPmijble8uT1gddgBmOxA1XXeDgyqgGc=
     version: 3
-- name: shadowtls_0_🇺🇸美国
-  type: ss
-  server: 172.83.156.157
-  port: 44550
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5IH4rBauUuOT4VpAshgMPMSQ3Tf+oJjDY/jEDbIel2Q=
-  plugin: shadow-tls
-  client-fingerprint: chrome
-  plugin-opts:
-    host: nijigen-works.jp
-    password: FHDLxKgzbcDCPmijble8uT1gddgBmOxA1XXeDgyqgGc=
-    version: 3
 - name: hysteria | 🇫🇷法国0
   type: hysteria
   server: 51.158.54.46
@@ -897,7 +885,6 @@ proxy-groups:
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
   - ss | 🇬🇧英国0
-  - shadowtls_0_🇺🇸美国
   - hysteria | 🇫🇷法国0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇹🇼台湾2
@@ -961,7 +948,6 @@ proxy-groups:
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
   - ss | 🇬🇧英国0
-  - shadowtls_0_🇺🇸美国
   - hysteria | 🇫🇷法国0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇹🇼台湾2
