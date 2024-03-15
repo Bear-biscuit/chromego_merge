@@ -910,6 +910,66 @@ proxies:
     host: nijigen-works.jp
     password: FHDLxKgzbcDCPmijble8uT1gddgBmOxA1XXeDgyqgGc=
     version: 3
+- name: hysteria | 🇨🇦加拿大0
+  type: hysteria
+  server: hy2.dtku47.xyz
+  port: 15566
+  auth-str: jQrGpwSqp34P
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: hysteria | 🇨🇦加拿大1
+  type: hysteria
+  server: clash1.dtku47.xyz
+  port: 11223
+  auth-str: O5tQQiW2xKf5
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: hysteria | 🇨🇦加拿大2
+  type: hysteria
+  server: hy2.dtku47.xyz
+  port: 15566
+  auth-str: jQrGpwSqp34P
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: hysteria | 🇨🇦加拿大3
+  type: hysteria
+  server: hy1.dtku47.xyz
+  port: 22334
+  auth-str: lASdKzWK0VxL
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: hysteria | 🇨🇦加拿大4
+  type: hysteria
+  server: hy2.dtku47.xyz
+  port: 15566
+  auth-str: jQrGpwSqp34P
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: hysteria | 🇨🇦加拿大5
+  type: hysteria
+  server: hy1.dtku47.xyz
+  port: 22334
+  auth-str: lASdKzWK0VxL
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
 - name: hysteria | 🇫🇷法国0
   type: hysteria
   server: 51.158.54.46
@@ -1064,6 +1124,12 @@ proxy-groups:
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
   - ss | 🇬🇧英国0
+  - hysteria | 🇨🇦加拿大0
+  - hysteria | 🇨🇦加拿大1
+  - hysteria | 🇨🇦加拿大2
+  - hysteria | 🇨🇦加拿大3
+  - hysteria | 🇨🇦加拿大4
+  - hysteria | 🇨🇦加拿大5
   - hysteria | 🇫🇷法国0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇹🇼台湾2
@@ -1138,6 +1204,12 @@ proxy-groups:
   - hysteria | 🇹🇼台湾1
   - hysteria2 | 🇫🇷法国0
   - ss | 🇬🇧英国0
+  - hysteria | 🇨🇦加拿大0
+  - hysteria | 🇨🇦加拿大1
+  - hysteria | 🇨🇦加拿大2
+  - hysteria | 🇨🇦加拿大3
+  - hysteria | 🇨🇦加拿大4
+  - hysteria | 🇨🇦加拿大5
   - hysteria | 🇫🇷法国0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇹🇼台湾2
