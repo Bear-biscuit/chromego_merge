@@ -25,17 +25,10 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - {
-    name: bocchi2b,
-    server: 142.171.31.40,
-    port: 1201,
-    client-fingerprint: chrome,
-    type: hysteria2,
-    password: 731f4c1c-492a-4c68-939f-5ee904ae6dd2,
-    sni: vps1.bocchi2b.top,
-    skip-cert-verify: true,
-    udp: true,
-    }
+  - name: 博客地址：bocchi2b.top
+    type: hysteria2
+    server: 109.104.152.333
+    port: 8007
 
 proxy-groups:
   - name: 节点选择
