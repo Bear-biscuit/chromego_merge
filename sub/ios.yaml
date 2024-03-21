@@ -89,7 +89,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: vmess | 🇺🇸美国0
+- name: vmess | 🇺🇸美国1
   type: vmess
   server: fbi.gov
   port: 8080
@@ -104,7 +104,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
     headers:
       host: pcs-referenced-camera-concerns.trycloudflare.com
-- name: vmess | 🇺🇸美国1
+- name: vmess | 🇺🇸美国2
   type: vmess
   server: fbi.gov
   port: 8080
@@ -119,7 +119,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
     headers:
       host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-- name: vmess | 🇺🇸美国2
+- name: vmess | 🇺🇸美国3
   type: vmess
   server: fbi.gov
   port: 8080
@@ -134,7 +134,7 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
     headers:
       host: nest-emily-healing-h.trycloudflare.com
-- name: vmess | 🇺🇸美国3
+- name: vmess | 🇺🇸美国4
   type: vmess
   server: fbi.gov
   port: 8080
@@ -149,6 +149,66 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
+- name: vmess | 🇺🇸美国5
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: uh-lawyers-instruments-kernel.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+    headers:
+      host: uh-lawyers-instruments-kernel.trycloudflare.com
+- name: vmess | 🇺🇸美国6
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: per-essex-patterns-bowling.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+    headers:
+      host: per-essex-patterns-bowling.trycloudflare.com
+- name: vmess | 🇺🇸美国7
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: technological-mel-fill-decide.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
+    headers:
+      host: technological-mel-fill-decide.trycloudflare.com
+- name: vmess | 🇺🇸美国8
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
+    headers:
+      host: widescreen-instruction-breakdown-postage.trycloudflare.com
 - name: vmess | 🇨🇦加拿大4
   type: vmess
   server: 23.227.39.12
@@ -362,10 +422,14 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
   - hysteria | 🇨🇦加拿大5
-  - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
+  - vmess | 🇺🇸美国4
+  - vmess | 🇺🇸美国5
+  - vmess | 🇺🇸美国6
+  - vmess | 🇺🇸美国7
+  - vmess | 🇺🇸美国8
   - vmess | 🇨🇦加拿大4
   - vmess | 🇨🇦加拿大5
   - vmess | 🇨🇦加拿大6
@@ -391,10 +455,14 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
   - hysteria | 🇨🇦加拿大5
-  - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
+  - vmess | 🇺🇸美国4
+  - vmess | 🇺🇸美国5
+  - vmess | 🇺🇸美国6
+  - vmess | 🇺🇸美国7
+  - vmess | 🇺🇸美国8
   - vmess | 🇨🇦加拿大4
   - vmess | 🇨🇦加拿大5
   - vmess | 🇨🇦加拿大6
@@ -420,10 +488,14 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
   - hysteria | 🇨🇦加拿大5
-  - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
+  - vmess | 🇺🇸美国4
+  - vmess | 🇺🇸美国5
+  - vmess | 🇺🇸美国6
+  - vmess | 🇺🇸美国7
+  - vmess | 🇺🇸美国8
   - vmess | 🇨🇦加拿大4
   - vmess | 🇨🇦加拿大5
   - vmess | 🇨🇦加拿大6
