@@ -5,4 +5,3 @@ hysteria://108.181.5.133:26022?peer=bing.com&auth=dongtaiwang.com&insecure=1&upm
 hysteria://173.234.25.52:48919?peer=bing.com&auth=dongtaiwang.com&insecure=1&upmbps=11&downmbps=55&alpn=h3&obfs=&protocol=udp&fastopen=1#hysteria1
 hysteria://www.dtku40.xyz:18490?peer=bing.com&auth=dongtaiwang.com&insecure=1&upmbps=11&downmbps=55&alpn=h3&obfs=&protocol=udp&fastopen=1#hysteria2
 hysteria://167.160.91.115:41189?peer=www.amazon.cn&auth=bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF&insecure=1&upmbps=11&downmbps=55&alpn=h3&obfs=&protocol=udp&fastopen=1#hysteria3
-hysteria://www.dtku50.xyz:18470?peer=www.amazon.cn&auth=dongtaiwang.com&insecure=1&upmbps=2&downmbps=10&alpn=h3&mport=18470&obfs=&protocol=udp&fastopen=1#hysteria10

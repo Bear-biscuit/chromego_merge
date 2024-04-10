@@ -96,17 +96,24 @@ proxies:
   skip-cert-verify: true
   up: 5 Mbps
   down: 20 Mbps
-- name: hysteria | 🇹🇼台湾0
-  type: hysteria
-  server: www2.dtku48.xyz
-  port: 22334
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-  skip-cert-verify: true
+- name: ss | 🇨🇦加拿大0
+  type: ss
+  server: 109.104.152.186
+  port: 11223
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 7/bb9x3TJQ4Y5SRA/Al3OdwxIk4uf3Jg8N9wDQg+Uto=
+  smux:
+    enabled: true
+    protocol: smux
+    max-connections: 1
+    min-streams: 4
+    statistic: false
+    only-tcp: false
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 11
+      down: 55
 - name: hysteria2 | 🇨🇦加拿大0
   type: hysteria2
   server: 109.104.152.89
@@ -118,29 +125,48 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: ss | 🇬🇧英国0
+- name: vless | 🇨🇦加拿大0
+  type: vless
+  server: 109.104.152.101
+  port: 13982
+  uuid: 85beb960-236b-4634-81ce-6ad66652f928
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: HjmsLPRaQqSqtdMMpIpmpoJOKhC0rAOUCHXnz0E89RE
+    short-id: 22f6b74f02cc88a6
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 11
+      down: 55
+- name: ss | 🇨🇦加拿大1
   type: ss
-  server: 62.204.54.81
-  port: 44550
+  server: 109.104.152.186
+  port: 11223
   cipher: 2022-blake3-chacha20-poly1305
-  password: 5IH4rBauUuOT4VpAshgMPMSQ3Tf+oJjDY/jEDbIel2Q=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: FHDLxKgzbcDCPmijble8uT1gddgBmOxA1XXeDgyqgGc=
-    version: 3
-- name: hysteria | 🇹🇼台湾1
-  type: hysteria
-  server: www.dtku50.xyz
-  port: 18470
-  sni: www.amazon.cn
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 2
-  down: 10
+  password: 7/bb9x3TJQ4Y5SRA/Al3OdwxIk4uf3Jg8N9wDQg+Uto=
+  smux:
+    enabled: true
+    protocol: smux
+    max-connections: 1
+    min-streams: 4
+    statistic: false
+    only-tcp: false
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 11
+      down: 55
 - name: shadowtls_1_🇨🇦加拿大
   type: ss
   server: 109.104.152.186
@@ -181,7 +207,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇹🇼台湾2
+- name: hysteria | 🇹🇼台湾0
   type: hysteria
   server: www.dtku40.xyz
   port: 18490
@@ -254,14 +280,14 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大4
   - hysteria | 🇨🇦加拿大5
   - hysteria2 | 🇺🇸美国0
-  - hysteria | 🇹🇼台湾0
+  - ss | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大0
-  - ss | 🇬🇧英国0
-  - hysteria | 🇹🇼台湾1
+  - vless | 🇨🇦加拿大0
+  - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇺🇸美国0
-  - hysteria | 🇹🇼台湾2
+  - hysteria | 🇹🇼台湾0
   - hysteria | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇺🇸美国1
@@ -280,14 +306,14 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大4
   - hysteria | 🇨🇦加拿大5
   - hysteria2 | 🇺🇸美国0
-  - hysteria | 🇹🇼台湾0
+  - ss | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大0
-  - ss | 🇬🇧英国0
-  - hysteria | 🇹🇼台湾1
+  - vless | 🇨🇦加拿大0
+  - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇺🇸美国0
-  - hysteria | 🇹🇼台湾2
+  - hysteria | 🇹🇼台湾0
   - hysteria | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇺🇸美国1
