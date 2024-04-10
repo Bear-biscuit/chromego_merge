@@ -141,6 +141,18 @@ proxies:
   auth_str: dongtaiwang.com
   up: 2
   down: 10
+- name: shadowtls_1_🇨🇦加拿大
+  type: ss
+  server: 109.104.152.186
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2mLw+aTguEUrvK/Jamxr4CY/RbLCL/MmfWJQ7c6bXe8=
+  plugin: shadow-tls
+  client-fingerprint: chrome
+  plugin-opts:
+    host: nijigen-works.jp
+    password: UcMMbVQBzIUAcdC12ju6lV9j3rjK3cAQiZoYCDk1h/g=
+    version: 3
 - name: hysteria | 🇨🇦加拿大6
   type: hysteria
   server: 108.181.5.133
@@ -246,6 +258,7 @@ proxy-groups:
   - hysteria2 | 🇨🇦加拿大0
   - ss | 🇬🇧英国0
   - hysteria | 🇹🇼台湾1
+  - shadowtls_1_🇨🇦加拿大
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇺🇸美国0
   - hysteria | 🇹🇼台湾2
@@ -271,6 +284,7 @@ proxy-groups:
   - hysteria2 | 🇨🇦加拿大0
   - ss | 🇬🇧英国0
   - hysteria | 🇹🇼台湾1
+  - shadowtls_1_🇨🇦加拿大
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇺🇸美国0
   - hysteria | 🇹🇼台湾2
