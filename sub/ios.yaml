@@ -197,11 +197,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国0
+- name: hysteria | 🇫🇷法国0
   type: hysteria
-  server: 173.234.25.52
-  port: 48919
-  ports: 48919
+  server: 62.210.243.131
+  port: 18702
+  ports: 18702
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -228,8 +228,8 @@ proxies:
 - name: hysteria | 🇨🇦加拿大7
   type: hysteria
   server: 109.104.152.194
-  port: 25304
-  ports: 47000-48000
+  port: 58510
+  ports: 58510
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -298,7 +298,7 @@ proxy-groups:
   - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
   - hysteria | 🇨🇦加拿大6
-  - hysteria | 🇺🇸美国0
+  - hysteria | 🇫🇷法国0
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇨🇦加拿大7
   - hysteria2 | 🇨🇦加拿大1
@@ -321,7 +321,7 @@ proxy-groups:
   - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
   - hysteria | 🇨🇦加拿大6
-  - hysteria | 🇺🇸美国0
+  - hysteria | 🇫🇷法国0
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇨🇦加拿大7
   - hysteria2 | 🇨🇦加拿大1
@@ -344,7 +344,7 @@ proxy-groups:
   - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
   - hysteria | 🇨🇦加拿大6
-  - hysteria | 🇺🇸美国0
+  - hysteria | 🇫🇷法国0
   - hysteria | 🇹🇼台湾0
   - hysteria | 🇨🇦加拿大7
   - hysteria2 | 🇨🇦加拿大1
