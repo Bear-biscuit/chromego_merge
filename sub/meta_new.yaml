@@ -221,24 +221,24 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国1
+- name: hysteria | 🇨🇦加拿大7
   type: hysteria
-  server: 167.160.91.115
-  port: 41189
-  ports: 41189
-  auth_str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF
+  server: 109.104.152.194
+  port: 25304
+  ports: 47000-48000
+  auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.amazon.cn
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria2 | 🇫🇷法国0
+- name: hysteria2 | 🇨🇦加拿大1
   type: hysteria2
-  server: 62.210.103.0
-  port: 22483
+  server: 109.104.152.194
+  port: 20352
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -251,7 +251,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇫🇷法国1
+- name: hysteria2 | 🇫🇷法国0
   type: hysteria2
   server: 62.210.103.0
   port: 22483
@@ -259,7 +259,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇫🇷法国2
+- name: hysteria2 | 🇫🇷法国1
   type: hysteria2
   server: 51.159.77.198
   port: 53967
@@ -288,11 +288,11 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇺🇸美国0
   - hysteria | 🇹🇼台湾0
-  - hysteria | 🇺🇸美国1
-  - hysteria2 | 🇫🇷法国0
+  - hysteria | 🇨🇦加拿大7
+  - hysteria2 | 🇨🇦加拿大1
   - hysteria2 | 🇺🇸美国1
+  - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇫🇷法国1
-  - hysteria2 | 🇫🇷法国2
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -314,11 +314,11 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大6
   - hysteria | 🇺🇸美国0
   - hysteria | 🇹🇼台湾0
-  - hysteria | 🇺🇸美国1
-  - hysteria2 | 🇫🇷法国0
+  - hysteria | 🇨🇦加拿大7
+  - hysteria2 | 🇨🇦加拿大1
   - hysteria2 | 🇺🇸美国1
+  - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇫🇷法国1
-  - hysteria2 | 🇫🇷法国2
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
