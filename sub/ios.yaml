@@ -129,16 +129,6 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: hysteria | 🇨🇦加拿大4
-  type: hysteria
-  server: hy1.dtku47.xyz
-  port: 22334
-  auth-str: lASdKzWK0VxL
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
 - name: tuic | 🇺🇸美国0
   server: 74.63.233.74
   port: 33441
@@ -234,7 +224,7 @@ proxies:
     host: nijigen-works.jp
     password: UcMMbVQBzIUAcdC12ju6lV9j3rjK3cAQiZoYCDk1h/g=
     version: 3
-- name: hysteria | 🇨🇦加拿大5
+- name: hysteria | 🇨🇦加拿大4
   type: hysteria
   server: 108.181.5.133
   port: 26022
@@ -276,7 +266,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇨🇦加拿大6
+- name: hysteria | 🇨🇦加拿大5
   type: hysteria
   server: 109.104.152.194
   port: 58510
@@ -344,17 +334,16 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
   - tuic | 🇺🇸美国0
   - ss | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大0
   - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
-  - hysteria | 🇨🇦加拿大5
+  - hysteria | 🇨🇦加拿大4
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
-  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇨🇦加拿大5
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
@@ -370,17 +359,16 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
   - tuic | 🇺🇸美国0
   - ss | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大0
   - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
-  - hysteria | 🇨🇦加拿大5
+  - hysteria | 🇨🇦加拿大4
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
-  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇨🇦加拿大5
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
@@ -396,17 +384,16 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
   - tuic | 🇺🇸美国0
   - ss | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大0
   - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
-  - hysteria | 🇨🇦加拿大5
+  - hysteria | 🇨🇦加拿大4
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
-  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇨🇦加拿大5
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
