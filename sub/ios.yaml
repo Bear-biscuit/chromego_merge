@@ -139,18 +139,66 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: tuic | 🇺🇸美国0
-  server: 74.63.233.74
-  port: 33441
-  type: tuic
-  uuid: a258065f-9502-4fe6-b3ed-cf7440e25150
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+- name: vmess | 🇺🇸美国4
+  type: vmess
+  server: fbi.gov
+  port: 8443
+  uuid: 7c82741d-5510-4cfe-a022-8ee885b80d8a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: commitments-coin-acdbentity-organized.trycloudflare.com
+  ws-opts:
+    path: 7c82741d-5510-4cfe-a022-8ee885b80d8a-vm
+    headers:
+      Host: commitments-coin-acdbentity-organized.trycloudflare.com
+- name: vmess | 🇺🇸美国5
+  type: vmess
+  server: 162.159.136.11
+  port: 8880
+  uuid: 7c82741d-5510-4cfe-a022-8ee885b80d8a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: commitments-coin-acdbentity-organized.trycloudflare.com
+  ws-opts:
+    path: 7c82741d-5510-4cfe-a022-8ee885b80d8a-vm
+    headers:
+      Host: commitments-coin-acdbentity-organized.trycloudflare.com
+- name: vmess | 🇺🇸美国6
+  type: vmess
+  server: 172.64.144.200
+  port: 8443
+  uuid: 7c82741d-5510-4cfe-a022-8ee885b80d8a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: commitments-coin-acdbentity-organized.trycloudflare.com
+  ws-opts:
+    path: 7c82741d-5510-4cfe-a022-8ee885b80d8a-vm
+    headers:
+      Host: commitments-coin-acdbentity-organized.trycloudflare.com
+- name: vmess | 🇺🇸美国7
+  type: vmess
+  server: 104.19.38.12
+  port: 8880
+  uuid: 7c82741d-5510-4cfe-a022-8ee885b80d8a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: commitments-coin-acdbentity-organized.trycloudflare.com
+  ws-opts:
+    path: 7c82741d-5510-4cfe-a022-8ee885b80d8a-vm
+    headers:
+      Host: commitments-coin-acdbentity-organized.trycloudflare.com
 - name: ss | 🇨🇦加拿大0
   type: ss
   server: 109.104.152.186
@@ -236,9 +284,9 @@ proxies:
     version: 3
 - name: hysteria | 🇨🇦加拿大5
   type: hysteria
-  server: 108.181.5.133
-  port: 26022
-  ports: 26022
+  server: 109.104.152.194
+  port: 58510
+  ports: 58510
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -345,7 +393,10 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - tuic | 🇺🇸美国0
+  - vmess | 🇺🇸美国4
+  - vmess | 🇺🇸美国5
+  - vmess | 🇺🇸美国6
+  - vmess | 🇺🇸美国7
   - ss | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大0
@@ -371,7 +422,10 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - tuic | 🇺🇸美国0
+  - vmess | 🇺🇸美国4
+  - vmess | 🇺🇸美国5
+  - vmess | 🇺🇸美国6
+  - vmess | 🇺🇸美国7
   - ss | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大0
@@ -397,7 +451,10 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - tuic | 🇺🇸美国0
+  - vmess | 🇺🇸美国4
+  - vmess | 🇺🇸美国5
+  - vmess | 🇺🇸美国6
+  - vmess | 🇺🇸美国7
   - ss | 🇨🇦加拿大0
   - hysteria2 | 🇨🇦加拿大0
   - vless | 🇨🇦加拿大0
