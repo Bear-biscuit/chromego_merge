@@ -138,63 +138,63 @@ proxies:
 - name: vmess | 🇺🇸美国4
   type: vmess
   server: fbi.gov
-  port: 8443
-  uuid: 7c82741d-5510-4cfe-a022-8ee885b80d8a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  servername: commitments-coin-acdbentity-organized.trycloudflare.com
-  ws-opts:
-    path: 7c82741d-5510-4cfe-a022-8ee885b80d8a-vm
-    headers:
-      Host: commitments-coin-acdbentity-organized.trycloudflare.com
-- name: vmess | 🇺🇸美国5
-  type: vmess
-  server: 162.159.136.11
-  port: 8880
-  uuid: 7c82741d-5510-4cfe-a022-8ee885b80d8a
+  port: 8080
+  uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: commitments-coin-acdbentity-organized.trycloudflare.com
+  servername: ip001.dtku47.xyz
   ws-opts:
-    path: 7c82741d-5510-4cfe-a022-8ee885b80d8a-vm
+    path: /9aqOiXD2/
     headers:
-      Host: commitments-coin-acdbentity-organized.trycloudflare.com
-- name: vmess | 🇺🇸美国6
+      Host: ip001.dtku47.xyz
+- name: vmess | 🇺🇸美国5
   type: vmess
-  server: 172.64.144.200
-  port: 8443
-  uuid: 7c82741d-5510-4cfe-a022-8ee885b80d8a
+  server: 172.64.169.160
+  port: 8080
+  uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   network: ws
-  servername: commitments-coin-acdbentity-organized.trycloudflare.com
+  servername: ip001.dtku47.xyz
   ws-opts:
-    path: 7c82741d-5510-4cfe-a022-8ee885b80d8a-vm
+    path: /9aqOiXD2/
     headers:
-      Host: commitments-coin-acdbentity-organized.trycloudflare.com
+      Host: ip001.dtku47.xyz
+- name: vmess | 🇺🇸美国6
+  type: vmess
+  server: 162.159.128.118
+  port: 8080
+  uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip001.dtku47.xyz
+  ws-opts:
+    path: /9aqOiXD2/
+    headers:
+      Host: ip001.dtku47.xyz
 - name: vmess | 🇺🇸美国7
   type: vmess
   server: 104.19.38.12
-  port: 8880
-  uuid: 7c82741d-5510-4cfe-a022-8ee885b80d8a
+  port: 8080
+  uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: commitments-coin-acdbentity-organized.trycloudflare.com
+  servername: ip001.dtku47.xyz
   ws-opts:
-    path: 7c82741d-5510-4cfe-a022-8ee885b80d8a-vm
+    path: /9aqOiXD2/
     headers:
-      Host: commitments-coin-acdbentity-organized.trycloudflare.com
+      Host: ip001.dtku47.xyz
 - name: ss | 🇨🇦加拿大0
   type: ss
   server: 109.104.152.186
@@ -213,17 +213,66 @@ proxies:
       enabled: true
       up: 11
       down: 55
-- name: hysteria2 | 🇨🇦加拿大0
-  type: hysteria2
-  server: 109.104.152.89
-  port: 22441
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
+- name: vmess | 🇺🇸美国8
+  type: vmess
+  server: 162.159.129.111
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
+- name: vmess | 🇺🇸美国9
+  type: vmess
+  server: 162.159.136.208
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
+- name: vmess | 🇺🇸美国10
+  type: vmess
+  server: 172.64.144.66
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
+- name: vmess | 🇺🇸美国11
+  type: vmess
+  server: 104.19.38.88
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
 - name: vless | 🇨🇦加拿大0
   type: vless
   server: 109.104.152.101
@@ -278,20 +327,6 @@ proxies:
     host: nijigen-works.jp
     password: UcMMbVQBzIUAcdC12ju6lV9j3rjK3cAQiZoYCDk1h/g=
     version: 3
-- name: hysteria | 🇨🇦加拿大5
-  type: hysteria
-  server: 109.104.152.194
-  port: 58510
-  ports: 58510
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: hysteria | 🇫🇷法国0
   type: hysteria
   server: 62.210.243.131
@@ -320,11 +355,25 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇨🇦加拿大6
+- name: hysteria | 🇫🇷法国2
   type: hysteria
-  server: 109.104.152.194
-  port: 58510
-  ports: 58510
+  server: 62.210.243.131
+  port: 18702
+  ports: 18702
+  auth_str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: hysteria | 🇫🇷法国3
+  type: hysteria
+  server: 62.210.243.131
+  port: 18702
+  ports: 18702
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -386,14 +435,17 @@ proxy-groups:
   - vmess | 🇺🇸美国6
   - vmess | 🇺🇸美国7
   - ss | 🇨🇦加拿大0
-  - hysteria2 | 🇨🇦加拿大0
+  - vmess | 🇺🇸美国8
+  - vmess | 🇺🇸美国9
+  - vmess | 🇺🇸美国10
+  - vmess | 🇺🇸美国11
   - vless | 🇨🇦加拿大0
   - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
-  - hysteria | 🇨🇦加拿大5
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
-  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇫🇷法国2
+  - hysteria | 🇫🇷法国3
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
@@ -418,14 +470,17 @@ proxy-groups:
   - vmess | 🇺🇸美国6
   - vmess | 🇺🇸美国7
   - ss | 🇨🇦加拿大0
-  - hysteria2 | 🇨🇦加拿大0
+  - vmess | 🇺🇸美国8
+  - vmess | 🇺🇸美国9
+  - vmess | 🇺🇸美国10
+  - vmess | 🇺🇸美国11
   - vless | 🇨🇦加拿大0
   - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
-  - hysteria | 🇨🇦加拿大5
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
-  - hysteria | 🇨🇦加拿大6
+  - hysteria | 🇫🇷法国2
+  - hysteria | 🇫🇷法国3
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
