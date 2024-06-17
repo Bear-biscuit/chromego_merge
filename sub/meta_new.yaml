@@ -145,11 +145,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip001.dtku47.xyz
+  servername: ip001.freegradely.xyz
   ws-opts:
     path: /9aqOiXD2/
     headers:
-      Host: ip001.dtku47.xyz
+      Host: ip001.freegradely.xyz
 - name: vmess | 🇺🇸美国5
   type: vmess
   server: 172.64.169.160
@@ -160,11 +160,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip001.dtku47.xyz
+  servername: ip001.freegradely.xyz
   ws-opts:
     path: /9aqOiXD2/
     headers:
-      Host: ip001.dtku47.xyz
+      Host: ip001.freegradely.xyz
 - name: vmess | 🇺🇸美国6
   type: vmess
   server: 162.159.128.118
@@ -175,11 +175,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip001.dtku47.xyz
+  servername: ip001.freegradely.xyz
   ws-opts:
     path: /9aqOiXD2/
     headers:
-      Host: ip001.dtku47.xyz
+      Host: ip001.freegradely.xyz
 - name: vmess | 🇺🇸美国7
   type: vmess
   server: 104.19.38.12
@@ -190,11 +190,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip001.dtku47.xyz
+  servername: ip001.freegradely.xyz
   ws-opts:
     path: /9aqOiXD2/
     headers:
-      Host: ip001.dtku47.xyz
+      Host: ip001.freegradely.xyz
 - name: ss | 🇨🇦加拿大0
   type: ss
   server: 109.104.152.186
@@ -228,11 +228,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5.dtku47.xyz
+  servername: ip5.freegradely.xyz
   ws-opts:
     path: /WNh8bXQv/
     headers:
-      Host: ip5.dtku47.xyz
+      Host: ip5.freegradely.xyz
 - name: vmess | 🇺🇸美国9
   type: vmess
   server: 162.159.136.208
@@ -243,11 +243,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5.dtku47.xyz
+  servername: ip5.freegradely.xyz
   ws-opts:
     path: /WNh8bXQv/
     headers:
-      Host: ip5.dtku47.xyz
+      Host: ip5.freegradely.xyz
 - name: vmess | 🇺🇸美国10
   type: vmess
   server: 172.64.144.66
@@ -258,11 +258,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5.dtku47.xyz
+  servername: ip5.freegradely.xyz
   ws-opts:
     path: /WNh8bXQv/
     headers:
-      Host: ip5.dtku47.xyz
+      Host: ip5.freegradely.xyz
 - name: vmess | 🇺🇸美国11
   type: vmess
   server: 104.19.38.88
@@ -273,11 +273,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5.dtku47.xyz
+  servername: ip5.freegradely.xyz
   ws-opts:
     path: /WNh8bXQv/
     headers:
-      Host: ip5.dtku47.xyz
+      Host: ip5.freegradely.xyz
 - name: vless | 🇨🇦加拿大0
   type: vless
   server: 109.104.152.101
