@@ -165,9 +165,9 @@ proxies:
     path: /9aqOiXD2/
     headers:
       Host: ip001.freegradely.xyz
-- name: vmess | 🇺🇸美国6
+- name: vmess | 🇨🇦加拿大0
   type: vmess
-  server: 162.159.128.118
+  server: 23.227.38.3
   port: 8080
   uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de
   alterId: 0
@@ -180,7 +180,7 @@ proxies:
     path: /9aqOiXD2/
     headers:
       Host: ip001.freegradely.xyz
-- name: vmess | 🇺🇸美国7
+- name: vmess | 🇺🇸美国6
   type: vmess
   server: 104.19.38.12
   port: 8080
@@ -218,37 +218,37 @@ proxies:
       enabled: true
       up: 11
       down: 55
+- name: vmess | 🇺🇸美国7
+  type: vmess
+  server: 104.16.149.222
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.freegradely.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.freegradely.xyz
+- name: vmess | 🇨🇦加拿大1
+  type: vmess
+  server: 23.227.38.8
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.freegradely.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.freegradely.xyz
 - name: vmess | 🇺🇸美国8
-  type: vmess
-  server: 162.159.129.111
-  port: 2095
-  uuid: e9555d84-a146-4e36-9c23-eac28387be48
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: ip5.freegradely.xyz
-  ws-opts:
-    path: /WNh8bXQv/
-    headers:
-      Host: ip5.freegradely.xyz
-- name: vmess | 🇺🇸美国9
-  type: vmess
-  server: 162.159.136.208
-  port: 2095
-  uuid: e9555d84-a146-4e36-9c23-eac28387be48
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: ip5.freegradely.xyz
-  ws-opts:
-    path: /WNh8bXQv/
-    headers:
-      Host: ip5.freegradely.xyz
-- name: vmess | 🇺🇸美国10
   type: vmess
   server: 172.64.144.66
   port: 2095
@@ -263,7 +263,7 @@ proxies:
     path: /WNh8bXQv/
     headers:
       Host: ip5.freegradely.xyz
-- name: vmess | 🇺🇸美国11
+- name: vmess | 🇺🇸美国9
   type: vmess
   server: 104.19.38.88
   port: 2095
@@ -437,13 +437,13 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大4
   - vmess | 🇺🇸美国4
   - vmess | 🇺🇸美国5
+  - vmess | 🇨🇦加拿大0
   - vmess | 🇺🇸美国6
-  - vmess | 🇺🇸美国7
   - ss | 🇨🇦加拿大0
+  - vmess | 🇺🇸美国7
+  - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国8
   - vmess | 🇺🇸美国9
-  - vmess | 🇺🇸美国10
-  - vmess | 🇺🇸美国11
   - vless | 🇨🇦加拿大0
   - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
@@ -472,13 +472,13 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大4
   - vmess | 🇺🇸美国4
   - vmess | 🇺🇸美国5
+  - vmess | 🇨🇦加拿大0
   - vmess | 🇺🇸美国6
-  - vmess | 🇺🇸美国7
   - ss | 🇨🇦加拿大0
+  - vmess | 🇺🇸美国7
+  - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国8
   - vmess | 🇺🇸美国9
-  - vmess | 🇺🇸美国10
-  - vmess | 🇺🇸美国11
   - vless | 🇨🇦加拿大0
   - ss | 🇨🇦加拿大1
   - shadowtls_1_🇨🇦加拿大
