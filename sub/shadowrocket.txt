@@ -1,6 +1,5 @@
 http2://ZG9uZ3RhaXdhbmcuY29tOmRvbmd0YWl3YW5nLmNvbUBuYWl2ZTE5LmNmY2RuMy54eXo6NDQz
 http2://ZG9uZ3RhaXdhbmcuY29tOmRvbmd0YWl3YW5nLmNvbUB3d3cuZHRrdTUwLnh5ejo0NDM=
-ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6Mm1MdythVGd1RVVydksvSmFteHI0Q1kvUmJMQ0wvTW1mV0pRN2M2YlhlOD1AMTA5LjEwNC4xNTIuMTg2OjQ0Mw==?shadow-tls=eyJ2ZXJzaW9uIjogIjEiLCAiaG9zdCI6ICJuaWppZ2VuLXdvcmtzLmpwIn0=#shadowtls1
 hysteria://62.210.243.131:18702?peer=bing.com&auth=dongtaiwang.com&insecure=1&upmbps=11&downmbps=55&alpn=h3&obfs=&protocol=udp&fastopen=1#hysteria0
 hysteria://62.210.243.131:18702?peer=bing.com&auth=dongtaiwang.com&insecure=1&upmbps=11&downmbps=55&alpn=h3&obfs=&protocol=udp&fastopen=1#hysteria1
 hysteria://62.210.243.131:18702?peer=bing.com&auth=dongtaiwang.com&insecure=1&upmbps=11&downmbps=55&alpn=h3&obfs=&protocol=udp&fastopen=1#hysteria2

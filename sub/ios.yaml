@@ -199,29 +199,18 @@ proxies:
     path: /9aqOiXD2/
     headers:
       Host: ip001.freegradely.xyz
-- name: ss | 🇨🇦加拿大0
-  type: ss
+- name: tuic | 🇨🇦加拿大0
   server: 109.104.152.186
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2mLw+aTguEUrvK/Jamxr4CY/RbLCL/MmfWJQ7c6bXe8=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: UcMMbVQBzIUAcdC12ju6lV9j3rjK3cAQiZoYCDk1h/g=
-    version: 3
-  smux:
-    enabled: true
-    protocol: smux
-    max-connections: 1
-    min-streams: 4
-    statistic: false
-    only-tcp: false
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 11
-      down: 55
+  port: 44550
+  type: tuic
+  uuid: 760d4891-63ab-40db-98c7-1219ae1b92df
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: vmess | 🇺🇸美国7
   type: vmess
   server: 104.16.149.222
@@ -306,36 +295,18 @@ proxies:
       enabled: true
       up: 11
       down: 55
-- name: ss | 🇨🇦加拿大1
-  type: ss
+- name: tuic | 🇨🇦加拿大1
   server: 109.104.152.186
-  port: 11223
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7/bb9x3TJQ4Y5SRA/Al3OdwxIk4uf3Jg8N9wDQg+Uto=
-  smux:
-    enabled: true
-    protocol: smux
-    max-connections: 1
-    min-streams: 4
-    statistic: false
-    only-tcp: false
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 11
-      down: 55
-- name: shadowtls_1_🇨🇦加拿大
-  type: ss
-  server: 109.104.152.186
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2mLw+aTguEUrvK/Jamxr4CY/RbLCL/MmfWJQ7c6bXe8=
-  plugin: shadow-tls
-  client-fingerprint: chrome
-  plugin-opts:
-    host: nijigen-works.jp
-    password: UcMMbVQBzIUAcdC12ju6lV9j3rjK3cAQiZoYCDk1h/g=
-    version: 3
+  port: 44550
+  type: tuic
+  uuid: 760d4891-63ab-40db-98c7-1219ae1b92df
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: hysteria | 🇫🇷法国0
   type: hysteria
   server: 62.210.243.131
@@ -451,14 +422,13 @@ proxy-groups:
   - vmess | 🇺🇸美国5
   - vmess | 🇨🇦加拿大0
   - vmess | 🇺🇸美国6
-  - ss | 🇨🇦加拿大0
+  - tuic | 🇨🇦加拿大0
   - vmess | 🇺🇸美国7
   - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国8
   - vmess | 🇺🇸美国9
   - vless | 🇨🇦加拿大0
-  - ss | 🇨🇦加拿大1
-  - shadowtls_1_🇨🇦加拿大
+  - tuic | 🇨🇦加拿大1
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
@@ -483,14 +453,13 @@ proxy-groups:
   - vmess | 🇺🇸美国5
   - vmess | 🇨🇦加拿大0
   - vmess | 🇺🇸美国6
-  - ss | 🇨🇦加拿大0
+  - tuic | 🇨🇦加拿大0
   - vmess | 🇺🇸美国7
   - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国8
   - vmess | 🇺🇸美国9
   - vless | 🇨🇦加拿大0
-  - ss | 🇨🇦加拿大1
-  - shadowtls_1_🇨🇦加拿大
+  - tuic | 🇨🇦加拿大1
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
@@ -515,14 +484,13 @@ proxy-groups:
   - vmess | 🇺🇸美国5
   - vmess | 🇨🇦加拿大0
   - vmess | 🇺🇸美国6
-  - ss | 🇨🇦加拿大0
+  - tuic | 🇨🇦加拿大0
   - vmess | 🇺🇸美国7
   - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国8
   - vmess | 🇺🇸美国9
   - vless | 🇨🇦加拿大0
-  - ss | 🇨🇦加拿大1
-  - shadowtls_1_🇨🇦加拿大
+  - tuic | 🇨🇦加拿大1
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
