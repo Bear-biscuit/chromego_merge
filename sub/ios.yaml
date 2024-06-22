@@ -59,6 +59,66 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
+- name: vmess | 🇺🇸美国0
+  type: vmess
+  server: 104.26.9.22
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: vmess | 🇺🇸美国1
+  type: vmess
+  server: 172.64.97.235
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: vmess | 🇺🇸美国2
+  type: vmess
+  server: 104.19.38.28
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: vmess | 🇺🇸美国3
+  type: vmess
+  server: 104.19.38.48
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
 - name: hysteria | 🇨🇦加拿大3
   type: hysteria
   server: hy2.dtku47.xyz
@@ -79,7 +139,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: vmess | 🇺🇸美国1
+- name: vmess | 🇺🇸美国4
   type: vmess
   server: 104.19.38.8
   port: 2086
@@ -94,7 +154,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip11.freegradely.xyz
-- name: vmess | 🇺🇸美国2
+- name: vmess | 🇺🇸美国5
   type: vmess
   server: 104.26.0.56
   port: 2086
@@ -124,7 +184,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip11.freegradely.xyz
-- name: vmess | 🇺🇸美国3
+- name: vmess | 🇺🇸美国6
   type: vmess
   server: 104.19.38.12
   port: 2086
@@ -151,7 +211,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: vmess | 🇺🇸美国4
+- name: vmess | 🇺🇸美国7
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -181,7 +241,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-4.freegradely.xyz
-- name: vmess | 🇺🇸美国5
+- name: vmess | 🇺🇸美国8
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -196,7 +256,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-4.freegradely.xyz
-- name: vmess | 🇺🇸美国6
+- name: vmess | 🇺🇸美国9
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -352,17 +412,21 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇨🇦加拿大1
   - hysteria | 🇨🇦加拿大2
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
+  - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
-  - vmess | 🇨🇦加拿大0
   - vmess | 🇺🇸美国3
-  - tuic | 🇨🇦加拿大0
+  - hysteria | 🇨🇦加拿大3
+  - hysteria | 🇨🇦加拿大4
   - vmess | 🇺🇸美国4
-  - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国5
+  - vmess | 🇨🇦加拿大0
   - vmess | 🇺🇸美国6
+  - tuic | 🇨🇦加拿大0
+  - vmess | 🇺🇸美国7
+  - vmess | 🇨🇦加拿大1
+  - vmess | 🇺🇸美国8
+  - vmess | 🇺🇸美国9
   - vless | 🇨🇦加拿大0
   - tuic | 🇨🇦加拿大1
   - hysteria | 🇫🇷法国0
@@ -379,17 +443,21 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇨🇦加拿大1
   - hysteria | 🇨🇦加拿大2
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
+  - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
-  - vmess | 🇨🇦加拿大0
   - vmess | 🇺🇸美国3
-  - tuic | 🇨🇦加拿大0
+  - hysteria | 🇨🇦加拿大3
+  - hysteria | 🇨🇦加拿大4
   - vmess | 🇺🇸美国4
-  - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国5
+  - vmess | 🇨🇦加拿大0
   - vmess | 🇺🇸美国6
+  - tuic | 🇨🇦加拿大0
+  - vmess | 🇺🇸美国7
+  - vmess | 🇨🇦加拿大1
+  - vmess | 🇺🇸美国8
+  - vmess | 🇺🇸美国9
   - vless | 🇨🇦加拿大0
   - tuic | 🇨🇦加拿大1
   - hysteria | 🇫🇷法国0
@@ -406,17 +474,21 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇨🇦加拿大1
   - hysteria | 🇨🇦加拿大2
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
+  - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
-  - vmess | 🇨🇦加拿大0
   - vmess | 🇺🇸美国3
-  - tuic | 🇨🇦加拿大0
+  - hysteria | 🇨🇦加拿大3
+  - hysteria | 🇨🇦加拿大4
   - vmess | 🇺🇸美国4
-  - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国5
+  - vmess | 🇨🇦加拿大0
   - vmess | 🇺🇸美国6
+  - tuic | 🇨🇦加拿大0
+  - vmess | 🇺🇸美国7
+  - vmess | 🇨🇦加拿大1
+  - vmess | 🇺🇸美国8
+  - vmess | 🇺🇸美国9
   - vless | 🇨🇦加拿大0
   - tuic | 🇨🇦加拿大1
   - hysteria | 🇫🇷法国0
