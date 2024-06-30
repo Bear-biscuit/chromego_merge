@@ -149,11 +149,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国5
   type: vmess
   server: 104.26.0.56
@@ -164,11 +164,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇨🇦加拿大0
   type: vmess
   server: 23.227.38.3
@@ -179,11 +179,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国6
   type: vmess
   server: 104.19.38.12
@@ -194,11 +194,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国7
   type: vmess
   server: 172.64.175.88
@@ -209,11 +209,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国8
   type: vmess
   server: 172.64.99.22
@@ -224,11 +224,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国9
   type: vmess
   server: 104.19.21.71
@@ -239,11 +239,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国10
   type: vmess
   server: 172.64.175.213
@@ -254,11 +254,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国11
   type: vmess
   server: 172.64.198.249
@@ -269,11 +269,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国12
   type: vmess
   server: 172.64.194.76
@@ -284,11 +284,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国13
   type: vmess
   server: 104.19.21.63
@@ -299,11 +299,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国14
   type: vmess
   server: 104.19.123.11
@@ -314,11 +314,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国15
   type: vmess
   server: 104.18.57.111
@@ -329,11 +329,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国16
   type: vmess
   server: 104.19.21.230
@@ -344,11 +344,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国17
   type: vmess
   server: 104.19.21.230
@@ -359,11 +359,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国18
   type: vmess
   server: 104.19.46.103
@@ -374,11 +374,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国19
   type: vmess
   server: 104.19.32.216
@@ -389,11 +389,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国20
   type: vmess
   server: 104.19.47.65
@@ -404,11 +404,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国21
   type: vmess
   server: 104.19.58.175
@@ -419,11 +419,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国22
   type: vmess
   server: 104.19.55.49
@@ -434,11 +434,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国23
   type: vmess
   server: 104.19.42.49
@@ -449,11 +449,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国24
   type: vmess
   server: 104.17.106.151
@@ -464,11 +464,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国25
   type: vmess
   server: 104.19.57.4
@@ -479,11 +479,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国26
   type: vmess
   server: 104.19.59.89
@@ -494,11 +494,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国27
   type: vmess
   server: 104.20.17.186
@@ -509,11 +509,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国28
   type: vmess
   server: 104.20.25.146
@@ -524,11 +524,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国29
   type: vmess
   server: 104.20.25.146
@@ -539,11 +539,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国30
   type: vmess
   server: 104.26.7.132
@@ -554,11 +554,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国31
   type: vmess
   server: 104.20.25.146
@@ -569,11 +569,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国32
   type: vmess
   server: 104.20.17.186
@@ -584,11 +584,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国33
   type: vmess
   server: 104.19.45.11
@@ -599,11 +599,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国34
   type: vmess
   server: 104.19.45.13
@@ -614,11 +614,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国35
   type: vmess
   server: 104.19.45.15
@@ -629,11 +629,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国36
   type: vmess
   server: 104.19.45.17
@@ -644,11 +644,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国37
   type: vmess
   server: 104.19.45.19
@@ -659,11 +659,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国38
   type: vmess
   server: 104.19.45.31
@@ -674,11 +674,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国39
   type: vmess
   server: 104.19.45.35
@@ -689,11 +689,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国40
   type: vmess
   server: 104.19.45.42
@@ -704,11 +704,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国41
   type: vmess
   server: 104.19.45.47
@@ -719,11 +719,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国42
   type: vmess
   server: 104.19.45.50
@@ -734,11 +734,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国43
   type: vmess
   server: 104.19.45.90
@@ -749,11 +749,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国44
   type: vmess
   server: 104.19.46.17
@@ -764,11 +764,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国45
   type: vmess
   server: 104.19.46.22
@@ -779,11 +779,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国46
   type: vmess
   server: 104.19.46.27
@@ -794,11 +794,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国47
   type: vmess
   server: 104.19.46.33
@@ -809,11 +809,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国48
   type: vmess
   server: 104.19.46.36
@@ -824,11 +824,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国49
   type: vmess
   server: 104.19.46.39
@@ -839,11 +839,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国50
   type: vmess
   server: 104.19.46.42
@@ -854,11 +854,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国51
   type: vmess
   server: 104.19.46.56
@@ -869,11 +869,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国52
   type: vmess
   server: 104.19.46.59
@@ -884,11 +884,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国53
   type: vmess
   server: 104.19.46.63
@@ -899,11 +899,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国54
   type: vmess
   server: 104.19.47.22
@@ -914,11 +914,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国55
   type: vmess
   server: 104.19.47.27
@@ -929,11 +929,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国56
   type: vmess
   server: 104.19.47.32
@@ -944,11 +944,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国57
   type: vmess
   server: 104.19.47.36
@@ -959,11 +959,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国58
   type: vmess
   server: 104.19.47.45
@@ -974,11 +974,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国59
   type: vmess
   server: 104.19.47.77
@@ -989,11 +989,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国60
   type: vmess
   server: 104.19.47.79
@@ -1004,11 +1004,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国61
   type: vmess
   server: 104.19.47.88
@@ -1019,11 +1019,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国62
   type: vmess
   server: 104.19.47.80
@@ -1034,11 +1034,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: vmess | 🇺🇸美国63
   type: vmess
   server: 104.19.47.122
@@ -1049,11 +1049,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip13.freegradely.xyz
+  servername: ip14.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip13.freegradely.xyz
+      Host: ip14.freegradely.xyz
 - name: ss | 🇺🇸美国0
   type: ss
   server: 23.170.40.77
@@ -1075,11 +1075,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-4.freegradely.xyz
+  servername: ip5-7.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-4.freegradely.xyz
+      Host: ip5-7.freegradely.xyz
 - name: vmess | 🇨🇦加拿大1
   type: vmess
   server: 23.227.38.8
@@ -1090,11 +1090,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-4.freegradely.xyz
+  servername: ip5-7.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-4.freegradely.xyz
+      Host: ip5-7.freegradely.xyz
 - name: vmess | 🇺🇸美国65
   type: vmess
   server: 104.26.0.50
@@ -1105,11 +1105,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-4.freegradely.xyz
+  servername: ip5-7.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-4.freegradely.xyz
+      Host: ip5-7.freegradely.xyz
 - name: vmess | 🇺🇸美国66
   type: vmess
   server: 104.19.38.88
@@ -1120,11 +1120,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-4.freegradely.xyz
+  servername: ip5-7.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-4.freegradely.xyz
+      Host: ip5-7.freegradely.xyz
 - name: ss | 🇺🇸美国1
   type: ss
   server: 23.170.40.77
@@ -1222,6 +1222,14 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国2
+  type: hysteria2
+  server: 166.88.159.24
+  port: 40931
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2 | 🇺🇸美国3
   type: hysteria2
   server: 166.88.159.24
   port: 40931
@@ -1327,6 +1335,7 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国3
 - name: 手动选择
   type: select
   proxies:
@@ -1414,6 +1423,7 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国3
 - name: 负载均衡
   type: load-balance
   proxies:
@@ -1501,6 +1511,7 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国3
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
