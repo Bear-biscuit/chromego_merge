@@ -139,17 +139,6 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: ss | 🇺🇸美国0
-  type: ss
-  server: 23.170.40.77
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: CmUP/cj9LY2W4bsBUV7mG8ujmMcCOzt+b4un9xnLuro=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: K+NtA/8R8MTQ9vyZAd0kzUYJkwQmQBkUIQmwa2Po8cM=
-    version: 3
 - name: vmess | 🇺🇸美国32
   type: vmess
   server: 104.19.32.88
@@ -210,7 +199,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-7.freegradely.xyz
-- name: ss | 🇺🇸美国1
+- name: ss | 🇺🇸美国0
   type: ss
   server: 23.170.40.77
   port: 443
@@ -345,12 +334,11 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - ss | 🇺🇸美国0
   - vmess | 🇺🇸美国32
   - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国33
   - vmess | 🇺🇸美国34
-  - ss | 🇺🇸美国1
+  - ss | 🇺🇸美国0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
@@ -372,12 +360,11 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - ss | 🇺🇸美国0
   - vmess | 🇺🇸美国32
   - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国33
   - vmess | 🇺🇸美国34
-  - ss | 🇺🇸美国1
+  - ss | 🇺🇸美国0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
@@ -399,12 +386,11 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - ss | 🇺🇸美国0
   - vmess | 🇺🇸美国32
   - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国33
   - vmess | 🇺🇸美国34
-  - ss | 🇺🇸美国1
+  - ss | 🇺🇸美国0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
