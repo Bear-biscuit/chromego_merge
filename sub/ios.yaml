@@ -149,11 +149,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国5
   type: vmess
   server: 104.26.0.56
@@ -164,11 +164,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇨🇦加拿大0
   type: vmess
   server: 23.227.38.3
@@ -179,11 +179,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国6
   type: vmess
   server: 104.19.38.12
@@ -194,11 +194,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国7
   type: vmess
   server: 172.64.175.88
@@ -209,11 +209,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国8
   type: vmess
   server: 172.64.99.22
@@ -224,11 +224,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国9
   type: vmess
   server: 104.19.21.71
@@ -239,11 +239,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国10
   type: vmess
   server: 172.64.175.213
@@ -254,11 +254,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国11
   type: vmess
   server: 172.64.198.249
@@ -269,11 +269,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国12
   type: vmess
   server: 172.64.194.76
@@ -284,11 +284,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国13
   type: vmess
   server: 104.19.21.63
@@ -299,11 +299,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国14
   type: vmess
   server: 104.19.123.11
@@ -314,11 +314,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国15
   type: vmess
   server: 104.18.57.111
@@ -329,11 +329,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国16
   type: vmess
   server: 104.19.21.230
@@ -344,11 +344,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国17
   type: vmess
   server: 104.19.21.230
@@ -359,11 +359,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国18
   type: vmess
   server: 104.19.46.103
@@ -374,11 +374,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国19
   type: vmess
   server: 104.19.32.216
@@ -389,11 +389,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国20
   type: vmess
   server: 104.19.47.65
@@ -404,11 +404,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国21
   type: vmess
   server: 104.19.58.175
@@ -419,11 +419,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国22
   type: vmess
   server: 104.19.55.49
@@ -434,11 +434,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国23
   type: vmess
   server: 104.19.42.49
@@ -449,11 +449,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国24
   type: vmess
   server: 104.17.106.151
@@ -464,11 +464,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国25
   type: vmess
   server: 104.19.57.4
@@ -479,11 +479,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国26
   type: vmess
   server: 104.19.59.89
@@ -494,11 +494,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国27
   type: vmess
   server: 104.20.17.186
@@ -509,11 +509,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国28
   type: vmess
   server: 104.20.25.146
@@ -524,11 +524,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国29
   type: vmess
   server: 104.20.25.146
@@ -539,11 +539,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国30
   type: vmess
   server: 104.26.7.132
@@ -554,11 +554,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国31
   type: vmess
   server: 104.20.25.146
@@ -569,11 +569,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国32
   type: vmess
   server: 104.20.17.186
@@ -584,11 +584,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国33
   type: vmess
   server: 104.19.45.11
@@ -599,11 +599,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国34
   type: vmess
   server: 104.19.45.13
@@ -614,11 +614,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国35
   type: vmess
   server: 104.19.45.15
@@ -629,11 +629,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国36
   type: vmess
   server: 104.19.45.17
@@ -644,11 +644,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国37
   type: vmess
   server: 104.19.45.19
@@ -659,11 +659,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国38
   type: vmess
   server: 104.19.45.31
@@ -674,11 +674,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国39
   type: vmess
   server: 104.19.45.35
@@ -689,11 +689,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国40
   type: vmess
   server: 104.19.45.42
@@ -704,11 +704,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国41
   type: vmess
   server: 104.19.45.47
@@ -719,11 +719,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国42
   type: vmess
   server: 104.19.45.50
@@ -734,11 +734,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国43
   type: vmess
   server: 104.19.45.90
@@ -749,11 +749,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国44
   type: vmess
   server: 104.19.46.17
@@ -764,11 +764,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国45
   type: vmess
   server: 104.19.46.22
@@ -779,11 +779,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国46
   type: vmess
   server: 104.19.46.27
@@ -794,11 +794,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国47
   type: vmess
   server: 104.19.46.33
@@ -809,11 +809,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国48
   type: vmess
   server: 104.19.46.36
@@ -824,11 +824,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国49
   type: vmess
   server: 104.19.46.39
@@ -839,11 +839,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国50
   type: vmess
   server: 104.19.46.42
@@ -854,11 +854,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国51
   type: vmess
   server: 104.19.46.56
@@ -869,11 +869,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国52
   type: vmess
   server: 104.19.46.59
@@ -884,11 +884,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国53
   type: vmess
   server: 104.19.46.63
@@ -899,11 +899,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国54
   type: vmess
   server: 104.19.47.22
@@ -914,11 +914,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国55
   type: vmess
   server: 104.19.47.27
@@ -929,11 +929,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国56
   type: vmess
   server: 104.19.47.32
@@ -944,11 +944,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国57
   type: vmess
   server: 104.19.47.36
@@ -959,11 +959,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国58
   type: vmess
   server: 104.19.47.45
@@ -974,11 +974,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国59
   type: vmess
   server: 104.19.47.77
@@ -989,11 +989,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国60
   type: vmess
   server: 104.19.47.79
@@ -1004,11 +1004,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国61
   type: vmess
   server: 104.19.47.88
@@ -1019,11 +1019,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国62
   type: vmess
   server: 104.19.47.80
@@ -1034,11 +1034,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess | 🇺🇸美国63
   type: vmess
   server: 104.19.47.122
@@ -1049,11 +1049,461 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国64
+  type: vmess
+  server: 172.64.167.5
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国65
+  type: vmess
+  server: 172.64.167.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国66
+  type: vmess
+  server: 172.64.167.10
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国67
+  type: vmess
+  server: 172.64.167.15
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国68
+  type: vmess
+  server: 172.64.167.19
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国69
+  type: vmess
+  server: 172.64.167.22
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国70
+  type: vmess
+  server: 172.64.167.25
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国71
+  type: vmess
+  server: 172.64.167.29
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国72
+  type: vmess
+  server: 172.64.167.35
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国73
+  type: vmess
+  server: 172.64.167.44
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国74
+  type: vmess
+  server: 172.64.233.7
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国75
+  type: vmess
+  server: 172.64.233.9
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国76
+  type: vmess
+  server: 172.64.233.15
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国77
+  type: vmess
+  server: 172.64.233.17
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国78
+  type: vmess
+  server: 172.64.233.24
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国79
+  type: vmess
+  server: 172.64.233.27
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国80
+  type: vmess
+  server: 172.64.233.32
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国81
+  type: vmess
+  server: 172.64.233.35
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国82
+  type: vmess
+  server: 172.64.233.37
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国83
+  type: vmess
+  server: 172.64.233.43
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国84
+  type: vmess
+  server: 172.64.166.2
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国85
+  type: vmess
+  server: 172.64.166.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国86
+  type: vmess
+  server: 172.64.166.9
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国87
+  type: vmess
+  server: 172.64.166.12
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国88
+  type: vmess
+  server: 172.64.166.16
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国89
+  type: vmess
+  server: 172.64.166.20
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国90
+  type: vmess
+  server: 172.64.166.22
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国91
+  type: vmess
+  server: 172.64.166.28
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国92
+  type: vmess
+  server: 172.64.166.32
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: vmess | 🇺🇸美国93
+  type: vmess
+  server: 172.64.166.33
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip2.1457230.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
 - name: ss | 🇺🇸美国0
   type: ss
   server: 23.170.40.77
@@ -1065,7 +1515,7 @@ proxies:
     host: nijigen-works.jp
     password: K+NtA/8R8MTQ9vyZAd0kzUYJkwQmQBkUIQmwa2Po8cM=
     version: 3
-- name: vmess | 🇺🇸美国64
+- name: vmess | 🇺🇸美国94
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -1075,11 +1525,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: vmess | 🇨🇦加拿大1
   type: vmess
   server: 23.227.38.8
@@ -1090,12 +1540,12 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
-- name: vmess | 🇺🇸美国65
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国95
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -1105,12 +1555,12 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
-- name: vmess | 🇺🇸美国66
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国96
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -1120,11 +1570,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: ss | 🇺🇸美国1
   type: ss
   server: 23.170.40.77
@@ -1213,6 +1663,14 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
+- name: hysteria2 | 🇫🇷法国0
+  type: hysteria2
+  server: 51.159.2.179
+  port: 23499
+  password: dongtaiwang.com
+  fast-open: true
+  sni: bing.com
+  skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国1
   type: hysteria2
   server: 166.88.159.24
@@ -1222,14 +1680,6 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国2
-  type: hysteria2
-  server: 166.88.159.24
-  port: 40931
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国3
   type: hysteria2
   server: 166.88.159.24
   port: 40931
@@ -1321,11 +1771,41 @@ proxy-groups:
   - vmess | 🇺🇸美国61
   - vmess | 🇺🇸美国62
   - vmess | 🇺🇸美国63
-  - ss | 🇺🇸美国0
   - vmess | 🇺🇸美国64
-  - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国65
   - vmess | 🇺🇸美国66
+  - vmess | 🇺🇸美国67
+  - vmess | 🇺🇸美国68
+  - vmess | 🇺🇸美国69
+  - vmess | 🇺🇸美国70
+  - vmess | 🇺🇸美国71
+  - vmess | 🇺🇸美国72
+  - vmess | 🇺🇸美国73
+  - vmess | 🇺🇸美国74
+  - vmess | 🇺🇸美国75
+  - vmess | 🇺🇸美国76
+  - vmess | 🇺🇸美国77
+  - vmess | 🇺🇸美国78
+  - vmess | 🇺🇸美国79
+  - vmess | 🇺🇸美国80
+  - vmess | 🇺🇸美国81
+  - vmess | 🇺🇸美国82
+  - vmess | 🇺🇸美国83
+  - vmess | 🇺🇸美国84
+  - vmess | 🇺🇸美国85
+  - vmess | 🇺🇸美国86
+  - vmess | 🇺🇸美国87
+  - vmess | 🇺🇸美国88
+  - vmess | 🇺🇸美国89
+  - vmess | 🇺🇸美国90
+  - vmess | 🇺🇸美国91
+  - vmess | 🇺🇸美国92
+  - vmess | 🇺🇸美国93
+  - ss | 🇺🇸美国0
+  - vmess | 🇺🇸美国94
+  - vmess | 🇨🇦加拿大1
+  - vmess | 🇺🇸美国95
+  - vmess | 🇺🇸美国96
   - ss | 🇺🇸美国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇫🇷法国0
@@ -1333,9 +1813,9 @@ proxy-groups:
   - hysteria | 🇫🇷法国2
   - hysteria | 🇫🇷法国3
   - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
 - name: 手动选择
   type: select
   proxies:
@@ -1409,11 +1889,41 @@ proxy-groups:
   - vmess | 🇺🇸美国61
   - vmess | 🇺🇸美国62
   - vmess | 🇺🇸美国63
-  - ss | 🇺🇸美国0
   - vmess | 🇺🇸美国64
-  - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国65
   - vmess | 🇺🇸美国66
+  - vmess | 🇺🇸美国67
+  - vmess | 🇺🇸美国68
+  - vmess | 🇺🇸美国69
+  - vmess | 🇺🇸美国70
+  - vmess | 🇺🇸美国71
+  - vmess | 🇺🇸美国72
+  - vmess | 🇺🇸美国73
+  - vmess | 🇺🇸美国74
+  - vmess | 🇺🇸美国75
+  - vmess | 🇺🇸美国76
+  - vmess | 🇺🇸美国77
+  - vmess | 🇺🇸美国78
+  - vmess | 🇺🇸美国79
+  - vmess | 🇺🇸美国80
+  - vmess | 🇺🇸美国81
+  - vmess | 🇺🇸美国82
+  - vmess | 🇺🇸美国83
+  - vmess | 🇺🇸美国84
+  - vmess | 🇺🇸美国85
+  - vmess | 🇺🇸美国86
+  - vmess | 🇺🇸美国87
+  - vmess | 🇺🇸美国88
+  - vmess | 🇺🇸美国89
+  - vmess | 🇺🇸美国90
+  - vmess | 🇺🇸美国91
+  - vmess | 🇺🇸美国92
+  - vmess | 🇺🇸美国93
+  - ss | 🇺🇸美国0
+  - vmess | 🇺🇸美国94
+  - vmess | 🇨🇦加拿大1
+  - vmess | 🇺🇸美国95
+  - vmess | 🇺🇸美国96
   - ss | 🇺🇸美国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇫🇷法国0
@@ -1421,9 +1931,9 @@ proxy-groups:
   - hysteria | 🇫🇷法国2
   - hysteria | 🇫🇷法国3
   - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
 - name: 负载均衡
   type: load-balance
   proxies:
@@ -1497,11 +2007,41 @@ proxy-groups:
   - vmess | 🇺🇸美国61
   - vmess | 🇺🇸美国62
   - vmess | 🇺🇸美国63
-  - ss | 🇺🇸美国0
   - vmess | 🇺🇸美国64
-  - vmess | 🇨🇦加拿大1
   - vmess | 🇺🇸美国65
   - vmess | 🇺🇸美国66
+  - vmess | 🇺🇸美国67
+  - vmess | 🇺🇸美国68
+  - vmess | 🇺🇸美国69
+  - vmess | 🇺🇸美国70
+  - vmess | 🇺🇸美国71
+  - vmess | 🇺🇸美国72
+  - vmess | 🇺🇸美国73
+  - vmess | 🇺🇸美国74
+  - vmess | 🇺🇸美国75
+  - vmess | 🇺🇸美国76
+  - vmess | 🇺🇸美国77
+  - vmess | 🇺🇸美国78
+  - vmess | 🇺🇸美国79
+  - vmess | 🇺🇸美国80
+  - vmess | 🇺🇸美国81
+  - vmess | 🇺🇸美国82
+  - vmess | 🇺🇸美国83
+  - vmess | 🇺🇸美国84
+  - vmess | 🇺🇸美国85
+  - vmess | 🇺🇸美国86
+  - vmess | 🇺🇸美国87
+  - vmess | 🇺🇸美国88
+  - vmess | 🇺🇸美国89
+  - vmess | 🇺🇸美国90
+  - vmess | 🇺🇸美国91
+  - vmess | 🇺🇸美国92
+  - vmess | 🇺🇸美国93
+  - ss | 🇺🇸美国0
+  - vmess | 🇺🇸美国94
+  - vmess | 🇨🇦加拿大1
+  - vmess | 🇺🇸美国95
+  - vmess | 🇺🇸美国96
   - ss | 🇺🇸美国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇫🇷法国0
@@ -1509,9 +2049,9 @@ proxy-groups:
   - hysteria | 🇫🇷法国2
   - hysteria | 🇫🇷法国3
   - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
