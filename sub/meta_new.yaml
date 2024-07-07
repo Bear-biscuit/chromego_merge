@@ -146,7 +146,7 @@ proxies:
     host: nijigen-works.jp
     password: K+NtA/8R8MTQ9vyZAd0kzUYJkwQmQBkUIQmwa2Po8cM=
     version: 3
-- name: vmess | 🇺🇸美国86
+- name: vmess | 🇺🇸美国30
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -176,7 +176,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国87
+- name: vmess | 🇺🇸美国31
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -191,7 +191,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国88
+- name: vmess | 🇺🇸美国32
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -334,10 +334,10 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
   - ss | 🇺🇸美国0
-  - vmess | 🇺🇸美国86
+  - vmess | 🇺🇸美国30
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国87
-  - vmess | 🇺🇸美国88
+  - vmess | 🇺🇸美国31
+  - vmess | 🇺🇸美国32
   - ss | 🇺🇸美国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇫🇷法国0
@@ -364,10 +364,10 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
   - ss | 🇺🇸美国0
-  - vmess | 🇺🇸美国86
+  - vmess | 🇺🇸美国30
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国87
-  - vmess | 🇺🇸美国88
+  - vmess | 🇺🇸美国31
+  - vmess | 🇺🇸美国32
   - ss | 🇺🇸美国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇫🇷法国0
