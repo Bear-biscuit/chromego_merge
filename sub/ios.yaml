@@ -150,7 +150,7 @@ proxies:
     host: nijigen-works.jp
     password: K+NtA/8R8MTQ9vyZAd0kzUYJkwQmQBkUIQmwa2Po8cM=
     version: 3
-- name: vmess | 🇺🇸美国52
+- name: vmess | 🇺🇸美国89
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -180,7 +180,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国53
+- name: vmess | 🇺🇸美国90
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -195,7 +195,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国54
+- name: vmess | 🇺🇸美国91
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -223,18 +223,17 @@ proxies:
     version: 3
 - name: hysteria | 🇺🇸美国0
   type: hysteria
-  server: 104.192.224.139
-  port: 42113
-  ports: 42113
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
+  server: 23.170.40.77
+  port: 30009
   sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+  hop_interval: 10
 - name: hysteria | 🇺🇸美国1
   type: hysteria
   server: 104.192.224.139
@@ -264,6 +263,20 @@ proxies:
   alpn:
   - h3
 - name: hysteria | 🇺🇸美国3
+  type: hysteria
+  server: 104.192.224.139
+  port: 42113
+  ports: 42113
+  auth_str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: hysteria | 🇺🇸美国4
   type: hysteria
   server: 104.192.224.139
   port: 42113
@@ -333,15 +346,16 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
   - ss | 🇺🇸美国0
-  - vmess | 🇺🇸美国52
+  - vmess | 🇺🇸美国89
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国53
-  - vmess | 🇺🇸美国54
+  - vmess | 🇺🇸美国90
+  - vmess | 🇺🇸美国91
   - ss | 🇺🇸美国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
+  - hysteria | 🇺🇸美国4
   - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇫🇷法国1
   - hysteria2 | 🇫🇷法国2
@@ -359,15 +373,16 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
   - ss | 🇺🇸美国0
-  - vmess | 🇺🇸美国52
+  - vmess | 🇺🇸美国89
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国53
-  - vmess | 🇺🇸美国54
+  - vmess | 🇺🇸美国90
+  - vmess | 🇺🇸美国91
   - ss | 🇺🇸美国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
+  - hysteria | 🇺🇸美国4
   - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇫🇷法国1
   - hysteria2 | 🇫🇷法国2
@@ -385,15 +400,16 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
   - ss | 🇺🇸美国0
-  - vmess | 🇺🇸美国52
+  - vmess | 🇺🇸美国89
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国53
-  - vmess | 🇺🇸美国54
+  - vmess | 🇺🇸美国90
+  - vmess | 🇺🇸美国91
   - ss | 🇺🇸美国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
+  - hysteria | 🇺🇸美国4
   - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇫🇷法国1
   - hysteria2 | 🇫🇷法国2
