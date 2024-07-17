@@ -1650,16 +1650,16 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: ss | 🇺🇸美国0
+- name: ss | 🇫🇷法国0
   type: ss
-  server: 23.170.40.77
+  server: 51.159.2.179
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
-  password: CmUP/cj9LY2W4bsBUV7mG8ujmMcCOzt+b4un9xnLuro=
+  password: EJhF7SAs95JSRDFE54wyjr79GvKPEm7w0qLpMh6T0aM=
   plugin: shadow-tls
   plugin-opts:
     host: nijigen-works.jp
-    password: K+NtA/8R8MTQ9vyZAd0kzUYJkwQmQBkUIQmwa2Po8cM=
+    password: QuLaE7p3W+ZSOvK/q5G5zRV0UEBEefflZENLW6MZPFI=
     version: 3
 - name: vmess | 🇺🇸美国103
   type: vmess
@@ -1733,19 +1733,31 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
+- name: ss | 🇫🇷法国1
+  type: ss
+  server: 51.159.2.179
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EJhF7SAs95JSRDFE54wyjr79GvKPEm7w0qLpMh6T0aM=
+  plugin: shadow-tls
+  plugin-opts:
+    host: nijigen-works.jp
+    password: QuLaE7p3W+ZSOvK/q5G5zRV0UEBEefflZENLW6MZPFI=
+    version: 3
 - name: hysteria | 🇺🇸美国0
   type: hysteria
-  server: 23.170.40.77
-  port: 30009
+  server: 166.1.18.52
+  port: 41363
+  ports: 41363
+  auth_str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
   sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 11
-  down: 55
-  hop_interval: 10
 - name: hysteria | 🇺🇸美国1
   type: hysteria
   server: 104.192.224.139
@@ -1776,9 +1788,9 @@ proxies:
   - h3
 - name: hysteria | 🇺🇸美国3
   type: hysteria
-  server: 104.192.224.139
-  port: 42113
-  ports: 42113
+  server: 166.1.18.52
+  port: 41363
+  ports: 41363
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -1788,20 +1800,22 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国4
-  type: hysteria
-  server: 104.192.224.139
-  port: 42113
-  ports: 42113
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
+- name: hysteria2 | 🇺🇸美国0
+  type: hysteria2
+  server: 38.114.103.210
+  port: 30647
+  password: dongtaiwang.com
   fast-open: true
-  protocol: udp
   sni: bing.com
   skip-cert-verify: true
-  alpn:
-  - h3
+- name: hysteria2 | 🇺🇸美国1
+  type: hysteria2
+  server: 38.114.103.210
+  port: 30647
+  password: dongtaiwang.com
+  fast-open: true
+  sni: bing.com
+  skip-cert-verify: true
 - name: hysteria2 | 🇫🇷法国0
   type: hysteria2
   server: 51.159.2.179
@@ -1811,22 +1825,6 @@ proxies:
   sni: bing.com
   skip-cert-verify: true
 - name: hysteria2 | 🇫🇷法国1
-  type: hysteria2
-  server: 51.159.2.179
-  port: 23499
-  password: dongtaiwang.com
-  fast-open: true
-  sni: bing.com
-  skip-cert-verify: true
-- name: hysteria2 | 🇫🇷法国2
-  type: hysteria2
-  server: 51.159.2.179
-  port: 23499
-  password: dongtaiwang.com
-  fast-open: true
-  sni: bing.com
-  skip-cert-verify: true
-- name: hysteria2 | 🇫🇷法国3
   type: hysteria2
   server: 51.159.2.179
   port: 23499
@@ -1950,21 +1948,21 @@ proxy-groups:
   - vmess | 🇺🇸美国100
   - vmess | 🇺🇸美国101
   - vmess | 🇺🇸美国102
-  - ss | 🇺🇸美国0
+  - ss | 🇫🇷法国0
   - vmess | 🇺🇸美国103
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
   - tuic | 🇹🇼台湾0
+  - ss | 🇫🇷法国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
-  - hysteria | 🇺🇸美国4
+  - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇫🇷法国1
-  - hysteria2 | 🇫🇷法国2
-  - hysteria2 | 🇫🇷法国3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2081,21 +2079,21 @@ proxy-groups:
   - vmess | 🇺🇸美国100
   - vmess | 🇺🇸美国101
   - vmess | 🇺🇸美国102
-  - ss | 🇺🇸美国0
+  - ss | 🇫🇷法国0
   - vmess | 🇺🇸美国103
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
   - tuic | 🇹🇼台湾0
+  - ss | 🇫🇷法国1
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
-  - hysteria | 🇺🇸美国4
+  - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇫🇷法国0
   - hysteria2 | 🇫🇷法国1
-  - hysteria2 | 🇫🇷法国2
-  - hysteria2 | 🇫🇷法国3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
