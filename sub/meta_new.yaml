@@ -1650,12 +1650,6 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: ss | 🇫🇷法国0
-  type: ss
-  server: 51.159.2.179
-  port: 22335
-  cipher: 2022-blake3-aes-256-gcm
-  password: zZpEonUDV3FRJbttewYtp9sH8hQdIFqqYIyTrVOegzs=
 - name: vmess | 🇺🇸美国103
   type: vmess
   server: 104.19.32.88
@@ -1716,6 +1710,66 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国106
+  type: vmess
+  server: 104.19.32.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇨🇦加拿大3
+  type: vmess
+  server: 23.227.38.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国107
+  type: vmess
+  server: 104.26.0.50
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国108
+  type: vmess
+  server: 104.19.38.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
 - name: ss | 🇹🇼台湾0
   server: www2.dtku44.xyz
   type: ss
@@ -1727,56 +1781,105 @@ proxies:
     host: nijigen-works.jp
     password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
     version: 3
-- name: ss | 🇫🇷法国1
-  type: ss
-  server: 51.159.2.179
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EJhF7SAs95JSRDFE54wyjr79GvKPEm7w0qLpMh6T0aM=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: QuLaE7p3W+ZSOvK/q5G5zRV0UEBEefflZENLW6MZPFI=
-    version: 3
+- name: vmess | 🇺🇸美国109
+  type: vmess
+  server: 104.19.32.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇨🇦加拿大4
+  type: vmess
+  server: 23.227.38.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国110
+  type: vmess
+  server: 104.26.0.50
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国111
+  type: vmess
+  server: 104.19.38.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
 - name: hysteria | 🇺🇸美国0
   type: hysteria
   server: 208.87.243.123
-  port: 38268
-  ports: 38268
+  port: 31476
+  ports: 31476
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.microsoft.com
+  sni: wechat.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: hysteria | 🇺🇸美国1
   type: hysteria
   server: 208.87.243.123
-  port: 38268
-  ports: 38268
+  port: 31476
+  ports: 31476
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.microsoft.com
+  sni: wechat.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: hysteria | 🇺🇸美国2
   type: hysteria
   server: 208.87.243.123
-  port: 38268
-  ports: 38268
+  port: 31476
+  ports: 31476
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.microsoft.com
+  sni: wechat.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -1802,29 +1905,29 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国1
+- name: hysteria2 | 🇨🇦加拿大0
   type: hysteria2
-  server: 208.87.243.123
-  port: 33599
+  server: 108.181.24.39
+  port: 60714
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国2
+- name: hysteria2 | 🇨🇦加拿大1
   type: hysteria2
-  server: 208.87.243.123
-  port: 33599
+  server: 108.181.24.39
+  port: 60714
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国3
+- name: hysteria2 | 🇨🇦加拿大2
   type: hysteria2
-  server: 208.87.243.123
-  port: 33599
+  server: 108.181.24.39
+  port: 60714
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: reality_0_🇫🇷法国
   type: vless
@@ -1956,21 +2059,27 @@ proxy-groups:
   - vmess | 🇺🇸美国100
   - vmess | 🇺🇸美国101
   - vmess | 🇺🇸美国102
-  - ss | 🇫🇷法国0
   - vmess | 🇺🇸美国103
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
+  - vmess | 🇺🇸美国106
+  - vmess | 🇨🇦加拿大3
+  - vmess | 🇺🇸美国107
+  - vmess | 🇺🇸美国108
   - ss | 🇹🇼台湾0
-  - ss | 🇫🇷法国1
+  - vmess | 🇺🇸美国109
+  - vmess | 🇨🇦加拿大4
+  - vmess | 🇺🇸美国110
+  - vmess | 🇺🇸美国111
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
   - hysteria2 | 🇺🇸美国0
-  - hysteria2 | 🇺🇸美国1
-  - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
+  - hysteria2 | 🇨🇦加拿大0
+  - hysteria2 | 🇨🇦加拿大1
+  - hysteria2 | 🇨🇦加拿大2
   - reality_0_🇫🇷法国
 - name: 自动选择
   type: url-test
@@ -2088,21 +2197,27 @@ proxy-groups:
   - vmess | 🇺🇸美国100
   - vmess | 🇺🇸美国101
   - vmess | 🇺🇸美国102
-  - ss | 🇫🇷法国0
   - vmess | 🇺🇸美国103
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
+  - vmess | 🇺🇸美国106
+  - vmess | 🇨🇦加拿大3
+  - vmess | 🇺🇸美国107
+  - vmess | 🇺🇸美国108
   - ss | 🇹🇼台湾0
-  - ss | 🇫🇷法国1
+  - vmess | 🇺🇸美国109
+  - vmess | 🇨🇦加拿大4
+  - vmess | 🇺🇸美国110
+  - vmess | 🇺🇸美国111
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
   - hysteria2 | 🇺🇸美国0
-  - hysteria2 | 🇺🇸美国1
-  - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
+  - hysteria2 | 🇨🇦加拿大0
+  - hysteria2 | 🇨🇦加拿大1
+  - hysteria2 | 🇨🇦加拿大2
   - reality_0_🇫🇷法国
 rules:
 - DOMAIN,clash.razord.top,DIRECT
