@@ -139,7 +139,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: vmess | 🇺🇸美国22
+- name: vmess | 🇺🇸美国79
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -169,7 +169,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国23
+- name: vmess | 🇺🇸美国80
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -184,7 +184,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国24
+- name: vmess | 🇺🇸美国81
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -199,7 +199,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国25
+- name: vmess | 🇺🇸美国82
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -229,7 +229,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国26
+- name: vmess | 🇺🇸美国83
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -244,7 +244,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国27
+- name: vmess | 🇺🇸美国84
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -270,7 +270,7 @@ proxies:
     host: nijigen-works.jp
     password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
     version: 3
-- name: vmess | 🇺🇸美国28
+- name: vmess | 🇺🇸美国85
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -300,7 +300,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国29
+- name: vmess | 🇺🇸美国86
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -315,7 +315,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国30
+- name: vmess | 🇺🇸美国87
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -455,19 +455,19 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国22
+  - vmess | 🇺🇸美国79
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国23
-  - vmess | 🇺🇸美国24
-  - vmess | 🇺🇸美国25
+  - vmess | 🇺🇸美国80
+  - vmess | 🇺🇸美国81
+  - vmess | 🇺🇸美国82
   - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国26
-  - vmess | 🇺🇸美国27
+  - vmess | 🇺🇸美国83
+  - vmess | 🇺🇸美国84
   - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国28
+  - vmess | 🇺🇸美国85
   - vmess | 🇨🇦加拿大3
-  - vmess | 🇺🇸美国29
-  - vmess | 🇺🇸美国30
+  - vmess | 🇺🇸美国86
+  - vmess | 🇺🇸美国87
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
@@ -489,19 +489,19 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国22
+  - vmess | 🇺🇸美国79
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国23
-  - vmess | 🇺🇸美国24
-  - vmess | 🇺🇸美国25
+  - vmess | 🇺🇸美国80
+  - vmess | 🇺🇸美国81
+  - vmess | 🇺🇸美国82
   - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国26
-  - vmess | 🇺🇸美国27
+  - vmess | 🇺🇸美国83
+  - vmess | 🇺🇸美国84
   - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国28
+  - vmess | 🇺🇸美国85
   - vmess | 🇨🇦加拿大3
-  - vmess | 🇺🇸美国29
-  - vmess | 🇺🇸美国30
+  - vmess | 🇺🇸美国86
+  - vmess | 🇺🇸美国87
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
@@ -523,19 +523,19 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国22
+  - vmess | 🇺🇸美国79
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国23
-  - vmess | 🇺🇸美国24
-  - vmess | 🇺🇸美国25
+  - vmess | 🇺🇸美国80
+  - vmess | 🇺🇸美国81
+  - vmess | 🇺🇸美国82
   - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国26
-  - vmess | 🇺🇸美国27
+  - vmess | 🇺🇸美国83
+  - vmess | 🇺🇸美国84
   - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国28
+  - vmess | 🇺🇸美国85
   - vmess | 🇨🇦加拿大3
-  - vmess | 🇺🇸美国29
-  - vmess | 🇺🇸美国30
+  - vmess | 🇺🇸美国86
+  - vmess | 🇺🇸美国87
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
