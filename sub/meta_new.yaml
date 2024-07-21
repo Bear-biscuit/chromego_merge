@@ -1781,6 +1781,66 @@ proxies:
     host: nijigen-works.jp
     password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
     version: 3
+- name: vmess | 🇺🇸美国109
+  type: vmess
+  server: 104.19.32.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇨🇦加拿大4
+  type: vmess
+  server: 23.227.38.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国110
+  type: vmess
+  server: 104.26.0.50
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国111
+  type: vmess
+  server: 104.19.38.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
 - name: hysteria | 🇺🇸美国0
   type: hysteria
   server: 208.87.243.123
@@ -2008,6 +2068,10 @@ proxy-groups:
   - vmess | 🇺🇸美国107
   - vmess | 🇺🇸美国108
   - ss | 🇹🇼台湾0
+  - vmess | 🇺🇸美国109
+  - vmess | 🇨🇦加拿大4
+  - vmess | 🇺🇸美国110
+  - vmess | 🇺🇸美国111
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
@@ -2142,6 +2206,10 @@ proxy-groups:
   - vmess | 🇺🇸美国107
   - vmess | 🇺🇸美国108
   - ss | 🇹🇼台湾0
+  - vmess | 🇺🇸美国109
+  - vmess | 🇨🇦加拿大4
+  - vmess | 🇺🇸美国110
+  - vmess | 🇺🇸美国111
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
