@@ -139,7 +139,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: vmess | 🇺🇸美国13
+- name: vmess | 🇺🇸美国32
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -169,7 +169,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国14
+- name: vmess | 🇺🇸美国33
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -184,7 +184,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国15
+- name: vmess | 🇺🇸美国34
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -199,7 +199,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国16
+- name: vmess | 🇺🇸美国35
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -229,7 +229,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国17
+- name: vmess | 🇺🇸美国36
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -244,7 +244,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国18
+- name: vmess | 🇺🇸美国37
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -270,7 +270,7 @@ proxies:
     host: nijigen-works.jp
     password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
     version: 3
-- name: vmess | 🇺🇸美国19
+- name: vmess | 🇺🇸美国38
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -300,7 +300,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国20
+- name: vmess | 🇺🇸美国39
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -315,7 +315,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国21
+- name: vmess | 🇺🇸美国40
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -388,36 +388,36 @@ proxies:
   - h3
 - name: hysteria2 | 🇺🇸美国0
   type: hysteria2
-  server: 173.234.31.99
-  port: 56549
+  server: hy2.3124845.xyz
+  port: 443
   password: dongtaiwang.com
   fast-open: true
-  sni: ''
-  skip-cert-verify: true
+  sni: hy2.3124845.xyz
+  skip-cert-verify: false
 - name: hysteria2 | 🇺🇸美国1
   type: hysteria2
-  server: 173.234.31.99
-  port: 56549
+  server: hy2.3124845.xyz
+  port: 443
   password: dongtaiwang.com
   fast-open: true
-  sni: ''
-  skip-cert-verify: true
+  sni: hy2.3124845.xyz
+  skip-cert-verify: false
 - name: hysteria2 | 🇺🇸美国2
   type: hysteria2
-  server: 173.234.31.99
-  port: 56549
+  server: hy2.3124845.xyz
+  port: 443
   password: dongtaiwang.com
   fast-open: true
-  sni: ''
-  skip-cert-verify: true
+  sni: hy2.3124845.xyz
+  skip-cert-verify: false
 - name: hysteria2 | 🇺🇸美国3
   type: hysteria2
-  server: 173.234.31.99
-  port: 56549
+  server: hy2.3124845.xyz
+  port: 443
   password: dongtaiwang.com
   fast-open: true
-  sni: ''
-  skip-cert-verify: true
+  sni: hy2.3124845.xyz
+  skip-cert-verify: false
 - name: reality_0_🇫🇷法国
   type: vless
   server: 62.210.101.0
@@ -455,19 +455,19 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国13
+  - vmess | 🇺🇸美国32
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国14
-  - vmess | 🇺🇸美国15
-  - vmess | 🇺🇸美国16
+  - vmess | 🇺🇸美国33
+  - vmess | 🇺🇸美国34
+  - vmess | 🇺🇸美国35
   - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国17
-  - vmess | 🇺🇸美国18
+  - vmess | 🇺🇸美国36
+  - vmess | 🇺🇸美国37
   - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国19
+  - vmess | 🇺🇸美国38
   - vmess | 🇨🇦加拿大3
-  - vmess | 🇺🇸美国20
-  - vmess | 🇺🇸美国21
+  - vmess | 🇺🇸美国39
+  - vmess | 🇺🇸美国40
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
@@ -489,19 +489,19 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国13
+  - vmess | 🇺🇸美国32
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国14
-  - vmess | 🇺🇸美国15
-  - vmess | 🇺🇸美国16
+  - vmess | 🇺🇸美国33
+  - vmess | 🇺🇸美国34
+  - vmess | 🇺🇸美国35
   - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国17
-  - vmess | 🇺🇸美国18
+  - vmess | 🇺🇸美国36
+  - vmess | 🇺🇸美国37
   - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国19
+  - vmess | 🇺🇸美国38
   - vmess | 🇨🇦加拿大3
-  - vmess | 🇺🇸美国20
-  - vmess | 🇺🇸美国21
+  - vmess | 🇺🇸美国39
+  - vmess | 🇺🇸美国40
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
@@ -523,19 +523,19 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国13
+  - vmess | 🇺🇸美国32
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国14
-  - vmess | 🇺🇸美国15
-  - vmess | 🇺🇸美国16
+  - vmess | 🇺🇸美国33
+  - vmess | 🇺🇸美国34
+  - vmess | 🇺🇸美国35
   - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国17
-  - vmess | 🇺🇸美国18
+  - vmess | 🇺🇸美国36
+  - vmess | 🇺🇸美国37
   - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国19
+  - vmess | 🇺🇸美国38
   - vmess | 🇨🇦加拿大3
-  - vmess | 🇺🇸美国20
-  - vmess | 🇺🇸美国21
+  - vmess | 🇺🇸美国39
+  - vmess | 🇺🇸美国40
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
