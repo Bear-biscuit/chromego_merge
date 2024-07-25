@@ -129,17 +129,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: hysteria | 🇨🇦加拿大4
-  type: hysteria
-  server: hy1.dtku47.xyz
-  port: 22334
-  auth-str: lASdKzWK0VxL
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
-- name: vmess | 🇺🇸美国30
+- name: vmess | 🇺🇸美国43
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -169,7 +159,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国31
+- name: vmess | 🇺🇸美国44
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -184,7 +174,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国32
+- name: vmess | 🇺🇸美国45
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -199,7 +189,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国33
+- name: vmess | 🇺🇸美国46
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -229,7 +219,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国34
+- name: vmess | 🇺🇸美国47
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -244,7 +234,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国35
+- name: vmess | 🇺🇸美国48
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -270,7 +260,7 @@ proxies:
     host: nijigen-works.jp
     password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
     version: 3
-- name: vmess | 🇺🇸美国36
+- name: vmess | 🇺🇸美国49
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -300,7 +290,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国37
+- name: vmess | 🇺🇸美国50
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -315,7 +305,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国38
+- name: vmess | 🇺🇸美国51
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -402,22 +392,6 @@ proxies:
   fast-open: true
   sni: bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国2
-  type: hysteria2
-  server: 207.90.239.157
-  port: 22334
-  password: dongtaiwang.com
-  fast-open: true
-  sni: bing.com
-  skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国3
-  type: hysteria2
-  server: 207.90.239.157
-  port: 22334
-  password: dongtaiwang.com
-  fast-open: true
-  sni: bing.com
-  skip-cert-verify: true
 - name: reality_0_🇫🇷法国
   type: vless
   server: 62.210.101.0
@@ -454,28 +428,25 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国30
+  - vmess | 🇺🇸美国43
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国31
-  - vmess | 🇺🇸美国32
-  - vmess | 🇺🇸美国33
+  - vmess | 🇺🇸美国44
+  - vmess | 🇺🇸美国45
+  - vmess | 🇺🇸美国46
   - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国34
-  - vmess | 🇺🇸美国35
+  - vmess | 🇺🇸美国47
+  - vmess | 🇺🇸美国48
   - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国36
+  - vmess | 🇺🇸美国49
   - vmess | 🇨🇦加拿大3
-  - vmess | 🇺🇸美国37
-  - vmess | 🇺🇸美国38
+  - vmess | 🇺🇸美国50
+  - vmess | 🇺🇸美国51
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
-  - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
   - reality_0_🇫🇷法国
 - name: 手动选择
   type: select
@@ -488,28 +459,25 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国30
+  - vmess | 🇺🇸美国43
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国31
-  - vmess | 🇺🇸美国32
-  - vmess | 🇺🇸美国33
+  - vmess | 🇺🇸美国44
+  - vmess | 🇺🇸美国45
+  - vmess | 🇺🇸美国46
   - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国34
-  - vmess | 🇺🇸美国35
+  - vmess | 🇺🇸美国47
+  - vmess | 🇺🇸美国48
   - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国36
+  - vmess | 🇺🇸美国49
   - vmess | 🇨🇦加拿大3
-  - vmess | 🇺🇸美国37
-  - vmess | 🇺🇸美国38
+  - vmess | 🇺🇸美国50
+  - vmess | 🇺🇸美国51
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
-  - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
   - reality_0_🇫🇷法国
 - name: 负载均衡
   type: load-balance
@@ -522,28 +490,25 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国30
+  - vmess | 🇺🇸美国43
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国31
-  - vmess | 🇺🇸美国32
-  - vmess | 🇺🇸美国33
+  - vmess | 🇺🇸美国44
+  - vmess | 🇺🇸美国45
+  - vmess | 🇺🇸美国46
   - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国34
-  - vmess | 🇺🇸美国35
+  - vmess | 🇺🇸美国47
+  - vmess | 🇺🇸美国48
   - ss | 🇹🇼台湾0
-  - vmess | 🇺🇸美国36
+  - vmess | 🇺🇸美国49
   - vmess | 🇨🇦加拿大3
-  - vmess | 🇺🇸美国37
-  - vmess | 🇺🇸美国38
+  - vmess | 🇺🇸美国50
+  - vmess | 🇺🇸美国51
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
-  - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
   - reality_0_🇫🇷法国
   url: http://www.gstatic.com/generate_204
   interval: 300
