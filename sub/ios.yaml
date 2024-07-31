@@ -121,16 +121,6 @@ proxies:
       host: dual-nothing-prep-exit.trycloudflare.com
 - name: hysteria | 🇨🇦加拿大3
   type: hysteria
-  server: hy2.dtku47.xyz
-  port: 15566
-  auth-str: jQrGpwSqp34P
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
-- name: hysteria | 🇨🇦加拿大4
-  type: hysteria
   server: hy1.dtku47.xyz
   port: 22334
   auth-str: lASdKzWK0VxL
@@ -1955,7 +1945,6 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
   - vmess | 🇺🇸美国4
   - vmess | 🇺🇸美国5
   - vmess | 🇨🇦加拿大0
@@ -2089,7 +2078,6 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
   - vmess | 🇺🇸美国4
   - vmess | 🇺🇸美国5
   - vmess | 🇨🇦加拿大0
@@ -2223,7 +2211,6 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
   - vmess | 🇺🇸美国4
   - vmess | 🇺🇸美国5
   - vmess | 🇨🇦加拿大0
