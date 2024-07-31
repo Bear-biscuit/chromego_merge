@@ -1847,9 +1847,9 @@ proxies:
       Host: ip5-10.freegradely.xyz
 - name: hysteria | 🇺🇸美国0
   type: hysteria
-  server: 38.135.52.192
-  port: 23456
-  ports: 23456
+  server: 104.166.125.163
+  port: 11001
+  ports: 11001
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -1861,9 +1861,9 @@ proxies:
   - h3
 - name: hysteria | 🇺🇸美国1
   type: hysteria
-  server: 38.135.52.192
-  port: 23456
-  ports: 23456
+  server: 104.166.125.163
+  port: 11001
+  ports: 11001
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -1875,9 +1875,9 @@ proxies:
   - h3
 - name: hysteria | 🇺🇸美国2
   type: hysteria
-  server: 38.135.52.192
-  port: 23456
-  ports: 23456
+  server: 104.166.125.163
+  port: 11001
+  ports: 11001
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -1889,9 +1889,9 @@ proxies:
   - h3
 - name: hysteria | 🇺🇸美国3
   type: hysteria
-  server: 38.135.52.192
-  port: 23456
-  ports: 23456
+  server: 104.166.125.163
+  port: 11001
+  ports: 11001
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -1904,34 +1904,34 @@ proxies:
 - name: hysteria2 | 🇺🇸美国0
   type: hysteria2
   server: 207.90.239.157
-  port: 22334
+  port: 15669
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国1
   type: hysteria2
   server: 207.90.239.157
-  port: 22334
+  port: 15669
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国2
   type: hysteria2
   server: 207.90.239.157
-  port: 22334
+  port: 15669
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国3
   type: hysteria2
   server: 207.90.239.157
-  port: 22334
+  port: 15669
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
