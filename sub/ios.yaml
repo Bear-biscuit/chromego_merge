@@ -1845,11 +1845,25 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
+- name: hysteria | NonePL0
+  type: hysteria
+  server: 91.149.239.23
+  port: 11223
+  ports: 11223
+  auth_str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: hysteria | 🇺🇸美国0
   type: hysteria
-  server: 104.166.125.163
-  port: 11001
-  ports: 11001
+  server: 166.1.221.169
+  port: 11223
+  ports: 11223
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -1861,9 +1875,9 @@ proxies:
   - h3
 - name: hysteria | 🇺🇸美国1
   type: hysteria
-  server: 104.166.125.163
-  port: 11001
-  ports: 11001
+  server: 166.1.221.169
+  port: 11223
+  ports: 11223
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -1875,23 +1889,9 @@ proxies:
   - h3
 - name: hysteria | 🇺🇸美国2
   type: hysteria
-  server: 104.166.125.163
-  port: 11001
-  ports: 11001
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: hysteria | 🇺🇸美国3
-  type: hysteria
-  server: 104.166.125.163
-  port: 11001
-  ports: 11001
+  server: 166.1.221.169
+  port: 11223
+  ports: 11223
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -2070,10 +2070,10 @@ proxy-groups:
   - vmess | 🇨🇦加拿大4
   - vmess | 🇺🇸美国110
   - vmess | 🇺🇸美国111
+  - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
-  - hysteria | 🇺🇸美国3
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
@@ -2204,10 +2204,10 @@ proxy-groups:
   - vmess | 🇨🇦加拿大4
   - vmess | 🇺🇸美国110
   - vmess | 🇺🇸美国111
+  - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
-  - hysteria | 🇺🇸美国3
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
@@ -2338,10 +2338,10 @@ proxy-groups:
   - vmess | 🇨🇦加拿大4
   - vmess | 🇺🇸美国110
   - vmess | 🇺🇸美国111
+  - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
-  - hysteria | 🇺🇸美国3
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
