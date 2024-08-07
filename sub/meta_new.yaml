@@ -1710,6 +1710,66 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国106
+  type: vmess
+  server: 104.19.32.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇨🇦加拿大3
+  type: vmess
+  server: 23.227.38.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国107
+  type: vmess
+  server: 104.26.0.50
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国108
+  type: vmess
+  server: 104.19.38.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
 - name: ss | 🇹🇼台湾0
   server: www2.dtku44.xyz
   type: ss
@@ -1721,7 +1781,7 @@ proxies:
     host: nijigen-works.jp
     password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
     version: 3
-- name: vmess | 🇺🇸美国108
+- name: vmess | 🇺🇸美国109
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -1751,7 +1811,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国109
+- name: vmess | 🇺🇸美国110
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -1766,7 +1826,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国110
+- name: vmess | 🇺🇸美国111
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -1989,11 +2049,15 @@ proxy-groups:
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
-  - ss | 🇹🇼台湾0
+  - vmess | 🇺🇸美国106
+  - vmess | 🇨🇦加拿大3
+  - vmess | 🇺🇸美国107
   - vmess | 🇺🇸美国108
-  - vmess | 🇨🇦加拿大4
+  - ss | 🇹🇼台湾0
   - vmess | 🇺🇸美国109
+  - vmess | 🇨🇦加拿大4
   - vmess | 🇺🇸美国110
+  - vmess | 🇺🇸美国111
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
@@ -2122,11 +2186,15 @@ proxy-groups:
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
-  - ss | 🇹🇼台湾0
+  - vmess | 🇺🇸美国106
+  - vmess | 🇨🇦加拿大3
+  - vmess | 🇺🇸美国107
   - vmess | 🇺🇸美国108
-  - vmess | 🇨🇦加拿大4
+  - ss | 🇹🇼台湾0
   - vmess | 🇺🇸美国109
+  - vmess | 🇨🇦加拿大4
   - vmess | 🇺🇸美国110
+  - vmess | 🇺🇸美国111
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
