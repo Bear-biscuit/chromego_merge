@@ -1710,7 +1710,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国157
+- name: vmess | 🇺🇸美国210
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -1740,7 +1740,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国158
+- name: vmess | 🇺🇸美国211
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -1755,7 +1755,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国159
+- name: vmess | 🇺🇸美国212
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -1978,10 +1978,10 @@ proxy-groups:
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
-  - vmess | 🇺🇸美国157
+  - vmess | 🇺🇸美国210
   - vmess | 🇨🇦加拿大5
-  - vmess | 🇺🇸美国158
-  - vmess | 🇺🇸美国159
+  - vmess | 🇺🇸美国211
+  - vmess | 🇺🇸美国212
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
@@ -2110,10 +2110,10 @@ proxy-groups:
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
-  - vmess | 🇺🇸美国157
+  - vmess | 🇺🇸美国210
   - vmess | 🇨🇦加拿大5
-  - vmess | 🇺🇸美国158
-  - vmess | 🇺🇸美国159
+  - vmess | 🇺🇸美国211
+  - vmess | 🇺🇸美国212
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
