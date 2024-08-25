@@ -139,7 +139,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: vmess | 🇺🇸美国49
+- name: vmess | 🇺🇸美国93
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -169,7 +169,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国50
+- name: vmess | 🇺🇸美国94
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -184,67 +184,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国51
-  type: vmess
-  server: 104.19.38.88
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: ip5-10.freegradely.xyz
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国70
-  type: vmess
-  server: 104.19.32.88
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: ip5-10.freegradely.xyz
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: ip5-10.freegradely.xyz
-- name: vmess | 🇨🇦加拿大4
-  type: vmess
-  server: 23.227.38.8
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: ip5-10.freegradely.xyz
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国71
-  type: vmess
-  server: 104.26.0.50
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: ip5-10.freegradely.xyz
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国72
+- name: vmess | 🇺🇸美国95
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -339,14 +279,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国3
-  type: hysteria2
-  server: 207.90.239.157
-  port: 15669
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -370,14 +302,10 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国49
+  - vmess | 🇺🇸美国93
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国50
-  - vmess | 🇺🇸美国51
-  - vmess | 🇺🇸美国70
-  - vmess | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国71
-  - vmess | 🇺🇸美国72
+  - vmess | 🇺🇸美国94
+  - vmess | 🇺🇸美国95
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
@@ -385,7 +313,6 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
 - name: 手动选择
   type: select
   proxies:
@@ -398,14 +325,10 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国49
+  - vmess | 🇺🇸美国93
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国50
-  - vmess | 🇺🇸美国51
-  - vmess | 🇺🇸美国70
-  - vmess | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国71
-  - vmess | 🇺🇸美国72
+  - vmess | 🇺🇸美国94
+  - vmess | 🇺🇸美国95
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
@@ -413,7 +336,6 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
 - name: 负载均衡
   type: load-balance
   proxies:
@@ -426,14 +348,10 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国49
+  - vmess | 🇺🇸美国93
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国50
-  - vmess | 🇺🇸美国51
-  - vmess | 🇺🇸美国70
-  - vmess | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国71
-  - vmess | 🇺🇸美国72
+  - vmess | 🇺🇸美国94
+  - vmess | 🇺🇸美国95
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
@@ -441,7 +359,6 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
