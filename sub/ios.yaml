@@ -1714,7 +1714,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国196
+- name: vmess | 🇺🇸美国191
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -1744,7 +1744,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国197
+- name: vmess | 🇺🇸美国192
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -1759,7 +1759,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国198
+- name: vmess | 🇺🇸美国193
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -1847,6 +1847,14 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国2
+  type: hysteria2
+  server: 207.90.239.157
+  port: 15669
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2 | 🇺🇸美国3
   type: hysteria2
   server: 207.90.239.157
   port: 15669
@@ -1982,10 +1990,10 @@ proxy-groups:
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
-  - vmess | 🇺🇸美国196
+  - vmess | 🇺🇸美国191
   - vmess | 🇨🇦加拿大5
-  - vmess | 🇺🇸美国197
-  - vmess | 🇺🇸美国198
+  - vmess | 🇺🇸美国192
+  - vmess | 🇺🇸美国193
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
@@ -1993,6 +2001,7 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国3
 - name: 手动选择
   type: select
   proxies:
@@ -2110,10 +2119,10 @@ proxy-groups:
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
-  - vmess | 🇺🇸美国196
+  - vmess | 🇺🇸美国191
   - vmess | 🇨🇦加拿大5
-  - vmess | 🇺🇸美国197
-  - vmess | 🇺🇸美国198
+  - vmess | 🇺🇸美国192
+  - vmess | 🇺🇸美国193
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
@@ -2121,6 +2130,7 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国3
 - name: 负载均衡
   type: load-balance
   proxies:
@@ -2238,10 +2248,10 @@ proxy-groups:
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
-  - vmess | 🇺🇸美国196
+  - vmess | 🇺🇸美国191
   - vmess | 🇨🇦加拿大5
-  - vmess | 🇺🇸美国197
-  - vmess | 🇺🇸美国198
+  - vmess | 🇺🇸美国192
+  - vmess | 🇺🇸美国193
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
@@ -2249,6 +2259,7 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国3
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
