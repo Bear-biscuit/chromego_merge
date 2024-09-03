@@ -1,114 +1,278 @@
-import base64
+import yaml
 import json
 import urllib.request
-import yaml
-import codecs
+import logging
+import socket
+import re
+from ipwhois import IPWhois
+from socket import gethostbyname
+from country_mappings import country_code_mapping
+from flag_emojis import country_emoji_mapping
 
-merged_proxies = []
+# 全局字典，用于记录每个国家出现的次数
+country_count = {}
 
-try:
-    with open("./urls/naiverproxy_urls.txt", "r") as file:
-        urls = file.read().splitlines()
+# ip归属
+def get_country_for_ip(ip):
+    try:
+        # 尝试解析输入，判断是 IP 地址还是域名
+        ip_address = gethostbyname(ip)
+    except Exception:
+        # 如果解析失败，说明输入可能是 IP 地址
+        ip_address = ip
+    # 使用 IP 地址调用 IPWhois 进行查询
+    obj = IPWhois(ip_address)
+    results = obj.lookup_rdap()
 
-    # 遍历每个网址
-    for index, url in enumerate(urls):
-        try:
-            # 使用适当的方法从网址中获取内容，这里使用urllib库示例
-            response = urllib.request.urlopen(url)
-            data = response.read().decode("utf-8")
-            json_data = json.loads(data)
-            proxy_str = json_data["proxy"]
-            proxy_str = proxy_str.replace("https://", "")
-            # 对 proxy 进行 Base64 编码
-            encoded_proxy = base64.b64encode(proxy_str.encode()).decode()
-            # 添加前缀
-            naiveproxy = "http2://" + encoded_proxy
-            merged_proxies.append(naiveproxy)
-        except Exception as e:
-            print(f"Error processing URL {url}: {e}")
-except Exception as e:
-    print(f"Error reading file: {e}")
+    # 提取国家信息
+    country = results.get('asn_country_code', 'Unknown')
+
+    # 使用映射字典获取中文国家名，如果没有对应的映射，则返回原始国家码
+    country = country_code_mapping.get(country, country)
+ 
+    return country
+
+# ip归属emoji
+def get_emoji_for_ip(ip):
+    try:
+        # 尝试解析输入，判断是 IP 地址还是域名
+        ip_address = gethostbyname(ip)
+    except Exception:
+        # 如果解析失败，说明输入可能是 IP 地址
+        ip_address = ip
+    # 使用 IP 地址调用 IPWhois 进行查询
+    obj = IPWhois(ip_address)
+    results = obj.lookup_rdap()
+
+    # 提取国家信息
+    country_emoji = results.get('asn_country_code', 'Unknown')
+
+    # 使用映射字典获取emoji，如果没有对应的映射，则返回原始国家码
+    country_emoji = country_emoji_mapping.get(country_emoji, None)
+ 
+    return country_emoji
+
+# 提取节点
+def process_urls(url_file, processor):
+    try:
+        with open(url_file, 'r') as file:
+            urls = file.read().splitlines()
+
+        for index, url in enumerate(urls):
+            try:
+                response = urllib.request.urlopen(url)
+                data = response.read().decode('utf-8')
+                processor(data, index)
+            except Exception as e:
+                logging.error(f"Error processing URL {url}: {e}")
+    except Exception as e:
+        logging.error(f"Error reading file {url_file}: {e}")
+#提取clash节点
+def process_clash(data, index):
+    content = yaml.safe_load(data)
+    proxies = content.get('proxies', [])
+    for i, proxy in enumerate(proxies):
+        ip = proxy.get('server', 'Unknown IP')
+        country = get_country_for_ip(ip)
+        country_emoji = get_emoji_for_ip(ip)
+        
+        # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
+        key = f"{proxy['type']} | {country_emoji}{country}"
+        count = country_count.get(key, 0)
+
+        # 生成节点名称
+        proxy['name'] = f"{key}{count}"
+
+        # 更新全局字典中该类型和国家出现的次数
+        country_count[key] = count + 1
+        # location = get_physical_location(proxy['server'])
+        # proxy['name'] = f"{location}_{proxy['type']}_{index}{i+1}"
+    merged_proxies.extend(proxies)
+
+# def get_physical_location(address):
+#     address = re.sub(':.*', '', address)  # 用正则表达式去除端口部分
+#     try:
+#         ip_address = socket.gethostbyname(address)
+#     except socket.gaierror:
+#         ip_address = address
+
+#     try:
+#         reader = geoip2.database.Reader('GeoLite2-City.mmdb')  # 这里的路径需要指向你自己的数据库文件
+#         response = reader.city(ip_address)
+#         country = response.country.name
+#         city = response.city.name
+#         #return f"{country}_{city}"
+#         return f"油管绵阿羊_{country}"
+#     except geoip2.errors.AddressNotFoundError as e:
+#         print(f"Error: {e}")
+#         return "Unknown"
+
+# 处理sb，待办
+def process_sb(data, index):
+    try:
+        json_data = json.loads(data)
+        # 处理 shadowtls 数据
+
+        # 提取所需字段
+        method = json_data["outbounds"][0]["method"]
+        password = json_data["outbounds"][0]["password"]
+        server = json_data["outbounds"][1]["server"]
+        server_port = json_data["outbounds"][1]["server_port"]
+        server_name = json_data["outbounds"][1]["tls"]["server_name"]
+        shadowtls_password = json_data["outbounds"][1]["password"]
+        version = json_data["outbounds"][1]["version"]
+        # location = get_physical_location(server)
+        # name = f"{location}_shadowtls_{index}"
+
+        # 获取 IP 归属地
+        country = get_country_for_ip(server)
+        country_emoji = get_emoji_for_ip(server)
+        name = f"shadowtls_{index}_{country_emoji}{country}"
+
+        # 创建当前网址的proxy字典
+        proxy = {
+            "name": name,
+            "type": "ss",
+            "server": server,
+            "port": server_port,
+            "cipher": method,
+            "password": password,
+            "plugin": "shadow-tls",
+            "client-fingerprint": "chrome",
+            "plugin-opts": {
+                "host": server_name,
+                "password": shadowtls_password,
+                "version": int(version)
+            }
+        }
+
+        # 将当前proxy字典添加到所有proxies列表中
+        merged_proxies.append(proxy)
+
+    except Exception as e:
+        logging.error(f"Error processing shadowtls data for index {index}: {e}")
+
+def process_hysteria(data, index):
+    try:
+        json_data = json.loads(data)
+        # 处理 hysteria 数据
+        # 提取所需字段
+        auth = json_data["auth_str"]
+        server_ports = json_data["server"]
+        server_ports_slt = server_ports.split(":")
+        server = server_ports_slt[0]
+        ports = server_ports_slt[1]
+        ports_slt = ports.split(",")
+        server_port = int(ports_slt[0])
+        if len(ports_slt) > 1:
+            mport = ports_slt[1]
+        else:
+            mport = server_port
+        #fast_open = json_data["fast_open"]
+        fast_open = True
+        insecure = json_data["insecure"]
+        server_name = json_data["server_name"]
+        alpn = json_data["alpn"]
+        protocol = json_data["protocol"]
+        # location = get_physical_location(server)
+        # name = f"{location}_hy_{index}"
 
 
+ # 获取 IP 归属地
+        country = get_country_for_ip(server)
+        country_emoji = get_emoji_for_ip(server)
 
-try:
-    with open("./urls/shadowtls_urls.txt", "r") as file:
-        urls = file.read().splitlines()
+        # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
+        key = f"hysteria | {country_emoji}{country}"
+        count = country_count.get(key, 0)
 
-    # 遍历每个网址
-    for index, url in enumerate(urls):
-        try:
-            # 使用适当的方法从网址中获取内容，这里使用urllib库示例
-            response = urllib.request.urlopen(url)
-            data = response.read().decode("utf-8")
-            # 解析JSON数据
-            json_data = json.loads(data)
+        name = f"{key}{count}"
 
+        # 更新全局字典中该类型和国家出现的次数
+        country_count[key] = count + 1
 
-            server = json_data["outbounds"][1]["server"]
-            server_port = json_data["outbounds"][1]["server_port"]
-            method = json_data["outbounds"][0]["method"]
-            password = json_data["outbounds"][0]["password"]
-            version = "1"
-            host = json_data["outbounds"][1]["tls"]["server_name"]
-            ss = f"{method}:{password}@{server}:{server_port}"
-            shadowtls = f'{{"version": "{version}", "host": "{host}"}}'
-            shadowtls_proxy = "ss://"+base64.b64encode(ss.encode()).decode()+"?shadow-tls="+base64.b64encode(shadowtls.encode()).decode()+f"#shadowtls{index}"
-            
-            merged_proxies.append(shadowtls_proxy)
-        except Exception as e:
-            print(f"Error processing URL {url}: {e}")
-except Exception as e:
-    print(f"Error reading file: {e}")
+        # 创建当前网址的proxy字典
+        proxy = {
+            "name": name,
+            "type": "hysteria",
+            "server": server,
+            "port": server_port,
+            "ports": mport,
+            "auth_str": auth,
+            "up": 80,
+            "down": 100,
+            "fast-open": fast_open,
+            "protocol": protocol,
+            "sni": server_name,
+            "skip-cert-verify": insecure,
+            "alpn": [alpn]
+        }
 
+        # 将当前proxy字典添加到所有proxies列表中
+        merged_proxies.append(proxy)
 
-try:
-    with open("./urls/hysteria_urls.txt", "r") as file:
-        urls = file.read().splitlines()
+    except Exception as e:
+        logging.error(f"Error processing hysteria data for index {index}: {e}")
+# 处理hysteria2
+def process_hysteria2(data, index):
+    try:
+        json_data = json.loads(data)
+        # 处理 hysteria2 数据
+        # 提取所需字段
+        auth = json_data["auth"]
+        server_ports = json_data["server"]
+        server_ports_slt = server_ports.split(":")
+        server = server_ports_slt[0]
+        ports = server_ports_slt[1]
+        ports_slt = ports.split(",")
+        server_port = int(ports_slt[0])
+        #fast_open = json_data["fastOpen"]
+        fast_open = True
+        insecure = json_data["tls"]["insecure"]
+        sni = json_data["tls"]["sni"]
+        # location = get_physical_location(server)
+        # name = f"{location}_hy2_{index}"
 
-    # 遍历每个网址
-    for index, url in enumerate(urls):
-        try:
-            # 使用适当的方法从网址中获取内容，这里使用urllib库示例
-            response = urllib.request.urlopen(url)
-            data = response.read().decode("utf-8")
-            # 解析JSON数据
-            json_data = json.loads(data)
+        # 获取 IP 归属地
+        country = get_country_for_ip(server)
+        country_emoji = get_emoji_for_ip(server)
 
-            # 提取字段值
-            server = json_data["server"]
-            protocol = json_data["protocol"]
-            up_mbps = json_data["up_mbps"]
-            down_mbps = json_data["down_mbps"]
-            alpn = json_data["alpn"]
-            obfs = json_data["obfs"]
-            insecure = int(json_data["insecure"])
-            server_name = json_data["server_name"]
-            fast_open = int(json_data["fast_open"])
-            auth = json_data["auth_str"]
-            # 生成URL
-            hysteria = f"hysteria://{server}?peer={server_name}&auth={auth}&insecure={insecure}&upmbps={up_mbps}&downmbps={down_mbps}&alpn={alpn}&obfs={obfs}&protocol={protocol}&fastopen={fast_open}#hysteria{index}"
-            merged_proxies.append(hysteria)
-        except Exception as e:
-            print(f"Error processing URL {url}: {e}")
-except Exception as e:
-    print(f"Error reading file: {e}")
+        # 生成节点名称，如果之前出现过相同类型和国家，就在国家后面加上出现的次数
+        key = f"hysteria2 | {country_emoji}{country}"
+        count = country_count.get(key, 0)
 
-# xray json reality节点处理
-try:
-    with open("./urls/reality_urls.txt", "r") as file:
-        urls = file.read().splitlines()
+        name = f"{key}{count}"
 
-    # 遍历每个网址
-    for index, url in enumerate(urls):
-        try:
-            # 使用适当的方法从网址中获取内容，这里使用urllib库示例
-            response = urllib.request.urlopen(url)
-            data = response.read().decode("utf-8")
-            json_data = json.loads(data)
+        # 更新全局字典中该类型和国家出现的次数
+        country_count[key] = count + 1
 
-            # 提取所需字段
-            protocol = json_data["outbounds"][0]["protocol"]
+        # 创建当前网址的proxy字典
+        proxy = {
+            "name": name,
+            "type": "hysteria2",
+            "server": server,
+            "port": server_port,
+            "password": auth,
+            "fast-open": fast_open,
+            "sni": sni,
+            "skip-cert-verify": insecure
+        }
+
+        # 将当前proxy字典添加到所有proxies列表中
+        merged_proxies.append(proxy)
+
+    except Exception as e:
+        logging.error(f"Error processing hysteria2 data for index {index}: {e}")
+
+#处理xray
+def process_xray(data, index):
+    try:
+        json_data = json.loads(data)
+        # 处理 xray 数据
+        protocol = json_data["outbounds"][0]["protocol"]
+        #vless操作
+        if protocol == "vless":
+        # 提取所需字段
             server = json_data["outbounds"][0]["settings"]["vnext"][0]["address"]
             port = json_data["outbounds"][0]["settings"]["vnext"][0]["port"]
             uuid = json_data["outbounds"][0]["settings"]["vnext"][0]["users"][0]["id"]
@@ -120,117 +284,131 @@ try:
             shortId = json_data["outbounds"][0]["streamSettings"]["realitySettings"]["shortId"]
             serverName = json_data["outbounds"][0]["streamSettings"]["realitySettings"]["serverName"]
             fingerprint = json_data["outbounds"][0]["streamSettings"]["realitySettings"]["fingerprint"]
-            spx = json_data["outbounds"][0]["streamSettings"]["realitySettings"]["spiderX"]
             # udp转发
             isudp = True
-            name = f"reality{index}"
+            # location = get_physical_location(server)
+            # name = f"{location}_reality_{index}"
+
+            # 获取 IP 归属地
+            country = get_country_for_ip(server)
+            country_emoji = get_emoji_for_ip(server)
+            name = f"reality_{index}_{country_emoji}{country}"
+
             
             # 根据network判断tcp
             if network == "tcp":
-                reality = f"vless://{uuid}@{server}:{port}?security=reality&flow={flow}&type={network}&fp={fingerprint}&pbk={publicKey}&sni={serverName}&spx={spx}&sid={shortId}#REALITY{index}"
-
+                proxy = {
+                    "name": name,
+                    "type": protocol,
+                    "server": server,
+                    "port": port,
+                    "uuid": uuid,
+                    "network": network,
+                    "tls": istls,
+                    "udp": isudp,
+                    "flow": flow,
+                    "client-fingerprint": fingerprint,
+                    "servername": serverName,                
+                    "reality-opts":{
+                        "public-key": publicKey,
+                        "short-id": shortId}
+                }
+                
             # 根据network判断grpc
             elif network == "grpc":
                 serviceName = json_data["outbounds"][0]["streamSettings"]["grpcSettings"]["serviceName"]
-                reality = f"vless://{uuid}@{server}:{port}?security=reality&flow={flow}&&type={network}&fp={fingerprint}&pbk={publicKey}&sni={serverName}&spx={spx}&sid={shortId}&serviceName={serviceName}#REALITY{index}"
+                
+                # 创建当前网址的proxy字典
+                proxy = {
+                    "name": name,
+                    "type": protocol,
+                    "server": server,
+                    "port": port,
+                    "uuid": uuid,
+                    "network": network,
+                    "tls": istls,
+                    "udp": isudp,
+                    "flow": flow,
+                    "client-fingerprint": fingerprint,
+                    "servername": serverName,
+                    "grpc-opts":{
+                        "grpc-service-name": serviceName
+                    },
+                    "reality-opts":{
+                        "public-key": publicKey,
+                        "short-id": shortId}
+                }
+
+        # 将当前proxy字典添加到所有proxies列表中
+        merged_proxies.append(proxy)
+    except Exception as e:
+        logging.error(f"Error processing xray data for index {index}: {e}")
+
+def update_proxy_groups(config_data, merged_proxies):
+    for group in config_data['proxy-groups']:
+        if group['name'] in ['自动选择', '节点选择']:
+            if 'proxies' not in group or not group['proxies']:
+                group['proxies'] = [proxy['name'] for proxy in merged_proxies]
             else:
-                print(f"其他协议还未支持 URL {url}")
-                reality = ""
-                continue
-            
-            # 将当前proxy字典添加到所有proxies列表中
-            merged_proxies.append(reality)
-        except Exception as e:
-            print(f"Error processing URL {url}: {e}")
-except Exception as e:
-    print(f"Error reading file: {e}")
+                group['proxies'].extend(proxy['name'] for proxy in merged_proxies)
+
+def update_warp_proxy_groups(config_warp_data, merged_proxies):
+    for group in config_warp_data['proxy-groups']:
+        if group['name'] in ['自动选择', '手动选择', '负载均衡']:
+            if 'proxies' not in group or not group['proxies']:
+                group['proxies'] = [proxy['name'] for proxy in merged_proxies]
+            else:
+                group['proxies'].extend(proxy['name'] for proxy in merged_proxies)
+
+# 包含hysteria2
+merged_proxies = []
+
+# 处理 clash URLs
+process_urls('./urls/clash_urls.txt', process_clash)
+
+# 处理 shadowtls URLs
+process_urls('./urls/sb_urls.txt', process_sb)
+
+# 处理 hysteria URLs
+process_urls('./urls/hysteria_urls.txt', process_hysteria)
+
+# 处理 hysteria2 URLs
+process_urls('./urls/hysteria2_urls.txt', process_hysteria2)
+
+# 处理 xray URLs
+process_urls('./urls/xray_urls.txt', process_xray)
+
+# 读取普通的配置文件内容
+with open('./templates/clash_template.yaml', 'r', encoding='utf-8') as file:
+    config_data = yaml.safe_load(file)
+
+# 读取warp配置文件内容
+with open('./templates/clash_warp_template.yaml', 'r', encoding='utf-8') as file:
+    config_warp_data = yaml.safe_load(file)
+
+# 添加合并后的代理到proxies部分
+if 'proxies' not in config_data or not config_data['proxies']:
+    config_data['proxies'] = merged_proxies
+else:
+    config_data['proxies'].extend(merged_proxies)
+
+if 'proxies' not in config_warp_data or not config_warp_data['proxies']:
+    config_warp_data['proxies'] = merged_proxies
+else:
+    config_warp_data['proxies'].extend(merged_proxies)
 
 
-# 获取clash文本中的内容
-try:
-    with open('./urls/clash_urls.txt', 'r') as file:
-        urls = file.read().splitlines()
+# 更新自动选择和节点选择的proxies的name部分
+update_proxy_groups(config_data, merged_proxies)
+update_warp_proxy_groups(config_warp_data, merged_proxies)
 
-    # 遍历每个网址
-    for index, url in enumerate(urls):
-        try:
-            # 使用适当的方法从网址中获取内容，这里使用urllib库示例
-            response = urllib.request.urlopen(url)
-            data = response.read().decode('utf-8')
+# 将更新后的数据写入到一个YAML文件中，并指定编码格式为UTF-8
+with open('./sub/meta_new.yaml', 'w', encoding='utf-8') as file:
+    yaml.dump(config_data, file, sort_keys=False, allow_unicode=True)
 
-            # 解析YAML格式的内容
-            content = yaml.safe_load(data)
+with open('./sub/ios.yaml', 'w', encoding='utf-8') as file:
+    yaml.dump(config_warp_data, file, sort_keys=False, allow_unicode=True)
 
-            # 提取proxies部分并合并到merged_proxies中
-            proxies = content.get('proxies', [])
-            
-            for proxy in proxies:
-                # 如果类型是reality
-                if proxy['type'] == 'vless' :
-                    server = proxy['server']
-                    port  = proxy['port']
-                    udp = proxy['udp']
-                    uuid = proxy['uuid']
-                    tls = proxy['tls']
-                    serverName = proxy['servername']
-                    flow = proxy['flow']
-                    network = proxy['network']
-                    publicKey = proxy['reality-opts']['public-key']
-                    fp = proxy['client-fingerprint']
-                    reality_meta =  f"vless://{uuid}@{server}:{port}?security=reality&flow={flow}&type={network}&fp={fingerprint}&pbk={publicKey}&sni={serverName}#reality_meta{index}"
-                    merged_proxies.append(reality_meta)
-                elif proxy['type'] == 'tuic':
-                    server = proxy["server"]
-                    port = proxy["port"]
-                    udp = proxy["udp"]
-                    uuid = proxy['uuid']
-                    password = proxy['password']
-                    alpn = proxy["alpn"][0]
-                    #disable_sni = proxy["disable-sni"]
-                    udp_relay_mode = proxy['udp-relay-mode']
-                    congestion =   proxy['congestion-controller']
-                    tuic_meta = f"tuic://{server}:{port}?uuid={uuid}&version=5&password={password}&insecure=1&alpn={alpn}&mode={udp_relay_mode}"
-                    merged_proxies.append(tuic_meta)
-                elif proxy['type'] == 'hysteria':
-                    server = proxy["server"]           
-                    mport = str(proxy["port"])
-                    ports = mport.split(",")
-                    port = int(ports[0])
-                    protocol = proxy["protocol"]
-                    up_mbps = proxy["up"]
-                    down_mbps = proxy["down"]
-                    alpn = proxy["alpn"][0]
-                    # insecure = proxy["skip-cert-verify"]
-                    obfs = ""
-                    insecure = 1
-                    server_name = proxy["sni"]
-                    fast_open = 1
-                    auth = proxy["auth_str"]
-                    # 生成URL
-                    hysteria_meta = f"hysteria://{server}:{port}?peer={server_name}&auth={auth}&insecure={insecure}&upmbps={up_mbps}&downmbps={down_mbps}&alpn={alpn}&mport={mport}&obfs={obfs}&protocol={protocol}&fastopen={fast_open}#hysteria{index}"
-                    merged_proxies.append(hysteria_meta)
-        except Exception as e:
-            print(f"Error processing URL {url}: {e}")
-except Exception as e:
-    print(f"Error reading file: {e}")
-
-# 将结果写入文件
-try:
-    with open("./sub/shadowrocket.txt", "w") as file:
-        for proxy in merged_proxies:
-            file.write(proxy + "\n")
-except Exception as e:
-    print(f"Error writing to file: {e}")
+print("聚合完成")
 
 
-try:
-    with open("./sub/shadowrocket.txt", "r") as file:
-        content = file.read()
-        encoded_content = base64.b64encode(content.encode("utf-8")).decode("utf-8")
-    
-    with open("./sub/shadowrocket_base64.txt", "w") as encoded_file:
-        encoded_file.write(encoded_content)
-        
-    print("Content successfully encoded and written to file.")
-except Exception as e:
-    print(f"Error encoding file content: {e}")
