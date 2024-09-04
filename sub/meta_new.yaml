@@ -109,7 +109,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: vmess | 🇺🇸美国45
+- name: vmess | 🇺🇸美国31
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -139,7 +139,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国46
+- name: vmess | 🇺🇸美国32
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -154,7 +154,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国47
+- name: vmess | 🇺🇸美国33
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -169,7 +169,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国127
+- name: vmess | 🇺🇸美国47
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -199,7 +199,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国128
+- name: vmess | 🇺🇸美国48
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -214,7 +214,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国129
+- name: vmess | 🇺🇸美国49
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -309,6 +309,14 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
+- name: hysteria2 | 🇺🇸美国3
+  type: hysteria2
+  server: 207.90.239.157
+  port: 3400
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -324,14 +332,14 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国45
+  - vmess | 🇺🇸美国31
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国46
+  - vmess | 🇺🇸美国32
+  - vmess | 🇺🇸美国33
   - vmess | 🇺🇸美国47
-  - vmess | 🇺🇸美国127
   - vmess | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国128
-  - vmess | 🇺🇸美国129
+  - vmess | 🇺🇸美国48
+  - vmess | 🇺🇸美国49
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
@@ -339,6 +347,7 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -354,14 +363,14 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国45
+  - vmess | 🇺🇸美国31
   - vmess | 🇨🇦加拿大1
-  - vmess | 🇺🇸美国46
+  - vmess | 🇺🇸美国32
+  - vmess | 🇺🇸美国33
   - vmess | 🇺🇸美国47
-  - vmess | 🇺🇸美国127
   - vmess | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国128
-  - vmess | 🇺🇸美国129
+  - vmess | 🇺🇸美国48
+  - vmess | 🇺🇸美国49
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
@@ -369,3 +378,4 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国3
