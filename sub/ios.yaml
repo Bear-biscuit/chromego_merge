@@ -29,7 +29,7 @@ proxies:
   type: hysteria2
   server: 109.104.152.333
   port: 8007
-- name: hysteria | 🇨🇦加拿大0
+- name: hysteria | 🇺🇸美国0
   type: hysteria
   server: hy2.dtku47.xyz
   port: 15566
@@ -39,7 +39,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: hysteria | 🇨🇦加拿大1
+- name: hysteria | 🇺🇸美国1
   type: hysteria
   server: clash1.dtku47.xyz
   port: 11223
@@ -49,7 +49,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: hysteria | 🇨🇦加拿大2
+- name: hysteria | 🇺🇸美国2
   type: hysteria
   server: hy2.dtku47.xyz
   port: 15566
@@ -119,7 +119,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
     headers:
       host: dual-nothing-prep-exit.trycloudflare.com
-- name: hysteria | 🇨🇦加拿大3
+- name: hysteria | 🇺🇸美国3
   type: hysteria
   server: hy2.dtku47.xyz
   port: 15566
@@ -129,7 +129,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: hysteria | 🇨🇦加拿大4
+- name: hysteria | 🇺🇸美国4
   type: hysteria
   server: hy1.dtku47.xyz
   port: 22334
@@ -139,7 +139,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: vmess | 🇺🇸美国50
+- name: vmess | 🇺🇸美国36
   type: vmess
   server: 104.19.32.88
   port: 2086
@@ -154,7 +154,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇨🇦加拿大2
+- name: vmess | 🇨🇦加拿大1
   type: vmess
   server: 23.227.38.8
   port: 2086
@@ -169,7 +169,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国51
+- name: vmess | 🇺🇸美国37
   type: vmess
   server: 104.26.0.50
   port: 2086
@@ -184,7 +184,67 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: vmess | 🇺🇸美国52
+- name: vmess | 🇺🇸美国38
+  type: vmess
+  server: 104.19.38.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国149
+  type: vmess
+  server: 104.19.32.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇨🇦加拿大4
+  type: vmess
+  server: 23.227.38.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国150
+  type: vmess
+  server: 104.26.0.50
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国151
   type: vmess
   server: 104.19.38.88
   port: 2086
@@ -213,7 +273,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国0
+- name: hysteria | 🇺🇸美国5
   type: hysteria
   server: 166.1.221.169
   port: 11223
@@ -227,7 +287,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国1
+- name: hysteria | 🇺🇸美国6
   type: hysteria
   server: 166.1.221.169
   port: 11223
@@ -241,7 +301,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国2
+- name: hysteria | 🇺🇸美国7
   type: hysteria
   server: 166.1.221.169
   port: 11223
@@ -301,23 +361,27 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - hysteria | 🇨🇦加拿大0
-  - hysteria | 🇨🇦加拿大1
-  - hysteria | 🇨🇦加拿大2
+  - hysteria | 🇺🇸美国0
+  - hysteria | 🇺🇸美国1
+  - hysteria | 🇺🇸美国2
   - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国50
-  - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国51
-  - vmess | 🇺🇸美国52
+  - hysteria | 🇺🇸美国3
+  - hysteria | 🇺🇸美国4
+  - vmess | 🇺🇸美国36
+  - vmess | 🇨🇦加拿大1
+  - vmess | 🇺🇸美国37
+  - vmess | 🇺🇸美国38
+  - vmess | 🇺🇸美国149
+  - vmess | 🇨🇦加拿大4
+  - vmess | 🇺🇸美国150
+  - vmess | 🇺🇸美国151
   - hysteria | NonePL0
-  - hysteria | 🇺🇸美国0
-  - hysteria | 🇺🇸美国1
-  - hysteria | 🇺🇸美国2
+  - hysteria | 🇺🇸美国5
+  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国7
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
@@ -325,23 +389,27 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - hysteria | 🇨🇦加拿大0
-  - hysteria | 🇨🇦加拿大1
-  - hysteria | 🇨🇦加拿大2
+  - hysteria | 🇺🇸美国0
+  - hysteria | 🇺🇸美国1
+  - hysteria | 🇺🇸美国2
   - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国50
-  - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国51
-  - vmess | 🇺🇸美国52
+  - hysteria | 🇺🇸美国3
+  - hysteria | 🇺🇸美国4
+  - vmess | 🇺🇸美国36
+  - vmess | 🇨🇦加拿大1
+  - vmess | 🇺🇸美国37
+  - vmess | 🇺🇸美国38
+  - vmess | 🇺🇸美国149
+  - vmess | 🇨🇦加拿大4
+  - vmess | 🇺🇸美国150
+  - vmess | 🇺🇸美国151
   - hysteria | NonePL0
-  - hysteria | 🇺🇸美国0
-  - hysteria | 🇺🇸美国1
-  - hysteria | 🇺🇸美国2
+  - hysteria | 🇺🇸美国5
+  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国7
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
@@ -349,23 +417,27 @@ proxy-groups:
 - name: 负载均衡
   type: load-balance
   proxies:
-  - hysteria | 🇨🇦加拿大0
-  - hysteria | 🇨🇦加拿大1
-  - hysteria | 🇨🇦加拿大2
+  - hysteria | 🇺🇸美国0
+  - hysteria | 🇺🇸美国1
+  - hysteria | 🇺🇸美国2
   - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
-  - hysteria | 🇨🇦加拿大3
-  - hysteria | 🇨🇦加拿大4
-  - vmess | 🇺🇸美国50
-  - vmess | 🇨🇦加拿大2
-  - vmess | 🇺🇸美国51
-  - vmess | 🇺🇸美国52
+  - hysteria | 🇺🇸美国3
+  - hysteria | 🇺🇸美国4
+  - vmess | 🇺🇸美国36
+  - vmess | 🇨🇦加拿大1
+  - vmess | 🇺🇸美国37
+  - vmess | 🇺🇸美国38
+  - vmess | 🇺🇸美国149
+  - vmess | 🇨🇦加拿大4
+  - vmess | 🇺🇸美国150
+  - vmess | 🇺🇸美国151
   - hysteria | NonePL0
-  - hysteria | 🇺🇸美国0
-  - hysteria | 🇺🇸美国1
-  - hysteria | 🇺🇸美国2
+  - hysteria | 🇺🇸美国5
+  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国7
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
