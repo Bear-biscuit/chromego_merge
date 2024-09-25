@@ -1684,6 +1684,66 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国210
+  type: vmess
+  server: 104.19.32.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇨🇦加拿大6
+  type: vmess
+  server: 23.227.38.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国211
+  type: vmess
+  server: 104.26.0.50
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: vmess | 🇺🇸美国212
+  type: vmess
+  server: 104.19.38.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
 - name: hysteria | NonePL0
   type: hysteria
   server: 91.149.239.23
@@ -1892,6 +1952,10 @@ proxy-groups:
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
+  - vmess | 🇺🇸美国210
+  - vmess | 🇨🇦加拿大6
+  - vmess | 🇺🇸美国211
+  - vmess | 🇺🇸美国212
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国5
   - hysteria | 🇺🇸美国6
@@ -2020,6 +2084,10 @@ proxy-groups:
   - vmess | 🇨🇦加拿大2
   - vmess | 🇺🇸美国104
   - vmess | 🇺🇸美国105
+  - vmess | 🇺🇸美国210
+  - vmess | 🇨🇦加拿大6
+  - vmess | 🇺🇸美国211
+  - vmess | 🇺🇸美国212
   - hysteria | NonePL0
   - hysteria | 🇺🇸美国5
   - hysteria | 🇺🇸美国6
