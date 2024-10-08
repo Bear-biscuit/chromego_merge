@@ -1624,6 +1624,17 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5.6016725.xyz
+- name: hysteria | NoneRU0
+  type: hysteria
+  server: 46.29.166.206
+  port: 22222
+  auth_str: dongtaiwang.com
+  alpn:
+  - h3
+  sni: www.bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: hysteria | 🇺🇸美国5
   type: hysteria
   server: 166.1.221.169
@@ -1828,6 +1839,7 @@ proxy-groups:
   - vmess | 🇺🇸美国100
   - vmess | 🇺🇸美国101
   - vmess | 🇺🇸美国102
+  - hysteria | NoneRU0
   - hysteria | 🇺🇸美国5
   - hysteria | 🇺🇸美国6
   - hysteria | 🇺🇸美国7
@@ -1952,6 +1964,7 @@ proxy-groups:
   - vmess | 🇺🇸美国100
   - vmess | 🇺🇸美国101
   - vmess | 🇺🇸美国102
+  - hysteria | NoneRU0
   - hysteria | 🇺🇸美国5
   - hysteria | 🇺🇸美国6
   - hysteria | 🇺🇸美国7
