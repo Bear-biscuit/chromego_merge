@@ -1724,7 +1724,7 @@ proxies:
 - name: hysteria2 | 🇺🇸美国0
   type: hysteria2
   server: 207.90.239.157
-  port: 12344
+  port: 11276
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -1732,7 +1732,7 @@ proxies:
 - name: hysteria2 | 🇺🇸美国1
   type: hysteria2
   server: 207.90.239.157
-  port: 12344
+  port: 11276
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -1740,7 +1740,7 @@ proxies:
 - name: hysteria2 | 🇺🇸美国2
   type: hysteria2
   server: 207.90.239.157
-  port: 12344
+  port: 11276
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -1748,7 +1748,7 @@ proxies:
 - name: hysteria2 | 🇺🇸美国3
   type: hysteria2
   server: 207.90.239.157
-  port: 12344
+  port: 11276
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
