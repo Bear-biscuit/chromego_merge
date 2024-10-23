@@ -1695,8 +1695,8 @@ proxies:
 - name: hysteria | NoneRU0
   type: hysteria
   server: 46.17.43.223
-  port: 12311
-  ports: 12311
+  port: 39655
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -1709,8 +1709,8 @@ proxies:
 - name: hysteria | NoneRU1
   type: hysteria
   server: 46.17.43.223
-  port: 12311
-  ports: 12311
+  port: 23142
+  ports: 23142
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -1723,8 +1723,8 @@ proxies:
 - name: hysteria | NoneRU2
   type: hysteria
   server: 46.17.43.223
-  port: 12311
-  ports: 12311
+  port: 23142
+  ports: 23142
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -1737,8 +1737,8 @@ proxies:
 - name: hysteria | NoneRU3
   type: hysteria
   server: 46.17.43.223
-  port: 12311
-  ports: 12311
+  port: 23142
+  ports: 23142
   auth_str: dongtaiwang.com
   up: 80
   down: 100
