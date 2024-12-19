@@ -109,18 +109,6 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: hysteria2 | 🇺🇸美国0
-  type: hysteria2
-  server: 166.1.190.83
-  port: 61677
-  ports: 10000-50000
-  password: github.com/Alvin9999
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 5 Mbps
-  down: 10 Mbps
 - name: hysteria | 🇩🇪德国0
   type: hysteria
   server: 146.0.36.114
@@ -272,7 +260,6 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
-  - hysteria2 | 🇺🇸美国0
   - hysteria | 🇩🇪德国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
@@ -300,7 +287,6 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
-  - hysteria2 | 🇺🇸美国0
   - hysteria | 🇩🇪德国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
