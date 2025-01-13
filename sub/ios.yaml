@@ -139,6 +139,18 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
+- name: hysteria | 🇺🇸美国5
+  type: hysteria
+  server: 208.87.243.151
+  port: 38670
+  ports: 10000-20000
+  auth_str: dongtaiwang.com
+  alpn:
+  - h3
+  sni: www.bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: hysteria | 🇫🇷法国0
   type: hysteria
   server: 195.154.184.5
@@ -163,7 +175,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇺🇸美国5
+- name: hysteria | 🇺🇸美国6
   type: hysteria
   server: 208.87.243.151
   port: 38670
@@ -342,9 +354,10 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国5
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
-  - hysteria | 🇺🇸美国5
+  - hysteria | 🇺🇸美国6
   - hysteria | NoneRU0
   - hysteria | NoneRU1
   - hysteria | NoneRU2
@@ -369,9 +382,10 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国5
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
-  - hysteria | 🇺🇸美国5
+  - hysteria | 🇺🇸美国6
   - hysteria | NoneRU0
   - hysteria | NoneRU1
   - hysteria | NoneRU2
@@ -396,9 +410,10 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国5
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
-  - hysteria | 🇺🇸美国5
+  - hysteria | 🇺🇸美国6
   - hysteria | NoneRU0
   - hysteria | NoneRU1
   - hysteria | NoneRU2
