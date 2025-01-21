@@ -121,27 +121,29 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇫🇷法国0
+- name: hysteria | NoneRU0
   type: hysteria
-  server: 195.154.184.5
-  port: 22787
+  server: 185.22.155.71
+  port: 15424
   ports: 30000-40000
   auth_str: dongtaiwang.com
+  obfs: dongtaiwang.com
   alpn:
   - h3
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇫🇷法国1
+- name: hysteria | NoneRU1
   type: hysteria
-  server: 195.154.184.5
-  port: 22787
+  server: 185.22.155.71
+  port: 15424
   ports: 30000-40000
   auth_str: dongtaiwang.com
+  obfs: dongtaiwang.com
   alpn:
   - h3
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
@@ -157,34 +159,6 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | NoneRU0
-  type: hysteria
-  server: 185.22.155.71
-  port: 15424
-  ports: 30000-40000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: hysteria | NoneRU1
-  type: hysteria
-  server: 185.22.155.71
-  port: 15424
-  ports: 30000-40000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: hysteria | NoneRU2
   type: hysteria
   server: 185.22.155.71
@@ -200,6 +174,34 @@ proxies:
   alpn:
   - h3
 - name: hysteria | NoneRU3
+  type: hysteria
+  server: 185.22.155.71
+  port: 15424
+  ports: 30000-40000
+  auth_str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: hysteria | NoneRU4
+  type: hysteria
+  server: 185.22.155.71
+  port: 15424
+  ports: 30000-40000
+  auth_str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: hysteria | NoneRU5
   type: hysteria
   server: 185.22.155.71
   port: 15424
@@ -317,13 +319,13 @@ proxy-groups:
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
   - hysteria | 🇺🇸美国5
-  - hysteria | 🇫🇷法国0
-  - hysteria | 🇫🇷法国1
-  - hysteria | 🇺🇸美国6
   - hysteria | NoneRU0
   - hysteria | NoneRU1
+  - hysteria | 🇺🇸美国6
   - hysteria | NoneRU2
   - hysteria | NoneRU3
+  - hysteria | NoneRU4
+  - hysteria | NoneRU5
   - hysteria2 | NoneRU0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneRU2
@@ -348,13 +350,13 @@ proxy-groups:
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
   - hysteria | 🇺🇸美国5
-  - hysteria | 🇫🇷法国0
-  - hysteria | 🇫🇷法国1
-  - hysteria | 🇺🇸美国6
   - hysteria | NoneRU0
   - hysteria | NoneRU1
+  - hysteria | 🇺🇸美国6
   - hysteria | NoneRU2
   - hysteria | NoneRU3
+  - hysteria | NoneRU4
+  - hysteria | NoneRU5
   - hysteria2 | NoneRU0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneRU2
