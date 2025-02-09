@@ -112,8 +112,7 @@ proxies:
 - name: hysteria | 🇺🇸美国5
   type: hysteria
   server: 208.87.243.151
-  port: 38670
-  ports: 10000-20000
+  port: 17549
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -150,8 +149,7 @@ proxies:
 - name: hysteria | 🇺🇸美国6
   type: hysteria
   server: 208.87.243.151
-  port: 38670
-  ports: 10000-20000
+  port: 17549
   auth_str: dongtaiwang.com
   alpn:
   - h3
