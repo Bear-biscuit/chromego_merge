@@ -123,8 +123,8 @@ proxies:
 - name: hysteria | NoneRU0
   type: hysteria
   server: 185.22.155.71
-  port: 15424
-  ports: 30000-40000
+  port: 63717
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   obfs: dongtaiwang.com
   alpn:
@@ -136,8 +136,8 @@ proxies:
 - name: hysteria | NoneRU1
   type: hysteria
   server: 185.22.155.71
-  port: 15424
-  ports: 30000-40000
+  port: 63717
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   obfs: dongtaiwang.com
   alpn:
@@ -160,63 +160,63 @@ proxies:
 - name: hysteria | NoneRU2
   type: hysteria
   server: 185.22.155.71
-  port: 15424
-  ports: 30000-40000
+  port: 63717
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: hysteria | NoneRU3
   type: hysteria
   server: 185.22.155.71
-  port: 15424
-  ports: 30000-40000
+  port: 63717
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: hysteria | NoneRU4
   type: hysteria
   server: 185.22.155.71
-  port: 15424
-  ports: 30000-40000
+  port: 63717
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: hysteria | NoneRU5
   type: hysteria
   server: 185.22.155.71
-  port: 15424
-  ports: 30000-40000
+  port: 63717
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: hysteria2 | NoneRU0
   type: hysteria2
   server: 46.17.41.189
-  port: 50717
+  port: 51224
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -224,7 +224,7 @@ proxies:
 - name: hysteria2 | NoneRU1
   type: hysteria2
   server: 46.17.41.189
-  port: 50717
+  port: 51224
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -232,7 +232,7 @@ proxies:
 - name: hysteria2 | NoneRU2
   type: hysteria2
   server: 46.17.41.189
-  port: 50717
+  port: 51224
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -240,7 +240,7 @@ proxies:
 - name: hysteria2 | NoneRU3
   type: hysteria2
   server: 46.17.41.189
-  port: 50717
+  port: 51224
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
