@@ -9,26 +9,6 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: hysteria | 🇺🇸美国1
-  type: hysteria
-  server: clash1.dtku47.xyz
-  port: 11223
-  auth-str: O5tQQiW2xKf5
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
-- name: hysteria | 🇺🇸美国2
-  type: hysteria
-  server: hy2.dtku47.xyz
-  port: 15566
-  auth-str: jQrGpwSqp34P
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
 - name: vmess | 🇺🇸美国0
   type: vmess
   server: 104.26.9.22
@@ -89,7 +69,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
     headers:
       host: dual-nothing-prep-exit.trycloudflare.com
-- name: hysteria | 🇺🇸美国3
+- name: hysteria | 🇺🇸美国1
   type: hysteria
   server: hy2.dtku47.xyz
   port: 15566
@@ -99,7 +79,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: hysteria | 🇺🇸美国4
+- name: hysteria | 🇺🇸美国2
   type: hysteria
   server: hy1.dtku47.xyz
   port: 22334
@@ -109,7 +89,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: hysteria | 🇺🇸美国5
+- name: hysteria | 🇺🇸美国3
   type: hysteria
   server: 208.87.243.151
   port: 17549
@@ -146,7 +126,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇺🇸美国6
+- name: hysteria | 🇺🇸美国4
   type: hysteria
   server: 208.87.243.151
   port: 17549
@@ -308,18 +288,16 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - hysteria | 🇺🇸美国0
-  - hysteria | 🇺🇸美国1
-  - hysteria | 🇺🇸美国2
   - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
+  - hysteria | 🇺🇸美国1
+  - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
-  - hysteria | 🇺🇸美国4
-  - hysteria | 🇺🇸美国5
   - hysteria | NoneRU0
   - hysteria | NoneRU1
-  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国4
   - hysteria | NoneRU2
   - hysteria | NoneRU3
   - hysteria | NoneRU4
@@ -339,18 +317,16 @@ proxy-groups:
   tolerance: 50
   proxies:
   - hysteria | 🇺🇸美国0
-  - hysteria | 🇺🇸美国1
-  - hysteria | 🇺🇸美国2
   - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
+  - hysteria | 🇺🇸美国1
+  - hysteria | 🇺🇸美国2
   - hysteria | 🇺🇸美国3
-  - hysteria | 🇺🇸美国4
-  - hysteria | 🇺🇸美国5
   - hysteria | NoneRU0
   - hysteria | NoneRU1
-  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国4
   - hysteria | NoneRU2
   - hysteria | NoneRU3
   - hysteria | NoneRU4
