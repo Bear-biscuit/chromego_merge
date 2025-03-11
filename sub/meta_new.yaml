@@ -91,6 +91,26 @@ proxies:
       host: dual-nothing-prep-exit.trycloudflare.com
 - name: hysteria | 🇺🇸美国3
   type: hysteria
+  server: hy2.dtku47.xyz
+  port: 15566
+  auth-str: jQrGpwSqp34P
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: hysteria | 🇺🇸美国4
+  type: hysteria
+  server: hy1.dtku47.xyz
+  port: 22334
+  auth-str: lASdKzWK0VxL
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: hysteria | 🇺🇸美国5
+  type: hysteria
   server: 208.87.243.151
   port: 17549
   auth_str: dongtaiwang.com
@@ -104,7 +124,6 @@ proxies:
   type: hysteria
   server: 108.181.24.77
   port: 11512
-  ports: 20000-30000
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -116,7 +135,7 @@ proxies:
 - name: hysteria | NoneRU0
   type: hysteria
   server: 185.22.155.71
-  port: 24342
+  port: 10803
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -124,7 +143,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇺🇸美国4
+- name: hysteria | 🇺🇸美国6
   type: hysteria
   server: 208.87.243.151
   port: 17549
@@ -138,8 +157,8 @@ proxies:
 - name: hysteria | NoneRU1
   type: hysteria
   server: 185.22.155.71
-  port: 24342
-  ports: 24342
+  port: 10803
+  ports: 10803
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -151,9 +170,9 @@ proxies:
   - h3
 - name: hysteria | NoneRU2
   type: hysteria
-  server: 185.22.155.71
-  port: 24342
-  ports: 24342
+  server: 46.17.41.174
+  port: 10469
+  ports: 10469
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -166,8 +185,8 @@ proxies:
 - name: hysteria | NoneRU3
   type: hysteria
   server: 185.22.155.71
-  port: 24342
-  ports: 24342
+  port: 10803
+  ports: 10803
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -179,9 +198,9 @@ proxies:
   - h3
 - name: hysteria | NoneRU4
   type: hysteria
-  server: 185.22.155.71
-  port: 24342
-  ports: 24342
+  server: 46.17.41.174
+  port: 10469
+  ports: 10469
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -193,32 +212,32 @@ proxies:
   - h3
 - name: hysteria2 | NoneRU0
   type: hysteria2
-  server: 46.17.41.189
-  port: 51224
+  server: 46.17.41.217
+  port: 37481
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
+- name: hysteria2 | 🇨🇦加拿大0
+  type: hysteria2
+  server: 108.181.5.133
+  port: 15544
+  password: dongtaiwang.com
+  fast-open: true
+  sni: apple.com
+  skip-cert-verify: true
 - name: hysteria2 | NoneRU1
   type: hysteria2
-  server: 46.17.41.189
-  port: 51224
+  server: 46.29.163.171
+  port: 18626
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | NoneRU2
   type: hysteria2
-  server: 46.17.41.189
-  port: 51224
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: hysteria2 | NoneRU3
-  type: hysteria2
-  server: 46.17.41.189
-  port: 51224
+  server: 46.17.41.217
+  port: 37481
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -293,17 +312,19 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
+  - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
   - hysteria | NoneRU0
-  - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
   - hysteria | NoneRU2
   - hysteria | NoneRU3
   - hysteria | NoneRU4
   - hysteria2 | NoneRU0
+  - hysteria2 | 🇨🇦加拿大0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneRU2
-  - hysteria2 | NoneRU3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
@@ -322,17 +343,19 @@ proxy-groups:
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
+  - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
   - hysteria | NoneRU0
-  - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
   - hysteria | NoneRU2
   - hysteria | NoneRU3
   - hysteria | NoneRU4
   - hysteria2 | NoneRU0
+  - hysteria2 | 🇨🇦加拿大0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneRU2
-  - hysteria2 | NoneRU3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
