@@ -246,7 +246,7 @@ proxies:
   port: 64816
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | NoneRU1
   type: hysteria2
@@ -254,7 +254,7 @@ proxies:
   port: 32555
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | NoneRU2
   type: hysteria2
@@ -262,7 +262,7 @@ proxies:
   port: 32555
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | NoneRU3
   type: hysteria2
@@ -270,7 +270,7 @@ proxies:
   port: 64816
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: reality_0_🇹🇼台湾
   type: vless
