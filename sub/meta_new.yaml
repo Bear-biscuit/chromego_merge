@@ -91,6 +91,16 @@ proxies:
       host: dual-nothing-prep-exit.trycloudflare.com
 - name: hysteria | 🇺🇸美国3
   type: hysteria
+  server: hy2.dtku47.xyz
+  port: 15566
+  auth-str: jQrGpwSqp34P
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: hysteria | 🇺🇸美国4
+  type: hysteria
   server: hy1.dtku47.xyz
   port: 22334
   auth-str: lASdKzWK0VxL
@@ -99,7 +109,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: hysteria | 🇺🇸美国4
+- name: hysteria | 🇺🇸美国5
   type: hysteria
   server: 208.87.243.151
   port: 17549
@@ -133,7 +143,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇺🇸美国5
+- name: hysteria | 🇺🇸美国6
   type: hysteria
   server: 208.87.243.151
   port: 17549
@@ -200,14 +210,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria2 | NoneSC0
-  type: hysteria2
-  server: hy2.694463.xyz
-  port: 10011
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: hysteria2 | NoneRU0
   type: hysteria2
   server: hy2.694463.xyz
@@ -216,7 +218,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | NoneSC1
+- name: hysteria2 | NoneRU1
   type: hysteria2
   server: hy2.694463.xyz
   port: 10011
@@ -224,7 +226,15 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | NoneSC2
+- name: hysteria2 | NoneRU2
+  type: hysteria2
+  server: hy2.694463.xyz
+  port: 10011
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2 | NoneRU3
   type: hysteria2
   server: hy2.694463.xyz
   port: 10011
@@ -303,17 +313,18 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
   - hysteria | NoneRU0
-  - hysteria | 🇺🇸美国5
+  - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
   - hysteria | NoneRU2
   - hysteria | NoneRU3
   - hysteria | NoneRU4
-  - hysteria2 | NoneSC0
   - hysteria2 | NoneRU0
-  - hysteria2 | NoneSC1
-  - hysteria2 | NoneSC2
+  - hysteria2 | NoneRU1
+  - hysteria2 | NoneRU2
+  - hysteria2 | NoneRU3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
@@ -333,17 +344,18 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
+  - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
   - hysteria | NoneRU0
-  - hysteria | 🇺🇸美国5
+  - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
   - hysteria | NoneRU2
   - hysteria | NoneRU3
   - hysteria | NoneRU4
-  - hysteria2 | NoneSC0
   - hysteria2 | NoneRU0
-  - hysteria2 | NoneSC1
-  - hysteria2 | NoneSC2
+  - hysteria2 | NoneRU1
+  - hysteria2 | NoneRU2
+  - hysteria2 | NoneRU3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
