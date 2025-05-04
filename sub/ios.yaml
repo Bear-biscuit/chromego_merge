@@ -198,11 +198,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | NoneRU2
+- name: hysteria | 🇺🇸美国7
   type: hysteria
-  server: 46.17.41.174
-  port: 10469
-  ports: 10469
+  server: 208.87.243.187
+  port: 40528
+  ports: 40528
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -212,7 +212,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | NoneRU3
+- name: hysteria | NoneRU2
   type: hysteria
   server: 185.22.155.71
   port: 10803
@@ -226,11 +226,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | NoneRU4
+- name: hysteria | 🇺🇸美国8
   type: hysteria
-  server: 46.17.41.174
-  port: 10469
-  ports: 10469
+  server: 208.87.243.187
+  port: 40528
+  ports: 40528
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -356,9 +356,9 @@ proxy-groups:
   - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
+  - hysteria | 🇺🇸美国7
   - hysteria | NoneRU2
-  - hysteria | NoneRU3
-  - hysteria | NoneRU4
+  - hysteria | 🇺🇸美国8
   - hysteria2 | NoneRU0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneSC0
@@ -384,9 +384,9 @@ proxy-groups:
   - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
+  - hysteria | 🇺🇸美国7
   - hysteria | NoneRU2
-  - hysteria | NoneRU3
-  - hysteria | NoneRU4
+  - hysteria | 🇺🇸美国8
   - hysteria2 | NoneRU0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneSC0
@@ -412,9 +412,9 @@ proxy-groups:
   - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
+  - hysteria | 🇺🇸美国7
   - hysteria | NoneRU2
-  - hysteria | NoneRU3
-  - hysteria | NoneRU4
+  - hysteria | 🇺🇸美国8
   - hysteria2 | NoneRU0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneSC0
