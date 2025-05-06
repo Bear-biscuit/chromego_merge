@@ -198,20 +198,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国7
-  type: hysteria
-  server: 208.87.243.187
-  port: 40528
-  ports: 40528
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: hysteria | NoneRU2
   type: hysteria
   server: 185.22.155.71
@@ -226,11 +212,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国8
+- name: hysteria | NoneRU3
   type: hysteria
-  server: 208.87.243.187
-  port: 40528
-  ports: 40528
+  server: 185.22.155.71
+  port: 10803
+  ports: 10803
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -240,14 +226,20 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria2 | NoneSC0
-  type: hysteria2
-  server: hy2.694463.xyz
-  port: 10011
-  password: dongtaiwang.com
+- name: hysteria | NoneRU4
+  type: hysteria
+  server: 185.22.155.71
+  port: 10803
+  ports: 10803
+  auth_str: dongtaiwang.com
+  up: 80
+  down: 100
   fast-open: true
-  sni: www.bing.com
+  protocol: udp
+  sni: apple.com
   skip-cert-verify: true
+  alpn:
+  - h3
 - name: hysteria2 | NoneRU0
   type: hysteria2
   server: hy2.694463.xyz
@@ -265,6 +257,14 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 - name: hysteria2 | NoneRU2
+  type: hysteria2
+  server: hy2.694463.xyz
+  port: 10011
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2 | NoneRU3
   type: hysteria2
   server: hy2.694463.xyz
   port: 10011
@@ -356,13 +356,13 @@ proxy-groups:
   - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
-  - hysteria | 🇺🇸美国7
   - hysteria | NoneRU2
-  - hysteria | 🇺🇸美国8
-  - hysteria2 | NoneSC0
+  - hysteria | NoneRU3
+  - hysteria | NoneRU4
   - hysteria2 | NoneRU0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneRU2
+  - hysteria2 | NoneRU3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
@@ -384,13 +384,13 @@ proxy-groups:
   - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
-  - hysteria | 🇺🇸美国7
   - hysteria | NoneRU2
-  - hysteria | 🇺🇸美国8
-  - hysteria2 | NoneSC0
+  - hysteria | NoneRU3
+  - hysteria | NoneRU4
   - hysteria2 | NoneRU0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneRU2
+  - hysteria2 | NoneRU3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
@@ -412,13 +412,13 @@ proxy-groups:
   - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
-  - hysteria | 🇺🇸美国7
   - hysteria | NoneRU2
-  - hysteria | 🇺🇸美国8
-  - hysteria2 | NoneSC0
+  - hysteria | NoneRU3
+  - hysteria | NoneRU4
   - hysteria2 | NoneRU0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneRU2
+  - hysteria2 | NoneRU3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
