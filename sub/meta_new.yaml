@@ -234,7 +234,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | NoneRU3
+- name: hysteria2 | NoneSC0
   type: hysteria2
   server: hy2.694463.xyz
   port: 10011
@@ -324,7 +324,7 @@ proxy-groups:
   - hysteria2 | NoneRU0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneRU2
-  - hysteria2 | NoneRU3
+  - hysteria2 | NoneSC0
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
@@ -355,7 +355,7 @@ proxy-groups:
   - hysteria2 | NoneRU0
   - hysteria2 | NoneRU1
   - hysteria2 | NoneRU2
-  - hysteria2 | NoneRU3
+  - hysteria2 | NoneSC0
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
