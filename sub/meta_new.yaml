@@ -120,18 +120,6 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇨🇦加拿大0
-  type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: hysteria | NoneRU0
   type: hysteria
   server: 185.22.155.71
@@ -213,7 +201,7 @@ proxies:
 - name: hysteria2 | NoneSC0
   type: hysteria2
   server: 45.129.2.108
-  port: 30033
+  port: 50850
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -314,7 +302,6 @@ proxy-groups:
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
   - hysteria | 🇺🇸美国5
-  - hysteria | 🇨🇦加拿大0
   - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
@@ -345,7 +332,6 @@ proxy-groups:
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
   - hysteria | 🇺🇸美国5
-  - hysteria | 🇨🇦加拿大0
   - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
