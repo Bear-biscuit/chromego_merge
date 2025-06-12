@@ -29,66 +29,6 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: vmess | 🇺🇸美国0
-  type: vmess
-  server: 104.26.9.22
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: vmess | 🇺🇸美国1
-  type: vmess
-  server: 172.64.97.235
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: vmess | 🇺🇸美国2
-  type: vmess
-  server: 104.19.38.28
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: vmess | 🇺🇸美国3
-  type: vmess
-  server: 104.19.38.48
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
 - name: hysteria | 🇺🇸美国3
   type: hysteria
   server: hy2.dtku47.xyz
@@ -118,6 +58,18 @@ proxies:
   - h3
   sni: www.bing.com
   skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: hysteria | 🇨🇦加拿大0
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: hysteria | NoneRU0
@@ -295,13 +247,10 @@ proxy-groups:
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
-  - vmess | 🇺🇸美国0
-  - vmess | 🇺🇸美国1
-  - vmess | 🇺🇸美国2
-  - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
   - hysteria | 🇺🇸美国5
+  - hysteria | 🇨🇦加拿大0
   - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
@@ -325,13 +274,10 @@ proxy-groups:
   - hysteria | 🇺🇸美国0
   - hysteria | 🇺🇸美国1
   - hysteria | 🇺🇸美国2
-  - vmess | 🇺🇸美国0
-  - vmess | 🇺🇸美国1
-  - vmess | 🇺🇸美国2
-  - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
   - hysteria | 🇺🇸美国5
+  - hysteria | 🇨🇦加拿大0
   - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
   - hysteria | NoneRU1
