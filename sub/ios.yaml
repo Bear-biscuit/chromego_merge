@@ -256,18 +256,18 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | NoneRU1
+- name: hysteria2 | NoneSC1
   type: hysteria2
-  server: 46.29.163.171
-  port: 30033
+  server: 45.129.2.248
+  port: 23579
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: hysteria2 | NoneRU2
+- name: hysteria2 | NoneSC2
   type: hysteria2
-  server: 46.29.163.171
-  port: 30033
+  server: 45.129.2.248
+  port: 23579
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -361,8 +361,8 @@ proxy-groups:
   - hysteria | NoneRU4
   - hysteria2 | NoneSC0
   - hysteria2 | NoneRU0
-  - hysteria2 | NoneRU1
-  - hysteria2 | NoneRU2
+  - hysteria2 | NoneSC1
+  - hysteria2 | NoneSC2
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
@@ -389,8 +389,8 @@ proxy-groups:
   - hysteria | NoneRU4
   - hysteria2 | NoneSC0
   - hysteria2 | NoneRU0
-  - hysteria2 | NoneRU1
-  - hysteria2 | NoneRU2
+  - hysteria2 | NoneSC1
+  - hysteria2 | NoneSC2
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
@@ -417,8 +417,8 @@ proxy-groups:
   - hysteria | NoneRU4
   - hysteria2 | NoneSC0
   - hysteria2 | NoneRU0
-  - hysteria2 | NoneRU1
-  - hysteria2 | NoneRU2
+  - hysteria2 | NoneSC1
+  - hysteria2 | NoneSC2
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
