@@ -162,18 +162,18 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | NoneRU0
+- name: hysteria | 🇺🇸美国6
   type: hysteria
-  server: 185.22.155.71
-  port: 10803
+  server: 172.245.235.201
+  port: 38814
   auth_str: dongtaiwang.com
   alpn:
   - h3
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇺🇸美国6
+- name: hysteria | 🇺🇸美国7
   type: hysteria
   server: 208.87.243.151
   port: 17549
@@ -184,11 +184,11 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | NoneRU1
+- name: hysteria | 🇺🇸美国8
   type: hysteria
-  server: 185.22.155.71
-  port: 10803
-  ports: 10803
+  server: 172.245.235.201
+  port: 38814
+  ports: 38814
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -198,11 +198,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | NoneRU2
+- name: hysteria | 🇺🇸美国9
   type: hysteria
-  server: 185.22.155.71
-  port: 10803
-  ports: 10803
+  server: 172.245.235.201
+  port: 38814
+  ports: 38814
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -212,11 +212,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | NoneRU3
+- name: hysteria | 🇺🇸美国10
   type: hysteria
-  server: 185.22.155.71
-  port: 10803
-  ports: 10803
+  server: 172.245.235.201
+  port: 38814
+  ports: 38814
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -226,11 +226,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | NoneRU4
+- name: hysteria | 🇺🇸美国11
   type: hysteria
-  server: 185.22.155.71
-  port: 10803
-  ports: 10803
+  server: 172.245.235.201
+  port: 38814
+  ports: 38814
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -240,37 +240,37 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria2 | NoneSC0
+- name: hysteria2 | 🇺🇸美国0
   type: hysteria2
-  server: 45.129.2.108
-  port: 50850
+  server: 64.31.63.57
+  port: 44462
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
-- name: hysteria2 | NoneRU0
+- name: hysteria2 | 🇺🇸美国1
   type: hysteria2
-  server: 46.17.41.217
-  port: 30033
+  server: 64.31.63.57
+  port: 44462
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
-- name: hysteria2 | 🇬🇧英国0
+- name: hysteria2 | 🇺🇸美国2
   type: hysteria2
-  server: 163.172.217.10
-  port: 10011
+  server: 64.31.63.57
+  port: 44462
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
-- name: hysteria2 | 🇬🇧英国1
+- name: hysteria2 | 🇺🇸美国3
   type: hysteria2
-  server: 163.172.217.10
-  port: 10011
+  server: 64.31.63.57
+  port: 44462
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
 - name: reality_0_🇹🇼台湾
   type: vless
@@ -353,16 +353,16 @@ proxy-groups:
   - hysteria | 🇺🇸美国4
   - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
-  - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
-  - hysteria | NoneRU1
-  - hysteria | NoneRU2
-  - hysteria | NoneRU3
-  - hysteria | NoneRU4
-  - hysteria2 | NoneSC0
-  - hysteria2 | NoneRU0
-  - hysteria2 | 🇬🇧英国0
-  - hysteria2 | 🇬🇧英国1
+  - hysteria | 🇺🇸美国7
+  - hysteria | 🇺🇸美国8
+  - hysteria | 🇺🇸美国9
+  - hysteria | 🇺🇸美国10
+  - hysteria | 🇺🇸美国11
+  - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇺🇸美国1
+  - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
@@ -381,16 +381,16 @@ proxy-groups:
   - hysteria | 🇺🇸美国4
   - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
-  - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
-  - hysteria | NoneRU1
-  - hysteria | NoneRU2
-  - hysteria | NoneRU3
-  - hysteria | NoneRU4
-  - hysteria2 | NoneSC0
-  - hysteria2 | NoneRU0
-  - hysteria2 | 🇬🇧英国0
-  - hysteria2 | 🇬🇧英国1
+  - hysteria | 🇺🇸美国7
+  - hysteria | 🇺🇸美国8
+  - hysteria | 🇺🇸美国9
+  - hysteria | 🇺🇸美国10
+  - hysteria | 🇺🇸美国11
+  - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇺🇸美国1
+  - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
@@ -409,16 +409,16 @@ proxy-groups:
   - hysteria | 🇺🇸美国4
   - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
-  - hysteria | NoneRU0
   - hysteria | 🇺🇸美国6
-  - hysteria | NoneRU1
-  - hysteria | NoneRU2
-  - hysteria | NoneRU3
-  - hysteria | NoneRU4
-  - hysteria2 | NoneSC0
-  - hysteria2 | NoneRU0
-  - hysteria2 | 🇬🇧英国0
-  - hysteria2 | 🇬🇧英国1
+  - hysteria | 🇺🇸美国7
+  - hysteria | 🇺🇸美国8
+  - hysteria | 🇺🇸美国9
+  - hysteria | 🇺🇸美国10
+  - hysteria | 🇺🇸美国11
+  - hysteria2 | 🇺🇸美国0
+  - hysteria2 | 🇺🇸美国1
+  - hysteria2 | 🇺🇸美国2
+  - hysteria2 | 🇺🇸美国3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
