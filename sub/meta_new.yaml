@@ -154,11 +154,11 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇺🇸美国8
+- name: hysteria | 🇨🇦加拿大1
   type: hysteria
-  server: 172.245.235.201
-  port: 38814
-  ports: 38814
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -168,11 +168,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国9
+- name: hysteria | 🇨🇦加拿大2
   type: hysteria
-  server: 172.245.235.201
-  port: 38814
-  ports: 38814
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -182,11 +182,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国10
+- name: hysteria | 🇨🇦加拿大3
   type: hysteria
-  server: 172.245.235.201
-  port: 38814
-  ports: 38814
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -196,11 +196,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria | 🇺🇸美国11
+- name: hysteria | 🇨🇦加拿大4
   type: hysteria
-  server: 172.245.235.201
-  port: 38814
-  ports: 38814
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -212,32 +212,32 @@ proxies:
   - h3
 - name: hysteria2 | 🇺🇸美国0
   type: hysteria2
-  server: 64.31.63.57
-  port: 44462
+  server: 104.168.10.176
+  port: 35205
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国1
   type: hysteria2
-  server: 64.31.63.57
-  port: 44462
+  server: 104.168.10.176
+  port: 35205
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国2
   type: hysteria2
-  server: 64.31.63.57
-  port: 44462
+  server: 104.168.10.176
+  port: 35205
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
 - name: hysteria2 | 🇺🇸美国3
   type: hysteria2
-  server: 64.31.63.57
-  port: 44462
+  server: 104.168.10.176
+  port: 35205
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -317,10 +317,10 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国6
   - hysteria | 🇺🇸美国7
-  - hysteria | 🇺🇸美国8
-  - hysteria | 🇺🇸美国9
-  - hysteria | 🇺🇸美国10
-  - hysteria | 🇺🇸美国11
+  - hysteria | 🇨🇦加拿大1
+  - hysteria | 🇨🇦加拿大2
+  - hysteria | 🇨🇦加拿大3
+  - hysteria | 🇨🇦加拿大4
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
@@ -348,10 +348,10 @@ proxy-groups:
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇺🇸美国6
   - hysteria | 🇺🇸美国7
-  - hysteria | 🇺🇸美国8
-  - hysteria | 🇺🇸美国9
-  - hysteria | 🇺🇸美国10
-  - hysteria | 🇺🇸美国11
+  - hysteria | 🇨🇦加拿大1
+  - hysteria | 🇨🇦加拿大2
+  - hysteria | 🇨🇦加拿大3
+  - hysteria | 🇨🇦加拿大4
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
