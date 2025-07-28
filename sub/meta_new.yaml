@@ -132,10 +132,11 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇺🇸美国6
+- name: hysteria | 🇨🇦加拿大1
   type: hysteria
-  server: 172.245.235.201
-  port: 38814
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -143,7 +144,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇺🇸美国7
+- name: hysteria | 🇺🇸美国6
   type: hysteria
   server: 208.87.243.151
   port: 17549
@@ -154,20 +155,6 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇨🇦加拿大1
-  type: hysteria
-  server: 109.104.153.91
-  port: 37519
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: hysteria | 🇨🇦加拿大2
   type: hysteria
   server: 109.104.153.91
@@ -197,6 +184,20 @@ proxies:
   alpn:
   - h3
 - name: hysteria | 🇨🇦加拿大4
+  type: hysteria
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
+  auth_str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: hysteria | 🇨🇦加拿大5
   type: hysteria
   server: 109.104.153.91
   port: 37519
@@ -315,12 +316,12 @@ proxy-groups:
   - hysteria | 🇺🇸美国4
   - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
-  - hysteria | 🇺🇸美国6
-  - hysteria | 🇺🇸美国7
   - hysteria | 🇨🇦加拿大1
+  - hysteria | 🇺🇸美国6
   - hysteria | 🇨🇦加拿大2
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
+  - hysteria | 🇨🇦加拿大5
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
@@ -346,12 +347,12 @@ proxy-groups:
   - hysteria | 🇺🇸美国4
   - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
-  - hysteria | 🇺🇸美国6
-  - hysteria | 🇺🇸美国7
   - hysteria | 🇨🇦加拿大1
+  - hysteria | 🇺🇸美国6
   - hysteria | 🇨🇦加拿大2
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
+  - hysteria | 🇨🇦加拿大5
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
