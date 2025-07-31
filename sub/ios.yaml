@@ -142,7 +142,7 @@ proxies:
 - name: hysteria | 🇺🇸美国5
   type: hysteria
   server: 208.87.243.151
-  port: 17549
+  port: 38845
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -153,7 +153,7 @@ proxies:
 - name: hysteria | 🇨🇦加拿大0
   type: hysteria
   server: 108.181.24.77
-  port: 11512
+  port: 37872
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -177,7 +177,7 @@ proxies:
 - name: hysteria | 🇺🇸美国6
   type: hysteria
   server: 208.87.243.151
-  port: 17549
+  port: 38845
   auth_str: dongtaiwang.com
   alpn:
   - h3
