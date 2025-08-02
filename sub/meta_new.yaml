@@ -235,14 +235,6 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: hysteria2 | 🇺🇸美国3
-  type: hysteria2
-  server: 104.168.10.176
-  port: 35205
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
 - name: reality_0_🇹🇼台湾
   type: vless
   server: 1.162.51.106
@@ -325,7 +317,6 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
@@ -356,7 +347,6 @@ proxy-groups:
   - hysteria2 | 🇺🇸美国0
   - hysteria2 | 🇺🇸美国1
   - hysteria2 | 🇺🇸美国2
-  - hysteria2 | 🇺🇸美国3
   - reality_0_🇹🇼台湾
   - reality_1_🇹🇼台湾
   - reality_2_🇹🇼台湾
