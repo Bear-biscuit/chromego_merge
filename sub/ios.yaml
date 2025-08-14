@@ -121,16 +121,6 @@ proxies:
       host: dual-nothing-prep-exit.trycloudflare.com
 - name: hysteria | 🇺🇸美国3
   type: hysteria
-  server: hy2.dtku47.xyz
-  port: 15566
-  auth-str: jQrGpwSqp34P
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
-- name: hysteria | 🇺🇸美国4
-  type: hysteria
   server: hy1.dtku47.xyz
   port: 22334
   auth-str: lASdKzWK0VxL
@@ -139,7 +129,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: hysteria | 🇺🇸美国5
+- name: hysteria | 🇺🇸美国4
   type: hysteria
   server: 208.87.243.151
   port: 38845
@@ -174,7 +164,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇺🇸美国6
+- name: hysteria | 🇺🇸美国5
   type: hysteria
   server: 208.87.243.151
   port: 38845
@@ -352,10 +342,9 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
-  - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇨🇦加拿大1
-  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大2
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
@@ -380,10 +369,9 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
-  - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇨🇦加拿大1
-  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大2
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
@@ -408,10 +396,9 @@ proxy-groups:
   - vmess | 🇺🇸美国3
   - hysteria | 🇺🇸美国3
   - hysteria | 🇺🇸美国4
-  - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大0
   - hysteria | 🇨🇦加拿大1
-  - hysteria | 🇺🇸美国6
+  - hysteria | 🇺🇸美国5
   - hysteria | 🇨🇦加拿大2
   - hysteria | 🇨🇦加拿大3
   - hysteria | 🇨🇦加拿大4
