@@ -1,34 +1,4 @@
 proxies:
-- name: hysteria | 🇺🇸美国0
-  type: hysteria
-  server: hy2.dtku47.xyz
-  port: 15566
-  auth-str: jQrGpwSqp34P
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
-- name: hysteria | 🇺🇸美国1
-  type: hysteria
-  server: clash1.dtku47.xyz
-  port: 11223
-  auth-str: O5tQQiW2xKf5
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
-- name: hysteria | 🇺🇸美国2
-  type: hysteria
-  server: hy2.dtku47.xyz
-  port: 15566
-  auth-str: jQrGpwSqp34P
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
 - name: vmess | 🇺🇸美国0
   type: vmess
   server: 104.26.9.22
@@ -89,26 +59,6 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
     headers:
       host: dual-nothing-prep-exit.trycloudflare.com
-- name: hysteria | 🇺🇸美国3
-  type: hysteria
-  server: hy2.dtku47.xyz
-  port: 15566
-  auth-str: jQrGpwSqp34P
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
-- name: hysteria | 🇺🇸美国4
-  type: hysteria
-  server: hy1.dtku47.xyz
-  port: 22334
-  auth-str: lASdKzWK0VxL
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
 - name: hysteria2 | 🇫🇷法国0
   type: hysteria2
   server: 2001:bc8:32d7:302::11
@@ -259,15 +209,10 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - hysteria | 🇺🇸美国0
-  - hysteria | 🇺🇸美国1
-  - hysteria | 🇺🇸美国2
   - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
-  - hysteria | 🇺🇸美国3
-  - hysteria | 🇺🇸美国4
   - hysteria2 | 🇫🇷法国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
@@ -285,15 +230,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - hysteria | 🇺🇸美国0
-  - hysteria | 🇺🇸美国1
-  - hysteria | 🇺🇸美国2
   - vmess | 🇺🇸美国0
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
-  - hysteria | 🇺🇸美国3
-  - hysteria | 🇺🇸美国4
   - hysteria2 | 🇫🇷法国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
