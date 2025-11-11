@@ -149,62 +149,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇨🇦加拿大0
-  type: hysteria
-  server: 109.104.154.97
-  port: 48429
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: hysteria | 🇨🇦加拿大1
-  type: hysteria
-  server: 109.104.154.97
-  port: 48429
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: hysteria | 🇨🇦加拿大2
-  type: hysteria
-  server: 109.104.154.97
-  port: 48429
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: hysteria | 🇨🇦加拿大3
-  type: hysteria
-  server: 109.104.154.97
-  port: 48429
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: reality_0_🇫🇷法国
   type: vless
   server: 2001:bc8:32d7:302::13
@@ -256,10 +200,6 @@ proxy-groups:
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
   - hysteria | 🇫🇷法国3
-  - hysteria | 🇨🇦加拿大0
-  - hysteria | 🇨🇦加拿大1
-  - hysteria | 🇨🇦加拿大2
-  - hysteria | 🇨🇦加拿大3
   - reality_0_🇫🇷法国
   - reality_3_🇫🇷法国
 - name: 手动选择
@@ -274,10 +214,6 @@ proxy-groups:
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
   - hysteria | 🇫🇷法国3
-  - hysteria | 🇨🇦加拿大0
-  - hysteria | 🇨🇦加拿大1
-  - hysteria | 🇨🇦加拿大2
-  - hysteria | 🇨🇦加拿大3
   - reality_0_🇫🇷法国
   - reality_3_🇫🇷法国
 - name: 负载均衡
@@ -292,10 +228,6 @@ proxy-groups:
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
   - hysteria | 🇫🇷法国3
-  - hysteria | 🇨🇦加拿大0
-  - hysteria | 🇨🇦加拿大1
-  - hysteria | 🇨🇦加拿大2
-  - hysteria | 🇨🇦加拿大3
   - reality_0_🇫🇷法国
   - reality_3_🇫🇷法国
   url: http://www.gstatic.com/generate_204
