@@ -89,11 +89,11 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
     headers:
       host: dual-nothing-prep-exit.trycloudflare.com
-- name: hysteria2 | 🇫🇷法国0
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  port: 20088
-  password: dongtaiwang.com
+- name: hysteria | 🇫🇷法国0
+  type: hysteria
+  server: 2001:bc8:32d7:17b::2
+  port: 11000
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -101,7 +101,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇫🇷法国0
+- name: hysteria | 🇫🇷法国1
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -113,7 +113,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇫🇷法国1
+- name: hysteria | 🇫🇷法国2
   type: hysteria
   server: 62.210.10.186
   port: 50011
@@ -125,7 +125,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇫🇷法国2
+- name: hysteria | 🇫🇷法国3
   type: hysteria
   server: 2001:bc8:32d7:158::2
   port: 50011
@@ -137,7 +137,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria | 🇫🇷法国3
+- name: hysteria | 🇫🇷法国4
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -195,11 +195,11 @@ proxy-groups:
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
-  - hysteria2 | 🇫🇷法国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
   - hysteria | 🇫🇷法国3
+  - hysteria | 🇫🇷法国4
   - reality_0_🇫🇷法国
   - reality_3_🇫🇷法国
 - name: 手动选择
@@ -209,11 +209,11 @@ proxy-groups:
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
-  - hysteria2 | 🇫🇷法国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
   - hysteria | 🇫🇷法国3
+  - hysteria | 🇫🇷法国4
   - reality_0_🇫🇷法国
   - reality_3_🇫🇷法国
 - name: 负载均衡
@@ -223,11 +223,11 @@ proxy-groups:
   - vmess | 🇺🇸美国1
   - vmess | 🇺🇸美国2
   - vmess | 🇺🇸美国3
-  - hysteria2 | 🇫🇷法国0
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
   - hysteria | 🇫🇷法国3
+  - hysteria | 🇫🇷法国4
   - reality_0_🇫🇷法国
   - reality_3_🇫🇷法国
   url: http://www.gstatic.com/generate_204
