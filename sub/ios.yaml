@@ -29,66 +29,6 @@ proxies:
   type: hysteria2
   server: 109.104.152.333
   port: 8007
-- name: vmess | 🇺🇸美国0
-  type: vmess
-  server: 104.26.9.22
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: vmess | 🇺🇸美国1
-  type: vmess
-  server: 172.64.97.235
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: vmess | 🇺🇸美国2
-  type: vmess
-  server: 104.19.38.28
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: vmess | 🇺🇸美国3
-  type: vmess
-  server: 104.19.38.48
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
 - name: hysteria | 🇫🇷法国0
   type: hysteria
   server: 2001:bc8:32d7:17b::2
@@ -191,10 +131,6 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - vmess | 🇺🇸美国0
-  - vmess | 🇺🇸美国1
-  - vmess | 🇺🇸美国2
-  - vmess | 🇺🇸美国3
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
@@ -205,10 +141,6 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - vmess | 🇺🇸美国0
-  - vmess | 🇺🇸美国1
-  - vmess | 🇺🇸美国2
-  - vmess | 🇺🇸美国3
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
@@ -219,10 +151,6 @@ proxy-groups:
 - name: 负载均衡
   type: load-balance
   proxies:
-  - vmess | 🇺🇸美国0
-  - vmess | 🇺🇸美国1
-  - vmess | 🇺🇸美国2
-  - vmess | 🇺🇸美国3
   - hysteria | 🇫🇷法国0
   - hysteria | 🇫🇷法国1
   - hysteria | 🇫🇷法国2
